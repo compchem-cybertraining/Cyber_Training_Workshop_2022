@@ -6,15 +6,13 @@ country: "United States"      # lowercase two-letter ISO country code such as "f
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 latitude: "43.002890"     # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-78.788780"    # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "June 14-26, 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "11:00 am - 5:00 pm EDT"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: 2021-06-14      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2021-06-25        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Alexey Akimov", "Jeanette Sperhac", "Sudhakar Pamidighantam",
-             "Ivan Infante",  "Felipe Zapata", "Sergei Tretiak", "Walter Malone", 
-             "Mario Barbatti", "Ljiljana Stojanovic", "Hans Lischka", "Amber Jain", "Aiichiro Nakano"]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Mohammad Shakiba", "Bas van Beek", "Juliette Zito", "Roberta Pascazio",
-         "Thomas Linker", "Reed Nieman" ] # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+humandate: "July 3-15, 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am - 5:00 pm EDT"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2022-07-03      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2022-07-15        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Alexey Akimov", "Seung Kyu Min", "Peihong Zhang", "Sebastian Mai", "Davide Avagliano",
+             "Lea-Mary Ibele", "Jin Zhao", "Dmitri Kilin"]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Mohammad Shakiba" ] # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["alexeyak@buffalo.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:         # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 googleform: https://forms.gle/kup1bkWibLsHH8Bn7
@@ -28,7 +26,7 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 {% endcomment %}
 
 
-# Excited States and Nonadiabatic Dynamics CyberTraining Workshop 2021
+# Excited States and Nonadiabatic Dynamics CyberTraining Workshop 2022
 
 ## About the Summer School and Workshop
 
