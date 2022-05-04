@@ -1,0 +1,12 @@
+{
+ "argv": [
+  "/projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/libra/share/jupyter/kernels/libra-plus/prepend_and_launch.sh",
+  "/projects/academic/cyberwksp21/Software/Conda/Miniconda3/envs/libra-plus/bin/python",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "Python 3.6 (libra-latest)",
+ "language": "python"
+}
