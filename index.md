@@ -6,12 +6,12 @@ country: "United States"      # lowercase two-letter ISO country code such as "f
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 latitude: "43.002890"     # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-78.788780"    # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "July 3-15, 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "July 3-15, 2022"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 5:00 pm EDT"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2022-07-03      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2022-07-15        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Alexey Akimov", "Seung Kyu Min", "Peihong Zhang", "Sebastian Mai", "Davide Avagliano",
-             "Lea-Mary Ibele", "Jin Zhao", "Dmitri Kilin"]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+             "Luis Rego", "Lea-Maria Ibele", "Jin Zhao", "Dmitri Kilin", "Weibin Chu"]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Mohammad Shakiba" ] # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["alexeyak@buffalo.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:         # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
@@ -63,16 +63,18 @@ The school aims to provide training in a range of advanced tools for excited sta
 nonadiabatic molecular dynamics calculations. 
 This year, the focus will be on the following packages:
 
+- pyUNIxMD (Min)
+- CT-MQC (Ibele)
+- SHARC (Mai, Avagliano)
+- OpenMolcas (Mai, Avagliano)
+- Hefei-NAMD (Zhao, Chu)
+- Quantum Espresso (Zhao, Chu)
+- BerkeleyGW (Zhang)
+- DynEMol  (Rego)
 - Libra (Akimov)
-- NEXMD (Tretiak)
-- Newton-X (Barbatti)
-- nano-qmflows (Infante, Zapata)
-- CAT, auto-FOX (Infante, Zapata)
-- COLUMBUS (Lischka)
-- DFTB+
-- CP2K
-- Quantum Espresso
-- ErgoSCF
+- DFTB+ (Shakiba)
+- CP2K (Shakiba)
+- TBD (Kilin)
 
 The school will leverage the [OnDemand](https://ondemand.ccr.buffalo.edu) gateway at the University at Buffalo
 
