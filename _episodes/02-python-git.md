@@ -1,7 +1,5 @@
 ---
-title: "2. Revision of Python and best practices. Coding Molecular Dynamics"
-date: June 14, 2021, 2:00 pm - 5:00 pm EDT
-
+title: "2. Revision of Python, Git and GitHub."
 ---
 
 

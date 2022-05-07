@@ -1,6 +1,5 @@
 ---
 title: "1. Introduction to our CyberInfrastructure. Setups and key links."
-date: June 14, 2021, 11:00 am - 1:00 pm EDT
 ---
 
 <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=dd57af07-4998-4213-9760-ad47016b0412&

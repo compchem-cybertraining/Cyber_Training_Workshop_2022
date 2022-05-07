@@ -155,20 +155,23 @@ The details may vary and the order of topics may be changed, the topics may be o
   <tr>
     <td class="col-md-3">July 4, 2022 (Day 2), <strong>Monday</strong></td>
     <td class="col-md-7">
+      <strong>Morning, 9 am - noon</strong>
       <ul>        
-        <li><a href="/_episodes/01-introduction.html">Introduction. Overview of CyberInfrastructure. </a></li>
+        <li><a href="/_episodes/01-introduction.html">Introduction. Overview of the CCR CyberInfrastructure. </a></li>
         <li><a href="/_episodes/02-python-git.html">Revision of Python and Best Practices.</a> </li>
-        <li><a href="/_episodes/02-python-git.html">Coding Molecular Dynamics. Intro to Libra.</a></li>
       </ul>
+      <strong>Noon - 1:30 pm</strong>
+      <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
+        <li><a href="/_episodes/03-libra.html">Brief overview of Libra. Demos: TSH, HEOM, QTAG, Wavepackets</a></li>
     </td> 
-    <td class="col-md-2">Alexey Akimov, Jeanette Sperhac, Sudhakar Pamidighantam</td>
+    <td class="col-md-2">Alexey Akimov</td>
   </tr>
 
   <tr>
     <td class="col-md-3">July 5, 2022 (Day 3), Tuesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/04-md-libra">Overview of the Libra code. Model Hamiltonians in Libra</a></li>
+        <li><a href="/_episodes/03-libra">Overview of the Libra code. Model Hamiltonians in Libra</a></li>
 
         <li>Opening. Intro to Jupyter and Python. </li>
         <li>Introduction to Adiabatic and Nonadiabatic molecular dynamics.</li>
@@ -189,9 +192,9 @@ The details may vary and the order of topics may be changed, the topics may be o
         <li>Continued: Atomistic simulations of NA-MD in materials, using Libra/DFTB+, Libra/cp2k, and Libra/QE interfaces.</li>
         <li>Additional capabilities of Libra: introduction to neural networks/machine learning.</li>
 
-        <li><a href="/_episodes/05-heom-libra">Hierarchy of equations of motion (HEOM) calculations with Libra. </a></li>
-        <li><a href="/_episodes/06-tsh-dvr-libra">Wavepacket/DVR calculations with  Libra. </a></li>
-        <li><a href="/_episodes/08-nbra-workflows-libra">Atomistic simulations of NA-MD in materials, using Libra/DFTB+, Libra/cp2k, Libra/ErgoSCF, Libra/QE interfaces</a></li>
+        <li><a href="/_episodes/03-libra">Hierarchy of equations of motion (HEOM) calculations with Libra. </a></li>
+        <li><a href="/_episodes/03-libra">Wavepacket/DVR calculations with  Libra. </a></li>
+        <li><a href="/_episodes/03-libra">Atomistic simulations of NA-MD in materials, using Libra/DFTB+, Libra/cp2k, Libra/ErgoSCF, Libra/QE interfaces</a></li>
 
       </ul>
     </td>
@@ -202,8 +205,9 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 6, 2022 (Day 4), Wednesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/07-cat-fox">Excited states calculations with OpenMolcas and ORCA codes</a></li>
-        <li><a href="/_episodes/07-cat-fox">NA-MD calculations with the SHARC code: LVC Hamiltonian</a></li>
+        <li><a href="/_episodes/04-molcas">Excited states calculations with OpenMolcas and ORCA codes</a></li>
+        <li><a href="/_episodes/05-orca">Excited states calculations with OpenMolcas and ORCA codes</a></li>
+        <li><a href="/_episodes/06-sharc">NA-MD calculations with the SHARC code: LVC Hamiltonian</a></li>
       </ul>
     </td>
     <td class="col-md-2">Sebastian Mai, Davide Avagliano</td>
@@ -213,8 +217,8 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 7, 2022 (Day 5), Thursday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/07-cat-fox">NA-MD calculations with the SHARC code: atomistic examples with OpenMolcas and ORCA</a></li>
-        <li><a href="/_episodes/07-cat-fox">NA-MD calculations with the SHARC/COBRAMM code</a></li>
+        <li><a href="/_episodes/06-sharc">NA-MD calculations with the SHARC code: atomistic examples with OpenMolcas and ORCA</a></li>
+        <li><a href="/_episodes/07-cobramm">NA-MD calculations with the SHARC/COBRAMM code</a></li>
       </ul>
     </td>
     <td class="col-md-2">Sebastian Mai, Davide Avagliano</td>
@@ -224,7 +228,7 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 8, 2022 (Day 6), Friday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/09-nexmd">Excited state dynamics of extended systems with DynEMol</a></li>
+        <li><a href="/_episodes/08-dynemol">Excited state dynamics of extended systems with DynEMol</a></li>
       </ul>
     </td>
     <td class="col-md-2">Luis Rego </td>
@@ -246,10 +250,10 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 11, 2022 (Day 9), <strong>Monday</strong></td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/pyunixmd">Theory of exact-factorization based TSH</a></li>
-        <li><a href="/_episodes/pyunixmd">SHXF + alhpa</a></li>
-        <li><a href="/_episodes/pyunixmd">Demo and hands on with pyUNIxMD + DFTB</a></li>
-        <li><a href="/_episodes/pyunixmd">Interfacing pyUNIxMD with external packages</a></li>
+        <li><a href="/_episodes/09-pyunixmd">Theory of exact-factorization based TSH</a></li>
+        <li><a href="/_episodes/09-pyunixmd">SHXF + alhpa</a></li>
+        <li><a href="/_episodes/09-pyunixmd">Demo and hands on with pyUNIxMD + DFTB</a></li>
+        <li><a href="/_episodes/09-pyunixmd">Interfacing pyUNIxMD with external packages</a></li>
       </ul>
     </td>
     <td class="col-md-2">Seung Kyu Min</td>
@@ -259,7 +263,7 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 12, 2022 (Day 10), Tuesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/11-columbus">Exact factorization-based calculatons with the CT-MQC code</a></li>
+        <li><a href="/_episodes/10-ctmqc">Exact factorization-based calculatons with the CT-MQC code</a></li>
       </ul>
     </td>
     <td class="col-md-2">Lea-Maria Ibele </td>
@@ -269,7 +273,8 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 13, 2022 (Day 11), Wednesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/11-columbus">Excited state calculations in condesned-matter systems with BerkeleyGW and paratec codes</a></li>
+        <li><a href="/_episodes/11-berkeleygw">Excited state calculations in condesned-matter systems with BerkeleyGW and paratec codes</a></li>
+        <li><a href="/_episodes/12-paratec">Excited state calculations in condesned-matter systems with BerkeleyGW and paratec codes</a></li>
       </ul>
     </td>
     <td class="col-md-2">Peihong Zhang</td>
@@ -279,8 +284,8 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 14, 2022 (Day 12), Thursday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/12-newtonx">Nonadiabatic dynamics in eQE and Libra/QE</a></li>
-        <li><a href="/_episodes/12-newtonx">Nonadiabatic dynamics using Hefei-NA-MD code</a></li>        
+        <li><a href="/_episodes/03-libra">Nonadiabatic dynamics in eQE and Libra/QE</a></li>
+        <li><a href="/_episodes/13-hefeinamd">Nonadiabatic dynamics using Hefei-NA-MD code</a></li>        
       </ul>
     </td>
     <td class="col-md-2">Jin Zhao, Weibin Wang, Qijing Zheng, Mohammad Shakiba, and Alexey Akimov</td>
@@ -290,7 +295,7 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 15, 2022 (Day 13), Friday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/13-projects"></a>Nonadiabatic dynamics calculations in extended systems with KS-TD-DFT NA-MD method</li>
+        <li><a href="/_episodes/14-tdksnamd"></a>Nonadiabatic dynamics calculations in extended systems with KS-TD-DFT NA-MD method</li>
         <li>Exploring Buffalo</li>
       </ul>
     </td>
