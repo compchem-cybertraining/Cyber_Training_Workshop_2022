@@ -205,6 +205,16 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 6, 2022 (Day 4), Wednesday</td>
     <td class="col-md-7">
       <ul>
+        <li><a href="/_episodes/08-dynemol">Excited state dynamics of extended systems with DynEMol</a></li>
+      </ul>
+    </td>
+    <td class="col-md-2">Luis Rego</td>
+  </tr>
+
+  <tr>
+    <td class="col-md-3">July 7, 2022 (Day 5), Thursday</td>
+    <td class="col-md-7">
+      <ul>
         <li><a href="/_episodes/04-molcas">Excited states calculations with OpenMolcas and ORCA codes</a></li>
         <li><a href="/_episodes/05-orca">Excited states calculations with OpenMolcas and ORCA codes</a></li>
         <li><a href="/_episodes/06-sharc">NA-MD calculations with the SHARC code: LVC Hamiltonian</a></li>
@@ -214,24 +224,15 @@ The details may vary and the order of topics may be changed, the topics may be o
   </tr>
 
   <tr>
-    <td class="col-md-3">July 7, 2022 (Day 5), Thursday</td>
+    <td class="col-md-3">July 8, 2022 (Day 6), Friday</td>
     <td class="col-md-7">
       <ul>
         <li><a href="/_episodes/06-sharc">NA-MD calculations with the SHARC code: atomistic examples with OpenMolcas and ORCA</a></li>
         <li><a href="/_episodes/07-cobramm">NA-MD calculations with the SHARC/COBRAMM code</a></li>
+        
       </ul>
     </td>
-    <td class="col-md-2">Sebastian Mai, Davide Avagliano</td>
-  </tr>
-
-  <tr>
-    <td class="col-md-3">July 8, 2022 (Day 6), Friday</td>
-    <td class="col-md-7">
-      <ul>
-        <li><a href="/_episodes/08-dynemol">Excited state dynamics of extended systems with DynEMol</a></li>
-      </ul>
-    </td>
-    <td class="col-md-2">Luis Rego </td>
+    <td class="col-md-2">Sebastian Mai, Davide Avagliano </td>
   </tr>
   
   <tr>
