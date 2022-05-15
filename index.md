@@ -143,7 +143,7 @@ The details may vary and the order of topics may be changed, the topics may be o
   </tr>
 
   <tr>
-    <td class="col-md-3">July 3, 2022 (Day 1), <strong>Sunday</strong></td>
+    <td class="col-md-3">July 3, 2022 (Day 1), Sunday</td>
     <td class="col-md-7">
       <ul>        
         <li>Arrivals</li>
@@ -157,15 +157,15 @@ The details may vary and the order of topics may be changed, the topics may be o
   <tr>
     <td class="col-md-3">July 4, 2022 (Day 2), <strong>Monday</strong></td>
     <td class="col-md-7">
-      <strong>Morning, 9 am - noon</strong>
-      <ul>        
+      <ul>
+        <li><strong>Morning, 9 am - noon</strong></li>        
         <li><a href="/_episodes/01-introduction">Introduction. Overview of the CCR CyberInfrastructure. </a></li>
         <li><a href="/_episodes/02-python-git">Revision of Python/Jupyter, Git/GitHub, and Best Practices.</a> </li>
-      </ul>
-      <strong>Noon - 1:30 pm</strong>
-      <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
+        <li><strong>Noon - 1:30 pm</strong> Lunch break</li>
+        <li><strong>Afternoon, 1:30 pm - 5:00 pm</strong></li>
         <li><a href="/_episodes/03-libra">Brief overview of Libra. Demos: HEOM, QTAG, Wavepackets</a></li>
         <li>Machine learning capabilities of Libra: introduction to neural networks/machine learning.</li>
+      </ul>
     </td> 
     <td class="col-md-2">Alexey Akimov</td>
   </tr>
@@ -174,11 +174,11 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 5, 2022 (Day 3), Tuesday</td>
     <td class="col-md-7">
       <ul>
-        <strong>Morning, 9 am - noon</strong>
+        <li><strong>Morning, 9 am - noon</strong></li>        
         <li><a href="/_episodes/03-libra">Theory of adiabatic and nonadiabatic dynamics.</a></li>
         <li>TSH and Ehrenfest dynamics with model Hamiltonians in Libra.</li>
-
-        <strong>Afternoon, 1:30 pm - 5:00</strong>
+        <li><strong>Noon - 1:30 pm</strong> Lunch break</li>
+        <li><strong>Afternoon, 1:30 pm - 5:00 pm</strong></li>
         <li>Brief overview of computations with CP2k/xTB.</li>
         <li>Atomistic simulations of NA-MD in materials, Libra/CP2k and Libra/QE/eQE (time-allowing) interfaces.</li>
       </ul>
@@ -298,36 +298,6 @@ The details may vary and the order of topics may be changed, the topics may be o
   
   </table>
 
-
-## Our team
-### Our instructors
-
-| Name            | Affiliation         |    Role/Software covered   |
-| --------------- | ------------------- | -------------------------- |
-| [Dr. Alexey Akimov](https://akimovlab.github.io/)         |   University at Buffalo, USA      | Workshop coordinator, Instructor for: **Libra, DFTB+, CP2k, etc.** |
-| [Dr. Sebastian Mai](https://theochem.univie.ac.at/member/mai) | University of Vienna, Switzerland | Instructor for **SHARC, OpenMolcas, ORCA** |
-| [Dr. Davide Avagliano](https://www.unibo.it/sitoweb/davide.avagliano) | University of Bologna, Italy  | Instructor: **SHARC/COBRAMM** |
-| [Dr. Seung Kyu Min](https://chemistry.unist.ac.kr/faculty/min-seung-kyu/) | Ulsan National University of Science and Technology, South Korea  |  Instructor for: **pyUNIxMD** |
-| [Dr. Lea-Maria Ibele]() | University of Paris-Saclay, France  |  Instructor for: **CT-MQC** |
-| [Dr. Peihong Zhang](https://www.acsu.buffalo.edu/~pzhang3/)     |   University at Buffalo, USA    | Instructor for: **BerkeleyGW, paratec** |
-| [Dr. Luis Rego](https://luisrego.sites.ufsc.br/luis-g-c-rego/)     | Universidade Federal de Santa Catarina, Brazil  | Instructor for: **DynEMol** |
-| [Dr. Jin Zhao](http://staff.ustc.edu.cn/~zhaojin/group_leader.html) | University of Science and Technology of China, China  |  Instructor for: **Hefei-NAMD** |
-| [Dr. Qijing Zheng](http://staff.ustc.edu.cn/~zhaojin/others.html) | University of Science and Technology of China, China  |  Instructor for: **Hefei-NAMD** |
-| [Dr. Weibin Chu](http://staff.ustc.edu.cn/~zhaojin/others.html) | University of Science and Technology of China, China  |  Instructor for: **Hefei-NAMD** |
-| [Dr. Dmitri Kilin](https://www.ndsu.edu/chemistry/people/faculty/kilin.html)  | North Dakota State University, USA  | Instructor for: **TD-DFT-NAMD package** |
-
-### Our co-instructors/helpers
-
-| Name            | Affiliation         |    Role/Software covered   |
-| --------------- | ------------------- | -------------------------- |
-| Mr. Mohammad Shakiba   |  Shahid Bahonar University of Kerman, Iran   | Co-instructor for: **CP2k, DFTB+, Libra/CP2k, Libra/DFTB+, etc.** |
-
-### The UB Center for Computational Research team
-
-| Name            |   Role/Software covered    |
-| --------------- | -------------------------- |
-| [Ms. Dori Sajdak](http://www.buffalo.edu/ccr/about-us/people/staff/sajdak.html) | UB CCR system administrator, UB VPN, Open OnDemand, HPC accounts, etc. |
- 
 
 
 ## Participation

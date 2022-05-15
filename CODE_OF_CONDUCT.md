@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Project and Participants"
+title: "Projects and Participants"
 ---
 
 ## Workshop Objectives
@@ -8,11 +8,6 @@ title: "Project and Participants"
 * Get **familiar with a variety of software packages** relevant to modeling of excited states and nonadiabatic dynamics
 * Get an overview of **theoretical background** for corresponding computational methods
 * Get a **practical experience** with these tools and packages
-
-
-## Schedule of the workshop
-
-<embed src="files/Schedule.pdf" width="100%" height="500" type='application/pdf'>
 
 
 ## Project rules
@@ -25,6 +20,7 @@ title: "Project and Participants"
 * Can be an application or a coding project
 * The consistency in your course work during this school will contribute to your chances to win the awards
 * The awards decisions will be made based on the committee evaluation. The awards will be: 1 first prize ($300), 3 second  
+
 
 
 ## Participants 

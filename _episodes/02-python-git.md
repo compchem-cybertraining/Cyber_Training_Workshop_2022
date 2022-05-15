@@ -3,11 +3,6 @@ title: "2. Revision of Python, Git and GitHub."
 ---
 
 
-<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=3f9a7e29-cacc-4fe2-ba4a-ad47016afb73&
-autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="900" width="800"
- style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
-
 <a name="toc"></a>
 # Table of Content
 1. [Brief Python overview](#python)
@@ -243,15 +238,4 @@ A session with merging and upstream update
 <a name="github2"></a>
 ## 3. Working on collaborative projects with Git and GitHub
 [Back to TOC](#toc)
-
-<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0d1facf1-f10c-4372-9487-ad49016debe4&
-autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="900" width="800" 
-style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
-
-<a name="md"></a>
-## 4. Molecular Dynamics
-[Back to TOC](#toc)
-
-### [Presentation](../files/episode_1/Akimov-MD.pdf)
 

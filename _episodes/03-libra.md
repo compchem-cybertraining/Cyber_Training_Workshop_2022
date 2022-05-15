@@ -16,9 +16,6 @@ title: "3. Libra"
 
 ### 1.2. Videorecording of the session
 
-<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=66d88d5a-1c69-4a45-ae67-ad49016de6bf&
-autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="900" width="800" 
-style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ### 1.3. Demonstrations
 
@@ -34,10 +31,6 @@ style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 [Back to TOC](#toc)
 
 ### 2.1. Videorecording of the session
-
-<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=c6ed5214-abd9-4764-9406-ad49016deaee&
-autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="900" width="800" 
-style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ### 2.2. Demonstrations
 
@@ -207,10 +200,4 @@ style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
   * [Command-line examples](https://github.com/compchem-cybertraining/Tutorials_CP2K)
 
         https://github.com/compchem-cybertraining/Tutorials_CP2K
-
-
-<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=7770057a-c9dd-44e9-8aec-ad4a0162e745&
-autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="900" width="800" 
-style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
 
