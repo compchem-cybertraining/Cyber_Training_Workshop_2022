@@ -158,11 +158,11 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 4, 2022 (Day 2), <strong>Monday</strong></td>
     <td class="col-md-7">
       <ul>
-        <li><strong>Morning, 9 am - noon</strong></li>        
+        <strong>Morning, 9 am - noon</strong>        
         <li><a href="/_episodes/01-introduction">Introduction. Overview of the CCR CyberInfrastructure. </a></li>
         <li><a href="/_episodes/02-python-git">Revision of Python/Jupyter, Git/GitHub, and Best Practices.</a> </li>
-        <li><strong>Noon - 1:30 pm</strong> Lunch break</li>
-        <li><strong>Afternoon, 1:30 pm - 5:00 pm</strong></li>
+        <strong>Noon - 1:30 pm</strong> Lunch break
+        <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
         <li><a href="/_episodes/03-libra">Brief overview of Libra. Demos: HEOM, QTAG, Wavepackets</a></li>
         <li>Machine learning capabilities of Libra: introduction to neural networks/machine learning.</li>
       </ul>
