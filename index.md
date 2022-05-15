@@ -53,10 +53,12 @@ Keywords and topics:
 - charge transfer
 - excitation energy transfer
 - trajectory surface hopping
-- TD-DFT
+- coupled trajectories
+- exact factorization
+- TD-DFT, CASSCF, GW/BSE
 - algorithms and methods
 - software, programming, Python
-- best practices, git, github
+- best practices, Git, GitHub
 
  
 The school aims to provide training in a range of advanced tools for excited state and 
@@ -157,12 +159,13 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-7">
       <strong>Morning, 9 am - noon</strong>
       <ul>        
-        <li><a href="/_episodes/01-introduction.html">Introduction. Overview of the CCR CyberInfrastructure. </a></li>
-        <li><a href="/_episodes/02-python-git.html">Revision of Python and Best Practices.</a> </li>
+        <li><a href="/_episodes/01-introduction">Introduction. Overview of the CCR CyberInfrastructure. </a></li>
+        <li><a href="/_episodes/02-python-git">Revision of Python/Jupyter, Git/GitHub, and Best Practices.</a> </li>
       </ul>
       <strong>Noon - 1:30 pm</strong>
       <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
-        <li><a href="/_episodes/03-libra.html">Brief overview of Libra. Demos: TSH, HEOM, QTAG, Wavepackets</a></li>
+        <li><a href="/_episodes/03-libra">Brief overview of Libra. Demos: HEOM, QTAG, Wavepackets</a></li>
+        <li>Machine learning capabilities of Libra: introduction to neural networks/machine learning.</li>
     </td> 
     <td class="col-md-2">Alexey Akimov</td>
   </tr>
@@ -171,31 +174,13 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 5, 2022 (Day 3), Tuesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/03-libra">Overview of the Libra code. Model Hamiltonians in Libra</a></li>
+        <strong>Morning, 9 am - noon</strong>
+        <li><a href="/_episodes/03-libra">Theory of adiabatic and nonadiabatic dynamics.</a></li>
+        <li>TSH and Ehrenfest dynamics with model Hamiltonians in Libra.</li>
 
-        <li>Opening. Intro to Jupyter and Python. </li>
-        <li>Introduction to Adiabatic and Nonadiabatic molecular dynamics.</li>
-        <li>Libra installation and testing examples.</li>
-        <li>Classical MD with the force fields in Libra. Exploring PESs.</li>
-
-        <li>General overview of the Libra code.</li> 
-        <li>TSH and Ehrenfest dynamics: model Hamiltonians in Libra.</li>
-        <li>Hierarchy of equations of motion (HEOM) calculations with Libra. </li>
-        <li>Wavepacket/DVR calculations with  Libra. </li>
-
-        <li>Electronic structure theory overview.</li>
-        <li>Libra' semiempirics and built-in integrals.</li>
-        <li>Hands on with Quantum Espresso.</li>
-        <li>Hands on with DFTB+.</li>
-        <li>Hands on with CP2k/xTB.</li>
-
-        <li>Continued: Atomistic simulations of NA-MD in materials, using Libra/DFTB+, Libra/cp2k, and Libra/QE interfaces.</li>
-        <li>Additional capabilities of Libra: introduction to neural networks/machine learning.</li>
-
-        <li><a href="/_episodes/03-libra">Hierarchy of equations of motion (HEOM) calculations with Libra. </a></li>
-        <li><a href="/_episodes/03-libra">Wavepacket/DVR calculations with  Libra. </a></li>
-        <li><a href="/_episodes/03-libra">Atomistic simulations of NA-MD in materials, using Libra/DFTB+, Libra/cp2k, Libra/ErgoSCF, Libra/QE interfaces</a></li>
-
+        <strong>Afternoon, 1:30 pm - 5:00</strong>
+        <li>Brief overview of computations with CP2k/xTB.</li>
+        <li>Atomistic simulations of NA-MD in materials, Libra/CP2k and Libra/QE/eQE (time-allowing) interfaces.</li>
       </ul>
     </td>
     <td class="col-md-2">Alexey Akimov, Mohammad Shakiba</td>
@@ -358,14 +343,14 @@ The details may vary and the order of topics may be changed, the topics may be o
    * your current/ongoing research projects and interests; 
    * how you plan to use the CyberTraining skill gained in this workshop in your research, for instance if you expect using any of the
      packages that will be covered at this workshop (see the agenda);
-   * propose at least one potential project to be completed during the summer school; the project will be presented at the end of the 
-     event and should involving one or more tools/software covered during the workshop (see the agenda). The quality and feasibility 
+   * propose at least one potential project to be completed during and shortly after the summer school; the project will be presented shortly after 
+     the event (within 1 week). It should leverage one or more tools/software covered during the workshop (see the agenda). The quality and feasibility 
      of the proposed workshop projects will be considered during the selection of the participants. 
          
    2.3. request your advisor to submit a letter of recommendation for you to the following email: "alexeyak AT buffalo DOT edu", 
    please replace "AT" and "DOT" with the corresponding characters
 
-3. Complete the <a href="" target="_blank" rel="nofollow">**Registration form**</a>
+3. Complete the <a href="https://forms.gle/91tpbpe98Q6RHdkv9" target="_blank" rel="nofollow">**Registration form**</a>
 
 
 ### Important dates
@@ -377,15 +362,15 @@ The details may vary and the order of topics may be changed, the topics may be o
 
 ### Who can apply
 
-This summer school is primarily for graduate students working in computational 
-modeling of excited states and nonadiabatic dynamics, both in abstract and atomistic
+This summer school is for graduate students, postdocs, and young faculty (and undergraduate in exceptional cases)
+working in computational modeling of excited states and nonadiabatic dynamics, both in abstract and atomistic
 applications/problems. The school aims to help researchers/students working either in 
 methodology development for nonadiabatic or quantum-classical dynamics and in 
 applied studies of various types of solar energy materials (photovoltaics, photocatalytics, etc.). 
 
 Postdocs and researchers wishing to acquire the practical experience with new simulation
 tools and expand their knowledge in the areas of excited states and nonadiabatic dynamics
-are also welcomed to participate.
+are also welcome to participate.
 
 
 
@@ -397,28 +382,12 @@ are also welcomed to participate.
   What is more important is how ready the applicants are to absorb the new knowlege, how efficiently they can operate during the workshop, 
   and how critical the use of the methods/tools covered in the workshop may be for your future research or career (e.g. educating others). 
 
-* **The VPN cap/instructing efficiency limit.** The hands-on session will be facilitated by the CyberInfrastructure built
-  at the UB CCR cluster. As such, users have to use VPN to remotely access the cluster. The UBIT department has provided 
-  a block of 30 external VPNs for non-UB participants (including about 10 instructors). This number sets the limit of about 
-  20 people for non-instructor participants we can accept to the fully-fledged (talks/demos + hands-on) event. However, more 
-  participants may be admitted to the theory talks/demo sessions. 
-
-* **Export control limit.** Certain countries (e.g. China, Iran, Russia, etc.) can not be issued the UB VPN, so the participants 
-  from these countries can not use the UB CCR cyberinftrastructure during the hands-on activities. Such participants may still be 
-  admitted to the theory talks/demo sessions. In your application, please indicate if you would like to participate without access 
-  of UB CCR facilities. In this case, you may need to rely on your own installations or may simply  be here for the theory talks and 
-  demos.
-
-* **Group champions.** We anticipate the workshop may be of interest to more than 1 person from any given research group. To broaden 
-  and diversify the participation, we will admit only 1 person from any research group (2, if we have room) to a fully-fledged workshop
-  (talks/demos + hands-on). This is the group champion. Although this person will not be allowed to share their login credentials with other
-  group members, they are free to communicate with other group members (that may be accepted to the workshop as non-champions) during hands-on
-  exercises and share their screens with the group mates. In your application, please indicate whether you are selected by the group as the
-  group champion. If you are not assigned to be the group champion, but still want to participate in the event (either relying on your own installations,
-  or working with your group champion, or just staying for the theory talks/demos), please indicate this in your application. 
-
-
-
+* **Capacity.** This year, the event will take place in a hybrid format. We will accommodate 15-20 in-person participants (excluding instructors).
+  There is no limit to the capacity of the participants wishing to attend remotely, however the remote users who wish to utilize our CyberInfrastructure 
+  have to use VPN to remotely access the cluster. There is a limit on how many VPNs the UBIT department can provide. Furthermore, participants 
+  from certain countries with the export control limitations (e.g. China, Iran, Russia, etc.) can not be issued the UB VPN. The participants 
+  from such countries can not use the UB CCR cyberinftrastructure during the hands-on activities. Such participants may still be 
+  admitted to the theory talks/demo sessions. 
 
 
 ### Acknowledgement
