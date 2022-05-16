@@ -1,7 +1,7 @@
 ---
 layout: workshop
-venue: "University at Buffalo, SUNY (virtual)"   # brief name of host site without address (e.g., "Euphoric State University")
-address: "University at Buffalo, SUNY, North Campus (virtual)"     # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+venue: "University at Buffalo, SUNY"   # brief name of host site without address (e.g., "Euphoric State University")
+address: "University at Buffalo, SUNY, North Campus"     # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "United States"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 latitude: "43.002890"     # decimal latitude of workshop venue (use https://www.latlong.net/)
@@ -174,11 +174,11 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 5, 2022 (Day 3), Tuesday</td>
     <td class="col-md-7">
       <ul>
-        <li><strong>Morning, 9 am - noon</strong></li>        
+        <strong>Morning, 9 am - noon</strong>        
         <li><a href="/_episodes/03-libra">Theory of adiabatic and nonadiabatic dynamics.</a></li>
         <li>TSH and Ehrenfest dynamics with model Hamiltonians in Libra.</li>
-        <li><strong>Noon - 1:30 pm</strong> Lunch break</li>
-        <li><strong>Afternoon, 1:30 pm - 5:00 pm</strong></li>
+        <strong>Noon - 1:30 pm</strong> Lunch break
+        <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
         <li>Brief overview of computations with CP2k/xTB.</li>
         <li>Atomistic simulations of NA-MD in materials, Libra/CP2k and Libra/QE/eQE (time-allowing) interfaces.</li>
       </ul>
@@ -237,8 +237,11 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 11, 2022 (Day 9), <strong>Monday</strong></td>
     <td class="col-md-7">
       <ul>
+        <strong>Morning, 9 am - noon</strong>        
         <li><a href="/_episodes/09-pyunixmd">Theory of exact-factorization based TSH</a></li>
         <li><a href="/_episodes/09-pyunixmd">SHXF + alhpa</a></li>
+        <strong>Noon - 1:30 pm</strong> Lunch break
+        <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
         <li><a href="/_episodes/09-pyunixmd">Demo and hands on with pyUNIxMD + DFTB</a></li>
         <li><a href="/_episodes/09-pyunixmd">Interfacing pyUNIxMD with external packages</a></li>
       </ul>

@@ -37,7 +37,7 @@ root: .
 
 | Name            | Affiliation         |    Role/Software covered   |
 | --------------- | ------------------- | -------------------------- |
-| Mr. Mohammad Shakiba   |  Shahid Bahonar University of Kerman, Iran   | Co-instructor for: **CP2k, DFTB+, Libra/CP2k, Libra/DFTB+, etc.** |
+| Mr. Mohammad Shakiba   |  University at Buffalo, US   | Co-instructor for: **CP2k, DFTB+, Libra/CP2k, Libra/DFTB+, etc.** |
 
 ### The UB Center for Computational Research team
 
