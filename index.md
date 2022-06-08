@@ -12,7 +12,7 @@ startdate: 2022-07-03      # machine-readable start date for the workshop in YYY
 enddate: 2022-07-15        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Alexey Akimov", "Seung Kyu Min", "Peihong Zhang", "Sebastian Mai", "Davide Avagliano",
              "Luis Rego", "Lea-Maria Ibele", "Jin Zhao", "Weibin Chu", "Qijing Zheng", "Dmitri Kilin" ]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Mohammad Shakiba" ] # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["Mohammad Shakiba", "Dae Ho Han", "Matthew Dutra" ] # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["alexeyak@buffalo.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:         # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 googleform: https://forms.gle/kup1bkWibLsHH8Bn7
@@ -164,10 +164,10 @@ The details may vary and the order of topics may be changed, the topics may be o
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
         <li><a href="/_episodes/03-libra">Brief overview of Libra. Demos: HEOM, QTAG, Wavepackets</a></li>
-        <li>Machine learning capabilities of Libra: introduction to neural networks/machine learning.</li>
+        <li><a href="/_episodes/03-libra">Machine learning capabilities of Libra: introduction to neural networks/machine learning.</a></li>
       </ul>
     </td> 
-    <td class="col-md-2">Alexey Akimov</td>
+    <td class="col-md-2">Alexey Akimov, Matthew Dutra</td>
   </tr>
 
   <tr>
@@ -175,12 +175,12 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-7">
       <ul>
         <strong>Morning, 9 am - noon</strong>        
-        <li><a href="/_episodes/03-libra">Theory of adiabatic and nonadiabatic dynamics.</a></li>
-        <li>TSH and Ehrenfest dynamics with model Hamiltonians in Libra.</li>
+        <li><a href="/_episodes/03-libra">Theory of adiabatic and nonadiabatic dynamics. Lecture (60 min)</a></li>
+        <li><a href="/_episodes/03-libra">TSH and Ehrenfest dynamics with model Hamiltonians in Libra. Hands on (120 min)</a></li>
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
-        <li>Brief overview of computations with CP2k/xTB.</li>
-        <li>Atomistic simulations of NA-MD in materials, Libra/CP2k and Libra/QE/eQE (time-allowing) interfaces.</li>
+        <li><a href="/_episodes/03-libra">NA-MD in finite and condensed matter systems with xTB and TD-DFT with Libra/CP2k code.</a></li>
+        <li><a href="/_episodes/03-libra">NA-MD calculations in condensed matter systems with Libra/QE/eQE codes.</a></li>
       </ul>
     </td>
     <td class="col-md-2">Alexey Akimov, Mohammad Shakiba</td>
@@ -190,8 +190,14 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 6, 2022 (Day 4), Wednesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/08-dynemol">Excited state dynamics of extended systems with DynEMol</a></li>
-        <li><a href="/_episodes/07-cobramm">Molecular mechanics basics, QM/MM for excited states</a></li>
+        <strong>Morning, 9 am - noon</strong>        
+        <li><a href="/_episodes/08-dynemol">MM and non-adiabatic trajectory methods (Ehrenfest, FSSH, CSDM). Theory (90 min)</a></li>
+        <li><a href="/_episodes/08-dynemol">DynEMol code. Hands on (90 min)</a></li>
+        <strong>Noon - 1:30 pm</strong> Lunch break
+        <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
+        <li><a href="/_episodes/08-dynemol">DynEMol Q and A and students projects (60 min)</a></li>
+        <li><a href="/_episodes/07-cobramm">QM/MM for excited states. Theory (75 min)</a></li>
+        <li><a href="/_episodes/07-cobramm">COBRAMM/Amber. Hands on (75 min)</a></li>
       </ul>
     </td>
     <td class="col-md-2">Luis Rego, Davide Avagliano</td>
@@ -201,9 +207,14 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 7, 2022 (Day 5), Thursday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/04-molcas">Excited states calculations with OpenMolcas codes</a></li>
-        <li><a href="/_episodes/05-orca">Excited states calculations with ORCA codes</a></li>
-        <li><a href="/_episodes/06-sharc">NA-MD calculations with the SHARC code: LVC Hamiltonian</a></li>
+        <strong>Morning, 9 am - noon</strong>        
+        <li><a href="/_episodes/07-cobramm">COBRAMM/Amber. Hands on (60 min)</a></li>
+        <li><a href="/_episodes/04-molcas">Excited states calculations with CASSCF. Theory (60 min)</a></li>
+        <li><a href="/_episodes/04-molcas">CASSCF with OpenMolcas. Hands on (60 min)</a></li>
+        <strong>Noon - 1:30 pm</strong> Lunch break
+        <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
+        <li><a href="/_episodes/06-sharc">From FSSH to SHARC, practical aspects. Theory (60 min)</a></li>
+        <li><a href="/_episodes/06-sharc">SHARC with CASSCF. Hands on (90 min)</a></li>
       </ul>
     </td>
     <td class="col-md-2">Sebastian Mai, Davide Avagliano</td>
@@ -213,8 +224,14 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 8, 2022 (Day 6), Friday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/06-sharc">NA-MD calculations with the SHARC code: atomistic examples with OpenMolcas and ORCA</a></li>
-        <li><a href="/_episodes/07-cobramm">NA-MD calculations with the SHARC/COBRAMM code</a></li>
+        <strong>Morning, 9 am - noon</strong>        
+        <li><a href="/_episodes/05-orca">Excited states with TDDFT (in ORCA code) and LVC model potentials. Theory (30 min)</a></li>
+        <li><a href="/_episodes/06-sharc">SHARC with TDDFT (ORCA). Hands on (75 min)</a></li>
+        <li><a href="/_episodes/06-sharc">SHARC with LVC. Hands on (75 min)</a></li>
+        <strong>Noon - 1:30 pm</strong> Lunch break
+        <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
+        <li><a href="/_episodes/06-sharc">Trajectory analysis with SHARC: populations, geometries, time-dependent spectra. Hands on (120 min)</a></li>
+        <li><a href="/_episodes/07-cobramm">SHARC with COMRAMM. Hands on (90 min)</a></li>
         
       </ul>
     </td>
@@ -246,7 +263,7 @@ The details may vary and the order of topics may be changed, the topics may be o
         <li><a href="/_episodes/09-pyunixmd">Interfacing pyUNIxMD with external packages</a></li>
       </ul>
     </td>
-    <td class="col-md-2">Seung Kyu Min</td>
+    <td class="col-md-2">Seung Kyu Min, Dae Ho Han</td>
   </tr>
 
   <tr>

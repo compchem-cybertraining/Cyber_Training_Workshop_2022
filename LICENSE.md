@@ -38,6 +38,8 @@ root: .
 | Name            | Affiliation         |    Role/Software covered   |
 | --------------- | ------------------- | -------------------------- |
 | Mr. Mohammad Shakiba   |  University at Buffalo, US   | Co-instructor for: **CP2k, DFTB+, Libra/CP2k, Libra/DFTB+, etc.** |
+| Mr. Dae Ho Han | Ulsan National University of Science and Technology, South Korea  |  Co-instructor for: **pyUNIxMD** |
+| Dr. Matthew Dutra | University of South Carolina, US  |  Co-instructor for: **Libra/QTAG** |
 
 ### The UB Center for Computational Research team
 
