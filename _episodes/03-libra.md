@@ -2,202 +2,185 @@
 title: "3. Libra"
 ---
 
+
 <a name="toc"></a>
 # Table of Content
-1. [TSH with model and atomistic Hamiltonians with Libra](#namd-libra)
-2. [DVR and grid propagation methods](#dvr-libra)
+1. [General overview of Libra. Demos on various auxiliary capabilities and simple hands ons; Day 1, 60 min](#1)
+2. [Quantum Trajectories with Adaptive Gaussians (QTAG); Day 1, 30 + 30 min](#2)
+3. [Machine learning capabilities of Libra: Lecture, Demo, and Hands on; Day 1, 60 min](#3)
+4. [HEOM and DVR in Libra. Lecture, Demo, and Hands on; Day 1, 90 min](#4)
+5. [Theory of adiabatic and nonadiabatic dynamics. Lecture; Day 2, 60 min](#5)
+6. [TSH and Ehrenfest dynamics with model Hamiltonians in Libra. Hands on; Day 2, 90 min](#6)
+7. [NA-MD with ML in Libra. Theory. Hands on; Day 2, 30 min](#7)
+8. [NA-MD in finite and condensed matter systems with xTB and TD-DFT with Libra/CP2k code; Day 2, 2h 30 min](#8)
+9. [NA-MD calculations in condensed matter systems with Libra/QE/eQE and other codes; Day 2, 60 min](#9)
 
 
-<a name="namd-libra"></a>
+To start - clone thetutorials repository into your working directory
+
+      git clone https://github.com/compchem-cybertraining/Tutorials_Libra.git
+
+
+
+<a name="1"></a>
 ## 1. TSH with model and atomistic Hamiltonians with Libra
 [Back to TOC](#toc)
 
-### 1.1. [TSH theory overview](../files/episode_2/Akimov-Libra-namd.pdf)
+### 1.1. [Slides](../files/episode_2/Akimov-Libra-namd.pdf)
 
 ### 1.2. Videorecording of the session
 
+### 1.3. Demonstrations  (5 min each)
 
-### 1.3. Demonstrations
-
+  * [Basic algebra](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/3_linear_algebra/1_vector_matrix_cmatrix_basics/tutorial.ipynb)
+  * [Matrix decompositions](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/3_linear_algebra/2_matrix_functions/tutorial.ipynb)
+  * [Statistics](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/7_special_functions/4_random_numbers/1_basics/tutorial.ipynb)
+  * [Metropolis](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/7_special_functions/4_random_numbers/2_metropolis/tutorial.ipynb)
+  * [Runge-Kutta for classical MD](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/2_integrators/1_runge_kutta_4th_order/tutorial.ipynb)
+  * [Runge-Kutta for Liouville Eq](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/2_integrators/2_runge_kutta_4_for_Liouville/tutorial.ipynb)
+  * [Program-specific utility functions](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/11_program_specific_methods/2_qe_methods)
 
 
 ### 1.4. Homeworks
 
-   Do the exercises described in the Tutorials above
 
 
-<a name="dvr-libra"></a>
-## 2. DVR and grid propagation methods
+## 2. Quantum Trajectories with Adaptive Gaussians (QTAG). By Matthew Dutra
 [Back to TOC](#toc)
 
-### 2.1. Videorecording of the session
+### 2.1. [Slides](../files/episode_2/qtag.pdf)
 
-### 2.2. Demonstrations
+### 2.2. Videorecording of the session
+
+### 2.3. Demonstrations
+
+### 2.4. Homeworks
+
+
+
+## 3. Machine learning capabilities of Libra: Lecture, Demo, and Hands on
+[Back to TOC](#toc)
+
+### 3.1. [Slides](../files/episode_2/libra-ml.pdf)
+
+### 3.2. Videorecording of the session
+
+### 3.3. Demonstrations
+
+### 3.4. Homeworks
+
+
+
+## 4. HEOM and DVR in Libra. Lecture, Demo, and Hands on
+[Back to TOC](#toc)
+
+### 4.1. [Slides](../files/episode_2/libra-dvr-heom.pdf)
+
+### 4.2. Videorecording of the session
+
+### 4.3. Demonstrations
 
  * [1_gaussian/1_matrix_elements](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/1_gaussian/1_matrix_elements)
    
    computing matrix elements, exercises
  
- * [2_dvr_basics/tutorial](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/2_dvr_basics) and [4_more/Tutorial1](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/4_more)
+ * [2_dvr_basics/tutorial](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/2_dvr_basics) 
+   and [4_more/Tutorial1](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/4_more)
 
    introduce key ideas, some exercises, HDF5 files 
 
+   **PROBLEM** Write a function that would return a subset of points `[i_0, i_1, i_2, ... i_{N-1}]` with a fixed value of one projection `i_a`
+   This in needed to compute the hyperplane and to compute the flux through that hyperplane. Avoid a brute-force approach - it has to be efficient.
+   This could be your project and the solution could be a PR to the code. 
+
+
  * [3_soft_propagation/tutorial](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/3_soft_propagation)
 
-   the wrapped up SOFT simulation and visualization
+   the wrapped up SOFT simulation and cool visualization
+
+ * [HEOM tutorial](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/3_heom/1_dynamics_and_lineshapes)
 
 
-### 2.3. Homeworks
+### 4.4. Homeworks
 
-   Do the exercises described in the Tutorials above
-   
-
-
-
-## 3. [Tutorial](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/3_heom/1_dynamics_and_lineshapes)
-
-## 4. Homework
+  * Do the exercises described in the Tutorials above
 
   * Explore Hamiltonian or Hamiltonians of your choice with the HEOM method. Explore the convergence 
     with respect to the number of Matsubara frequences and the hierarchy level. 
 
-  * Study the convergence properties for various reorganization energies and bath temperatures
+  * Study the convergence properties of HEOM method for various reorganization energies and bath temperatures
 
 
-## 1. Constructing MD integrators
+
+## 5. Theory of adiabatic and nonadiabatic dynamics. Lecture
 [Back to TOC](#toc)
 
-### 1.1. [Presentation](../files/episode_1/Akimov-MD.pdf)
+### 5.1. [Slides](../files/episode_2/namd-theory.pdf)
 
-### 1.2. Coding Exercises 
+### 5.2. Videorecording of the session
 
-  * Euler MD
-  * Leap-frog (coordinate Verlet)
-  * Velocity verlet
+### 5.3. Demonstrations
 
-### 1.3. Libra exmaples
-
-  * [Runge-Kutta for classical MD](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/2_integrators/1_runge_kutta_4th_order)
-
-  * Lattice MD
-
-     `cd /projects/academic/cyberwksp21/Instructors_material/alexeyak/libra/demos_from_libra_code/notebooks/Example4_md/Example1_lattice`
-
-  * Atomistic MD
-
-     `cd /projects/academic/cyberwksp21/Instructors_material/alexeyak/libra/demos_from_libra_code/tests/test_md`
+### 5.4. Homeworks
 
 
-<a name="intro_libra"></a>
-## 2. Introduction to Libra
+
+## 6. TSH and Ehrenfest dynamics with model Hamiltonians in Libra. Hands on
 [Back to TOC](#toc)
 
-### 2.1. [Presentation](../files/episode_1/Akimov-Libra-overview.pdf)
+### 6.1. [Slides](../files/episode_2/namd-theory.pdf)
 
-### 2.2. Get your copy of tutorials
+### 6.2. Videorecording of the session
 
-    git clone https://github.com/compchem-cybertraining/Tutorials_Libra.git
+### 6.3. Demonstrations
 
-   or 
-
-    cd /projects/academic/cyberwksp21/Instructors_material/alexeyak/libra
-
-### 2.3. Examples 
-
-  * Discuss data types
-
-  * [Runge-Kutta for quantum dynamics](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/2_integrators/2_runge_kutta_4_for_Liouville)
-
-  * Molecular integrals
- 
-         cd /projects/academic/cyberwksp21/Instructors_material/alexeyak/libra/demos_from_libra_code/tests/test_libint2
-
-  * Built-in Electronic structure calculations: 
-
-         cd /projects/academic/cyberwksp21/Instructors_material/alexeyak/libra/Tutorials_Libra/5_electronic_structure/1_eht/1_compact1
-
-  * Kinetic MC example to model diffusion
-
-         cd /projects/academic/cyberwksp21/Instructors_material/alexeyak/libra/demos_from_libra_code/notebooks/Example5_diffusion
-
-  * random number sampling - section 7.4
-
-  * crystal builder - section 12.1 (may be useful for the nano-qmflows/CAT tutorials)
-
-  * Molecular rotation
-
-         cd /projects/academic/cyberwksp21/Instructors_material/alexeyak/libra/demos_from_libra_code/tests/example_8_rotation
-
-     Exercise: can you combine examples showing py3Dmol, imageio, and the current rotation script to produce the animateg gifs of the
-     rotation?
-
-  * define model Hamiltonians and plot properties, HDF5, exercises
-`
-  * Atomistic interfaces: Psi4 and DFTB+: LiH at CCSD/sto-3G
+### 6.4. Homeworks
 
 
 
-########## WORKFLOW 
+## 7. NA-MD with ML in Libra. Theory. Hands on
+[Back to TOC](#toc)
 
-## 1. Step 4: Dynamics
+### 7.1. [Slides](../files/episode_2/namd-ml-libra.pdf)
 
-  * [Running the dynamics](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/2_nbra_workflows/5_step4)
+### 7.2. Videorecording of the session
 
-        6_dynamics/2_nbra_workflows/5_step4
+### 7.3. Demonstrations
 
-## 2. Step 3: Basis transformation and "grooming"
-
-  * [Preliminary transformations: Constructing SP basis, a.k.a. SDs](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/2_nbra_workflows/4_step3/1_build_SP_basis)
-
-        6_dynamics/2_nbra_workflows/4_step3/1_build_SP_basis
-
-  * [Preliminary transformations: Constructing MB basis, a.k.a. TD-DFT(B)](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/2_nbra_workflows/4_step3/2_build_MB_basis)
-
-        6_dynamics/2_nbra_workflows/4_step3/2_build_MB_basis
-
-  * [Plotting the properties in SP and MB bases](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/2_nbra_workflows/5_step4/1_initialize_data)
-
-        6_dynamics/2_nbra_workflows/5_step4/1_initialize_data
-
-
-<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=7b6b8cdc-7430-4a2b-9713-ad4a01634e2a&
-autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="900" width="800" 
-style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+### 7.4. Homeworks
 
 
 
-## 3. Step 2: NAC workflows
+## 8. NA-MD in finite and condensed matter systems with xTB and TD-DFT with Libra/CP2k code
+[Back to TOC](#toc)
 
-### 3.1. ErgoSCF
+### 8.1. [Slides](../files/episode_2/namd-ml-libra.pdf)
 
-  * [Jupyter demonstrations](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/11_program_specific_methods/1_ergoscf_methods)
+### 8.2. Videorecording of the session
 
-        11_program_specific_methods/1_ergoscf_methods
+### 8.3. Demonstrations
 
-  * [Command-line examples](https://github.com/compchem-cybertraining/Tutorials_ErgoSCF)
-
-        https://github.com/compchem-cybertraining/Tutorials_ErgoSCF
-
-### 3.2. Quantum Espresso
-
-  * [Jupyter demonstration](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/2_nbra_workflows/3_step2_qe)
-
-        6_dynamics/2_nbra_workflows/3_step2_qe
-
-  * [Command-line and Jupyter examples](https://github.com/compchem-cybertraining/Tutorials_QE_and_eQE)
-
-        https://github.com/compchem-cybertraining/Tutorials_QE_and_eQE
-
-### 3.3. DFTB+
-
-  * [Command-line examples](https://github.com/compchem-cybertraining/Tutorials_DFTB_plus)
- 
-        https://github.com/compchem-cybertraining/Tutorials_DFTB_plus
+### 8.4. Homeworks
 
 
-### 3.4. CP2k
 
-  * [Command-line examples](https://github.com/compchem-cybertraining/Tutorials_CP2K)
+## 9. NA-MD calculations in condensed matter systems with Libra/QE/eQE and other codes
+[Back to TOC](#toc)
 
-        https://github.com/compchem-cybertraining/Tutorials_CP2K
+### 9.1. [Slides](../files/episode_2/namd-ml-libra.pdf)
 
+### 9.2. Videorecording of the session
+
+### 9.3. Demonstrations
+
+  * [DFTB+, command-line example](https://github.com/compchem-cybertraining/Tutorials_DFTB_plus)
+  * [QE, Jupyter demonstration](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/2_nbra_workflows/3_step2_qe)
+  * [QE, command-line and Jupyter examples](https://github.com/compchem-cybertraining/Tutorials_QE_and_eQE)
+  * [ErgoSCF, Jupyter demonstrations](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/11_program_specific_methods/1_ergoscf_methods)
+
+
+### 9.4. Homeworks
+
+
+
+   

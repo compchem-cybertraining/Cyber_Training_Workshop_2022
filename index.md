@@ -159,12 +159,15 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-7">
       <ul>
         <strong>Morning, 9 am - noon</strong>        
-        <li><a href="/_episodes/01-introduction">Introduction. Overview of the CCR CyberInfrastructure. </a></li>
-        <li><a href="/_episodes/02-python-git">Revision of Python/Jupyter, Git/GitHub, and Best Practices.</a> </li>
+        <li><a href="/_episodes/01-introduction">Introduction. Overview of the CCR CyberInfrastructure and auxiliary Software (30 min)</a></li>
+        <li><a href="/_episodes/02-python-git">Working with Git and GitHub. Python/Jupyter. Best practices. Theory and Hands on (90 min)</a> </li>
+        <li><a href="/_episodes/03-libra">General overview of Libra. Demos on various auxiliary capabilities and simple hands ons (60 min)</a></li>
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
-        <li><a href="/_episodes/03-libra">Brief overview of Libra. Demos: HEOM, QTAG, Wavepackets</a></li>
-        <li><a href="/_episodes/03-libra">Machine learning capabilities of Libra: introduction to neural networks/machine learning.</a></li>
+        <li><a href="/_episodes/03-libra">Quantum Trajectories with Adaptive Gaussians (QTAG). Lecture (30 min)</a></li>
+        <li><a href="/_episodes/03-libra">Quantum Trajectories with Adaptive Gaussians (QTAG). Demo and Hands on (30 min)</a></li>
+        <li><a href="/_episodes/03-libra">Machine learning capabilities of Libra: Lecture, Demo, and Hands on  (60 min)</a></li>
+        <li><a href="/_episodes/03-libra">HEOM and DVR in Libra. Lecture, Demo, and Hands on (90 min)</a></li>
       </ul>
     </td> 
     <td class="col-md-2">Alexey Akimov, Matthew Dutra</td>
@@ -176,7 +179,8 @@ The details may vary and the order of topics may be changed, the topics may be o
       <ul>
         <strong>Morning, 9 am - noon</strong>        
         <li><a href="/_episodes/03-libra">Theory of adiabatic and nonadiabatic dynamics. Lecture (60 min)</a></li>
-        <li><a href="/_episodes/03-libra">TSH and Ehrenfest dynamics with model Hamiltonians in Libra. Hands on (120 min)</a></li>
+        <li><a href="/_episodes/03-libra">TSH and Ehrenfest dynamics with model Hamiltonians in Libra. Hands on (90 min)</a></li>
+        <li><a href="/_episodes/03-libra">NA-MD with ML in Libra. Theory. Hands on (30 min)</a></li>
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
         <li><a href="/_episodes/03-libra">NA-MD in finite and condensed matter systems with xTB and TD-DFT with Libra/CP2k code.</a></li>
@@ -225,12 +229,12 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-7">
       <ul>
         <strong>Morning, 9 am - noon</strong>        
-        <li><a href="/_episodes/05-orca">Excited states with TDDFT (in ORCA code) and LVC model potentials. Theory (30 min)</a></li>
-        <li><a href="/_episodes/06-sharc">SHARC with TDDFT (ORCA). Hands on (75 min)</a></li>
-        <li><a href="/_episodes/06-sharc">SHARC with LVC. Hands on (75 min)</a></li>
+        <li><a href="/_episodes/05-orca">Excited states with TDDFT (in ORCA) and LVC model potentials. Theory (60 min)</a></li>
+        <li><a href="/_episodes/06-sharc">SHARC with LVC: Preparing parameters from TDDFT and running a swarm of LVC trajectories. Hands on (120 min)</a></li>
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
-        <li><a href="/_episodes/06-sharc">Trajectory analysis with SHARC: populations, geometries, time-dependent spectra. Hands on (120 min)</a></li>
+        <li><a href="/_episodes/06-sharc">Trajectory analysis with SHARC. Theory (60 min)</a></li>
+        <li><a href="/_episodes/06-sharc">Trajectory analysis with SHARC. Hands on (60 min)</a></li>
         <li><a href="/_episodes/07-cobramm">SHARC with COMRAMM. Hands on (90 min)</a></li>
         
       </ul>
@@ -303,14 +307,14 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-7">
       <ul>
         <li><a href="/_episodes/14-tdksnamd"></a>Nonadiabatic dynamics calculations in extended systems with KS-TD-DFT NA-MD method</li>
-        <li>Exploring Buffalo</li>
+        <li>Closing dinner.</li>
       </ul>
     </td>
     <td class="col-md-2">Dmitrii Kilin</td>
   </tr>
 
   <tr>
-    <td class="col-md-3">July 16, 2022 (Day 14), Sunday</td>
+    <td class="col-md-3">July 16, 2022 (Day 14), Saturday</td>
     <td class="col-md-7">Departure.</td>
     <td class="col-md-2"></td>
   </tr>
