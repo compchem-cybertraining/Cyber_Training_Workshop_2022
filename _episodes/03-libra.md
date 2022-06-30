@@ -54,6 +54,8 @@ To start - clone thetutorials repository into your working directory
 
 ### 2.3. Demonstrations
 
+  * [Tutorial](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/6_dynamics/5_qtag/1_basics/tutorial.ipynb)
+
 ### 2.4. Homeworks
 
 
@@ -67,7 +69,13 @@ To start - clone thetutorials repository into your working directory
 
 ### 3.3. Demonstrations
 
+  * [Basics](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/9_machine_learning/1_basics_of_mlp/tutorial.ipynb)
+  * [Derivatives](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/9_machine_learning/2_ann_derivatives/tutorial.ipynb)
+  * [Advanced](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/9_machine_learning/3_advanced_ann/tutorial.ipynb)
+
 ### 3.4. Homeworks
+
+  * Complete the homeworks given in the tutorials
 
 
 
@@ -80,11 +88,11 @@ To start - clone thetutorials repository into your working directory
 
 ### 4.3. Demonstrations
 
- * [1_gaussian/1_matrix_elements](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/1_gaussian/1_matrix_elements)
+ * [1_gaussian/1_matrix_elements](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/1_gaussian/1_matrix_elements/tutorial.ipynb)
    
    computing matrix elements, exercises
  
- * [2_dvr_basics/tutorial](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/2_dvr_basics) 
+ * [2_dvr_basics/tutorial](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/2_dvr_basics/tutorial.ipynb) 
    and [4_more/Tutorial1](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/4_more)
 
    introduce key ideas, some exercises, HDF5 files 
@@ -94,11 +102,11 @@ To start - clone thetutorials repository into your working directory
    This could be your project and the solution could be a PR to the code. 
 
 
- * [3_soft_propagation/tutorial](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/3_soft_propagation)
+ * [3_soft_propagation/tutorial](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/3_soft_propagation/tutorial.ipynb)
 
    the wrapped up SOFT simulation and cool visualization
 
- * [HEOM tutorial](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/3_heom/1_dynamics_and_lineshapes)
+ * [HEOM tutorial](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/3_heom/1_dynamics_and_lineshapes/tutorial.ipynb)
 
 
 ### 4.4. Homeworks
@@ -172,12 +180,28 @@ To start - clone thetutorials repository into your working directory
 ### 9.2. Videorecording of the session
 
 ### 9.3. Demonstrations
+  
+
+  * [Interfaces with other codes](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/8_model_hamiltonians/2_interfaces_with_qchem_codes/tutorial.ipynb)
+
+    For the DFTB+ part, make sure to download the parameters files and change kernel to libra-latest
 
   * [DFTB+, command-line example](https://github.com/compchem-cybertraining/Tutorials_DFTB_plus)
-  * [QE, Jupyter demonstration](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/2_nbra_workflows/3_step2_qe)
-  * [QE, command-line and Jupyter examples](https://github.com/compchem-cybertraining/Tutorials_QE_and_eQE)
-  * [ErgoSCF, Jupyter demonstrations](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/11_program_specific_methods/1_ergoscf_methods)
 
+    Make sure to download the parameters files and change kernel to `libra-latest`
+
+  * [QE, Jupyter demonstration](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/2_nbra_workflows/1_step1_qe/tutorial.ipynb)
+
+    Make sure to download the PP files and change kernel to `libra-latest`
+
+  * [QE, Jupyter demonstration](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/2_nbra_workflows/3_step2_qe/tutorial.ipynb)
+
+    Make sure to download the PP files and change kernel to `libra-latest`
+    Make sure to use the absolute path for the pseudopotential dir
+
+  * [QE, command-line and Jupyter examples](https://github.com/compchem-cybertraining/Tutorials_QE_and_eQE/tree/master/7_eqe_nacs)
+
+    Show the NAC calculcations with eQE
 
 ### 9.4. Homeworks
 
