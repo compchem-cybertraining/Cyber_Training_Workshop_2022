@@ -4,9 +4,9 @@ title: "4. OpenMolcas"
 
 ## 1. Presentations
 
-Slides for theory lecture
+* [Excited States with Multi-Reference Self-Consistent Field Methods](https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2022/blob/gh-pages/files/Sebastian_Mai/lecture_1_CASSCF.pdf)
+* [Calculation of Excited States with CASSCF in OpenMolcas](https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2022/blob/gh-pages/files/Sebastian_Mai/handson_1_CASSCF.pdf)
 
-Task sheet for hands-on session
 
 ## 2. Installation
 
