@@ -4,17 +4,13 @@ title: "6. SHARC"
 
 ## 1. Presentations
 
-Theory lecture "From Fewest-Switches Surface Hopping to Surface Hopping including Arbitrary Couplings and a Brief Overview over Practical Aspects"
+* [Theory lecture "From Fewest-Switches Surface Hopping to Surface Hopping including Arbitrary Couplings and a Brief Overview over Practical Aspects"](https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2022/blob/gh-pages/files/Sebastian_Mai/lecture_2_SHARC.pdf)
+* [Hands-on task sheet "Preparation of Surface Hopping Trajectories with SHARC and OpenMolcas"](https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2022/blob/gh-pages/files/Sebastian_Mai/handson_2_SHARC_setup.pdf)
+* [Theory lecture "Excited States with Time-Dependent Density Functional Theory and with Linear Vibronic Coupling Models"](https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2022/blob/gh-pages/files/Sebastian_Mai/lecture_3_TDDFT_LVC.pdf)
+* [Hands-on task sheet "Preparation and Execution of Surface Hopping Trajectories with SHARC and Linear Vibronic Coupling Models for Sulfur Dioxide"](https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2022/blob/gh-pages/files/Sebastian_Mai/handson_3_LVC.pdf)
+* [Application lecture "Trajectory Ensemble Analysis with SHARC"](https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2022/blob/gh-pages/files/Sebastian_Mai/lecture_4_SHARC_analysis.pdf)
+* [Hands-on task sheet "Analysis of Surface Hopping Trajectories obtained with SHARC and OpenMolcas"](https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2022/blob/gh-pages/files/Sebastian_Mai/handson_4_SHARC_analysis.pdf)
 
-Hands-on task sheet "Preparation of Surface Hopping Trajectories with SHARC and OpenMolcas"
-
-Theory lecture "Excited States with Time-Dependent Density Functional Theory and with Linear Vibronic Coupling Models"
-
-Hands-on task sheet "Preparation and Execution of Surface Hopping Trajectories with SHARC and Linear Vibronic Coupling Models for Sulfur Dioxide"
-
-Application lecture "Trajectory Ensemble Analysis with SHARC"
-
-Hands-on task sheet "Analysis of Surface Hopping Trajectories obtained with SHARC and OpenMolcas"
 
 
 ## 2. Installation and execution
