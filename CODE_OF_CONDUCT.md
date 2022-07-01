@@ -25,14 +25,33 @@ title: "Projects and Participants"
 
 ## Participants 
 
-| Number | Name | Role | Institution | Country | Supervisor | Outcome |
-|-----|------|------|-------------|---------|------------|--------|
-| TBD | TBD | TBD | TBD | TBD | TBD | TBD |
+| Number | Name | Role | Institution | Country | Supervisor | Participation Mode | Outcome |
+|-----|------|------|-------------|---------|------------|--------|--------|
+| 1 | Mohammad Shakiba | GRA-1 | University at Buffalo | USA | Alexey Akimov | Online | TBD |
+| 2 | Anjali Ganai | GRA-1 | Visva-Bharati U | India | Pranab Sarkar | Online | TBD |
+| 3 | Julian Stetzler | GRA-2 | U of South Carolina | USA | Vitaly Rassolov | In-person | TBD |
+| 4 | David Hoffmann | GRA-1 | Karlsruhe Institute of Technology | Germany | Marcus Elstner | Online | TBD |
+| 5 | Priya Das | GRA-1 | Visva-Bharati U | India | Pranab Sarkar | Online | TBD |
+| 6 | Min Choi | PD | UC Riverside | USA | Bryan Wong | In-person | TBD |
+| 7 | Pratima Pandeya | PD | Northeastern U | USA | Sijia Dong | Online | TBD |
+| 8 | Benjamin William Kaufold | GRA-4 | Northeastern U | USA | Sijia Dong | Online | TBD |
+| 9 | Luke Ali | GRA-1 | Clarkson U | USA | Dhara Trivedi | In-person | TBD |
+| 10 | Sampad Mandal | GRA-2 | Visva-Bharati U | India | Pranab Sarkar | Online | TBD |
+| 11 | Nathan Jansen | GRA-3 | Michigan State U | USA | Katharine Hunt | In-person | TBD |
+| 12 | Matthew Hennefarth | GRA-1 | U of Chicago | USA | Laura Gagliardi | Online | TBD |
+| 13 | Matthew Dutra | PD | U of South Carolina | USA | Sophya Garashchuk | In-person | TBD |
+| 14 | Heidi Hendrikson | FAC-PUI | Lafayette College | USA | N/A | Online | TBD |
+| 15 | Qingxin Zhang | GRA-1 | University at Buffalo | USA | Alexey Akimov | In-person | TBD |
+| 16 | Daeho Han | GRA-5 | Ulsan National Institute of Science and Technology | South Korea | Seung Kyu Min | In-person | TBD |
+| 17 | Haley Woods | GRA-1 | U of North Dakota | USA | Svetlana Kilina | Online | TBD |
+| 18 | Anna Hehn | PD | U of Zurich | Switzerland | Jurg Hutter | Online | TBD |
+
 
 
 Notes:
 >
-> bolded are participants with access to UB HPC; GRA-N - graduate students, N-th year; PD - postdoc; FAC-PHD - faculty at a PhD-granting institution
+> bolded are participants with access to UB HPC; GRA-N - graduate students, N-th year; PD - postdoc; FAC-PHD - faculty at a PhD-granting institution, 
+> FAC-PUI - faculty at a primarily undergraduate institution
 >
 > `1st, 2nd (2 positions), and 3rd (5 positions) prizes` are won based on students' project presentations and course work documentation
 >
