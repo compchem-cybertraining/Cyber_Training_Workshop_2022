@@ -19,7 +19,7 @@ title: "Projects and Participants"
 * Projects completed using local or home institution resources are eligible
 * Can be an application or a coding project
 * The consistency in your course work during this school will contribute to your chances to win the awards
-* The awards decisions will be made based on the committee evaluation. The awards will be: 1 first prize ($300), 3 second  
+* The awards decisions will be made based on the committee evaluation. The awards will be: 1 first prize ($300), 3 second, and 5 third prizes. 
 
 
 

@@ -178,13 +178,11 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-7">
       <ul>
         <strong>Morning, 9 am - noon</strong>        
-        <li><a href="/_episodes/03-libra">Theory of adiabatic and nonadiabatic dynamics. Lecture (60 min)</a></li>
+        <li><a href="/_episodes/03-libra">Theory of adiabatic and nonadiabatic dynamics. Lecture (90 min)</a></li>
         <li><a href="/_episodes/03-libra">TSH and Ehrenfest dynamics with model Hamiltonians in Libra. Hands on (90 min)</a></li>
-        <li><a href="/_episodes/03-libra">NA-MD with ML in Libra. Theory. Hands on (30 min)</a></li>
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
-        <li><a href="/_episodes/03-libra">NA-MD in finite and condensed matter systems with xTB and TD-DFT with Libra/CP2k code.</a></li>
-        <li><a href="/_episodes/03-libra">NA-MD calculations in condensed matter systems with Libra/QE/eQE codes.</a></li>
+        <li><a href="/_episodes/03-libra">NA-MD in finite and condensed matter systems with xTB and TD-DFT with Libra/CP2k code. Lecture and Hands on</a></li>
       </ul>
     </td>
     <td class="col-md-2">Alexey Akimov, Mohammad Shakiba</td>
@@ -274,7 +272,13 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 12, 2022 (Day 10), Tuesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/10-ctmqc">Exact factorization-based calculatons with the CT-MQC code</a></li>
+        <strong>Morning, 9 am - noon</strong>        
+        <li><a href="/_episodes/10-ctmqc">Introduction to the Exact Factorization quantities. Lecture (50 min)</a></li>
+        <li><a href="/_episodes/10-ctmqc">Trajectory based algorithms from EF. Lecture (50 min)</a></li>
+        <li><a href="/_episodes/10-ctmqc">CT-MQC and CT-TSH (50 min)</a></li>
+        <strong>Noon - 1:30 pm</strong> Lunch break
+        <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
+        <li><a href="/_episodes/10-ctmqc">hands on with model systems. Observing and understanding time dependent potentials and trajectories within the EF picture with the G-CTMQC code</a></li>
       </ul>
     </td>
     <td class="col-md-2">Lea-Maria Ibele </td>
@@ -295,8 +299,14 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 14, 2022 (Day 12), Thursday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/03-libra">Nonadiabatic dynamics in eQE and Libra/QE</a></li>
-        <li><a href="/_episodes/13-hefeinamd">Nonadiabatic dynamics using Hefei-NA-MD code</a></li>        
+        <strong>Morning, 9 am - noon</strong>        
+        <li><a href="/_episodes/13-hefeinamd">Nonadiabatic dynamics using Hefei-NA-MD code. Lectures and Demos</a></li>        
+        <li><a href="/_episodes/13-hefeinamd">Nonadiabatic dynamics using Hefei-NA-MD code. Hands on</a></li>        
+        <strong>Noon - 1:30 pm</strong> Lunch break
+        <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
+        <li><a href="/_episodes/13-hefeinamd">Nonadiabatic dynamics using Hefei-NA-MD code. Hands on</a></li>        
+        <li><a href="/_episodes/03-libra">NA-MD calculations in condensed matter systems with Libra/QE/eQE codes.(60 min)</a></li>
+        <li><a href="/_episodes/03-libra">NA-MD with ML in Libra. Theory. Hands on (30 min)</a></li>
       </ul>
     </td>
     <td class="col-md-2">Jin Zhao, Weibin Wang, Qijing Zheng, Mohammad Shakiba, and Alexey Akimov</td>

@@ -5,33 +5,26 @@ title: "2. Revision of Python, Git and GitHub."
 
 <a name="toc"></a>
 # Table of Content
-1. [Brief Python overview](#python)
-2. [Best practices](#best_practices)
-3. [Working on collaborative projects with Git and GitHub](#github2)
-4. [Constructing MD integrators](#md)
+1. [Python and Best practices](#python)
+2. [Working with Git and GitHub](#github)
+
 
 
 <a name="python"></a>
-## 1. Python introduction
+## 1. Python and Best practices
 [Back to TOC](#toc)
 
   My best referece [is this site](https://www.tutorialspoint.com/python/index.htm)
 
-  Copy the example from
-
-    Instructors_material/Python/Python_overview.ipynb
-
-  or from:
-
      https://github.com/compchem-cybertraining/Tutorials_Python
 
-
-<a name="best_practices"></a>
-## 2. Best practices
-
-  * PEP standards, readability and modularity of the codes
-  * testing (covered above)
+  * [PEP standards, readability and modularity of the codes](https://peps.python.org/pep-0008/)
+  * testing
   * GitHub (this section)
+
+
+<a name="github"></a>
+## 2. Working with Git and GitHub
 
   This section can also be found [here](https://akimovlab.github.io/soft_and_tuts/5.6-GIT.html)
 
@@ -233,9 +226,4 @@ A session with merging and upstream update
     git checkout master 
     git merge my_new_feature
     git push origin master
-
-
-<a name="github2"></a>
-## 3. Working on collaborative projects with Git and GitHub
-[Back to TOC](#toc)
 
