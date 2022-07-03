@@ -23,10 +23,10 @@ To start - clone thetutorials repository into your working directory
 
 
 <a name="1"></a>
-## 1. TSH with model and atomistic Hamiltonians with Libra
+## 1. General overview of Libra. Demos on various auxiliary capabilities and simple hands ons
 [Back to TOC](#toc)
 
-### 1.1. [Slides](../files/episode_2/Akimov-Libra-namd.pdf)
+### 1.1. [Slides](../files/Alexey_Akimov/July4-morning.pdf)
 
 ### 1.2. Videorecording of the session
 
@@ -40,9 +40,11 @@ To start - clone thetutorials repository into your working directory
   * [Runge-Kutta for Liouville Eq](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/2_integrators/2_runge_kutta_4_for_Liouville/tutorial.ipynb)
   * [Program-specific utility functions](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/11_program_specific_methods/2_qe_methods)
 
-
 ### 1.4. Homeworks
 
+  * Create your project directory and a README.md file on this GitHub repository
+
+  * (Optional) Implement one of the published model Hamiltonians and create a PR to Libra, make sure to document your code
 
 
 ## 2. Quantum Trajectories with Adaptive Gaussians (QTAG). By Matthew Dutra
@@ -63,7 +65,7 @@ To start - clone thetutorials repository into your working directory
 ## 3. Machine learning capabilities of Libra: Lecture, Demo, and Hands on
 [Back to TOC](#toc)
 
-### 3.1. [Slides](../files/episode_2/libra-ml.pdf)
+### 3.1. [Slides](../files/Alexey_Akimov/July4-afternoon.pdf)
 
 ### 3.2. Videorecording of the session
 
@@ -82,7 +84,7 @@ To start - clone thetutorials repository into your working directory
 ## 4. HEOM and DVR in Libra. Lecture, Demo, and Hands on
 [Back to TOC](#toc)
 
-### 4.1. [Slides](../files/episode_2/libra-dvr-heom.pdf)
+### 4.1. [Slides](../files/Alexey_Akimov/July4-morning.pdf)
 
 ### 4.2. Videorecording of the session
 
@@ -123,7 +125,7 @@ To start - clone thetutorials repository into your working directory
 ## 5. Theory of adiabatic and nonadiabatic dynamics. Lecture
 [Back to TOC](#toc)
 
-### 5.1. [Slides](../files/episode_2/namd-theory.pdf)
+### 5.1. [Slides]()
 
 ### 5.2. Videorecording of the session
 
@@ -136,7 +138,7 @@ To start - clone thetutorials repository into your working directory
 ## 6. TSH and Ehrenfest dynamics with model Hamiltonians in Libra. Hands on
 [Back to TOC](#toc)
 
-### 6.1. [Slides](../files/episode_2/namd-theory.pdf)
+### 6.1. [Slides]()
 
 ### 6.2. Videorecording of the session
 
@@ -149,7 +151,7 @@ To start - clone thetutorials repository into your working directory
 ## 7. NA-MD with ML in Libra. Theory. Hands on
 [Back to TOC](#toc)
 
-### 7.1. [Slides](../files/episode_2/namd-ml-libra.pdf)
+### 7.1. [Slides]()
 
 ### 7.2. Videorecording of the session
 
@@ -162,7 +164,7 @@ To start - clone thetutorials repository into your working directory
 ## 8. NA-MD in finite and condensed matter systems with xTB and TD-DFT with Libra/CP2k code
 [Back to TOC](#toc)
 
-### 8.1. [Slides](../files/episode_2/namd-ml-libra.pdf)
+### 8.1. [Slides]()
 
 ### 8.2. Videorecording of the session
 
@@ -175,7 +177,7 @@ To start - clone thetutorials repository into your working directory
 ## 9. NA-MD calculations in condensed matter systems with Libra/QE/eQE and other codes
 [Back to TOC](#toc)
 
-### 9.1. [Slides](../files/episode_2/namd-ml-libra.pdf)
+### 9.1. [Slides]()
 
 ### 9.2. Videorecording of the session
 

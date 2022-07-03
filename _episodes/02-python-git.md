@@ -7,6 +7,8 @@ title: "2. Revision of Python, Git and GitHub."
 # Table of Content
 1. [Python and Best practices](#python)
 2. [Working with Git and GitHub](#github)
+3. [Testing](#testing)
+4. [Documentation](#docs)
 
 
 
@@ -226,4 +228,52 @@ A session with merging and upstream update
     git checkout master 
     git merge my_new_feature
     git push origin master
+
+
+<a name="testing"></a>
+## 3. Testing
+
+  Demonstration of the `unittest` Python library. Examples with real code.
+
+  Distinguishing actualy unittests from the amateur "tests".
+
+  This example includes the demonstration of working with Git/GitHub
+
+
+<a name="docs"></a>
+## 4. Documentation
+
+  Documentation with Sphinx
+
+  * To get ready (on your system, not on CCR)
+
+        conda install sphinx sphinx_rtd_theme 
+
+
+  * Create docs directory
+
+        mkdir docs
+        cd docs
+
+
+  * Initialize Sphinx make and config files
+
+        sphinx-quickstart
+
+
+  * Edit source/conf.py
+
+
+  * Edit the `source` directory with the .rst files. Organize them according to the Python package structure
+    starting from the `index.rst` in the `source` directory (same level as `conf.py`). This is the top-level 
+    file for future docs, the prototype of the index.html
+
+  * Compile the docs
+
+        make html
+
+  * Check out the results in the `build` folder just created
+
+
+
 
