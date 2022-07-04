@@ -1,0 +1,3 @@
+NQE Project
+
+Investigate effect of nuclear motion on electronic structure
