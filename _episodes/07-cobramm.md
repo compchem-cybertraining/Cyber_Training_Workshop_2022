@@ -16,7 +16,7 @@ title: "7. COBRAMM"
 
 * [Overview and Theory of QM/MM](../files/Davide_Avagliano/buffalo_lecture_qmmm.pdf)
 
-* [Hands on](../files/Davide_Avagliano/HANDSON_DAVIDE1.pdf)
+* [Hands on](../files/Davide_Avagliano/HANDSON1_DAVIDE.pdf)
 
 
 ### 1.2. Videorecording of the session
