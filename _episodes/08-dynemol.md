@@ -13,7 +13,7 @@ title: "8. DynEMol"
 
 ### 1.1. Slides
 
-* [Methods](../files/Luis_Rego/dynemol_methods.pdf)
+* [Methods](../files/Luis_Rego/dynemol-methods.pdf)
 
 * [Tutorial](../files/Luis_Rego/tutorial-Dynemol_code.pdf)
 
