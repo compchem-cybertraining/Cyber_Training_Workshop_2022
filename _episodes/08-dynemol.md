@@ -20,7 +20,13 @@ title: "8. DynEMol"
 
 ### 1.2. Videorecording of the session
 
-### 1.3. Demonstrations
+### 1.3. Demonstrations and handson
+
+ To start clone the repository:
+
+    git clone https://github.com/compchem-cybertraining/Tutorials_DynEMol.git
+
+
 
 * [azo+EtOH](../files/Luis_Rego/azo+EtOH.mp4)
 
@@ -34,6 +40,10 @@ title: "8. DynEMol"
 
 * [np](../files/Luis_Rego/np-21364.mp4)
 
+
+
 ### 1.4. Homeworks
+
+
 
 
