@@ -153,10 +153,29 @@ style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ### 5.2. Videorecording of the session
 
- |-----|-------|
- | Zoom | Webcast |
- | <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=a6e7a4ed-587a-47b8-8200-aec901667f0f&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> | <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ffb0fdb8-db41-42df-9aa1-aeb50145475a&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> | 
- | <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=26f1e7ab-b025-48c3-9425-aec901659e95&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> | <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=30894def-c914-4127-bc66-aeb501458da0&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> | 
+* Session 1, Zoom
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=a6e7a4ed-587a-47b8-8200-aec901667f0f
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> 
+
+* Session 1, Webcast
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ffb0fdb8-db41-42df-9aa1-aeb50145475a
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> 
+
+
+* Session 2, Zoom
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=26f1e7ab-b025-48c3-9425-aec901659e95
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> 
+
+* Session 2, Webcast
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=30894def-c914-4127-bc66-aeb501458da0
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 
 ### 5.3. Demonstrations
 
@@ -176,9 +195,16 @@ style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ### 6.2. Videorecording of the session
 
- |-----|-------|
- | Zoom | Webcast |
- | <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=26f1e7ab-b025-48c3-9425-aec901659e95&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> | <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=30894def-c914-4127-bc66-aeb501458da0&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> | 
+  Zoom: 
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=26f1e7ab-b025-48c3-9425-aec901659e95
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> 
+
+ Webcast
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=30894def-c914-4127-bc66-aeb501458da0
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> 
 
 
 ### 6.3. Demonstrations
