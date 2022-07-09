@@ -52,6 +52,13 @@ style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
+#### Afternoon, July 8 section
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0d940404-4222-4837-b1dd-aecc01643278
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+
 
 ### 1.3. Demonstrations and Handson
 

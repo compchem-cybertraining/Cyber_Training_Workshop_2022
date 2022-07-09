@@ -39,3 +39,19 @@ style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 &autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
 style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
+
+#### Morning, July 8 section
+
+* Zoom recording
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=5e91e94f-89f6-45bc-b3d8-aecc010fe40c
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+#### Afternoon, July 8 section
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=0d940404-4222-4837-b1dd-aecc01643278
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+
