@@ -28,6 +28,10 @@ title: "2. Revision of Python, Git and GitHub."
 <a name="github"></a>
 ## 2. Working with Git and GitHub
 
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=5bab5b19-ca64-4531-ac7b-aec801114d19
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
   This section can also be found [here](https://akimovlab.github.io/soft_and_tuts/5.6-GIT.html)
 
   I also recommend [this reference](https://education.github.com/git-cheat-sheet-education.pdf)

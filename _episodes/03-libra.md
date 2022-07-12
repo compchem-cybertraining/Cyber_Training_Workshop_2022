@@ -2,18 +2,18 @@
 title: "3. Libra"
 ---
 
-
 <a name="toc"></a>
 # Table of Content
-1. [General overview of Libra. Demos on various auxiliary capabilities and simple hands ons; Day 1, 60 min](#1)
-2. [Quantum Trajectories with Adaptive Gaussians (QTAG); Day 1, 30 + 30 min](#2)
-3. [Machine learning capabilities of Libra: Lecture, Demo, and Hands on; Day 1, 60 min](#3)
-4. [HEOM and DVR in Libra. Lecture, Demo, and Hands on; Day 1, 90 min](#4)
-5. [Theory of adiabatic and nonadiabatic dynamics. Lecture; Day 2, 60 min](#5)
-6. [TSH and Ehrenfest dynamics with model Hamiltonians in Libra. Hands on; Day 2, 90 min](#6)
-7. [NA-MD with ML in Libra. Theory. Hands on; Day 2, 30 min](#7)
-8. [NA-MD in finite and condensed matter systems with xTB and TD-DFT with Libra/CP2k code; Day 2, 2h 30 min](#8)
-9. [NA-MD calculations in condensed matter systems with Libra/QE/eQE and other codes; Day 2, 60 min](#9)
+1. [General overview of Libra. Demos on various auxiliary capabilities and simple hands ons](#1)
+2. [Quantum Trajectories with Adaptive Gaussians (QTAG)](#2)
+3. [HEOM and DVR in Libra. Lecture, Demo, and Hands on](#3)
+4. [Theory of adiabatic and nonadiabatic dynamics. Lecture](#4)
+5. [NA-MD in finite and condensed matter systems with xTB and TD-DFT with Libra/CP2k code](#5)
+6. [TSH and Ehrenfest dynamics with model Hamiltonians in Libra. Hands on](#6)
+7. [Machine learning capabilities of Libra: Lecture, Demo, and Hands on](#7)
+8. [NA-MD with ML in Libra. Theory. Hands on](#8)
+9. [NA-MD calculations in condensed matter systems with Libra/QE/eQE and other codes](#9)
+
 
 
 To start - clone thetutorials repository into your working directory
@@ -29,6 +29,19 @@ To start - clone thetutorials repository into your working directory
 ### 1.1. [Slides](../files/Alexey_Akimov/July4-morning.pdf)
 
 ### 1.2. Videorecording of the session
+
+* Libra overview 
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=5bab5b19-ca64-4531-ac7b-aec801114d19
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+* Libra demonstrations
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ffbac4f0-ba43-40b6-b2bc-aec801653e1c
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 
 ### 1.3. Demonstrations  (5 min each)
 
@@ -47,12 +60,18 @@ To start - clone thetutorials repository into your working directory
   * (Optional) Implement one of the published model Hamiltonians and create a PR to Libra, make sure to document your code
 
 
+<a name="2"></a>
 ## 2. Quantum Trajectories with Adaptive Gaussians (QTAG). By Matthew Dutra
 [Back to TOC](#toc)
 
-### 2.1. [Slides](../files/episode_2/qtag.pdf)
+### 2.1. [Slides](../files/Matthew_Dutra/lecture_1_QTAG.pdf)
 
 ### 2.2. Videorecording of the session
+
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ffbac4f0-ba43-40b6-b2bc-aec801653e1c
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ### 2.3. Demonstrations
 
@@ -62,33 +81,20 @@ To start - clone thetutorials repository into your working directory
 
 
 
-## 3. Machine learning capabilities of Libra: Lecture, Demo, and Hands on
+<a name="3"></a>
+## 3. HEOM and DVR in Libra. Lecture, Demo, and Hands on
 [Back to TOC](#toc)
 
 ### 3.1. [Slides](../files/Alexey_Akimov/July4-afternoon.pdf)
 
 ### 3.2. Videorecording of the session
 
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ffbac4f0-ba43-40b6-b2bc-aec801653e1c
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+
 ### 3.3. Demonstrations
-
-  * [Basics](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/9_machine_learning/1_basics_of_mlp/tutorial.ipynb)
-  * [Derivatives](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/9_machine_learning/2_ann_derivatives/tutorial.ipynb)
-  * [Advanced](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/9_machine_learning/3_advanced_ann/tutorial.ipynb)
-
-### 3.4. Homeworks
-
-  * Complete the homeworks given in the tutorials
-
-
-
-## 4. HEOM and DVR in Libra. Lecture, Demo, and Hands on
-[Back to TOC](#toc)
-
-### 4.1. [Slides](../files/Alexey_Akimov/July4-morning.pdf)
-
-### 4.2. Videorecording of the session
-
-### 4.3. Demonstrations
 
  * [1_gaussian/1_matrix_elements](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/1_gaussian/1_matrix_elements/tutorial.ipynb)
    
@@ -111,7 +117,7 @@ To start - clone thetutorials repository into your working directory
  * [HEOM tutorial](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/3_heom/1_dynamics_and_lineshapes/tutorial.ipynb)
 
 
-### 4.4. Homeworks
+### 3.4. Homeworks
 
   * Do the exercises described in the Tutorials above
 
@@ -122,33 +128,97 @@ To start - clone thetutorials repository into your working directory
 
 
 
-## 5. Theory of adiabatic and nonadiabatic dynamics. Lecture
+<a name="4"></a>
+## 4. Theory of adiabatic and nonadiabatic dynamics. Lecture
 [Back to TOC](#toc)
 
-### 5.1. [Slides]()
+### 4.1. [Slides](../files/Alexey_Akimov/July5-morning.pdf)
+
+### 4.2. Videorecording of the session
+
+ |-----|-------|
+ | Zoom | Webcast |
+ | <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=a6e7a4ed-587a-47b8-8200-aec901667f0f&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> | <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ffb0fdb8-db41-42df-9aa1-aeb50145475a&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> | 
+
+### 4.3. Demonstrations
+
+### 4.4. Homeworks
+
+
+<a name="5"></a>
+## 5. NA-MD in finite and condensed matter systems with xTB and TD-DFT with Libra/CP2k code
+[Back to TOC](#toc)
+
+### 5.1. [Slides](../files/Mohammad_Shakiba/July5-morning.pdf)
 
 ### 5.2. Videorecording of the session
 
+* Session 1, Zoom
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=a6e7a4ed-587a-47b8-8200-aec901667f0f
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> 
+
+* Session 1, Webcast
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ffb0fdb8-db41-42df-9aa1-aeb50145475a
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> 
+
+
+* Session 2, Zoom
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=26f1e7ab-b025-48c3-9425-aec901659e95
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> 
+
+* Session 2, Webcast
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=30894def-c914-4127-bc66-aeb501458da0
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+
 ### 5.3. Demonstrations
+
+* [Step 1, cp2k/DFT](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/6_dynamics/2_nbra_workflows/6_step1_cp2k/1_DFT/1_example_TiO2/tutorial.ipynb)
+* [Step 2, cp2k/DFT](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/6_dynamics/2_nbra_workflows/7_step2_cp2k/1_DFT/2_hpc/1_example_TiO2/tutorial.ipynb)
+* [Step 3, cp2k/DFT](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/6_dynamics/2_nbra_workflows/8_step3_cp2k/1_DFT/tutorial.ipynb)
+* [Step 4, cp2k/DFT](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/6_dynamics/2_nbra_workflows/9_step4_cp2k/tutorial.ipynb)
 
 ### 5.4. Homeworks
 
 
-
+<a name="6"></a>
 ## 6. TSH and Ehrenfest dynamics with model Hamiltonians in Libra. Hands on
 [Back to TOC](#toc)
 
-### 6.1. [Slides]()
+### 6.1. Slides
 
 ### 6.2. Videorecording of the session
 
+  Zoom: 
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=26f1e7ab-b025-48c3-9425-aec901659e95
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> 
+
+ Webcast
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=30894def-c914-4127-bc66-aeb501458da0
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> 
+
+
 ### 6.3. Demonstrations
+
+* [namd_workflow, scattering calculations](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/6_dynamics/1_trajectory_based/8_model_nonadiabatic/tutorial.ipynb)
+* [lower level functions, adiabatic, Ehrensfest, and TSH calculations](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/6_dynamics/1_trajectory_based/2_model_adiabatic_ehrenfest_fssh/tutorial.ipynb)
+
 
 ### 6.4. Homeworks
 
 
 
-## 7. NA-MD with ML in Libra. Theory. Hands on
+<a name="7"></a>
+## 7. Machine learning capabilities of Libra: Lecture, Demo, and Hands on
 [Back to TOC](#toc)
 
 ### 7.1. [Slides]()
@@ -157,11 +227,18 @@ To start - clone thetutorials repository into your working directory
 
 ### 7.3. Demonstrations
 
+  * [Basics](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/9_machine_learning/1_basics_of_mlp/tutorial.ipynb)
+  * [Derivatives](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/9_machine_learning/2_ann_derivatives/tutorial.ipynb)
+  * [Advanced](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/9_machine_learning/3_advanced_ann/tutorial.ipynb)
+
 ### 7.4. Homeworks
 
+  * Complete the homeworks given in the tutorials
 
 
-## 8. NA-MD in finite and condensed matter systems with xTB and TD-DFT with Libra/CP2k code
+
+<a name="8"></a>
+## 8. NA-MD with ML in Libra. Theory. Hands on
 [Back to TOC](#toc)
 
 ### 8.1. [Slides]()
@@ -174,6 +251,7 @@ To start - clone thetutorials repository into your working directory
 
 
 
+<a name="9"></a>
 ## 9. NA-MD calculations in condensed matter systems with Libra/QE/eQE and other codes
 [Back to TOC](#toc)
 
