@@ -1,0 +1,106 @@
+  
+ MM input format >>>   GMX    <<<
+  
+ Number of defined/different AtomTypes =   9/  7
+  
+ Number of atoms in         COH =      6
+ Number of bonds in         COH =      5
+ Number of angles in        COH =      7
+ Number of dihedrals in     COH =      3
+ Number of Torsion DHDs in  COH =      0
+ Number of Improper DHDs in COH =      0
+ Total MM_charge in COH =   -0.000000
+  
+ Number of atoms in         AZO =     24
+ Number of bonds in         AZO =     25
+ Number of angles in        AZO =     38
+ Number of dihedrals in     AZO =     52
+ Number of Torsion DHDs in  AZO =      0
+ Number of Improper DHDs in AZO =      0
+ Total MM_charge in AZO =   -0.000002
+  
+Force Field Parameters:
+ NonBonded FF type       =      2
+ Combination Rule        =      3
+ Coulomb 1-4 scale       =  0.5000
+ van der Walls 1-4 scale =  0.5000
+  
+[ atomtypes ]
+    1 CT       1.87083     0.21414    
+    3 HC       1.58114     0.14437    
+    1 OH       1.75214     0.34368    
+    1 HO       0.00000     0.00000 <==
+   12 CAT      1.88414     0.22061    
+    2 NAT      1.80278     0.34379    
+   10 HA       1.57797     0.14437    
+  
+[ SpecialPairs ]
+  
+[ bondtypes ]
+CT  HC   1          0.10900     284512.000          0.000   
+CT  OH   1          0.14250     323004.800          0.000   
+OH  HO   1          0.09450     462750.400          0.000   
+CAT CAT  1          0.14000     392459.200          0.000   
+CAT HA   1          0.10800     307105.600          0.000   
+CAT NAT  1          0.14000     357552.700          0.000   
+NAT NAT  1          0.13000     459710.600          0.000   
+NAT CAT  1          0.14000     357552.700          0.000   
+HA  CAT  1          0.10800     307105.600          0.000   
+  
+[ angletypes ]
+HC  CT  OH   1          109.500        292.880   
+HC  CT  HC   1          107.800        276.144   
+CT  OH  HO   1          108.500        460.240   
+CAT CAT CAT  1          120.000        700.000   
+CAT CAT HA   1          120.000        292.880   
+CAT CAT NAT  1          124.000        586.152   
+CAT NAT NAT  1          108.000       1000.000   
+NAT NAT CAT  1          108.000       1000.000   
+NAT CAT CAT  1          124.000        586.152   
+  
+[ dihedraltypes ]
+HC  CT  OH  HO      3     0.94140     2.82420     0.00000    -3.76560     0.00000     0.00000   
+CAT CAT CAT NAT     3    30.35400     0.00000   -30.35400     0.00000     0.00000     0.00000   
+CAT CAT CAT CAT     3    30.35400     0.00000   -30.35400     0.00000     0.00000     0.00000   
+CAT CAT CAT HA      3    30.35400     0.00000   -30.35400     0.00000     0.00000     0.00000   
+CAT CAT NAT NAT     3    16.03800    -4.39400   -14.39400     2.39500     0.00000     0.00000   
+CAT NAT NAT CAT     3   100.00000     0.00000  -100.00000     0.00000     0.00000     0.00000   
+HA  CAT CAT HA      3    30.35400     0.00000   -30.35400     0.00000     0.00000     0.00000   
+HA  CAT CAT NAT     3    30.35400     0.00000   -30.35400     0.00000     0.00000     0.00000   
+NAT NAT CAT CAT     3    16.03800    -4.39400   -14.39400     2.39500     0.00000     0.00000   
+NAT CAT CAT HA      3    30.35400     0.00000   -30.35400     0.00000     0.00000     0.00000   
+NAT CAT CAT CAT     3    30.35400     0.00000   -30.35400     0.00000     0.00000     0.00000   
+  
+[ charges ]
+( COH )
+   CT  0.1450     
+   HC  0.0400     
+   HC  0.0400     
+   HC  0.0400     
+   OH -0.6830     
+   HO  0.4180     
+( AZO )
+  CAT -0.1177     
+  CAT -0.1174     
+  CAT -0.1280     
+  CAT -0.0557     
+  CAT -0.2297     
+  CAT  0.3052     
+  NAT -0.1795     
+   HA  0.1216     
+   HA  0.1078     
+   HA  0.1054     
+   HA  0.1177     
+   HA  0.0703     
+  NAT -0.1795     
+  CAT  0.3052     
+  CAT -0.1174     
+  CAT -0.1177     
+  CAT -0.1280     
+  CAT -0.0557     
+  CAT -0.2297     
+   HA  0.0703     
+   HA  0.1216     
+   HA  0.1078     
+   HA  0.1054     
+   HA  0.1177     

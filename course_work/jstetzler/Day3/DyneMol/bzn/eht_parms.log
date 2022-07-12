@@ -1,0 +1,8 @@
+ # of atoms  |  EHSymbol  |  residue  |  OPT parms 
+       6          HA           BZN                    
+       6          CA           BZN                    
+ 
+Symbol  |  EHsymbol  |  residue  |  NoAt  |  Nvalen  |  Nzeta  |  n  |  spdf  |    IP   |  zeta1  |  zeta2  |  coef1  |  coef2  |  k_WH
+C           CA           BZN         6        4           1       2      s     -21.98894  1.552166  0.000000  1.000000  0.000000  1.197909
+C           CA           BZN         6        4           1       2      p     -11.32328  2.214218  0.000000  1.000000  0.000000  4.099984
+H           HA           BZN         1        1           1       1      s     -13.34376  1.221147  0.000000  1.000000  0.000000  1.808950
