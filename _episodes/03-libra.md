@@ -136,9 +136,19 @@ style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ### 4.2. Videorecording of the session
 
- |-----|-------|
- | Zoom | Webcast |
- | <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=a6e7a4ed-587a-47b8-8200-aec901667f0f&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> | <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ffb0fdb8-db41-42df-9aa1-aeb50145475a&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> | 
+
+* Zoom 
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=a6e7a4ed-587a-47b8-8200-aec901667f0f
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> 
+
+
+* Webcast
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ffb0fdb8-db41-42df-9aa1-aeb50145475a
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> 
 
 ### 4.3. Demonstrations
 
@@ -153,25 +163,29 @@ style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ### 5.2. Videorecording of the session
 
-* Session 1, Zoom
+#### Morning, July 5 section
+
+* Zoom
 
 <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=a6e7a4ed-587a-47b8-8200-aec901667f0f
 &autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
 style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> 
 
-* Session 1, Webcast
+* Webcast
 
 <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ffb0fdb8-db41-42df-9aa1-aeb50145475a
 &autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
 style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> 
 
 
-* Session 2, Zoom
+#### Afternoon, July 5 section
+
+* Zoom
 <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=26f1e7ab-b025-48c3-9425-aec901659e95
 &autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
 style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe> 
 
-* Session 2, Webcast
+* Webcast
 <iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=30894def-c914-4127-bc66-aeb501458da0
 &autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
 style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
@@ -255,9 +269,21 @@ style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 ## 9. NA-MD calculations in condensed matter systems with Libra/QE/eQE and other codes
 [Back to TOC](#toc)
 
-### 9.1. [Slides]()
+### 9.1. Slides
+
+No
 
 ### 9.2. Videorecording of the session
+
+
+#### Afternoon, July 12 section
+
+* Zoom
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=a235d619-ce24-4bf3-9249-aed0016066a0
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 
 ### 9.3. Demonstrations
   
@@ -284,7 +310,6 @@ style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
     Show the NAC calculcations with eQE
 
 ### 9.4. Homeworks
-
 
 
    
