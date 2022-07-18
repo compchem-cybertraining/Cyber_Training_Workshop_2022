@@ -259,10 +259,17 @@ style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 ### 8.2. Videorecording of the session
 
+#### Afternoon, July 14 section
+
+* Zoom
+
+<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=bf13e8c3-bdc7-48df-ae3b-aed20168de51
+&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
+style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 ### 8.3. Demonstrations
 
 ### 8.4. Homeworks
-
 
 
 <a name="9"></a>
