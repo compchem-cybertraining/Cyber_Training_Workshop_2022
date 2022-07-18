@@ -316,7 +316,7 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">July 15, 2022 (Day 13), Friday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/14-tdksnamd"></a>Nonadiabatic dynamics calculations in extended systems with KS-TD-DFT NA-MD method</li>
+        <li><a href="/_episodes/14-redfield"></a>Nonadiabatic dynamics calculations in extended systems with KS-TD-DFT NA-MD method</li>
         <li>Closing dinner.</li>
       </ul>
     </td>
