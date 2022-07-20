@@ -1,0 +1,19 @@
+%Chk=optimization-gaussian.chk
+#T Opt Freq=NoRaman Symmetry=Follow B3LYP/aug-cc-pVTZ
+
+Benzene Optimization
+
+0 1
+ H	0.0	2.0	0.0
+ H	2.0	1.0	0.0
+ C	0.0	1.0	0.0
+ H	-2.0	1.0	0.0
+ C	1.0	0.5	0.0
+ C	-1.0	0.5	0.0
+ C	1.0	-0.5	0.0
+ C	-1.0	-0.5	0.0
+ H	2.0	-1.0	0.0
+ C	0.0	-1.0	0.0
+ H	-2.0	-1.0	0.0
+ H	0.0	-2.0	0.0
+

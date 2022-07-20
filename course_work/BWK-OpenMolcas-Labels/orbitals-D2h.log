@@ -1,0 +1,1454 @@
+   This run of MOLCAS is using the pymolcas driver
+
+                             OPE
+                             OPE          NMOL  CASOP  ENMOLC A   SO
+                 OPE        NMOLC        AS  OP EN  MO LC     AS  OP
+                OPENM       OL CA        SO  PE NM  OL CA     SOP EN
+                OP EN      MO   LC       AS  OP ENMOL  CASO   PENMOL
+                OP  EN     MO   LC       AS  OP EN     MO     LC ASO
+               OP   E  NMOL  C  AS       OP  EN MO     LC     AS  OP
+               OP  E   NMO   LC AS        OPEN  MO     LCASOP EN   M
+               O  PEN   MO  LCA  SO
+            OPE   NMO   L   CAS    OP
+        OPENMOL  CASOP     ENMOL   CASOPE
+     OPENMOLCA   SOPENMOLCASOPEN   MOLCASOPE
+    OPENMOLCAS   OP           EN   MOL    CAS
+    OPENMOLCAS       OP  ENM        O     LCA
+    OPENMOLCAS    OPEN  MOLCASO     P  E  NMO
+    OPENMOLCAS     OP               E  N  MOL
+    OPENMOLCA   SO           PENM   O  L  CAS    OPEN    MO    LCAS
+    OPENMOLCA   SOP           ENM   O  L  CAS   OP  EN  MOLC  AS   O
+    OPENMOLCA   SOPE           NM      O  LCA   S      OP  EN MO
+    OPENMOLC                AS         O  PEN   M      OL  CA  SOPE
+    OPENMO        LCASOPE  NMOL        C  ASO   P      ENMOLC     AS
+    OPE     NMO      LCA  SO     P     E   NM   OL  CA SO  PE N   MO
+          OPENMOLCA            SOPE   NMO        LCAS  O    P  ENMO
+     OPENMOLCASOPENMOLCASOPENMOLCASOPENMOLCA
+        OPENMOLCASOPENMOLCASOPENMOLCASOPE
+            OPENMOLCASOPENMOLCASOPENM
+               OPENMOLCASOPENMOLCA        version: 22.02
+                   OPENMOLCASO
+                       OPE                tag: 112-ge90b629
+
+ OpenMolcas is free software; you can redistribute it and/or modify it
+ under the terms of the GNU Lesser General Public License version 2.1.
+ OpenMolcas is distributed in the hope that it will be useful, but it
+ is provided "as is" and without any express or implied warranties.
+ For more details see the full text of the license in the file
+ LICENSE or in <http://www.gnu.org/licenses/>.
+
+                 Copyright (C) The OpenMolcas Authors
+           For the author list and the recommended citation,
+                   consult the file CONTRIBUTORS.md
+
+           *************************************************
+           * pymolcas version py2.22                       *
+           *   build 8f5156e7c298caa029894eefd30f00af      *
+           *   (after the EMIL interpreter by V. Veryazov) *
+           *************************************************
+
+configuration info
+------------------
+Host name: d3070 (Linux)
+C Compiler ID: Intel
+C flags: -O2 -fpic -march=skylake-avx512 -std=gnu99 -gcc-sys -qopenmp
+Fortran Compiler ID: Intel
+Fortran flags: -O2 -fpic -march=skylake-avx512  -fpp -i8 -r8 -heap-arrays -qopenmp
+Definitions: _MOLCAS_;_I8_;_LINUX_;_MOLCAS_MPP_;_SCALAPACK_;_GA_
+Parallel: ON (GA=ON)
+
+
+   --------------------------------------------------------------------------------------
+  |
+  |              Project: orbitals-D2h
+  |       Submitted from: /work/donglab/kaufold.b/Label-Tutorial
+  |         Scratch area: /scratch/kaufold.b/OpenMolcas/29116732_0/orbitals-D2h
+  |      Save outputs to: /work/donglab/kaufold.b/Label-Tutorial/orbitals-D2h
+  |               Molcas: /shared/centos7/openmolcas/22.02-intel-cascadelake-wfa
+  |
+  | Scratch area is empty
+  |
+  |       MOLCAS_DRIVER = /shared/centos7/openmolcas/22.02-intel-cascadelake-wfa/pymolcas
+  | MOLCAS_KEEP_WORKDIR = NO
+  |      MOLCAS_MAXITER = 10000
+  |       MOLCAS_MAXMEM = 51975
+  |       MOLCAS_MOLDEN = ON
+  | MOLCAS_NEW_DEFAULTS = NO
+  |       MOLCAS_NPROCS = 1
+  |         MOLCAS_SAVE = ORIG
+  |       MOLCAS_SOURCE = /shared/centos7/openmolcas/22.02-intel-cascadelake-wfa
+  |    MOLCAS_STRUCTURE = 0
+  |      MOLCAS_TIMELIM = 3360
+  |     MOLCAS_VALIDATE = YES
+  |
+   --------------------------------------------------------------------------------------
+
+
+--- Start Module: gateway at Sun Jul 17 19:45:57 2022 ---
+
+-- Input validation for gateway
+lxml python module not found, no validation possible
+--
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                              &GATEWAY
+
+                       only a single process is used, running in SERIAL mode
+                       available to each process: 46 GB of memory, 16 threads
+                                             pid: 60998
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+      Found SYMMETRY generators: x y z
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    Warning! XYZ coordinates will be modified to match                   ###
+ ###    the specified/detected symmetry. Use SYMT = 0.0 if                   ###
+ ###    this is not desired.                                                 ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+ 
+ Title:
+                                 Benzene Orbitals with Symmetry                         
+ 
+ 
+++    Symmetry information:
+      ---------------------
+ 
+                    --- Group Generators ---
+                    Reflection in the yz-plane  
+                    Reflection in the xz-plane  
+                    Reflection in the xy-plane  
+ 
+                    Character Table for D2h
+ 
+                             E   s(yz) s(xz) C2(z) s(xy) C2(y) C2(x)   i  
+                    ag       1     1     1     1     1     1     1     1  
+                    b3u      1    -1     1    -1     1    -1     1    -1  x
+                    b2u      1     1    -1    -1     1     1    -1    -1  y
+                    b1g      1    -1    -1     1     1    -1    -1     1  xy, Rz
+                    b1u      1     1     1     1    -1    -1    -1    -1  z
+                    b2g      1    -1     1    -1    -1     1    -1     1  xz, Ry
+                    b3g      1     1    -1    -1    -1    -1     1     1  yz, Rx
+                    au       1    -1    -1     1    -1     1     1    -1  I
+--
+ 
+ 
+++    Basis set information:
+      ----------------------
+ 
+ 
+      Basis set label: H.AUG-CC-PVTZ.........
+ 
+      Electronic valence basis set:
+      ------------------
+      Associated Effective Charge   1.000000 au
+      Associated Actual Charge      1.000000 au
+      Nuclear Model: Point charge
+ 
+      Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+         s       6       4        X                  
+         p       3       3        X                  
+         d       2       2                 X         
+ 
+ 
+      Basis set label: C.AUG-CC-PVTZ.........
+ 
+      Electronic valence basis set:
+      ------------------
+      Associated Effective Charge   6.000000 au
+      Associated Actual Charge      6.000000 au
+      Nuclear Model: Point charge
+ 
+      Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+         s      11       5        X                  
+         p       6       4        X                  
+         d       3       3                 X         
+         f       2       2                 X         
+--
+ 
+ 
+++    Molecular structure info:
+      -------------------------
+ 
+                    ************************************************ 
+                    **** Cartesian Coordinates / Bohr, Angstrom **** 
+                    ************************************************ 
+ 
+     Center  Label                x              y              z                     x              y              z
+        1      H1               0.000000       4.672658       0.000000              0.000000       2.472664       0.000000
+        2      H1               0.000000      -4.672658       0.000000              0.000000      -2.472664       0.000000
+        3      H2               4.047232       2.335660       0.000000              2.141703       1.235978       0.000000
+        4      H2              -4.047232       2.335660       0.000000             -2.141703       1.235978       0.000000
+        5      H2               4.047232      -2.335660       0.000000              2.141703      -1.235978       0.000000
+        6      H2              -4.047232      -2.335660       0.000000             -2.141703      -1.235978       0.000000
+        7      C3               0.000000       2.628293       0.000000              0.000000       1.390833       0.000000
+        8      C3               0.000000      -2.628293       0.000000              0.000000      -1.390833       0.000000
+        9      C4               2.276482       1.314007       0.000000              1.204663       0.695343       0.000000
+       10      C4              -2.276482       1.314007       0.000000             -1.204663       0.695343       0.000000
+       11      C4               2.276482      -1.314007       0.000000              1.204663      -0.695343       0.000000
+       12      C4              -2.276482      -1.314007       0.000000             -1.204663      -0.695343       0.000000
+ 
+                    *************************************** 
+                    *    InterNuclear Distances / Bohr    * 
+                    *************************************** 
+ 
+               1 H1            2 H1            3 H2            4 H2            5 H2            6 H2    
+    1 H1       0.000000
+    2 H1       9.345316        0.000000
+    3 H2       4.673505        8.092997        0.000000
+    4 H2       4.673505        8.092997        8.094465        0.000000
+    5 H2       8.092997        4.673505        4.671319        9.345672        0.000000
+    6 H2       8.092997        4.673505        9.345672        4.671319        8.094465        0.000000
+    7 C3       2.044365        7.300951        4.057798        4.057798        6.404757        6.404757
+    8 C3       7.300951        2.044365        6.404757        6.404757        4.057798        4.057798
+    9 C4       4.057451        6.404883        2.044341        6.405712        4.056553        7.301331
+   10 C4       4.057451        6.404883        6.405712        2.044341        7.301331        4.056553
+   11 C4       6.404883        4.057451        4.056553        7.301331        2.044341        6.405712
+   12 C4       6.404883        4.057451        7.301331        4.056553        6.405712        2.044341
+ 
+               7 C3            8 C3            9 C4           10 C4           11 C4           12 C4    
+    7 C3       0.000000
+    8 C3       5.256586        0.000000
+    9 C4       2.628635        4.552373        0.000000
+   10 C4       2.628635        4.552373        4.552965        0.000000
+   11 C4       4.552373        2.628635        2.628014        5.256990        0.000000
+   12 C4       4.552373        2.628635        5.256990        2.628014        4.552965        0.000000
+ 
+                    ******************************************* 
+                    *    InterNuclear Distances / Angstrom    * 
+                    ******************************************* 
+ 
+               1 H1            2 H1            3 H2            4 H2            5 H2            6 H2    
+    1 H1       0.000000
+    2 H1       4.945328        0.000000
+    3 H2       2.473112        4.282630        0.000000
+    4 H2       2.473112        4.282630        4.283406        0.000000
+    5 H2       4.282630        2.473112        2.471956        4.945517        0.000000
+    6 H2       4.282630        2.473112        4.945517        2.471956        4.283406        0.000000
+    7 C3       1.081831        3.863497        2.147294        2.147294        3.389252        3.389252
+    8 C3       3.863497        1.081831        3.389252        3.389252        2.147294        2.147294
+    9 C4       2.147111        3.389318        1.081819        3.389757        2.146635        3.863698
+   10 C4       2.147111        3.389318        3.389757        1.081819        3.863698        2.146635
+   11 C4       3.389318        2.147111        2.146635        3.863698        1.081819        3.389757
+   12 C4       3.389318        2.147111        3.863698        2.146635        3.389757        1.081819
+ 
+               7 C3            8 C3            9 C4           10 C4           11 C4           12 C4    
+    7 C3       0.000000
+    8 C3       2.781666        0.000000
+    9 C4       1.391014        2.409012        0.000000
+   10 C4       1.391014        2.409012        2.409325        0.000000
+   11 C4       2.409012        1.391014        1.390685        2.781879        0.000000
+   12 C4       2.409012        1.391014        2.781879        1.390685        2.409325        0.000000
+ 
+                    ************************************** 
+                    *    Valence Bond Angles / Degree    * 
+                    ************************************** 
+                          Atom centers                 Phi
+                      1 H1       7 C3       9 C4       120.00
+                      1 H1       7 C3      10 C4       120.00
+                      9 C4       7 C3      10 C4       120.00
+                      2 H1       8 C3      11 C4       120.00
+                      2 H1       8 C3      12 C4       120.00
+                     11 C4       8 C3      12 C4       120.00
+                      3 H2       9 C4       7 C3       120.02
+                      3 H2       9 C4      11 C4       119.98
+                      7 C3       9 C4      11 C4       120.00
+                      4 H2      10 C4       7 C3       120.02
+                      4 H2      10 C4      12 C4       119.98
+                      7 C3      10 C4      12 C4       120.00
+                      5 H2      11 C4       8 C3       120.02
+                      5 H2      11 C4       9 C4       119.98
+                      8 C3      11 C4       9 C4       120.00
+                      6 H2      12 C4       8 C3       120.02
+                      6 H2      12 C4      10 C4       119.98
+                      8 C3      12 C4      10 C4       120.00
+ 
+           ***************************************************************
+           *              Valence Dihedral Angles / Degree               *
+           ***************************************************************
+                    Atom centers                       Phi1     Phi2     Theta 
+           1 H1       7 C3       9 C4       3 H2        120.00   120.02     0.00
+           1 H1       7 C3       9 C4      11 C4        120.00   120.00  -180.00
+          10 C4       7 C3       9 C4      11 C4        120.00   120.00     0.00
+           1 H1       7 C3      10 C4       4 H2        120.00   120.02     0.00
+           1 H1       7 C3      10 C4      12 C4        120.00   120.00  -180.00
+           9 C4       7 C3      10 C4      12 C4        120.00   120.00     0.00
+           2 H1       8 C3      11 C4       5 H2        120.00   120.02     0.00
+           2 H1       8 C3      11 C4       9 C4        120.00   120.00  -180.00
+           2 H1       8 C3      12 C4       6 H2        120.00   120.02     0.00
+           2 H1       8 C3      12 C4      10 C4        120.00   120.00  -180.00
+           3 H2       9 C4       7 C3      10 C4        120.02   120.00  -180.00
+           3 H2       9 C4      11 C4       5 H2        119.98   119.98     0.00
+           3 H2       9 C4      11 C4       8 C3        119.98   120.00  -180.00
+           7 C3       9 C4      11 C4       8 C3        120.00   120.00     0.00
+           4 H2      10 C4       7 C3       9 C4        120.02   120.00  -180.00
+           4 H2      10 C4      12 C4       6 H2        119.98   119.98     0.00
+           4 H2      10 C4      12 C4       8 C3        119.98   120.00  -180.00
+           7 C3      10 C4      12 C4       8 C3        120.00   120.00     0.00
+           5 H2      11 C4       8 C3      12 C4        120.02   120.00  -180.00
+           9 C4      11 C4       8 C3      12 C4        120.00   120.00     0.00
+           5 H2      11 C4       9 C4       7 C3        119.98   120.00  -180.00
+           6 H2      12 C4       8 C3      11 C4        120.02   120.00  -180.00
+          10 C4      12 C4       8 C3      11 C4        120.00   120.00     0.00
+           6 H2      12 C4      10 C4       7 C3        119.98   120.00  -180.00
+--
+ 
+ 
+            Nuclear Potential Energy            204.04227156 au
+ 
+The total execution time is limited to 3360 seconds.
+--- Stop Module: gateway at Sun Jul 17 19:45:58 2022 /rc=_RC_ALL_IS_WELL_ ---
+*** files: xmldump
+    saved to directory /work/donglab/kaufold.b/Label-Tutorial/orbitals-D2h
+
+--- Start Module: seward at Sun Jul 17 19:45:58 2022 ---
+
+-- Input validation for seward
+lxml python module not found, no validation possible
+--
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                              &SEWARD
+
+                       only a single process is used, running in SERIAL mode
+                       available to each process: 46 GB of memory, 16 threads
+                                             pid: 61016
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+               SEWARD will generate:
+                  Multipole Moment integrals up to order  2
+                  Kinetic Energy integrals
+                  Nuclear Attraction integrals (point charge)
+                  One-Electron Hamiltonian integrals
+                  Velocity integrals
+                  Orbital angular momentum around ( 0.0000  0.0000  0.0000 )
+                  Velocity quadrupole around ( 0.0000  0.0000  0.0000 )
+                  Two-Electron Repulsion integrals
+ 
+ Title:
+                                 Benzene Orbitals with Symmetry                         
+ 
+ 
+                   Integrals are discarded if absolute value <: 0.10E-13
+                   Integral cutoff threshold is set to       <: 0.10E-15
+ 
+                    Unitary symmetry adaptation
+ 
+ 
+            Nuclear Potential Energy            204.04227156 au
+ 
+ 
+      Basis set specifications :
+      Symmetry species         ag   b3u  b2u  b1g  b1u  b2g  b3g  au 
+      Basis functions           76   62   76   62   39   30   39   30
+ 
+ 
+      Input file to MOLDEN was generated!
+ 
+The total execution time is limited to 3360 seconds.
+--- Stop Module: seward at Sun Jul 17 19:55:47 2022 /rc=_RC_ALL_IS_WELL_ ---
+*** files: orbitals-D2h.GssOrb orbitals-D2h.guessorb.h5 orbitals-D2h.guessorb.molden xmldump
+    saved to directory /work/donglab/kaufold.b/Label-Tutorial/orbitals-D2h
+--- Module seward spent 9 minutes 48 seconds ---
+
+*** symbolic link created: INPORB -> orbitals-D2h.GssOrb
+--- Start Module: scf at Sun Jul 17 19:55:47 2022 ---
+
+-- Input validation for scf
+lxml python module not found, no validation possible
+--
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                                &SCF
+
+                       only a single process is used, running in SERIAL mode
+                       available to each process: 46 GB of memory, 16 threads
+                                             pid: 61919
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###     Minimized-density-differences option turned off!                    ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+++    Input section:
+      --------------
+ 
+      Header of the integral files:
+      
+       Integrals generated by Gateway/Seward, Sun Jul 17 19:45:58 2022
+ 
+ 
+      Cartesian coordinates in Angstrom:
+      -----------------------------------------------------
+      No.  Label        X            Y            Z        
+      -----------------------------------------------------
+       1   H1         0.00000000   2.47266405   0.00000000
+       2   H2         2.14170318   1.23597787   0.00000000
+       3   C3         0.00000000   1.39083283   0.00000000
+       4   C4         1.20466254   0.69534255   0.00000000
+       5   H1         0.00000000  -2.47266405   0.00000000
+       6   H2        -2.14170318   1.23597787   0.00000000
+       7   H2         2.14170318  -1.23597787   0.00000000
+       8   H2        -2.14170318  -1.23597787   0.00000000
+       9   C3         0.00000000  -1.39083283   0.00000000
+      10   C4        -1.20466254   0.69534255   0.00000000
+      11   C4         1.20466254  -0.69534255   0.00000000
+      12   C4        -1.20466254  -0.69534255   0.00000000
+      -----------------------------------------------------
+      Nuclear repulsion energy =  204.04227156
+--
+ 
+++    Orbital specifications:
+      -----------------------
+ 
+      Symmetry species               1   2   3   4   5   6   7   8
+                                    ag b3u b2u b1g b1u b2g b3g  au
+      Frozen orbitals                0   0   0   0   0   0   0   0
+      Occupied orbitals              6   4   5   3   1   1   1   0
+      Secondary orbitals            70  58  71  59  38  29  38  30
+      Deleted orbitals               0   0   0   0   0   0   0   0
+      Total number of orbitals      76  62  76  62  39  30  39  30
+      Number of basis functions     76  62  76  62  39  30  39  30
+--
+ 
+      Molecular charge                           0.000
+ 
+ 
+      Numerical integration parameters
+      --------------------------------
+      Radial quadrature type:                         MHL       
+      Size of radial grid:                            99
+      Lebedev angular grid:                           41
+      Angular grid prunned with the crowding factor:  1.00E+10
+                                  and fading factor:  1.00E+01
+      Screening threshold for integral computation:   1.00E-11
+      Radial quadrature accuracy:                     1.00E-25
+      Maximum batch size:                             128
+      AO values are stored on disk
+      The same grid will be used for all iterations.
+ 
+      DFT functional specifications
+      -----------------------------
+      Using Libxc version: 5.2.2
+      Please cite the following reference:
+      S. Lehtola, C. Steigemann, M. J. Oliveira, and M. A. Marques, SoftwareX 7, 1 (2018) doi:10.1016/j.softx.2017.11.002
+ 
+      * B3LYP
+        - P. J. Stephens, F. J. Devlin, C. F. Chabalowski, and M. J. Frisch, J. Phys. Chem. 98, 11623 (1994) doi:10.1021/j100096a001
+ 
+++    Optimization specifications:
+      ----------------------------
+ 
+      SCF Algorithm: Conventional
+      D(i)-D(i-1) density differences are used
+      Number of density matrices in core                5
+      Maximum number of NDDO SCF iterations           400
+      Maximum number of HF SCF iterations             400
+      Threshold for SCF energy change            0.10E-08
+      Threshold for density matrix               0.10E-03
+      Threshold for Fock matrix                  0.15E-03
+      Threshold for linear dependence            0.10E-08
+      Threshold at which DIIS is turned on       0.15E+00
+      Threshold at which QNR/C2DIIS is turned on 0.75E-01
+      Threshold for Norm(delta) (QNR/C2DIIS)     0.20E-04
+      DIIS extrapolation of the SCF procedure
+      All orbitals punched on: SCFORB
+--
+ 
+      Input vectors read from INPORB
+      Orbital file label: *Guess orbitals
+ 
+ 
+++ Convergence information
+                                   B3LYP      iterations: Energy and convergence statistics
+ 
+Iter     Tot. B3LYP      One-elec.       Two-elec.     Energy      Max Dij or  Max Fij      DNorm      TNorm      AccCon     Time
+         Energy          Energy          Energy        Change      Delta Norm                                                in Sec.
+   1  -231.903298088  -735.904501458   299.958931806   0.00E+00    0.26E+00*   0.13E+00*    0.96E+01   0.40E+03   None       117.
+   2  -232.156125280  -750.812845900   314.614449056  -0.25E+00*   0.22E+00*   0.60E-01*    0.88E+01   0.41E+03   EDIIS       72.
+   3  -232.178349327  -736.625571659   300.404950768  -0.22E-01*   0.22E-01*   0.33E-01*    0.46E+01   0.40E+03   EDIIS       76.
+   4  -232.334206263  -743.964046053   307.587568226  -0.16E+00*   0.81E-02*   0.43E-02*    0.83E+00   0.40E+03   c2DIIS      79.
+   5  -232.335409855  -743.507071974   307.129390555  -0.12E-02*   0.44E-03*   0.13E-02*    0.19E+00   0.40E+03   c2DIIS      81.
+   6  -232.335572280  -743.560108819   307.182264975  -0.16E-03*   0.12E-03*   0.32E-04     0.30E-01   0.40E+03   QNRc2DIIS   77.
+   7  -232.335572294  -743.557190330   307.179346472  -0.14E-07*   0.69E-04*   0.18E-04     0.45E-02   0.40E+03   QNRc2DIIS   89.
+   8  -232.335572304  -743.559052442   307.181208575  -0.95E-08*   0.18E-04    0.43E-05     0.86E-03   0.40E+03   QNRc2DIIS   93.
+   9  -232.335572304  -743.558762753   307.180918885  -0.81E-09    0.18E-05    0.35E-06     0.74E-03   0.40E+03   QNRc2DIIS   93.
+ 
+       Convergence after  9 Macro Iterations
+--
+ 
+ *****************************************************************************************************************************
+ *                                                                                                                           *
+ *                                             SCF/KS-DFT Program, Final results                                             *
+ *                                                                                                                           *
+ *                                                                                                                           *
+ *                                                                                                                           *
+ *                                                       Final Results                                                       *
+ *                                                                                                                           *
+ *****************************************************************************************************************************
+ 
+::    Total KS-DFT energy                            -232.3355723043
+      One-electron energy                            -743.5587627533
+      Two-electron energy                             307.1809188852
+      Nuclear repulsion energy                        204.0422715638
+      Kinetic energy (interpolated)                   230.8497875623
+      Virial theorem                                    1.0064361538
+      Total spin, S(S+1)                                0.0000000000
+      Total spin, S                                     0.0000000000
+      Max non-diagonal density matrix element           0.0000011508
+      Max non-diagonal Fock matrix element              0.0000000648
+ 
+ 
+      All orbitals with orbital energies smaller than  E(LUMO)+0.5 are printed
+ 
+++    Molecular orbitals:
+      -------------------
+ 
+      Title: RKS-DFT orbitals
+
+      Molecular orbitals for symmetry species 1: ag 
+ 
+ 
+      Basis set list:
+        1 H1     1s                 17 H2     *px                33 C3     2py                49 C4     *s                 65 C4     *d0    
+        2 H1     *s                 18 H2     *px                34 C3     *py                50 C4     *s                 66 C4     *d2+   
+        3 H1     *s                 19 H2     *py                35 C3     *py                51 C4     *s                 67 C4     *d2+   
+        4 H1     *s                 20 H2     *py                36 C3     *py                52 C4     2px                68 C4     *d2+   
+        5 H1     *py                21 H2     *py                37 C3     *d0                53 C4     *px                69 C4     *f3-   
+        6 H1     *py                22 H2     *d2-               38 C3     *d0                54 C4     *px                70 C4     *f3-   
+        7 H1     *py                23 H2     *d2-               39 C3     *d0                55 C4     *px                71 C4     *f1-   
+        8 H1     *d0                24 H2     *d0                40 C3     *d2+               56 C4     2py                72 C4     *f1-   
+        9 H1     *d0                25 H2     *d0                41 C3     *d2+               57 C4     *py                73 C4     *f1+   
+       10 H1     *d2+               26 H2     *d2+               42 C3     *d2+               58 C4     *py                74 C4     *f1+   
+       11 H1     *d2+               27 H2     *d2+               43 C3     *f3-               59 C4     *py                75 C4     *f3+   
+       12 H2     1s                 28 C3     1s                 44 C3     *f3-               60 C4     *d2-               76 C4     *f3+   
+       13 H2     *s                 29 C3     2s                 45 C3     *f1-               61 C4     *d2-   
+       14 H2     *s                 30 C3     *s                 46 C3     *f1-               62 C4     *d2-   
+       15 H2     *s                 31 C3     *s                 47 C4     1s                 63 C4     *d0    
+       16 H2     *px                32 C3     *s                 48 C4     2s                 64 C4     *d0    
+ 
+ 
+  Index Energy  Occupation Coefficients ...
+ 
+    1  -10.1807    2.0000         28 C3     1s     ( 0.598),    47 C4     1s     ( 0.814),                                                                                          
+ 
+    2  -10.1797    2.0000         28 C3     1s     (-0.809),    47 C4     1s     ( 0.594),                                                                                          
+ 
+    3   -0.8601    2.0000         29 C3     2s     ( 0.490),    48 C4     2s     ( 0.693),                                                                                          
+ 
+    4   -0.6077    2.0000          1 H1     1s     (-0.419),    12 H2     1s     ( 0.297),    29 C3     2s     (-0.574),    48 C4     2s     ( 0.406),                              
+                                  52 C4     2px    ( 0.379),    56 C4     2py    (-0.448),                                                                                          
+ 
+    5   -0.5296    2.0000          1 H1     1s     ( 0.412),    12 H2     1s     ( 0.582),    33 C3     2py    ( 0.448),    52 C4     2px    ( 0.549),                              
+                                  56 C4     2py    ( 0.317),                                                                                                                        
+ 
+    6   -0.3495    2.0000          1 H1     1s     (-0.623),    12 H2     1s     ( 0.440),    33 C3     2py    (-0.510),    56 C4     2py    ( 0.822),                              
+ 
+    7   -0.0103    0.0000          3 H1     *s     (-0.976),     4 H1     *s     (-0.774),    14 H2     *s     (-1.380),    15 H2     *s     (-1.094),                              
+                                  32 C3     *s     ( 0.916),    50 C4     *s     ( 0.703),    51 C4     *s     ( 1.296),                                                            
+ 
+    8    0.0255    0.0000          4 H1     *s     (-7.683),    32 C3     *s     (-13.46),    36 C3     *py    ( 6.806),    51 C4     *s     ( 9.520),                              
+ 
+    9    0.0544    0.0000          3 H1     *s     (-0.986),    14 H2     *s     (-1.375),    15 H2     *s     (-1.114),    31 C3     *s     ( 1.321),                              
+                                  32 C3     *s     ( 0.973),    36 C3     *py    ( 1.001),    50 C4     *s     ( 1.854),    51 C4     *s     ( 1.334),                              
+                                  55 C4     *px    ( 1.242),                                                                                                                        
+ 
+   10    0.0805    0.0000          3 H1     *s     (-4.362),    14 H2     *s     (-6.171),    32 C3     *s     ( 3.898),    51 C4     *s     ( 5.472),                              
+ 
+   11    0.0859    0.0000         32 C3     *s     (-49.66),    51 C4     *s     ( 35.12),                                                                                          
+ 
+   12    0.1238    0.0000          3 H1     *s     ( 10.07),    32 C3     *s     ( 14.06),    36 C3     *py    ( 10.53),    51 C4     *s     (-9.942),                              
+                                  59 C4     *py    (-14.86),                                                                                                                        
+ 
+   13    0.1820    0.0000          3 H1     *s     (-3.540),    14 H2     *s     (-4.989),    31 C3     *s     ( 2.512),    32 C3     *s     ( 3.138),                              
+                                  50 C4     *s     ( 3.568),    51 C4     *s     ( 4.098),    55 C4     *px    ( 2.619),                                                            
+ 
+   14    0.2007    0.0000         32 C3     *s     ( 101.9),    51 C4     *s     (-72.07),                                                                                          
+ 
+   15    0.2193    0.0000         32 C3     *s     (-47.23),    51 C4     *s     ( 33.40),                                                                                          
+ 
+   16    0.2609    0.0000          3 H1     *s     ( 26.89),    14 H2     *s     (-19.02),    32 C3     *s     (-23.68),    36 C3     *py    ( 21.42),                              
+                                  51 C4     *s     ( 16.76),    59 C4     *py    (-15.95),                                                                                          
+ 
+   17    0.2747    0.0000          3 H1     *s     (-6.877),    14 H2     *s     (-9.653),    51 C4     *s     ( 6.147),                                                            
+ 
+   18    0.3206    0.0000          3 H1     *s     (-6.629),    14 H2     *s     (-9.358),    31 C3     *s     ( 8.833),    50 C4     *s     ( 12.42),                              
+ 
+   19    0.3669    0.0000         32 C3     *s     ( 35.75),    51 C4     *s     (-25.26),                                                                                          
+ 
+   20    0.3892    0.0000          3 H1     *s     (-9.951),    14 H2     *s     (-14.12),    50 C4     *s     ( 9.368),    54 C4     *px    ( 7.229),                              
+ 
+   21    0.4280    0.0000         32 C3     *s     ( 95.80),    51 C4     *s     (-67.75),                                                                                          
+ 
+   22    0.4590    0.0000         32 C3     *s     (-95.45),    51 C4     *s     ( 67.49),                                                                                          
+ 
+
+      Molecular orbitals for symmetry species 2: b3u
+ 
+ 
+      Basis set list:
+        1 H1     *px                14 H2     *py                27 C3     *d2-               40 C4     *px                53 C4     *d2+   
+        2 H1     *px                15 H2     *py                28 C3     *d2-               41 C4     *px                54 C4     *d2+   
+        3 H1     *px                16 H2     *d2-               29 C3     *f1+               42 C4     2py                55 C4     *f3-   
+        4 H1     *d2-               17 H2     *d2-               30 C3     *f1+               43 C4     *py                56 C4     *f3-   
+        5 H1     *d2-               18 H2     *d0                31 C3     *f3+               44 C4     *py                57 C4     *f1-   
+        6 H2     1s                 19 H2     *d0                32 C3     *f3+               45 C4     *py                58 C4     *f1-   
+        7 H2     *s                 20 H2     *d2+               33 C4     1s                 46 C4     *d2-               59 C4     *f1+   
+        8 H2     *s                 21 H2     *d2+               34 C4     2s                 47 C4     *d2-               60 C4     *f1+   
+        9 H2     *s                 22 C3     2px                35 C4     *s                 48 C4     *d2-               61 C4     *f3+   
+       10 H2     *px                23 C3     *px                36 C4     *s                 49 C4     *d0                62 C4     *f3+   
+       11 H2     *px                24 C3     *px                37 C4     *s                 50 C4     *d0    
+       12 H2     *px                25 C3     *px                38 C4     2px                51 C4     *d0    
+       13 H2     *py                26 C3     *d2-               39 C4     *px                52 C4     *d2+   
+ 
+ 
+  Index Energy  Occupation Coefficients ...
+ 
+    1  -10.1804    2.0000         33 C4     1s     ( 1.010),                                                                                                                        
+ 
+    2   -0.7512    2.0000         34 C4     2s     ( 0.859),                                                                                                                        
+ 
+    3   -0.4527    2.0000         22 C3     2px    ( 0.637),    38 C4     2px    (-0.451),    42 C4     2py    ( 0.779),                                                            
+ 
+    4   -0.4270    2.0000          6 H2     1s     ( 0.754),    38 C4     2px    ( 0.658),    42 C4     2py    ( 0.540),                                                            
+ 
+    5    0.0057    0.0000          9 H2     *s     ( 3.685),    37 C4     *s     ( 5.955),                                                                                          
+ 
+    6    0.0775    0.0000         37 C4     *s     ( 31.34),                                                                                                                        
+ 
+    7    0.0825    0.0000         25 C3     *px    ( 2.184),    41 C4     *px    (-1.536),    45 C4     *py    ( 2.661),                                                            
+ 
+    8    0.1015    0.0000         25 C3     *px    (-17.02),    37 C4     *s     ( 33.22),                                                                                          
+ 
+    9    0.1958    0.0000         37 C4     *s     ( 79.37),                                                                                                                        
+ 
+   10    0.2220    0.0000         25 C3     *px    (-12.44),    37 C4     *s     ( 23.34),    45 C4     *py    ( 12.93),                                                            
+ 
+   11    0.2255    0.0000          3 H1     *px    (-1.932),    15 H2     *py    (-2.392),    25 C3     *px    ( 2.753),    41 C4     *px    (-1.980),                              
+                                  45 C4     *py    ( 3.583),                                                                                                                        
+ 
+   12    0.2623    0.0000          8 H2     *s     (-7.517),     9 H2     *s     (-5.536),    24 C3     *px    ( 10.01),    37 C4     *s     (-10.71),                              
+                                  40 C4     *px    ( 6.133),    41 C4     *px    ( 7.631),                                                                                          
+ 
+   13    0.3471    0.0000          8 H2     *s     (-22.45),    37 C4     *s     ( 31.21),                                                                                          
+ 
+   14    0.3910    0.0000         12 H2     *px    (-9.836),    24 C3     *px    ( 13.85),    25 C3     *px    (-7.554),    28 C3     *d2-   ( 9.297),                              
+                                  37 C4     *s     ( 9.644),    44 C4     *py    (-12.84),    45 C4     *py    ( 9.184),    48 C4     *d2-   ( 10.27),                              
+                                  54 C4     *d2+   ( 13.57),                                                                                                                        
+ 
+   15    0.4020    0.0000          3 H1     *px    ( 7.094),    12 H2     *px    (-4.969),    15 H2     *py    ( 8.662),    28 C3     *d2-   (-7.801),                              
+                                  48 C4     *d2-   (-5.533),    54 C4     *d2+   ( 9.440),                                                                                          
+ 
+   16    0.4323    0.0000         37 C4     *s     ( 100.8),                                                                                                                        
+ 
+
+      Molecular orbitals for symmetry species 3: b2u
+ 
+ 
+      Basis set list:
+        1 H1     1s                 17 H2     *px                33 C3     2py                49 C4     *s                 65 C4     *d0    
+        2 H1     *s                 18 H2     *px                34 C3     *py                50 C4     *s                 66 C4     *d2+   
+        3 H1     *s                 19 H2     *py                35 C3     *py                51 C4     *s                 67 C4     *d2+   
+        4 H1     *s                 20 H2     *py                36 C3     *py                52 C4     2px                68 C4     *d2+   
+        5 H1     *py                21 H2     *py                37 C3     *d0                53 C4     *px                69 C4     *f3-   
+        6 H1     *py                22 H2     *d2-               38 C3     *d0                54 C4     *px                70 C4     *f3-   
+        7 H1     *py                23 H2     *d2-               39 C3     *d0                55 C4     *px                71 C4     *f1-   
+        8 H1     *d0                24 H2     *d0                40 C3     *d2+               56 C4     2py                72 C4     *f1-   
+        9 H1     *d0                25 H2     *d0                41 C3     *d2+               57 C4     *py                73 C4     *f1+   
+       10 H1     *d2+               26 H2     *d2+               42 C3     *d2+               58 C4     *py                74 C4     *f1+   
+       11 H1     *d2+               27 H2     *d2+               43 C3     *f3-               59 C4     *py                75 C4     *f3+   
+       12 H2     1s                 28 C3     1s                 44 C3     *f3-               60 C4     *d2-               76 C4     *f3+   
+       13 H2     *s                 29 C3     2s                 45 C3     *f1-               61 C4     *d2-   
+       14 H2     *s                 30 C3     *s                 46 C3     *f1-               62 C4     *d2-   
+       15 H2     *s                 31 C3     *s                 47 C4     1s                 63 C4     *d0    
+       16 H2     *px                32 C3     *s                 48 C4     2s                 64 C4     *d0    
+ 
+ 
+  Index Energy  Occupation Coefficients ...
+ 
+    1  -10.1804    2.0000         28 C3     1s     ( 0.836),    47 C4     1s     ( 0.568),                                                                                          
+ 
+    2  -10.1795    2.0000         28 C3     1s     (-0.567),    47 C4     1s     ( 0.835),                                                                                          
+ 
+    3   -0.7511    2.0000         29 C3     2s     ( 0.702),    48 C4     2s     ( 0.496),                                                                                          
+ 
+    4   -0.4653    2.0000          1 H1     1s     (-0.518),    12 H2     1s     ( 0.733),    48 C4     2s     ( 0.478),    50 C4     *s     ( 0.413),                              
+ 
+    5   -0.4269    2.0000          1 H1     1s     ( 0.615),    12 H2     1s     ( 0.435),    33 C3     2py    ( 0.686),    52 C4     2px    ( 0.539),                              
+ 
+    6    0.0057    0.0000          4 H1     *s     ( 3.011),    32 C3     *s     ( 4.862),    51 C4     *s     ( 3.450),    59 C4     *py    (-3.345),                              
+ 
+    7    0.0486    0.0000         32 C3     *s     (-49.89),    51 C4     *s     ( 70.58),                                                                                          
+ 
+    8    0.0775    0.0000         32 C3     *s     ( 25.57),    51 C4     *s     ( 18.12),    59 C4     *py    (-15.28),                                                            
+ 
+    9    0.1016    0.0000         32 C3     *s     ( 27.13),    51 C4     *s     ( 19.15),    55 C4     *px    ( 14.74),    59 C4     *py    (-15.55),                              
+ 
+   10    0.1107    0.0000         32 C3     *s     (-101.8),    51 C4     *s     ( 144.0),                                                                                          
+ 
+   11    0.1958    0.0000         32 C3     *s     ( 64.79),    51 C4     *s     ( 45.87),                                                                                          
+ 
+   12    0.2220    0.0000         32 C3     *s     ( 19.53),    51 C4     *s     ( 12.89),    55 C4     *px    ( 13.10),    59 C4     *py    (-10.02),                              
+ 
+   13    0.2302    0.0000         32 C3     *s     (-164.5),    51 C4     *s     ( 232.6),                                                                                          
+ 
+   14    0.2623    0.0000          3 H1     *s     (-6.014),    32 C3     *s     (-8.324),    36 C3     *py    ( 6.340),    51 C4     *s     (-6.717),                              
+                                  58 C4     *py    ( 11.50),                                                                                                                        
+ 
+   15    0.2819    0.0000         14 H2     *s     (-134.4),    32 C3     *s     ( 159.1),    51 C4     *s     (-225.0),                                                            
+ 
+   16    0.3472    0.0000          3 H1     *s     (-18.07),    14 H2     *s     (-13.37),    32 C3     *s     ( 25.37),    51 C4     *s     ( 18.17),                              
+ 
+   17    0.3911    0.0000          7 H1     *py    (-7.561),    21 H2     *py    (-8.127),    32 C3     *s     ( 7.844),    35 C3     *py    (-7.144),                              
+                                  36 C3     *py    ( 7.479),    42 C3     *d2+   (-12.76),    54 C4     *px    (-12.86),    55 C4     *px    ( 9.173),                              
+                                  58 C4     *py    ( 12.20),    62 C4     *d2-   ( 13.62),                                                                                          
+ 
+   18    0.4142    0.0000          3 H1     *s     ( 135.0),    14 H2     *s     (-190.8),    32 C3     *s     (-110.0),    51 C4     *s     ( 155.1),                              
+ 
+   19    0.4322    0.0000         32 C3     *s     ( 82.08),    51 C4     *s     ( 58.64),                                                                                          
+ 
+
+      Molecular orbitals for symmetry species 4: b1g
+ 
+ 
+      Basis set list:
+        1 H1     *px                14 H2     *py                27 C3     *d2-               40 C4     *px                53 C4     *d2+   
+        2 H1     *px                15 H2     *py                28 C3     *d2-               41 C4     *px                54 C4     *d2+   
+        3 H1     *px                16 H2     *d2-               29 C3     *f1+               42 C4     2py                55 C4     *f3-   
+        4 H1     *d2-               17 H2     *d2-               30 C3     *f1+               43 C4     *py                56 C4     *f3-   
+        5 H1     *d2-               18 H2     *d0                31 C3     *f3+               44 C4     *py                57 C4     *f1-   
+        6 H2     1s                 19 H2     *d0                32 C3     *f3+               45 C4     *py                58 C4     *f1-   
+        7 H2     *s                 20 H2     *d2+               33 C4     1s                 46 C4     *d2-               59 C4     *f1+   
+        8 H2     *s                 21 H2     *d2+               34 C4     2s                 47 C4     *d2-               60 C4     *f1+   
+        9 H2     *s                 22 C3     2px                35 C4     *s                 48 C4     *d2-               61 C4     *f3+   
+       10 H2     *px                23 C3     *px                36 C4     *s                 49 C4     *d0                62 C4     *f3+   
+       11 H2     *px                24 C3     *px                37 C4     *s                 50 C4     *d0    
+       12 H2     *px                25 C3     *px                38 C4     2px                51 C4     *d0    
+       13 H2     *py                26 C3     *d2-               39 C4     *px                52 C4     *d2+   
+ 
+ 
+  Index Energy  Occupation Coefficients ...
+ 
+    1  -10.1797    2.0000         33 C4     1s     ( 1.003),                                                                                                                        
+ 
+    2   -0.6076    2.0000          6 H2     1s     ( 0.514),    22 C3     2px    ( 0.472),    34 C4     2s     ( 0.703),    42 C4     2py    ( 0.379),                              
+ 
+    3   -0.3495    2.0000          6 H2     1s     ( 0.763),    22 C3     2px    (-0.605),    38 C4     2px    ( 0.755),                                                            
+ 
+    4    0.0255    0.0000          9 H2     *s     ( 9.413),    37 C4     *s     ( 16.49),                                                                                          
+ 
+    5    0.0859    0.0000         37 C4     *s     ( 60.83),                                                                                                                        
+ 
+    6    0.1238    0.0000          8 H2     *s     ( 12.34),    25 C3     *px    (-10.49),    37 C4     *s     ( 17.24),    41 C4     *px    ( 14.89),                              
+ 
+    7    0.2007    0.0000         37 C4     *s     ( 124.9),                                                                                                                        
+ 
+    8    0.2130    0.0000         25 C3     *px    ( 276.5),    41 C4     *px    ( 195.6),    45 C4     *py    (-338.7),                                                            
+ 
+    9    0.2194    0.0000         37 C4     *s     ( 57.59),                                                                                                                        
+ 
+   10    0.2609    0.0000          8 H2     *s     (-32.96),    37 C4     *s     ( 29.03),    41 C4     *px    (-25.55),                                                            
+ 
+   11    0.3670    0.0000         37 C4     *s     ( 43.80),                                                                                                                        
+ 
+   12    0.4267    0.0000         25 C3     *px    ( 163.3),    41 C4     *px    ( 115.6),    45 C4     *py    (-199.1),                                                            
+ 
+   13    0.4279    0.0000         37 C4     *s     ( 117.2),                                                                                                                        
+ 
+   14    0.4590    0.0000         37 C4     *s     ( 116.9),                                                                                                                        
+ 
+
+      Molecular orbitals for symmetry species 5: b1u
+ 
+ 
+      Basis set list:
+        1 H1     *pz                11 H2     *d1+               21 C3     *f0                31 C4     *d1+   
+        2 H1     *pz                12 H2     *d1+               22 C3     *f2+               32 C4     *d1+   
+        3 H1     *pz                13 C3     2pz                23 C3     *f2+               33 C4     *d1+   
+        4 H1     *d1-               14 C3     *pz                24 C4     2pz                34 C4     *f2-   
+        5 H1     *d1-               15 C3     *pz                25 C4     *pz                35 C4     *f2-   
+        6 H2     *pz                16 C3     *pz                26 C4     *pz                36 C4     *f0    
+        7 H2     *pz                17 C3     *d1-               27 C4     *pz                37 C4     *f0    
+        8 H2     *pz                18 C3     *d1-               28 C4     *d1-               38 C4     *f2+   
+        9 H2     *d1-               19 C3     *d1-               29 C4     *d1-               39 C4     *f2+   
+       10 H2     *d1-               20 C3     *f0                30 C4     *d1-   
+ 
+ 
+  Index Energy  Occupation Coefficients ...
+ 
+    1   -0.3744    2.0000         13 C3     2pz    ( 0.493),    24 C4     2pz    ( 0.697),                                                                                          
+ 
+    2   -0.0176    0.0000         13 C3     2pz    (-0.774),    16 C3     *pz    (-0.593),    24 C4     2pz    ( 0.547),    27 C4     *pz    ( 0.419),                              
+ 
+    3    0.0446    0.0000         16 C3     *pz    ( 0.332),    27 C4     *pz    ( 0.470),                                                                                          
+ 
+    4    0.1088    0.0000         16 C3     *pz    (-5.623),    27 C4     *pz    ( 3.976),                                                                                          
+ 
+    5    0.1722    0.0000          3 H1     *pz    (-1.280),     8 H2     *pz    (-1.811),    26 C4     *pz    ( 0.981),                                                            
+ 
+    6    0.2977    0.0000          3 H1     *pz    ( 3.735),    15 C3     *pz    (-3.621),    16 C3     *pz    (-5.308),    27 C4     *pz    ( 3.754),                              
+ 
+    7    0.3395    0.0000          3 H1     *pz    (-1.659),     8 H2     *pz    (-2.346),    26 C4     *pz    ( 1.397),                                                            
+ 
+    8    0.3576    0.0000          3 H1     *pz    ( 5.158),     8 H2     *pz    (-3.647),    15 C3     *pz    ( 4.955),    19 C3     *d1-   (-6.193),                              
+                                  26 C4     *pz    (-3.504),    33 C4     *d1+   ( 4.898),                                                                                          
+ 
+    9    0.4454    0.0000          3 H1     *pz    (-1.805),     8 H2     *pz    (-2.555),    15 C3     *pz    ( 2.144),    26 C4     *pz    ( 3.033),                              
+ 
+
+      Molecular orbitals for symmetry species 6: b2g
+ 
+ 
+      Basis set list:
+        1 H1     *d1+               11 C3     *d1+               21 C4     *d1-   
+        2 H1     *d1+               12 C3     *d1+               22 C4     *d1+   
+        3 H2     *pz                13 C3     *f2-               23 C4     *d1+   
+        4 H2     *pz                14 C3     *f2-               24 C4     *d1+   
+        5 H2     *pz                15 C4     2pz                25 C4     *f2-   
+        6 H2     *d1-               16 C4     *pz                26 C4     *f2-   
+        7 H2     *d1-               17 C4     *pz                27 C4     *f0    
+        8 H2     *d1+               18 C4     *pz                28 C4     *f0    
+        9 H2     *d1+               19 C4     *d1-               29 C4     *f2+   
+       10 C3     *d1+               20 C4     *d1-               30 C4     *f2+   
+ 
+ 
+  Index Energy  Occupation Coefficients ...
+ 
+    1   -0.2606    2.0000         15 C4     2pz    ( 0.921),                                                                                                                        
+ 
+    2    0.0671    0.0000         12 C3     *d1+   (-0.889),    17 C4     *pz    ( 1.056),    18 C4     *pz    ( 1.769),                                                            
+ 
+    3    0.2334    0.0000          5 H2     *pz    (-3.625),    17 C4     *pz    ( 4.079),    18 C4     *pz    ( 2.098),                                                            
+ 
+    4    0.3158    0.0000         12 C3     *d1+   ( 0.817),    21 C4     *d1-   ( 0.994),    24 C4     *d1+   (-0.570),                                                            
+ 
+    5    0.3461    0.0000          5 H2     *pz    (-3.989),    12 C3     *d1+   ( 4.198),    17 C4     *pz    (-2.458),    24 C4     *d1+   ( 3.410),                              
+ 
+
+      Molecular orbitals for symmetry species 7: b3g
+ 
+ 
+      Basis set list:
+        1 H1     *pz                11 H2     *d1+               21 C3     *f0                31 C4     *d1+   
+        2 H1     *pz                12 H2     *d1+               22 C3     *f2+               32 C4     *d1+   
+        3 H1     *pz                13 C3     2pz                23 C3     *f2+               33 C4     *d1+   
+        4 H1     *d1-               14 C3     *pz                24 C4     2pz                34 C4     *f2-   
+        5 H1     *d1-               15 C3     *pz                25 C4     *pz                35 C4     *f2-   
+        6 H2     *pz                16 C3     *pz                26 C4     *pz                36 C4     *f0    
+        7 H2     *pz                17 C3     *d1-               27 C4     *pz                37 C4     *f0    
+        8 H2     *pz                18 C3     *d1-               28 C4     *d1-               38 C4     *f2+   
+        9 H2     *d1-               19 C3     *d1-               29 C4     *d1-               39 C4     *f2+   
+       10 H2     *d1-               20 C3     *f0                30 C4     *d1-   
+ 
+ 
+  Index Energy  Occupation Coefficients ...
+ 
+    1   -0.2605    2.0000         13 C3     2pz    ( 0.752),    24 C4     2pz    ( 0.531),                                                                                          
+ 
+    2    0.0671    0.0000         15 C3     *pz    ( 0.863),    16 C3     *pz    ( 1.444),    27 C4     *pz    ( 1.023),    30 C4     *d1-   (-0.909),                              
+ 
+    3    0.1180    0.0000         16 C3     *pz    (-8.763),    27 C4     *pz    ( 12.39),                                                                                          
+ 
+    4    0.1631    0.0000         16 C3     *pz    (-10.98),    27 C4     *pz    ( 15.53),                                                                                          
+ 
+    5    0.2334    0.0000          3 H1     *pz    (-2.960),     8 H2     *pz    (-2.093),    15 C3     *pz    ( 3.332),    16 C3     *pz    ( 1.714),                              
+                                  26 C4     *pz    ( 2.356),    33 C4     *d1+   ( 1.837),                                                                                          
+ 
+    6    0.3461    0.0000          3 H1     *pz    (-3.267),    30 C4     *d1-   ( 5.091),                                                                                          
+ 
+    7    0.3508    0.0000         16 C3     *pz    (-11.03),    27 C4     *pz    ( 15.60),                                                                                          
+ 
+    8    0.4723    0.0000          8 H2     *pz    (-13.26),    15 C3     *pz    ( 15.84),    19 C3     *d1-   (-15.64),    26 C4     *pz    (-22.40),                              
+                                  33 C4     *d1+   ( 19.16),                                                                                                                        
+ 
+
+      Molecular orbitals for symmetry species 8: au 
+ 
+ 
+      Basis set list:
+        1 H1     *d1+               11 C3     *d1+               21 C4     *d1-   
+        2 H1     *d1+               12 C3     *d1+               22 C4     *d1+   
+        3 H2     *pz                13 C3     *f2-               23 C4     *d1+   
+        4 H2     *pz                14 C3     *f2-               24 C4     *d1+   
+        5 H2     *pz                15 C4     2pz                25 C4     *f2-   
+        6 H2     *d1-               16 C4     *pz                26 C4     *f2-   
+        7 H2     *d1-               17 C4     *pz                27 C4     *f0    
+        8 H2     *d1+               18 C4     *pz                28 C4     *f0    
+        9 H2     *d1+               19 C4     *d1-               29 C4     *f2+   
+       10 C3     *d1+               20 C4     *d1-               30 C4     *f2+   
+ 
+ 
+  Index Energy  Occupation Coefficients ...
+ 
+    1   -0.0175    0.0000         15 C4     2pz    ( 0.948),    18 C4     *pz    ( 0.727),                                                                                          
+ 
+    2    0.1089    0.0000         18 C4     *pz    ( 6.887),                                                                                                                        
+ 
+    3    0.2977    0.0000          5 H2     *pz    (-4.577),    17 C4     *pz    ( 4.436),    18 C4     *pz    ( 6.501),                                                            
+ 
+    4    0.3575    0.0000          5 H2     *pz    (-6.314),    17 C4     *pz    (-6.070),    21 C4     *d1-   ( 4.892),    24 C4     *d1+   ( 5.932),                              
+ 
+--
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                H1      H2      C3      C4    
+      1s       1.4679  1.4680  2.0155  2.0155
+      2s       0.0000  0.0000  1.4344  1.4344
+      2px      0.0000  0.0000  1.2499  1.2953
+      2pz      0.0000  0.0000  1.0566  1.0567
+      2py      0.0000  0.0000  1.3104  1.2652
+      *s      -0.8317 -0.8321  0.0939  0.0935
+      *px      0.0050 -0.0160 -0.3414 -0.3268
+      *pz      0.0172  0.0172 -0.1008 -0.1009
+      *py     -0.0228 -0.0020 -0.3216 -0.3364
+      *d2+     0.0008  0.0009 -0.0265 -0.0157
+      *d1+     0.0001  0.0030  0.0124  0.0092
+      *d0     -0.0007 -0.0007 -0.0055 -0.0055
+      *d1-     0.0040  0.0011  0.0081  0.0114
+      *d2-     0.0010  0.0008 -0.0122 -0.0232
+      *f3+     0.0000  0.0000 -0.0132 -0.0131
+      *f2+     0.0000  0.0000  0.0005  0.0008
+      *f1+     0.0000  0.0000  0.0001  0.0001
+      *f0      0.0000  0.0000  0.0010  0.0010
+      *f1-     0.0000  0.0000  0.0000  0.0001
+      *f2-     0.0000  0.0000  0.0009  0.0006
+      *f3-     0.0000  0.0000 -0.0026 -0.0026
+      Total    0.6407  0.6403  6.3601  6.3594
+ 
+      N-E      0.3593  0.3597 -0.3601 -0.3594
+ 
+      Total electronic charge=   42.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X= -2.2575E-15               Y=  0.0000E+00               Z=  0.0000E+00           Total=  2.2575E-15
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                  XX= -3.2417E+01              XY=  7.5363E-16              XZ=  0.0000E+00              YY= -3.2425E+01
+                  YZ=  0.0000E+00              ZZ= -3.9874E+01
+      In traceless form (Debye*Ang)
+                  XX=  3.7322E+00              XY=  1.1305E-15              XZ=  0.0000E+00              YY=  3.7206E+00
+                  YZ=  0.0000E+00              ZZ= -7.4528E+00
+--
+ 
+ 
+      Input file to MOLDEN was generated!
+ 
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: RunFile label nBas                                          ###
+ ###    was used       81 times                                              ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+The total execution time is limited to 3360 seconds.
+--- Stop Module: scf at Sun Jul 17 19:57:24 2022 /rc=_RC_ALL_IS_WELL_ ---
+*** files: orbitals-D2h.scf.molden orbitals-D2h.ScfOrb orbitals-D2h.scf.h5 xmldump
+    saved to directory /work/donglab/kaufold.b/Label-Tutorial/orbitals-D2h
+--- Module scf spent 1 minute 36 seconds ---
+
+*** symbolic link created: INPORB -> orbitals-D2h.ScfOrb
+--- Start Module: grid_it at Sun Jul 17 19:57:24 2022 ---
+
+-- Input validation for grid_it
+lxml python module not found, no validation possible
+--
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                              &GRID_IT
+
+                       only a single process is used, running in SERIAL mode
+                       available to each process: 46 GB of memory, 16 threads
+                                             pid: 62066
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+ 
+      Cartesian coordinates:
+      -----------------------------------------
+      No.  Label     X         Y         Z     
+      -----------------------------------------
+       1   H1         0.00000   4.67266   0.00000
+       2   H1         0.00000  -4.67266   0.00000
+       3   H2         4.04723   2.33566   0.00000
+       4   H2        -4.04723   2.33566   0.00000
+       5   H2         4.04723  -2.33566   0.00000
+       6   H2        -4.04723  -2.33566   0.00000
+       7   C3         0.00000   2.62829   0.00000
+       8   C3         0.00000  -2.62829   0.00000
+       9   C4         2.27648   1.31401   0.00000
+      10   C4        -2.27648   1.31401   0.00000
+      11   C4         2.27648  -1.31401   0.00000
+      12   C4        -2.27648  -1.31401   0.00000
+      -----------------------------------------
+      Grid Origin      =    -8.000000   -8.000000   -4.000000
+      Grid Axis Length =    16.000000   16.000000    8.000000
+      -----------------------------------------
+ 
+ 
+   Input vectors read from INPORB
+   Orbital file label: * RKS-DFT orbitals / B3LYP
+  Number of grid points in file:                   18513
+ 
+  Total number of MOs               :                   414
+  Number MOs for grid               :                   415
+  Batches processed in increments of:                 18432
+ 
+GridName=  3   76     18.7080 (0.00) s
+GridName=  2   62     18.4740 (0.00) s
+GridName=  3   75     18.4710 (0.00) s
+GridName=  1   76     16.3790 (0.00) s
+GridName=  4   62     15.2750 (0.00) s
+GridName=  1   75     15.2710 (0.00) s
+GridName=  4   61      7.0424 (0.00) s
+GridName=  3   74      6.8252 (0.00) s
+GridName=  4   60      6.5859 (0.00) s
+GridName=  4   59      6.4727 (0.00) s
+GridName=  1   74      6.4721 (0.00) s
+GridName=  2   61      6.2467 (0.00) s
+GridName=  3   73      6.2467 (0.00) s
+GridName=  3   72      6.0095 (0.00) s
+GridName=  2   60      5.9926 (0.00) s
+GridName=  3   71      5.9923 (0.00) s
+GridName=  1   73      5.8839 (0.00) s
+GridName=  4   58      5.8839 (0.00) s
+GridName=  2   59      5.7669 (0.00) s
+GridName=  3   70      5.7666 (0.00) s
+GridName=  3   69      5.6071 (0.00) s
+GridName=  1   72      5.5418 (0.00) s
+GridName=  4   57      5.5341 (0.00) s
+GridName=  7   39      5.5282 (0.00) s
+GridName=  1   71      5.4304 (0.00) s
+GridName=  4   56      5.4302 (0.00) s
+GridName=  3   68      5.3566 (0.00) s
+GridName=  2   58      5.3563 (0.00) s
+GridName=  2   57      5.2024 (0.00) s
+GridName=  1   70      5.1209 (0.00) s
+GridName=  2   56      5.1012 (0.00) s
+GridName=  3   67      5.1007 (0.00) s
+GridName=  5   39      5.0973 (0.00) s
+GridName=  8   30      5.0972 (0.00) s
+GridName=  7   38      5.0208 (0.00) s
+GridName=  8   29      4.9968 (0.00) s
+GridName=  1   69      4.9924 (0.00) s
+GridName=  4   55      4.9921 (0.00) s
+GridName=  3   66      4.8781 (0.00) s
+GridName=  1   68      4.8683 (0.00) s
+GridName=  4   54      4.8681 (0.00) s
+GridName=  4   53      4.8468 (0.00) s
+GridName=  7   37      4.8465 (0.00) s
+GridName=  6   30      4.8462 (0.00) s
+GridName=  8   28      4.8221 (0.00) s
+GridName=  5   38      4.8220 (0.00) s
+GridName=  2   55      4.7747 (0.00) s
+GridName=  5   37      4.7596 (0.00) s
+GridName=  4   52      4.7503 (0.00) s
+GridName=  1   67      4.7496 (0.00) s
+GridName=  6   29      4.7238 (0.00) s
+GridName=  7   36      4.7238 (0.00) s
+GridName=  3   65      4.6733 (0.00) s
+GridName=  2   54      4.6732 (0.00) s
+GridName=  7   35      4.6060 (0.00) s
+GridName=  3   64      4.5874 (0.00) s
+GridName=  1   66      4.5413 (0.00) s
+GridName=  1   65      4.5144 (0.00) s
+GridName=  4   51      4.5144 (0.00) s
+GridName=  7   34      4.4702 (0.00) s
+GridName=  6   28      4.4701 (0.00) s
+GridName=  5   36      4.4234 (0.00) s
+GridName=  3   63      4.3709 (0.00) s
+GridName=  2   53      4.3708 (0.00) s
+GridName=  8   27      4.3687 (0.00) s
+GridName=  5   35      4.3683 (0.00) s
+GridName=  4   50      4.3284 (0.00) s
+GridName=  8   26      4.2615 (0.00) s
+GridName=  1   64      4.1626 (0.00) s
+GridName=  4   49      4.1626 (0.00) s
+GridName=  2   52      4.1356 (0.00) s
+GridName=  3   62      4.1356 (0.00) s
+GridName=  3   61      4.1296 (0.00) s
+GridName=  8   25      4.1165 (0.00) s
+GridName=  5   34      4.1163 (0.00) s
+GridName=  4   48      4.0954 (0.00) s
+GridName=  1   63      4.0916 (0.00) s
+GridName=  4   47      4.0916 (0.00) s
+GridName=  2   51      4.0281 (0.00) s
+GridName=  3   60      4.0280 (0.00) s
+GridName=  7   33      3.9878 (0.00) s
+GridName=  6   27      3.9876 (0.00) s
+GridName=  2   50      3.9633 (0.00) s
+GridName=  1   62      3.9536 (0.00) s
+GridName=  7   32      3.9427 (0.00) s
+GridName=  8   24      3.9242 (0.00) s
+GridName=  5   33      3.9238 (0.00) s
+GridName=  8   23      3.8762 (0.00) s
+GridName=  6   26      3.8760 (0.00) s
+GridName=  3   59      3.8315 (0.00) s
+GridName=  1   61      3.8157 (0.00) s
+GridName=  4   46      3.8102 (0.00) s
+GridName=  1   60      3.8099 (0.00) s
+GridName=  7   31      3.7909 (0.00) s
+GridName=  6   25      3.7907 (0.00) s
+GridName=  7   30      3.7413 (0.00) s
+GridName=  2   49      3.7077 (0.00) s
+GridName=  3   58      3.7073 (0.00) s
+GridName=  4   45      3.6938 (0.00) s
+GridName=  1   59      3.6937 (0.00) s
+GridName=  3   57      3.6686 (0.00) s
+GridName=  3   56      3.6374 (0.00) s
+GridName=  2   48      3.6373 (0.00) s
+GridName=  2   47      3.6224 (0.00) s
+GridName=  3   55      3.6223 (0.00) s
+GridName=  7   29      3.5333 (0.00) s
+GridName=  6   24      3.5331 (0.00) s
+GridName=  8   22      3.5178 (0.00) s
+GridName=  5   32      3.5176 (0.00) s
+GridName=  4   44      3.5077 (0.00) s
+GridName=  1   58      3.5076 (0.00) s
+GridName=  3   54      3.5007 (0.00) s
+GridName=  2   46      3.5006 (0.00) s
+GridName=  1   57      3.4743 (0.00) s
+GridName=  3   53      3.4515 (0.00) s
+GridName=  2   45      3.4384 (0.00) s
+GridName=  7   28      3.3889 (0.00) s
+GridName=  3   52      3.3713 (0.00) s
+GridName=  1   56      3.3243 (0.00) s
+GridName=  4   43      3.3242 (0.00) s
+GridName=  6   23      3.3093 (0.00) s
+GridName=  1   55      3.2833 (0.00) s
+GridName=  5   31      3.2574 (0.00) s
+GridName=  6   22      3.2390 (0.00) s
+GridName=  7   27      3.2390 (0.00) s
+GridName=  5   30      3.2339 (0.00) s
+GridName=  8   21      3.2339 (0.00) s
+GridName=  5   29      3.2221 (0.00) s
+GridName=  8   20      3.2221 (0.00) s
+GridName=  2   44      3.2055 (0.00) s
+GridName=  3   51      3.2054 (0.00) s
+GridName=  4   42      3.1154 (0.00) s
+GridName=  1   54      3.1152 (0.00) s
+GridName=  1   53      3.0891 (0.00) s
+GridName=  2   43      3.0783 (0.00) s
+GridName=  5   28      3.0743 (0.00) s
+GridName=  2   42      3.0503 (0.00) s
+GridName=  3   50      3.0500 (0.00) s
+GridName=  7   26      3.0491 (0.00) s
+GridName=  6   21      3.0490 (0.00) s
+GridName=  5   27      3.0005 (0.00) s
+GridName=  6   20      2.9911 (0.00) s
+GridName=  1   52      2.9758 (0.00) s
+GridName=  4   41      2.9758 (0.00) s
+GridName=  8   19      2.8879 (0.00) s
+GridName=  5   26      2.8878 (0.00) s
+GridName=  6   19      2.8414 (0.00) s
+GridName=  7   25      2.8414 (0.00) s
+GridName=  1   51      2.8011 (0.00) s
+GridName=  2   41      2.7773 (0.00) s
+GridName=  3   49      2.7772 (0.00) s
+GridName=  2   40      2.6151 (0.00) s
+GridName=  4   40      2.6011 (0.00) s
+GridName=  1   50      2.5614 (0.00) s
+GridName=  4   39      2.5612 (0.00) s
+GridName=  1   49      2.5415 (0.00) s
+GridName=  4   38      2.5163 (0.00) s
+GridName=  8   18      2.4954 (0.00) s
+GridName=  2   39      2.4812 (0.00) s
+GridName=  4   37      2.3824 (0.00) s
+GridName=  1   48      2.3820 (0.00) s
+GridName=  5   25      2.3651 (0.00) s
+GridName=  3   48      2.3250 (0.00) s
+GridName=  2   38      2.3193 (0.00) s
+GridName=  3   47      2.3193 (0.00) s
+GridName=  1   47      2.2442 (0.00) s
+GridName=  4   36      2.2441 (0.00) s
+GridName=  3   46      2.1937 (0.00) s
+GridName=  7   24      2.1901 (0.00) s
+GridName=  6   18      2.1575 (0.00) s
+GridName=  7   23      2.1574 (0.00) s
+GridName=  4   35      2.1552 (0.00) s
+GridName=  8   17      2.1234 (0.00) s
+GridName=  5   24      2.1230 (0.00) s
+GridName=  2   37      2.1173 (0.00) s
+GridName=  3   45      2.1172 (0.00) s
+GridName=  1   46      2.0377 (0.00) s
+GridName=  4   34      2.0376 (0.00) s
+GridName=  8   16      2.0223 (0.00) s
+GridName=  5   23      2.0222 (0.00) s
+GridName=  7   22      1.9298 (0.00) s
+GridName=  2   36      1.8891 (0.00) s
+GridName=  3   44      1.8890 (0.00) s
+GridName=  3   43      1.8882 (0.00) s
+GridName=  7   21      1.8750 (0.00) s
+GridName=  6   17      1.8746 (0.00) s
+GridName=  1   45      1.8488 (0.00) s
+GridName=  4   33      1.8486 (0.00) s
+GridName=  3   42      1.8400 (0.00) s
+GridName=  2   35      1.8146 (0.00) s
+GridName=  3   41      1.8121 (0.00) s
+GridName=  2   34      1.8119 (0.00) s
+GridName=  1   44      1.7986 (0.00) s
+GridName=  4   32      1.7986 (0.00) s
+GridName=  5   22      1.7844 (0.00) s
+GridName=  8   15      1.7844 (0.00) s
+GridName=  5   21      1.7246 (0.00) s
+GridName=  1   43      1.7048 (0.00) s
+GridName=  4   31      1.7029 (0.00) s
+GridName=  1   42      1.7028 (0.00) s
+GridName=  7   20      1.6841 (0.00) s
+GridName=  6   16      1.6530 (0.00) s
+GridName=  7   19      1.6529 (0.00) s
+GridName=  8   14      1.6453 (0.00) s
+GridName=  1   41      1.6401 (0.00) s
+GridName=  4   30      1.6400 (0.00) s
+GridName=  1   40      1.6391 (0.00) s
+GridName=  3   40      1.5996 (0.00) s
+GridName=  2   33      1.5995 (0.00) s
+GridName=  2   32      1.5911 (0.00) s
+GridName=  6   15      1.5745 (0.00) s
+GridName=  2   31      1.5465 (0.00) s
+GridName=  3   39      1.5464 (0.00) s
+GridName=  2   30      1.5133 (0.00) s
+GridName=  3   38      1.5133 (0.00) s
+GridName=  4   29      1.4976 (0.00) s
+GridName=  7   18      1.4867 (0.00) s
+GridName=  6   14      1.4866 (0.00) s
+GridName=  5   20      1.4513 (0.00) s
+GridName=  8   13      1.4512 (0.00) s
+GridName=  5   19      1.4376 (0.00) s
+GridName=  3   37      1.3957 (0.00) s
+GridName=  3   36      1.3348 (0.00) s
+GridName=  2   29      1.3347 (0.00) s
+GridName=  1   39      1.3224 (0.00) s
+GridName=  4   28      1.3212 (0.00) s
+GridName=  1   38      1.3211 (0.00) s
+GridName=  7   17      1.3056 (0.00) s
+GridName=  6   13      1.2923 (0.00) s
+GridName=  7   16      1.2922 (0.00) s
+GridName=  4   27      1.2738 (0.00) s
+GridName=  3   35      1.2700 (0.00) s
+GridName=  3   34      1.2396 (0.00) s
+GridName=  2   28      1.2394 (0.00) s
+GridName=  8   12      1.2325 (0.00) s
+GridName=  5   18      1.2324 (0.00) s
+GridName=  8   11      1.2214 (0.00) s
+GridName=  1   37      1.2110 (0.00) s
+GridName=  4   26      1.2110 (0.00) s
+GridName=  5   17      1.1526 (0.00) s
+GridName=  3   33      1.1014 (0.00) s
+GridName=  5   16      1.0971 (0.00) s
+GridName=  8   10      1.0970 (0.00) s
+GridName=  4   25      1.0931 (0.00) s
+GridName=  1   36      1.0929 (0.00) s
+GridName=  1   35      1.0898 (0.00) s
+GridName=  1   34      1.0667 (0.00) s
+GridName=  4   24      1.0667 (0.00) s
+GridName=  2   27      1.0660 (0.00) s
+GridName=  2   26      1.0532 (0.00) s
+GridName=  3   32      1.0532 (0.00) s
+GridName=  1   33      1.0255 (0.00) s
+GridName=  4   23      1.0255 (0.00) s
+GridName=  2   25      1.0105 (0.00) s
+GridName=  3   31      1.0105 (0.00) s
+GridName=  3   30      1.0101 (0.00) s
+GridName=  7   15      0.9985 (0.00) s
+GridName=  6   12      0.9984 (0.00) s
+GridName=  7   14      0.9655 (0.00) s
+GridName=  6   11      0.9577 (0.00) s
+GridName=  1   32      0.9459 (0.00) s
+GridName=  4   22      0.9459 (0.00) s
+GridName=  2   24      0.9429 (0.00) s
+GridName=  3   29      0.9329 (0.00) s
+GridName=  2   23      0.9328 (0.00) s
+GridName=  4   21      0.9143 (0.00) s
+GridName=  6   10      0.9082 (0.00) s
+GridName=  7   13      0.9081 (0.00) s
+GridName=  1   31      0.9030 (0.00) s
+GridName=  7   12      0.9026 (0.00) s
+GridName=  6    9      0.9024 (0.00) s
+GridName=  5   15      0.8981 (0.00) s
+GridName=  8    9      0.8981 (0.00) s
+GridName=  3   28      0.8519 (0.00) s
+GridName=  2   22      0.8519 (0.00) s
+GridName=  1   30      0.8226 (0.00) s
+GridName=  5   14      0.8115 (0.00) s
+GridName=  8    8      0.8068 (0.00) s
+GridName=  5   13      0.8067 (0.00) s
+GridName=  3   27      0.8065 (0.00) s
+GridName=  4   20      0.7886 (0.00) s
+GridName=  1   29      0.7885 (0.00) s
+GridName=  6    8      0.7567 (0.00) s
+GridName=  7   11      0.7502 (0.00) s
+GridName=  5   12      0.7482 (0.00) s
+GridName=  1   28      0.7390 (0.00) s
+GridName=  2   21      0.7345 (0.00) s
+GridName=  3   26      0.7345 (0.00) s
+GridName=  5   11      0.7276 (0.00) s
+GridName=  8    7      0.7275 (0.00) s
+GridName=  4   19      0.7185 (0.00) s
+GridName=  1   27      0.7184 (0.00) s
+GridName=  1   26      0.7137 (0.00) s
+GridName=  4   18      0.6914 (0.00) s
+GridName=  3   25      0.6821 (0.00) s
+GridName=  3   24      0.6749 (0.00) s
+GridName=  2   20      0.6748 (0.00) s
+GridName=  2   19      0.6729 (0.00) s
+GridName=  3   23      0.6445 (0.00) s
+GridName=  8    6      0.6375 (0.00) s
+GridName=  7   10      0.6373 (0.00) s
+GridName=  6    7      0.6372 (0.00) s
+GridName=  3   22      0.6162 (0.00) s
+GridName=  2   18      0.6161 (0.00) s
+GridName=  1   25      0.5905 (0.00) s
+GridName=  4   17      0.5863 (0.00) s
+GridName=  1   24      0.5806 (0.00) s
+GridName=  4   16      0.5806 (0.00) s
+GridName=  3   21      0.5489 (0.00) s
+GridName=  2   17      0.5488 (0.00) s
+GridName=  4   15      0.5437 (0.00) s
+GridName=  1   23      0.5436 (0.00) s
+GridName=  8    5      0.5243 (0.00) s
+GridName=  5   10      0.5241 (0.00) s
+GridName=  7    9      0.5231 (0.00) s
+GridName=  6    6      0.5230 (0.00) s
+GridName=  3   20      0.5192 (0.00) s
+GridName=  7    8      0.4723 (0.00) s
+GridName=  1   22      0.4590 (0.00) s
+GridName=  4   14      0.4590 (0.00) s
+GridName=  5    9      0.4454 (0.00) s
+GridName=  2   16      0.4323 (0.00) s
+GridName=  3   19      0.4322 (0.00) s
+GridName=  1   21      0.4280 (0.00) s
+GridName=  4   13      0.4279 (0.00) s
+GridName=  4   12      0.4267 (0.00) s
+GridName=  3   18      0.4142 (0.00) s
+GridName=  2   15      0.4020 (0.00) s
+GridName=  3   17      0.3911 (0.00) s
+GridName=  2   14      0.3910 (0.00) s
+GridName=  1   20      0.3892 (0.00) s
+GridName=  4   11      0.3670 (0.00) s
+GridName=  1   19      0.3669 (0.00) s
+GridName=  5    8      0.3576 (0.00) s
+GridName=  8    4      0.3575 (0.00) s
+GridName=  7    7      0.3508 (0.00) s
+GridName=  3   16      0.3472 (0.00) s
+GridName=  2   13      0.3471 (0.00) s
+GridName=  7    6      0.3461 (0.00) s
+GridName=  6    5      0.3461 (0.00) s
+GridName=  5    7      0.3395 (0.00) s
+GridName=  1   18      0.3206 (0.00) s
+GridName=  6    4      0.3158 (0.00) s
+GridName=  8    3      0.2977 (0.00) s
+GridName=  5    6      0.2977 (0.00) s
+GridName=  3   15      0.2819 (0.00) s
+GridName=  1   17      0.2747 (0.00) s
+GridName=  3   14      0.2623 (0.00) s
+GridName=  2   12      0.2623 (0.00) s
+GridName=  1   16      0.2609 (0.00) s
+GridName=  4   10      0.2609 (0.00) s
+GridName=  7    5      0.2334 (0.00) s
+GridName=  6    3      0.2334 (0.00) s
+GridName=  3   13      0.2302 (0.00) s
+GridName=  2   11      0.2255 (0.00) s
+GridName=  2   10      0.2220 (0.00) s
+GridName=  3   12      0.2220 (0.00) s
+GridName=  4    9      0.2194 (0.00) s
+GridName=  1   15      0.2193 (0.00) s
+GridName=  4    8      0.2130 (0.00) s
+GridName=  4    7      0.2007 (0.00) s
+GridName=  1   14      0.2007 (0.00) s
+GridName=  3   11      0.1958 (0.00) s
+GridName=  2    9      0.1958 (0.00) s
+GridName=  1   13      0.1820 (0.00) s
+GridName=  5    5      0.1722 (0.00) s
+GridName=  7    4      0.1631 (0.00) s
+GridName=  1   12      0.1238 (0.00) s
+GridName=  4    6      0.1238 (0.00) s
+GridName=  7    3      0.1180 (0.00) s
+GridName=  3   10      0.1107 (0.00) s
+GridName=  8    2      0.1089 (0.00) s
+GridName=  5    4      0.1088 (0.00) s
+GridName=  3    9      0.1016 (0.00) s
+GridName=  2    8      0.1015 (0.00) s
+GridName=  4    5      0.0859 (0.00) s
+GridName=  1   11      0.0859 (0.00) s
+GridName=  2    7      0.0825 (0.00) s
+GridName=  1   10      0.0805 (0.00) s
+GridName=  3    8      0.0775 (0.00) s
+GridName=  2    6      0.0775 (0.00) s
+GridName=  7    2      0.0671 (0.00) s
+GridName=  6    2      0.0671 (0.00) s
+GridName=  1    9      0.0544 (0.00) s
+GridName=  3    7      0.0486 (0.00) s
+GridName=  5    3      0.0446 (0.00) s
+GridName=  4    4      0.0255 (0.00) s
+GridName=  1    8      0.0255 (0.00) s
+GridName=  3    6      0.0057 (0.00) s
+GridName=  2    5      0.0057 (0.00) s
+GridName=  1    7     -0.0103 (0.00) s
+GridName=  8    1     -0.0175 (0.00) s
+GridName=  5    2     -0.0175 (0.00) s
+GridName=  7    1     -0.2605 (2.00) i
+GridName=  6    1     -0.2606 (2.00) i
+GridName=  1    6     -0.3495 (2.00) i
+GridName=  4    3     -0.3495 (2.00) i
+GridName=  5    1     -0.3744 (2.00) i
+GridName=  3    5     -0.4269 (2.00) i
+GridName=  2    4     -0.4270 (2.00) i
+GridName=  2    3     -0.4527 (2.00) i
+GridName=  3    4     -0.4653 (2.00) i
+GridName=  1    5     -0.5296 (2.00) i
+GridName=  4    2     -0.6076 (2.00) i
+GridName=  1    4     -0.6077 (2.00) i
+GridName=  3    3     -0.7511 (2.00) i
+GridName=  2    2     -0.7512 (2.00) i
+GridName=  1    3     -0.8601 (2.00) i
+GridName=  3    2    -10.1790 (2.00) i
+GridName=  1    2    -10.1800 (2.00) i
+GridName=  2    1    -10.1800 (2.00) i
+GridName=  3    1    -10.1800 (2.00) i
+GridName=  4    1    -10.1800 (2.00) i
+GridName=  1    1    -10.1810 (2.00) i
+ 
+The total execution time is limited to 3360 seconds.
+--- Stop Module: grid_it at Sun Jul 17 19:57:24 2022 /rc=_RC_ALL_IS_WELL_ ---
+*** files: orbitals-D2h.lus xmldump
+    saved to directory /work/donglab/kaufold.b/Label-Tutorial/orbitals-D2h
+
+.##################.
+.# Happy landing! #.
+.##################.
+
+    Timing: Wall=686.62 User=2912.05 System=179.28
+********************************************************************************
+*** WorkDir at /scratch/kaufold.b/OpenMolcas/29116732_0/orbitals-D2h cleaned ***
+********************************************************************************
