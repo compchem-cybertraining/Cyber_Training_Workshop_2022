@@ -1,0 +1,17 @@
+&GATEWAY
+	Title = Benzene Orbitals with Symmetry
+	Coord = optimized.xyz
+	Basis = aug-cc-pVTZ
+	Group = NoSym
+
+&SEWARD
+	grid input
+	grid=ultrafine
+	end of grid input
+
+&SCF
+	KSDFT = B3LYP
+
+&GRID_IT
+	Sparse; Pack
+	All
