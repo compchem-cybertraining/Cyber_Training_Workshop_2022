@@ -1,0 +1,1582 @@
+
+ BerkeleyGW  tag 1.0.4  revision 4950
+
+ Sigma  Real version  Run on  13-Jul-2022  at  14:36:55 -0400
+
+--------------------------------------------------------------------------------
+ Please cite the following papers when using results from BerkeleyGW:
+
+ Jack Deslippe, Georgy Samsonidze, David A. Strubbe, Manish Jain, Marvin L.
+ Cohen, and Steven G. Louie, "BerkeleyGW: A Massively Parallel Computer Package
+ for the Calculation of the Quasiparticle and Optical Properties of Materials
+ and Nanostructures," Comput. Phys. Commun. 183, 1269 (2012)
+
+ Mark S. Hybertsen and Steven G. Louie, "Electron correlation in semiconductors
+ and insulators: Band gaps and quasiparticle energies," Phys. Rev. B 34, 5390
+ (1986)
+
+ Michael Rohlfing and Steven G. Louie, "Electron-hole excitations and optical
+ spectra from first principles," Phys. Rev. B 62, 4927 (2000)
+--------------------------------------------------------------------------------
+
+ Running MPI version (parallel)
+
+ Running on   12 processor(s)
+
+ Using the Generalized Plasmon Pole model
+
+ We are communicating via MPI
+
+ Computing CH as a partial sum over empty bands
+
+ Computing half sum over G and G' vectors
+
+ Running with semiconductor screening
+
+ We are using no truncation
+
+ Computing exchange-correlation matrix elements from VXC file
+
+Using energy integration method
+Reading in weight.dat
+The code will use the paramters in weight.dat
+Done reading in weight.dat
+ Memory available:      10.233 GB per PE
+ kshift  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+ kgrid           6           6           6
+ nk          16
+          33          33          33       14331   27370.1938733994     
+       35937   37015.1100000000     
+ *** VERBOSE: Reading WFN_inner -- gvec info  time = 14:36:55.713
+ Memory required for execution:   19.0 MB per PE
+ Memory required for vcoul:  114.4 MB per PE
+ 
+ Highest occupied band (unshifted grid) =  4
+ Middle energy (unshifted grid) =     11.783910 eV
+ Fermi  energy (unshifted grid) =     11.783910 eV
+
+ Number of electrons per unit cell =   8.000000
+ Plasma Frequency =   1.793597 Rydberg
+
+ *** VERBOSE: Reading VXC  time = 14:36:55.740
+ sig%vxc(1) -0.716807850743156     
+ *** VERBOSE: Reading RHO  time = 14:36:55.762
+ rho(1)=   8.00000000000000     
+   12 processor(s),    1 pool(s),   12 processor(s) per pool
+ each pool is computing    8 diagonal sigma matrix element(s)
+ each pool is computing    0 off-diagonal sigma matrix element(s)
+ each pool is holding   29 to   30 valence and conduction band(s)
+ 
+ *** VERBOSE: Reading WFN_inner -> cond/val wfns irk=           1  time = 
+ 14:36:55.792
+ *** VERBOSE: Reading WFN_inner -> cond/val wfns irk=           2  time = 
+ 14:36:55.840
+ *** VERBOSE: Reading WFN_inner -> cond/val wfns irk=           3  time = 
+ 14:36:55.881
+ *** VERBOSE: Reading WFN_inner -> cond/val wfns irk=           4  time = 
+ 14:36:55.924
+ *** VERBOSE: Reading WFN_inner -> cond/val wfns irk=           5  time = 
+ 14:36:55.958
+ *** VERBOSE: Reading WFN_inner -> cond/val wfns irk=           6  time = 
+ 14:36:56.018
+ *** VERBOSE: Reading WFN_inner -> cond/val wfns irk=           7  time = 
+ 14:36:56.042
+ *** VERBOSE: Reading WFN_inner -> cond/val wfns irk=           8  time = 
+ 14:36:56.153
+ *** VERBOSE: Reading WFN_inner -> cond/val wfns irk=           9  time = 
+ 14:36:56.163
+ *** VERBOSE: Reading WFN_inner -> cond/val wfns irk=          10  time = 
+ 14:36:56.169
+ *** VERBOSE: Reading WFN_inner -> cond/val wfns irk=          11  time = 
+ 14:36:56.258
+ *** VERBOSE: Reading WFN_inner -> cond/val wfns irk=          12  time = 
+ 14:36:56.291
+ *** VERBOSE: Reading WFN_inner -> cond/val wfns irk=          13  time = 
+ 14:36:56.296
+ *** VERBOSE: Reading WFN_inner -> cond/val wfns irk=          14  time = 
+ 14:36:56.360
+ *** VERBOSE: Reading WFN_inner -> cond/val wfns irk=          15  time = 
+ 14:36:56.433
+ *** VERBOSE: Reading WFN_inner -> cond/val wfns irk=          16  time = 
+ 14:36:56.457
+
+ Read WFN_inner successfully.
+
+
+     ntband =   350  nvband =   4  ncrit =  0
+     ecutb = 90.0000  ecuts = 60.0000  sexcut =  4.0000
+     gamma =  0.5000  fdf =  2  de =  0.5000 eV
+
+     cvfit       =  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+     cvfit_outer =  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+
+     data for sum rule   rho(0,1)=  8.0000   wp = 24.4031 eV
+ 
+
+ ndiag    =   8
+ diag(:)  =   1   2   3   4   5   6   7   8
+ noffdiag =   0
+ 
+ *** VERBOSE: Opening WFN_outer  time = 14:36:56.470
+ *** VERBOSE: Calling epscopy  time = 14:36:57.524
+  
+  Allocating epsilon matrices:         1002
+  
+
+      eps0mat read from chiGG0  13-Jul-2022
+      nq0=   1 q0=      0.005     0.005     0.005
+
+      epsmat read from chiGG0  13-Jul-2022
+       nq=  15 gmax=     60.000
+                 0.000     0.000     0.167
+                 0.000     0.000     0.333
+                 0.000     0.000     0.500
+                 0.000     0.167     0.167
+                 0.000     0.167     0.333
+                 0.000     0.167     0.500
+                 0.000     0.167     0.667
+                 0.000     0.167     0.833
+                 0.000     0.333     0.333
+                 0.000     0.333     0.500
+                 0.000     0.333     0.667
+                 0.000     0.500     0.500
+                 0.167     0.333     0.500
+                 0.167     0.333     0.667
+                 0.167     0.500     0.667
+ *** VERBOSE: Reading ngq0=       14331 , nmtx, isortold(:)  time = 14:36:57.588
+ *** VERBOSE: Reading ekold and eps, nmtx=         941  time = 14:36:57.589
+ *** VERBOSE: Storing eps0 to memory  time = 14:36:57.589
+ *** VERBOSE: Matching oldxyz  time = 14:36:57.589
+ *** VERBOSE: Storing eps to memory  time = 14:36:57.596
+ *** VERBOSE: Storing eps to memory  time = 14:36:57.601
+ *** VERBOSE: Storing eps to memory  time = 14:36:57.606
+ *** VERBOSE: Storing eps to memory  time = 14:36:57.610
+ *** VERBOSE: Storing eps to memory  time = 14:36:57.615
+ *** VERBOSE: Storing eps to memory  time = 14:36:57.620
+ *** VERBOSE: Storing eps to memory  time = 14:36:57.625
+ *** VERBOSE: Storing eps to memory  time = 14:36:57.629
+ *** VERBOSE: Storing eps to memory  time = 14:36:57.634
+ *** VERBOSE: Storing eps to memory  time = 14:36:57.639
+ *** VERBOSE: Storing eps to memory  time = 14:36:57.643
+ *** VERBOSE: Storing eps to memory  time = 14:36:57.648
+ *** VERBOSE: Storing eps to memory  time = 14:36:57.653
+ *** VERBOSE: Storing eps to memory  time = 14:36:57.657
+ *** VERBOSE: Storing eps to memory  time = 14:36:57.661
+
+     q->0  chiGG0 13-Jul-2022
+
+     nq= 16  chiGG0 13-Jul-2022
+ Using q0vec read from eps0mat
+  5.000000000000000E-003  5.000000000000000E-003  5.000000000000000E-003
+ 
+ *** VERBOSE: nq, syms%ntran=           16          48
+ *** VERBOSE: Allocating eps  time = 14:36:57.674
+ *** VERBOSE: size of eps, neps=        1002
+k+G sampling:   0.204124  0.192450  0.180021 (reciprocal lattice units)
+
+                    K=   0.000   0.000   0.000
+
+ *** VERBOSE: Calling mtxel_vxc  time = 14:36:57.674
+ *** VERBOSE: Creating   36 x  36 x  36 FFTW plans.  time = 14:36:57.675
+ *** VERBOSE: Done creating plans  time = 14:37:03.268
+ *** VERBOSE: Computing <n|Vxc|n> for n=   1  time = 14:37:03.270
+ *** VERBOSE: Computing <n|Vxc|n> for n=   2  time = 14:37:03.271
+ *** VERBOSE: Computing <n|Vxc|n> for n=   3  time = 14:37:03.273
+ *** VERBOSE: Computing <n|Vxc|n> for n=   4  time = 14:37:03.274
+ *** VERBOSE: Computing <n|Vxc|n> for n=   5  time = 14:37:03.275
+ *** VERBOSE: Computing <n|Vxc|n> for n=   6  time = 14:37:03.276
+ *** VERBOSE: Computing <n|Vxc|n> for n=   7  time = 14:37:03.277
+ *** VERBOSE: Computing <n|Vxc|n> for n=   8  time = 14:37:03.279
+   16 q-points in irreducible BZ
+
+               q                     neq      indrq      itrq         kg0
+
+   0.00000   0.00000   0.00000        1        1       48        0   0   0
+   0.00000   0.00000   0.16667        8        2       47        0   0   0
+   0.00000   0.00000   0.33333        8        3       47        0   0   0
+   0.00000   0.00000   0.50000        4        4       47        0   0   0
+   0.00000   0.16667   0.16667        6        5       42        0   0   0
+   0.00000   0.16667   0.33333       24        6       42        0   0   0
+   0.00000   0.16667   0.50000       24        7       42        0   0   0
+   0.00000   0.16667   0.66667       24        8       42        0   0   0
+   0.00000   0.16667   0.83333       12        9       42        0   0   0
+   0.00000   0.33333   0.33333        6       10       42        0   0   0
+   0.00000   0.33333   0.50000       24       11       42        0   0   0
+   0.00000   0.33333   0.66667       12       12       42        0   0   0
+   0.00000   0.50000   0.50000        3       13       44        0   1   1
+   0.16667   0.33333   0.50000       24       14       28        0   0   0
+   0.16667   0.33333   0.66667       24       15       23        0   0   1
+   0.16667   0.50000   0.66667       12       16       28        0   0   0
+
+   qpoint    1 out of    16
+  
+ Reading Eps Back
+ *** VERBOSE: Read data from unit itpe or memory  time = 14:37:04.059
+ *** VERBOSE: nmtx =       941 ncouls =       941
+ 
+   q= 0.000 0.000 0.000  n=   941  eps(1,1)=  0.34
+
+ *** VERBOSE: Calling gmap  time = 14:37:04.059
+ *** VERBOSE: Calling genwf  time = 14:37:04.060
+ 
+ Computing Sigma diag   1 of   8
+ *** VERBOSE: Working on band            1  1st pool  time = 14:37:04.063
+ *** VERBOSE: Calling mtxel  time = 14:37:04.063
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:04.129
+ *** VERBOSE: Computing bare X  time = 14:37:04.864
+ Computing Sigma diag   2 of   8
+ *** VERBOSE: Working on band            2  1st pool  time = 14:37:04.864
+ *** VERBOSE: Calling mtxel  time = 14:37:04.864
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:04.931
+ *** VERBOSE: Computing bare X  time = 14:37:05.664
+ Computing Sigma diag   3 of   8
+ *** VERBOSE: Working on band            3  1st pool  time = 14:37:05.665
+ *** VERBOSE: Calling mtxel  time = 14:37:05.665
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:05.731
+ *** VERBOSE: Computing bare X  time = 14:37:06.464
+ Computing Sigma diag   4 of   8
+ *** VERBOSE: Working on band            4  1st pool  time = 14:37:06.464
+ *** VERBOSE: Calling mtxel  time = 14:37:06.464
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:06.531
+ *** VERBOSE: Computing bare X  time = 14:37:07.276
+ Computing Sigma diag   5 of   8
+ *** VERBOSE: Working on band            5  1st pool  time = 14:37:07.277
+ *** VERBOSE: Calling mtxel  time = 14:37:07.277
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:07.343
+ *** VERBOSE: Computing bare X  time = 14:37:08.076
+ Computing Sigma diag   6 of   8
+ *** VERBOSE: Working on band            6  1st pool  time = 14:37:08.077
+ *** VERBOSE: Calling mtxel  time = 14:37:08.077
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:08.143
+ *** VERBOSE: Computing bare X  time = 14:37:08.877
+ Computing Sigma diag   7 of   8
+ *** VERBOSE: Working on band            7  1st pool  time = 14:37:08.877
+ *** VERBOSE: Calling mtxel  time = 14:37:08.877
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:08.944
+ *** VERBOSE: Computing bare X  time = 14:37:09.677
+ Computing Sigma diag   8 of   8
+ *** VERBOSE: Working on band            8  1st pool  time = 14:37:09.677
+ *** VERBOSE: Calling mtxel  time = 14:37:09.678
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:09.744
+ *** VERBOSE: Computing bare X  time = 14:37:10.477
+ 
+ 
+ *** VERBOSE: Calling MPI_Allreduce xdum1 to xdum2  time = 14:37:10.478
+ *** VERBOSE: Done reduction of xdum1 to xdum2  time = 14:37:10.478
+#kpt=      0.000000    0.000000    0.000000
+#qpt=      0.000000    0.000000    0.000000
+# irq =     1  neq =     1
+# q0vec =     0.005000    0.005000    0.005000
+# q0len =     0.006855731998
+#diagonal      1 ispin     1
+#diagonal      2 ispin     1
+#diagonal      3 ispin     1
+#diagonal      4 ispin     1
+#diagonal      5 ispin     1
+#diagonal      6 ispin     1
+#diagonal      7 ispin     1
+#diagonal      8 ispin     1
+
+   qpoint    2 out of    16
+  
+ Reading Eps Back
+ *** VERBOSE: Read data from unit itpe or memory  time = 14:37:10.492
+ *** VERBOSE: nmtx =       968 ncouls =       968
+ 
+   q= 0.000 0.000 0.167  n=   968  eps(1,1)=  0.38
+
+ *** VERBOSE: Calling gmap  time = 14:37:10.493
+ *** VERBOSE: Calling genwf  time = 14:37:10.493
+ 
+ Computing Sigma diag   1 of   8
+ *** VERBOSE: Working on band            1  1st pool  time = 14:37:10.497
+ *** VERBOSE: Calling mtxel  time = 14:37:10.497
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:10.564
+ *** VERBOSE: Computing bare X  time = 14:37:11.360
+ Computing Sigma diag   2 of   8
+ *** VERBOSE: Working on band            2  1st pool  time = 14:37:11.360
+ *** VERBOSE: Calling mtxel  time = 14:37:11.360
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:11.427
+ *** VERBOSE: Computing bare X  time = 14:37:12.228
+ Computing Sigma diag   3 of   8
+ *** VERBOSE: Working on band            3  1st pool  time = 14:37:12.228
+ *** VERBOSE: Calling mtxel  time = 14:37:12.228
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:12.295
+ *** VERBOSE: Computing bare X  time = 14:37:13.091
+ Computing Sigma diag   4 of   8
+ *** VERBOSE: Working on band            4  1st pool  time = 14:37:13.092
+ *** VERBOSE: Calling mtxel  time = 14:37:13.092
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:13.158
+ *** VERBOSE: Computing bare X  time = 14:37:13.954
+ Computing Sigma diag   5 of   8
+ *** VERBOSE: Working on band            5  1st pool  time = 14:37:13.955
+ *** VERBOSE: Calling mtxel  time = 14:37:13.955
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:14.022
+ *** VERBOSE: Computing bare X  time = 14:37:14.817
+ Computing Sigma diag   6 of   8
+ *** VERBOSE: Working on band            6  1st pool  time = 14:37:14.818
+ *** VERBOSE: Calling mtxel  time = 14:37:14.818
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:14.885
+ *** VERBOSE: Computing bare X  time = 14:37:15.680
+ Computing Sigma diag   7 of   8
+ *** VERBOSE: Working on band            7  1st pool  time = 14:37:15.681
+ *** VERBOSE: Calling mtxel  time = 14:37:15.681
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:15.748
+ *** VERBOSE: Computing bare X  time = 14:37:16.555
+ Computing Sigma diag   8 of   8
+ *** VERBOSE: Working on band            8  1st pool  time = 14:37:16.556
+ *** VERBOSE: Calling mtxel  time = 14:37:16.556
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:16.623
+ *** VERBOSE: Computing bare X  time = 14:37:17.420
+ 
+ 
+ *** VERBOSE: Calling MPI_Allreduce xdum1 to xdum2  time = 14:37:17.420
+ *** VERBOSE: Done reduction of xdum1 to xdum2  time = 14:37:17.420
+#kpt=      0.000000    0.000000    0.000000
+#qpt=      0.000000    0.000000    0.166667
+# irq =     2  neq =     8
+# q0vec =     0.005000    0.005000    0.005000
+# q0len =     0.006855731998
+#diagonal      1 ispin     1
+#diagonal      2 ispin     1
+#diagonal      3 ispin     1
+#diagonal      4 ispin     1
+#diagonal      5 ispin     1
+#diagonal      6 ispin     1
+#diagonal      7 ispin     1
+#diagonal      8 ispin     1
+
+   qpoint    3 out of    16
+  
+ Reading Eps Back
+ *** VERBOSE: Read data from unit itpe or memory  time = 14:37:17.426
+ *** VERBOSE: nmtx =       968 ncouls =       968
+ 
+   q= 0.000 0.000 0.333  n=   968  eps(1,1)=  0.45
+
+ *** VERBOSE: Calling gmap  time = 14:37:17.426
+ *** VERBOSE: Calling genwf  time = 14:37:17.426
+ 
+ Computing Sigma diag   1 of   8
+ *** VERBOSE: Working on band            1  1st pool  time = 14:37:17.431
+ *** VERBOSE: Calling mtxel  time = 14:37:17.431
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:17.498
+ *** VERBOSE: Computing bare X  time = 14:37:18.290
+ Computing Sigma diag   2 of   8
+ *** VERBOSE: Working on band            2  1st pool  time = 14:37:18.291
+ *** VERBOSE: Calling mtxel  time = 14:37:18.291
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:18.358
+ *** VERBOSE: Computing bare X  time = 14:37:19.147
+ Computing Sigma diag   3 of   8
+ *** VERBOSE: Working on band            3  1st pool  time = 14:37:19.147
+ *** VERBOSE: Calling mtxel  time = 14:37:19.147
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:19.214
+ *** VERBOSE: Computing bare X  time = 14:37:20.003
+ Computing Sigma diag   4 of   8
+ *** VERBOSE: Working on band            4  1st pool  time = 14:37:20.003
+ *** VERBOSE: Calling mtxel  time = 14:37:20.003
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:20.070
+ *** VERBOSE: Computing bare X  time = 14:37:20.859
+ Computing Sigma diag   5 of   8
+ *** VERBOSE: Working on band            5  1st pool  time = 14:37:20.860
+ *** VERBOSE: Calling mtxel  time = 14:37:20.860
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:20.927
+ *** VERBOSE: Computing bare X  time = 14:37:21.723
+ Computing Sigma diag   6 of   8
+ *** VERBOSE: Working on band            6  1st pool  time = 14:37:21.723
+ *** VERBOSE: Calling mtxel  time = 14:37:21.723
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:21.790
+ *** VERBOSE: Computing bare X  time = 14:37:22.579
+ Computing Sigma diag   7 of   8
+ *** VERBOSE: Working on band            7  1st pool  time = 14:37:22.579
+ *** VERBOSE: Calling mtxel  time = 14:37:22.579
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:22.646
+ *** VERBOSE: Computing bare X  time = 14:37:23.435
+ Computing Sigma diag   8 of   8
+ *** VERBOSE: Working on band            8  1st pool  time = 14:37:23.435
+ *** VERBOSE: Calling mtxel  time = 14:37:23.435
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:23.502
+ *** VERBOSE: Computing bare X  time = 14:37:24.291
+ 
+ 
+ *** VERBOSE: Calling MPI_Allreduce xdum1 to xdum2  time = 14:37:24.291
+ *** VERBOSE: Done reduction of xdum1 to xdum2  time = 14:37:24.292
+#kpt=      0.000000    0.000000    0.000000
+#qpt=      0.000000    0.000000    0.333333
+# irq =     3  neq =     8
+# q0vec =     0.005000    0.005000    0.005000
+# q0len =     0.006855731998
+#diagonal      1 ispin     1
+#diagonal      2 ispin     1
+#diagonal      3 ispin     1
+#diagonal      4 ispin     1
+#diagonal      5 ispin     1
+#diagonal      6 ispin     1
+#diagonal      7 ispin     1
+#diagonal      8 ispin     1
+
+   qpoint    4 out of    16
+  
+ Reading Eps Back
+ *** VERBOSE: Read data from unit itpe or memory  time = 14:37:24.298
+ *** VERBOSE: nmtx =       978 ncouls =       978
+ 
+   q= 0.000 0.000 0.500  n=   978  eps(1,1)=  0.55
+
+ *** VERBOSE: Calling gmap  time = 14:37:24.298
+ *** VERBOSE: Calling genwf  time = 14:37:24.298
+ 
+ Computing Sigma diag   1 of   8
+ *** VERBOSE: Working on band            1  1st pool  time = 14:37:24.303
+ *** VERBOSE: Calling mtxel  time = 14:37:24.303
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:24.370
+ *** VERBOSE: Computing bare X  time = 14:37:25.211
+ Computing Sigma diag   2 of   8
+ *** VERBOSE: Working on band            2  1st pool  time = 14:37:25.211
+ *** VERBOSE: Calling mtxel  time = 14:37:25.211
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:25.278
+ *** VERBOSE: Computing bare X  time = 14:37:26.090
+ Computing Sigma diag   3 of   8
+ *** VERBOSE: Working on band            3  1st pool  time = 14:37:26.090
+ *** VERBOSE: Calling mtxel  time = 14:37:26.090
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:26.157
+ *** VERBOSE: Computing bare X  time = 14:37:26.969
+ Computing Sigma diag   4 of   8
+ *** VERBOSE: Working on band            4  1st pool  time = 14:37:26.969
+ *** VERBOSE: Calling mtxel  time = 14:37:26.969
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:27.036
+ *** VERBOSE: Computing bare X  time = 14:37:27.848
+ Computing Sigma diag   5 of   8
+ *** VERBOSE: Working on band            5  1st pool  time = 14:37:27.848
+ *** VERBOSE: Calling mtxel  time = 14:37:27.848
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:27.915
+ *** VERBOSE: Computing bare X  time = 14:37:28.727
+ Computing Sigma diag   6 of   8
+ *** VERBOSE: Working on band            6  1st pool  time = 14:37:28.727
+ *** VERBOSE: Calling mtxel  time = 14:37:28.727
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:28.794
+ *** VERBOSE: Computing bare X  time = 14:37:29.606
+ Computing Sigma diag   7 of   8
+ *** VERBOSE: Working on band            7  1st pool  time = 14:37:29.607
+ *** VERBOSE: Calling mtxel  time = 14:37:29.607
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:29.673
+ *** VERBOSE: Computing bare X  time = 14:37:30.485
+ Computing Sigma diag   8 of   8
+ *** VERBOSE: Working on band            8  1st pool  time = 14:37:30.486
+ *** VERBOSE: Calling mtxel  time = 14:37:30.486
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:30.553
+ *** VERBOSE: Computing bare X  time = 14:37:31.365
+ 
+ 
+ *** VERBOSE: Calling MPI_Allreduce xdum1 to xdum2  time = 14:37:31.365
+ *** VERBOSE: Done reduction of xdum1 to xdum2  time = 14:37:31.365
+#kpt=      0.000000    0.000000    0.000000
+#qpt=      0.000000    0.000000    0.500000
+# irq =     4  neq =     4
+# q0vec =     0.005000    0.005000    0.005000
+# q0len =     0.006855731998
+#diagonal      1 ispin     1
+#diagonal      2 ispin     1
+#diagonal      3 ispin     1
+#diagonal      4 ispin     1
+#diagonal      5 ispin     1
+#diagonal      6 ispin     1
+#diagonal      7 ispin     1
+#diagonal      8 ispin     1
+
+   qpoint    5 out of    16
+  
+ Reading Eps Back
+ *** VERBOSE: Read data from unit itpe or memory  time = 14:37:31.371
+ *** VERBOSE: nmtx =       966 ncouls =       966
+ 
+   q= 0.000 0.167 0.167  n=   966  eps(1,1)=  0.38
+
+ *** VERBOSE: Calling gmap  time = 14:37:31.371
+ *** VERBOSE: Calling genwf  time = 14:37:31.371
+ 
+ Computing Sigma diag   1 of   8
+ *** VERBOSE: Working on band            1  1st pool  time = 14:37:31.376
+ *** VERBOSE: Calling mtxel  time = 14:37:31.376
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:31.443
+ *** VERBOSE: Computing bare X  time = 14:37:32.235
+ Computing Sigma diag   2 of   8
+ *** VERBOSE: Working on band            2  1st pool  time = 14:37:32.235
+ *** VERBOSE: Calling mtxel  time = 14:37:32.236
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:32.302
+ *** VERBOSE: Computing bare X  time = 14:37:33.095
+ Computing Sigma diag   3 of   8
+ *** VERBOSE: Working on band            3  1st pool  time = 14:37:33.095
+ *** VERBOSE: Calling mtxel  time = 14:37:33.095
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:33.161
+ *** VERBOSE: Computing bare X  time = 14:37:33.957
+ Computing Sigma diag   4 of   8
+ *** VERBOSE: Working on band            4  1st pool  time = 14:37:33.958
+ *** VERBOSE: Calling mtxel  time = 14:37:33.958
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:34.024
+ *** VERBOSE: Computing bare X  time = 14:37:34.818
+ Computing Sigma diag   5 of   8
+ *** VERBOSE: Working on band            5  1st pool  time = 14:37:34.818
+ *** VERBOSE: Calling mtxel  time = 14:37:34.818
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:34.885
+ *** VERBOSE: Computing bare X  time = 14:37:35.677
+ Computing Sigma diag   6 of   8
+ *** VERBOSE: Working on band            6  1st pool  time = 14:37:35.677
+ *** VERBOSE: Calling mtxel  time = 14:37:35.677
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:35.744
+ *** VERBOSE: Computing bare X  time = 14:37:36.536
+ Computing Sigma diag   7 of   8
+ *** VERBOSE: Working on band            7  1st pool  time = 14:37:36.536
+ *** VERBOSE: Calling mtxel  time = 14:37:36.536
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:36.603
+ *** VERBOSE: Computing bare X  time = 14:37:37.407
+ Computing Sigma diag   8 of   8
+ *** VERBOSE: Working on band            8  1st pool  time = 14:37:37.407
+ *** VERBOSE: Calling mtxel  time = 14:37:37.407
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:37.474
+ *** VERBOSE: Computing bare X  time = 14:37:38.266
+ 
+ 
+ *** VERBOSE: Calling MPI_Allreduce xdum1 to xdum2  time = 14:37:38.267
+ *** VERBOSE: Done reduction of xdum1 to xdum2  time = 14:37:38.267
+#kpt=      0.000000    0.000000    0.000000
+#qpt=      0.000000    0.166667    0.166667
+# irq =     5  neq =     6
+# q0vec =     0.005000    0.005000    0.005000
+# q0len =     0.006855731998
+#diagonal      1 ispin     1
+#diagonal      2 ispin     1
+#diagonal      3 ispin     1
+#diagonal      4 ispin     1
+#diagonal      5 ispin     1
+#diagonal      6 ispin     1
+#diagonal      7 ispin     1
+#diagonal      8 ispin     1
+
+   qpoint    6 out of    16
+  
+ Reading Eps Back
+ *** VERBOSE: Read data from unit itpe or memory  time = 14:37:38.272
+ *** VERBOSE: nmtx =       981 ncouls =       981
+ 
+   q= 0.000 0.167 0.333  n=   981  eps(1,1)=  0.43
+
+ *** VERBOSE: Calling gmap  time = 14:37:38.272
+ *** VERBOSE: Calling genwf  time = 14:37:38.272
+ 
+ Computing Sigma diag   1 of   8
+ *** VERBOSE: Working on band            1  1st pool  time = 14:37:38.276
+ *** VERBOSE: Calling mtxel  time = 14:37:38.276
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:38.343
+ *** VERBOSE: Computing bare X  time = 14:37:39.160
+ Computing Sigma diag   2 of   8
+ *** VERBOSE: Working on band            2  1st pool  time = 14:37:39.161
+ *** VERBOSE: Calling mtxel  time = 14:37:39.161
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:39.228
+ *** VERBOSE: Computing bare X  time = 14:37:40.058
+ Computing Sigma diag   3 of   8
+ *** VERBOSE: Working on band            3  1st pool  time = 14:37:40.058
+ *** VERBOSE: Calling mtxel  time = 14:37:40.058
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:40.125
+ *** VERBOSE: Computing bare X  time = 14:37:40.942
+ Computing Sigma diag   4 of   8
+ *** VERBOSE: Working on band            4  1st pool  time = 14:37:40.942
+ *** VERBOSE: Calling mtxel  time = 14:37:40.942
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:41.009
+ *** VERBOSE: Computing bare X  time = 14:37:41.826
+ Computing Sigma diag   5 of   8
+ *** VERBOSE: Working on band            5  1st pool  time = 14:37:41.827
+ *** VERBOSE: Calling mtxel  time = 14:37:41.827
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:41.894
+ *** VERBOSE: Computing bare X  time = 14:37:42.711
+ Computing Sigma diag   6 of   8
+ *** VERBOSE: Working on band            6  1st pool  time = 14:37:42.711
+ *** VERBOSE: Calling mtxel  time = 14:37:42.711
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:42.778
+ *** VERBOSE: Computing bare X  time = 14:37:43.596
+ Computing Sigma diag   7 of   8
+ *** VERBOSE: Working on band            7  1st pool  time = 14:37:43.596
+ *** VERBOSE: Calling mtxel  time = 14:37:43.596
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:43.663
+ *** VERBOSE: Computing bare X  time = 14:37:44.480
+ Computing Sigma diag   8 of   8
+ *** VERBOSE: Working on band            8  1st pool  time = 14:37:44.480
+ *** VERBOSE: Calling mtxel  time = 14:37:44.480
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:44.548
+ *** VERBOSE: Computing bare X  time = 14:37:45.364
+ 
+ 
+ *** VERBOSE: Calling MPI_Allreduce xdum1 to xdum2  time = 14:37:45.365
+ *** VERBOSE: Done reduction of xdum1 to xdum2  time = 14:37:45.365
+#kpt=      0.000000    0.000000    0.000000
+#qpt=      0.000000    0.166667    0.333333
+# irq =     6  neq =    24
+# q0vec =     0.005000    0.005000    0.005000
+# q0len =     0.006855731998
+#diagonal      1 ispin     1
+#diagonal      2 ispin     1
+#diagonal      3 ispin     1
+#diagonal      4 ispin     1
+#diagonal      5 ispin     1
+#diagonal      6 ispin     1
+#diagonal      7 ispin     1
+#diagonal      8 ispin     1
+
+   qpoint    7 out of    16
+  
+ Reading Eps Back
+ *** VERBOSE: Read data from unit itpe or memory  time = 14:37:45.370
+ *** VERBOSE: nmtx =       992 ncouls =       992
+ 
+   q= 0.000 0.167 0.500  n=   992  eps(1,1)=  0.52
+
+ *** VERBOSE: Calling gmap  time = 14:37:45.371
+ *** VERBOSE: Calling genwf  time = 14:37:45.371
+ 
+ Computing Sigma diag   1 of   8
+ *** VERBOSE: Working on band            1  1st pool  time = 14:37:45.375
+ *** VERBOSE: Calling mtxel  time = 14:37:45.375
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:45.443
+ *** VERBOSE: Computing bare X  time = 14:37:46.273
+ Computing Sigma diag   2 of   8
+ *** VERBOSE: Working on band            2  1st pool  time = 14:37:46.273
+ *** VERBOSE: Calling mtxel  time = 14:37:46.273
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:46.341
+ *** VERBOSE: Computing bare X  time = 14:37:47.172
+ Computing Sigma diag   3 of   8
+ *** VERBOSE: Working on band            3  1st pool  time = 14:37:47.172
+ *** VERBOSE: Calling mtxel  time = 14:37:47.173
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:47.240
+ *** VERBOSE: Computing bare X  time = 14:37:48.070
+ Computing Sigma diag   4 of   8
+ *** VERBOSE: Working on band            4  1st pool  time = 14:37:48.070
+ *** VERBOSE: Calling mtxel  time = 14:37:48.071
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:48.138
+ *** VERBOSE: Computing bare X  time = 14:37:48.971
+ Computing Sigma diag   5 of   8
+ *** VERBOSE: Working on band            5  1st pool  time = 14:37:48.971
+ *** VERBOSE: Calling mtxel  time = 14:37:48.971
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:49.038
+ *** VERBOSE: Computing bare X  time = 14:37:49.869
+ Computing Sigma diag   6 of   8
+ *** VERBOSE: Working on band            6  1st pool  time = 14:37:49.869
+ *** VERBOSE: Calling mtxel  time = 14:37:49.869
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:49.946
+ *** VERBOSE: Computing bare X  time = 14:37:50.914
+ Computing Sigma diag   7 of   8
+ *** VERBOSE: Working on band            7  1st pool  time = 14:37:50.914
+ *** VERBOSE: Calling mtxel  time = 14:37:50.914
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:50.981
+ *** VERBOSE: Computing bare X  time = 14:37:51.812
+ Computing Sigma diag   8 of   8
+ *** VERBOSE: Working on band            8  1st pool  time = 14:37:51.812
+ *** VERBOSE: Calling mtxel  time = 14:37:51.812
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:51.879
+ *** VERBOSE: Computing bare X  time = 14:37:52.710
+ 
+ 
+ *** VERBOSE: Calling MPI_Allreduce xdum1 to xdum2  time = 14:37:52.710
+ *** VERBOSE: Done reduction of xdum1 to xdum2  time = 14:37:52.710
+#kpt=      0.000000    0.000000    0.000000
+#qpt=      0.000000    0.166667    0.500000
+# irq =     7  neq =    24
+# q0vec =     0.005000    0.005000    0.005000
+# q0len =     0.006855731998
+#diagonal      1 ispin     1
+#diagonal      2 ispin     1
+#diagonal      3 ispin     1
+#diagonal      4 ispin     1
+#diagonal      5 ispin     1
+#diagonal      6 ispin     1
+#diagonal      7 ispin     1
+#diagonal      8 ispin     1
+
+   qpoint    8 out of    16
+  
+ Reading Eps Back
+ *** VERBOSE: Read data from unit itpe or memory  time = 14:37:52.716
+ *** VERBOSE: nmtx =       975 ncouls =       975
+ 
+   q= 0.000 0.167 0.667  n=   975  eps(1,1)=  0.49
+
+ *** VERBOSE: Calling gmap  time = 14:37:52.717
+ *** VERBOSE: Calling genwf  time = 14:37:52.717
+ 
+ Computing Sigma diag   1 of   8
+ *** VERBOSE: Working on band            1  1st pool  time = 14:37:52.721
+ *** VERBOSE: Calling mtxel  time = 14:37:52.722
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:52.789
+ *** VERBOSE: Computing bare X  time = 14:37:53.597
+ Computing Sigma diag   2 of   8
+ *** VERBOSE: Working on band            2  1st pool  time = 14:37:53.597
+ *** VERBOSE: Calling mtxel  time = 14:37:53.597
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:53.665
+ *** VERBOSE: Computing bare X  time = 14:37:54.472
+ Computing Sigma diag   3 of   8
+ *** VERBOSE: Working on band            3  1st pool  time = 14:37:54.472
+ *** VERBOSE: Calling mtxel  time = 14:37:54.472
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:54.540
+ *** VERBOSE: Computing bare X  time = 14:37:55.376
+ Computing Sigma diag   4 of   8
+ *** VERBOSE: Working on band            4  1st pool  time = 14:37:55.376
+ *** VERBOSE: Calling mtxel  time = 14:37:55.376
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:55.444
+ *** VERBOSE: Computing bare X  time = 14:37:56.251
+ Computing Sigma diag   5 of   8
+ *** VERBOSE: Working on band            5  1st pool  time = 14:37:56.251
+ *** VERBOSE: Calling mtxel  time = 14:37:56.251
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:56.318
+ *** VERBOSE: Computing bare X  time = 14:37:57.126
+ Computing Sigma diag   6 of   8
+ *** VERBOSE: Working on band            6  1st pool  time = 14:37:57.126
+ *** VERBOSE: Calling mtxel  time = 14:37:57.126
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:57.193
+ *** VERBOSE: Computing bare X  time = 14:37:58.001
+ Computing Sigma diag   7 of   8
+ *** VERBOSE: Working on band            7  1st pool  time = 14:37:58.001
+ *** VERBOSE: Calling mtxel  time = 14:37:58.001
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:58.068
+ *** VERBOSE: Computing bare X  time = 14:37:58.876
+ Computing Sigma diag   8 of   8
+ *** VERBOSE: Working on band            8  1st pool  time = 14:37:58.876
+ *** VERBOSE: Calling mtxel  time = 14:37:58.876
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:58.943
+ *** VERBOSE: Computing bare X  time = 14:37:59.750
+ 
+ 
+ *** VERBOSE: Calling MPI_Allreduce xdum1 to xdum2  time = 14:37:59.751
+ *** VERBOSE: Done reduction of xdum1 to xdum2  time = 14:37:59.751
+#kpt=      0.000000    0.000000    0.000000
+#qpt=      0.000000    0.166667    0.666667
+# irq =     8  neq =    24
+# q0vec =     0.005000    0.005000    0.005000
+# q0len =     0.006855731998
+#diagonal      1 ispin     1
+#diagonal      2 ispin     1
+#diagonal      3 ispin     1
+#diagonal      4 ispin     1
+#diagonal      5 ispin     1
+#diagonal      6 ispin     1
+#diagonal      7 ispin     1
+#diagonal      8 ispin     1
+
+   qpoint    9 out of    16
+  
+ Reading Eps Back
+ *** VERBOSE: Read data from unit itpe or memory  time = 14:37:59.757
+ *** VERBOSE: nmtx =       975 ncouls =       975
+ 
+   q= 0.000 0.167 0.833  n=   975  eps(1,1)=  0.41
+
+ *** VERBOSE: Calling gmap  time = 14:37:59.757
+ *** VERBOSE: Calling genwf  time = 14:37:59.757
+ 
+ Computing Sigma diag   1 of   8
+ *** VERBOSE: Working on band            1  1st pool  time = 14:37:59.762
+ *** VERBOSE: Calling mtxel  time = 14:37:59.762
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:37:59.829
+ *** VERBOSE: Computing bare X  time = 14:38:00.636
+ Computing Sigma diag   2 of   8
+ *** VERBOSE: Working on band            2  1st pool  time = 14:38:00.636
+ *** VERBOSE: Calling mtxel  time = 14:38:00.636
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:00.703
+ *** VERBOSE: Computing bare X  time = 14:38:01.511
+ Computing Sigma diag   3 of   8
+ *** VERBOSE: Working on band            3  1st pool  time = 14:38:01.511
+ *** VERBOSE: Calling mtxel  time = 14:38:01.511
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:01.578
+ *** VERBOSE: Computing bare X  time = 14:38:02.385
+ Computing Sigma diag   4 of   8
+ *** VERBOSE: Working on band            4  1st pool  time = 14:38:02.386
+ *** VERBOSE: Calling mtxel  time = 14:38:02.386
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:02.453
+ *** VERBOSE: Computing bare X  time = 14:38:03.272
+ Computing Sigma diag   5 of   8
+ *** VERBOSE: Working on band            5  1st pool  time = 14:38:03.272
+ *** VERBOSE: Calling mtxel  time = 14:38:03.273
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:03.339
+ *** VERBOSE: Computing bare X  time = 14:38:04.151
+ Computing Sigma diag   6 of   8
+ *** VERBOSE: Working on band            6  1st pool  time = 14:38:04.152
+ *** VERBOSE: Calling mtxel  time = 14:38:04.152
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:04.219
+ *** VERBOSE: Computing bare X  time = 14:38:05.027
+ Computing Sigma diag   7 of   8
+ *** VERBOSE: Working on band            7  1st pool  time = 14:38:05.027
+ *** VERBOSE: Calling mtxel  time = 14:38:05.027
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:05.094
+ *** VERBOSE: Computing bare X  time = 14:38:05.902
+ Computing Sigma diag   8 of   8
+ *** VERBOSE: Working on band            8  1st pool  time = 14:38:05.902
+ *** VERBOSE: Calling mtxel  time = 14:38:05.902
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:05.969
+ *** VERBOSE: Computing bare X  time = 14:38:06.776
+ 
+ 
+ *** VERBOSE: Calling MPI_Allreduce xdum1 to xdum2  time = 14:38:06.776
+ *** VERBOSE: Done reduction of xdum1 to xdum2  time = 14:38:06.776
+#kpt=      0.000000    0.000000    0.000000
+#qpt=      0.000000    0.166667    0.833333
+# irq =     9  neq =    12
+# q0vec =     0.005000    0.005000    0.005000
+# q0len =     0.006855731998
+#diagonal      1 ispin     1
+#diagonal      2 ispin     1
+#diagonal      3 ispin     1
+#diagonal      4 ispin     1
+#diagonal      5 ispin     1
+#diagonal      6 ispin     1
+#diagonal      7 ispin     1
+#diagonal      8 ispin     1
+
+   qpoint   10 out of    16
+  
+ Reading Eps Back
+ *** VERBOSE: Read data from unit itpe or memory  time = 14:38:06.782
+ *** VERBOSE: nmtx =      1002 ncouls =      1002
+ 
+   q= 0.000 0.333 0.333  n=  1002  eps(1,1)=  0.46
+
+ *** VERBOSE: Calling gmap  time = 14:38:06.782
+ *** VERBOSE: Calling genwf  time = 14:38:06.783
+ 
+ Computing Sigma diag   1 of   8
+ *** VERBOSE: Working on band            1  1st pool  time = 14:38:06.787
+ *** VERBOSE: Calling mtxel  time = 14:38:06.787
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:06.854
+ *** VERBOSE: Computing bare X  time = 14:38:07.748
+ Computing Sigma diag   2 of   8
+ *** VERBOSE: Working on band            2  1st pool  time = 14:38:07.748
+ *** VERBOSE: Calling mtxel  time = 14:38:07.748
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:07.815
+ *** VERBOSE: Computing bare X  time = 14:38:08.667
+ Computing Sigma diag   3 of   8
+ *** VERBOSE: Working on band            3  1st pool  time = 14:38:08.667
+ *** VERBOSE: Calling mtxel  time = 14:38:08.667
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:08.734
+ *** VERBOSE: Computing bare X  time = 14:38:09.586
+ Computing Sigma diag   4 of   8
+ *** VERBOSE: Working on band            4  1st pool  time = 14:38:09.586
+ *** VERBOSE: Calling mtxel  time = 14:38:09.586
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:09.653
+ *** VERBOSE: Computing bare X  time = 14:38:10.505
+ Computing Sigma diag   5 of   8
+ *** VERBOSE: Working on band            5  1st pool  time = 14:38:10.505
+ *** VERBOSE: Calling mtxel  time = 14:38:10.505
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:10.572
+ *** VERBOSE: Computing bare X  time = 14:38:11.424
+ Computing Sigma diag   6 of   8
+ *** VERBOSE: Working on band            6  1st pool  time = 14:38:11.424
+ *** VERBOSE: Calling mtxel  time = 14:38:11.424
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:11.491
+ *** VERBOSE: Computing bare X  time = 14:38:12.343
+ Computing Sigma diag   7 of   8
+ *** VERBOSE: Working on band            7  1st pool  time = 14:38:12.343
+ *** VERBOSE: Calling mtxel  time = 14:38:12.343
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:12.410
+ *** VERBOSE: Computing bare X  time = 14:38:13.262
+ Computing Sigma diag   8 of   8
+ *** VERBOSE: Working on band            8  1st pool  time = 14:38:13.263
+ *** VERBOSE: Calling mtxel  time = 14:38:13.263
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:13.329
+ *** VERBOSE: Computing bare X  time = 14:38:14.181
+ 
+ 
+ *** VERBOSE: Calling MPI_Allreduce xdum1 to xdum2  time = 14:38:14.182
+ *** VERBOSE: Done reduction of xdum1 to xdum2  time = 14:38:14.182
+#kpt=      0.000000    0.000000    0.000000
+#qpt=      0.000000    0.333333    0.333333
+# irq =    10  neq =     6
+# q0vec =     0.005000    0.005000    0.005000
+# q0len =     0.006855731998
+#diagonal      1 ispin     1
+#diagonal      2 ispin     1
+#diagonal      3 ispin     1
+#diagonal      4 ispin     1
+#diagonal      5 ispin     1
+#diagonal      6 ispin     1
+#diagonal      7 ispin     1
+#diagonal      8 ispin     1
+
+   qpoint   11 out of    16
+  
+ Reading Eps Back
+ *** VERBOSE: Read data from unit itpe or memory  time = 14:38:14.188
+ *** VERBOSE: nmtx =       987 ncouls =       987
+ 
+   q= 0.000 0.333 0.500  n=   987  eps(1,1)=  0.52
+
+ *** VERBOSE: Calling gmap  time = 14:38:14.188
+ *** VERBOSE: Calling genwf  time = 14:38:14.188
+ 
+ Computing Sigma diag   1 of   8
+ *** VERBOSE: Working on band            1  1st pool  time = 14:38:14.192
+ *** VERBOSE: Calling mtxel  time = 14:38:14.192
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:14.260
+ *** VERBOSE: Computing bare X  time = 14:38:15.087
+ Computing Sigma diag   2 of   8
+ *** VERBOSE: Working on band            2  1st pool  time = 14:38:15.087
+ *** VERBOSE: Calling mtxel  time = 14:38:15.087
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:15.154
+ *** VERBOSE: Computing bare X  time = 14:38:15.981
+ Computing Sigma diag   3 of   8
+ *** VERBOSE: Working on band            3  1st pool  time = 14:38:15.981
+ *** VERBOSE: Calling mtxel  time = 14:38:15.981
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:16.048
+ *** VERBOSE: Computing bare X  time = 14:38:16.876
+ Computing Sigma diag   4 of   8
+ *** VERBOSE: Working on band            4  1st pool  time = 14:38:16.877
+ *** VERBOSE: Calling mtxel  time = 14:38:16.877
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:16.944
+ *** VERBOSE: Computing bare X  time = 14:38:17.771
+ Computing Sigma diag   5 of   8
+ *** VERBOSE: Working on band            5  1st pool  time = 14:38:17.771
+ *** VERBOSE: Calling mtxel  time = 14:38:17.771
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:17.838
+ *** VERBOSE: Computing bare X  time = 14:38:18.668
+ Computing Sigma diag   6 of   8
+ *** VERBOSE: Working on band            6  1st pool  time = 14:38:18.668
+ *** VERBOSE: Calling mtxel  time = 14:38:18.668
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:18.736
+ *** VERBOSE: Computing bare X  time = 14:38:19.563
+ Computing Sigma diag   7 of   8
+ *** VERBOSE: Working on band            7  1st pool  time = 14:38:19.563
+ *** VERBOSE: Calling mtxel  time = 14:38:19.563
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:19.630
+ *** VERBOSE: Computing bare X  time = 14:38:20.458
+ Computing Sigma diag   8 of   8
+ *** VERBOSE: Working on band            8  1st pool  time = 14:38:20.458
+ *** VERBOSE: Calling mtxel  time = 14:38:20.458
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:20.525
+ *** VERBOSE: Computing bare X  time = 14:38:21.352
+ 
+ 
+ *** VERBOSE: Calling MPI_Allreduce xdum1 to xdum2  time = 14:38:21.353
+ *** VERBOSE: Done reduction of xdum1 to xdum2  time = 14:38:21.353
+#kpt=      0.000000    0.000000    0.000000
+#qpt=      0.000000    0.333333    0.500000
+# irq =    11  neq =    24
+# q0vec =     0.005000    0.005000    0.005000
+# q0len =     0.006855731998
+#diagonal      1 ispin     1
+#diagonal      2 ispin     1
+#diagonal      3 ispin     1
+#diagonal      4 ispin     1
+#diagonal      5 ispin     1
+#diagonal      6 ispin     1
+#diagonal      7 ispin     1
+#diagonal      8 ispin     1
+
+   qpoint   12 out of    16
+  
+ Reading Eps Back
+ *** VERBOSE: Read data from unit itpe or memory  time = 14:38:21.358
+ *** VERBOSE: nmtx =       981 ncouls =       981
+ 
+   q= 0.000 0.333 0.667  n=   981  eps(1,1)=  0.54
+
+ *** VERBOSE: Calling gmap  time = 14:38:21.359
+ *** VERBOSE: Calling genwf  time = 14:38:21.359
+ 
+ Computing Sigma diag   1 of   8
+ *** VERBOSE: Working on band            1  1st pool  time = 14:38:21.363
+ *** VERBOSE: Calling mtxel  time = 14:38:21.364
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:21.431
+ *** VERBOSE: Computing bare X  time = 14:38:22.248
+ Computing Sigma diag   2 of   8
+ *** VERBOSE: Working on band            2  1st pool  time = 14:38:22.248
+ *** VERBOSE: Calling mtxel  time = 14:38:22.248
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:22.315
+ *** VERBOSE: Computing bare X  time = 14:38:23.138
+ Computing Sigma diag   3 of   8
+ *** VERBOSE: Working on band            3  1st pool  time = 14:38:23.138
+ *** VERBOSE: Calling mtxel  time = 14:38:23.138
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:23.205
+ *** VERBOSE: Computing bare X  time = 14:38:24.023
+ Computing Sigma diag   4 of   8
+ *** VERBOSE: Working on band            4  1st pool  time = 14:38:24.023
+ *** VERBOSE: Calling mtxel  time = 14:38:24.023
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:24.090
+ *** VERBOSE: Computing bare X  time = 14:38:24.936
+ Computing Sigma diag   5 of   8
+ *** VERBOSE: Working on band            5  1st pool  time = 14:38:24.936
+ *** VERBOSE: Calling mtxel  time = 14:38:24.936
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:25.003
+ *** VERBOSE: Computing bare X  time = 14:38:25.821
+ Computing Sigma diag   6 of   8
+ *** VERBOSE: Working on band            6  1st pool  time = 14:38:25.822
+ *** VERBOSE: Calling mtxel  time = 14:38:25.822
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:25.889
+ *** VERBOSE: Computing bare X  time = 14:38:26.718
+ Computing Sigma diag   7 of   8
+ *** VERBOSE: Working on band            7  1st pool  time = 14:38:26.718
+ *** VERBOSE: Calling mtxel  time = 14:38:26.718
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:26.785
+ *** VERBOSE: Computing bare X  time = 14:38:27.602
+ Computing Sigma diag   8 of   8
+ *** VERBOSE: Working on band            8  1st pool  time = 14:38:27.602
+ *** VERBOSE: Calling mtxel  time = 14:38:27.603
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:27.670
+ *** VERBOSE: Computing bare X  time = 14:38:28.487
+ 
+ 
+ *** VERBOSE: Calling MPI_Allreduce xdum1 to xdum2  time = 14:38:28.487
+ *** VERBOSE: Done reduction of xdum1 to xdum2  time = 14:38:28.487
+#kpt=      0.000000    0.000000    0.000000
+#qpt=      0.000000    0.333333    0.666667
+# irq =    12  neq =    12
+# q0vec =     0.005000    0.005000    0.005000
+# q0len =     0.006855731998
+#diagonal      1 ispin     1
+#diagonal      2 ispin     1
+#diagonal      3 ispin     1
+#diagonal      4 ispin     1
+#diagonal      5 ispin     1
+#diagonal      6 ispin     1
+#diagonal      7 ispin     1
+#diagonal      8 ispin     1
+
+   qpoint   13 out of    16
+  
+ Reading Eps Back
+ *** VERBOSE: Read data from unit itpe or memory  time = 14:38:28.493
+ *** VERBOSE: nmtx =       982 ncouls =       982
+ 
+   q= 0.000 0.500 0.500  n=   982  eps(1,1)=  0.57
+
+ *** VERBOSE: Calling gmap  time = 14:38:28.493
+ *** VERBOSE: Calling genwf  time = 14:38:28.493
+ 
+ Computing Sigma diag   1 of   8
+ *** VERBOSE: Working on band            1  1st pool  time = 14:38:28.498
+ *** VERBOSE: Calling mtxel  time = 14:38:28.498
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:28.564
+ *** VERBOSE: Computing bare X  time = 14:38:29.367
+ Computing Sigma diag   2 of   8
+ *** VERBOSE: Working on band            2  1st pool  time = 14:38:29.367
+ *** VERBOSE: Calling mtxel  time = 14:38:29.367
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:29.434
+ *** VERBOSE: Computing bare X  time = 14:38:30.237
+ Computing Sigma diag   3 of   8
+ *** VERBOSE: Working on band            3  1st pool  time = 14:38:30.237
+ *** VERBOSE: Calling mtxel  time = 14:38:30.237
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:30.304
+ *** VERBOSE: Computing bare X  time = 14:38:31.107
+ Computing Sigma diag   4 of   8
+ *** VERBOSE: Working on band            4  1st pool  time = 14:38:31.107
+ *** VERBOSE: Calling mtxel  time = 14:38:31.107
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:31.174
+ *** VERBOSE: Computing bare X  time = 14:38:31.976
+ Computing Sigma diag   5 of   8
+ *** VERBOSE: Working on band            5  1st pool  time = 14:38:31.977
+ *** VERBOSE: Calling mtxel  time = 14:38:31.977
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:32.043
+ *** VERBOSE: Computing bare X  time = 14:38:32.846
+ Computing Sigma diag   6 of   8
+ *** VERBOSE: Working on band            6  1st pool  time = 14:38:32.846
+ *** VERBOSE: Calling mtxel  time = 14:38:32.846
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:32.913
+ *** VERBOSE: Computing bare X  time = 14:38:33.719
+ Computing Sigma diag   7 of   8
+ *** VERBOSE: Working on band            7  1st pool  time = 14:38:33.719
+ *** VERBOSE: Calling mtxel  time = 14:38:33.719
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:33.786
+ *** VERBOSE: Computing bare X  time = 14:38:34.589
+ Computing Sigma diag   8 of   8
+ *** VERBOSE: Working on band            8  1st pool  time = 14:38:34.589
+ *** VERBOSE: Calling mtxel  time = 14:38:34.589
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:34.656
+ *** VERBOSE: Computing bare X  time = 14:38:35.458
+ 
+ 
+ *** VERBOSE: Calling MPI_Allreduce xdum1 to xdum2  time = 14:38:35.459
+ *** VERBOSE: Done reduction of xdum1 to xdum2  time = 14:38:35.459
+#kpt=      0.000000    0.000000    0.000000
+#qpt=      0.000000    0.500000    0.500000
+# irq =    13  neq =     3
+# q0vec =     0.005000    0.005000    0.005000
+# q0len =     0.006855731998
+#diagonal      1 ispin     1
+#diagonal      2 ispin     1
+#diagonal      3 ispin     1
+#diagonal      4 ispin     1
+#diagonal      5 ispin     1
+#diagonal      6 ispin     1
+#diagonal      7 ispin     1
+#diagonal      8 ispin     1
+
+   qpoint   14 out of    16
+  
+ Reading Eps Back
+ *** VERBOSE: Read data from unit itpe or memory  time = 14:38:35.465
+ *** VERBOSE: nmtx =       983 ncouls =       983
+ 
+   q= 0.167 0.333 0.500  n=   983  eps(1,1)=  0.48
+
+ *** VERBOSE: Calling gmap  time = 14:38:35.465
+ *** VERBOSE: Calling genwf  time = 14:38:35.465
+ 
+ Computing Sigma diag   1 of   8
+ *** VERBOSE: Working on band            1  1st pool  time = 14:38:35.469
+ *** VERBOSE: Calling mtxel  time = 14:38:35.469
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:35.537
+ *** VERBOSE: Computing bare X  time = 14:38:36.357
+ Computing Sigma diag   2 of   8
+ *** VERBOSE: Working on band            2  1st pool  time = 14:38:36.357
+ *** VERBOSE: Calling mtxel  time = 14:38:36.357
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:36.425
+ *** VERBOSE: Computing bare X  time = 14:38:37.261
+ Computing Sigma diag   3 of   8
+ *** VERBOSE: Working on band            3  1st pool  time = 14:38:37.262
+ *** VERBOSE: Calling mtxel  time = 14:38:37.262
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:37.329
+ *** VERBOSE: Computing bare X  time = 14:38:38.149
+ Computing Sigma diag   4 of   8
+ *** VERBOSE: Working on band            4  1st pool  time = 14:38:38.149
+ *** VERBOSE: Calling mtxel  time = 14:38:38.149
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:38.217
+ *** VERBOSE: Computing bare X  time = 14:38:39.037
+ Computing Sigma diag   5 of   8
+ *** VERBOSE: Working on band            5  1st pool  time = 14:38:39.037
+ *** VERBOSE: Calling mtxel  time = 14:38:39.037
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:39.104
+ *** VERBOSE: Computing bare X  time = 14:38:39.925
+ Computing Sigma diag   6 of   8
+ *** VERBOSE: Working on band            6  1st pool  time = 14:38:39.925
+ *** VERBOSE: Calling mtxel  time = 14:38:39.925
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:39.992
+ *** VERBOSE: Computing bare X  time = 14:38:40.812
+ Computing Sigma diag   7 of   8
+ *** VERBOSE: Working on band            7  1st pool  time = 14:38:40.813
+ *** VERBOSE: Calling mtxel  time = 14:38:40.813
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:40.880
+ *** VERBOSE: Computing bare X  time = 14:38:41.700
+ Computing Sigma diag   8 of   8
+ *** VERBOSE: Working on band            8  1st pool  time = 14:38:41.700
+ *** VERBOSE: Calling mtxel  time = 14:38:41.701
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:41.768
+ *** VERBOSE: Computing bare X  time = 14:38:42.588
+ 
+ 
+ *** VERBOSE: Calling MPI_Allreduce xdum1 to xdum2  time = 14:38:42.588
+ *** VERBOSE: Done reduction of xdum1 to xdum2  time = 14:38:42.588
+#kpt=      0.000000    0.000000    0.000000
+#qpt=      0.166667    0.333333    0.500000
+# irq =    14  neq =    24
+# q0vec =     0.005000    0.005000    0.005000
+# q0len =     0.006855731998
+#diagonal      1 ispin     1
+#diagonal      2 ispin     1
+#diagonal      3 ispin     1
+#diagonal      4 ispin     1
+#diagonal      5 ispin     1
+#diagonal      6 ispin     1
+#diagonal      7 ispin     1
+#diagonal      8 ispin     1
+
+   qpoint   15 out of    16
+  
+ Reading Eps Back
+ *** VERBOSE: Read data from unit itpe or memory  time = 14:38:42.594
+ *** VERBOSE: nmtx =       988 ncouls =       988
+ 
+   q= 0.167 0.333 0.667  n=   988  eps(1,1)=  0.56
+
+ *** VERBOSE: Calling gmap  time = 14:38:42.594
+ *** VERBOSE: Calling genwf  time = 14:38:42.594
+ 
+ Computing Sigma diag   1 of   8
+ *** VERBOSE: Working on band            1  1st pool  time = 14:38:42.599
+ *** VERBOSE: Calling mtxel  time = 14:38:42.599
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:42.666
+ *** VERBOSE: Computing bare X  time = 14:38:43.496
+ Computing Sigma diag   2 of   8
+ *** VERBOSE: Working on band            2  1st pool  time = 14:38:43.496
+ *** VERBOSE: Calling mtxel  time = 14:38:43.496
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:43.563
+ *** VERBOSE: Computing bare X  time = 14:38:44.392
+ Computing Sigma diag   3 of   8
+ *** VERBOSE: Working on band            3  1st pool  time = 14:38:44.392
+ *** VERBOSE: Calling mtxel  time = 14:38:44.392
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:44.459
+ *** VERBOSE: Computing bare X  time = 14:38:45.289
+ Computing Sigma diag   4 of   8
+ *** VERBOSE: Working on band            4  1st pool  time = 14:38:45.289
+ *** VERBOSE: Calling mtxel  time = 14:38:45.289
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:45.356
+ *** VERBOSE: Computing bare X  time = 14:38:46.185
+ Computing Sigma diag   5 of   8
+ *** VERBOSE: Working on band            5  1st pool  time = 14:38:46.185
+ *** VERBOSE: Calling mtxel  time = 14:38:46.185
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:46.252
+ *** VERBOSE: Computing bare X  time = 14:38:47.082
+ Computing Sigma diag   6 of   8
+ *** VERBOSE: Working on band            6  1st pool  time = 14:38:47.082
+ *** VERBOSE: Calling mtxel  time = 14:38:47.082
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:47.149
+ *** VERBOSE: Computing bare X  time = 14:38:47.978
+ Computing Sigma diag   7 of   8
+ *** VERBOSE: Working on band            7  1st pool  time = 14:38:47.978
+ *** VERBOSE: Calling mtxel  time = 14:38:47.978
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:48.045
+ *** VERBOSE: Computing bare X  time = 14:38:48.877
+ Computing Sigma diag   8 of   8
+ *** VERBOSE: Working on band            8  1st pool  time = 14:38:48.877
+ *** VERBOSE: Calling mtxel  time = 14:38:48.877
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:48.944
+ *** VERBOSE: Computing bare X  time = 14:38:49.785
+ 
+ 
+ *** VERBOSE: Calling MPI_Allreduce xdum1 to xdum2  time = 14:38:49.786
+ *** VERBOSE: Done reduction of xdum1 to xdum2  time = 14:38:49.786
+#kpt=      0.000000    0.000000    0.000000
+#qpt=      0.166667    0.333333    0.666667
+# irq =    15  neq =    24
+# q0vec =     0.005000    0.005000    0.005000
+# q0len =     0.006855731998
+#diagonal      1 ispin     1
+#diagonal      2 ispin     1
+#diagonal      3 ispin     1
+#diagonal      4 ispin     1
+#diagonal      5 ispin     1
+#diagonal      6 ispin     1
+#diagonal      7 ispin     1
+#diagonal      8 ispin     1
+
+   qpoint   16 out of    16
+  
+ Reading Eps Back
+ *** VERBOSE: Read data from unit itpe or memory  time = 14:38:49.792
+ *** VERBOSE: nmtx =       978 ncouls =       978
+ 
+   q= 0.167 0.500 0.667  n=   978  eps(1,1)=  0.58
+
+ *** VERBOSE: Calling gmap  time = 14:38:49.792
+ *** VERBOSE: Calling genwf  time = 14:38:49.792
+ 
+ Computing Sigma diag   1 of   8
+ *** VERBOSE: Working on band            1  1st pool  time = 14:38:49.797
+ *** VERBOSE: Calling mtxel  time = 14:38:49.797
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:49.864
+ *** VERBOSE: Computing bare X  time = 14:38:50.676
+ Computing Sigma diag   2 of   8
+ *** VERBOSE: Working on band            2  1st pool  time = 14:38:50.676
+ *** VERBOSE: Calling mtxel  time = 14:38:50.676
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:50.743
+ *** VERBOSE: Computing bare X  time = 14:38:51.555
+ Computing Sigma diag   3 of   8
+ *** VERBOSE: Working on band            3  1st pool  time = 14:38:51.556
+ *** VERBOSE: Calling mtxel  time = 14:38:51.556
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:51.623
+ *** VERBOSE: Computing bare X  time = 14:38:52.435
+ Computing Sigma diag   4 of   8
+ *** VERBOSE: Working on band            4  1st pool  time = 14:38:52.435
+ *** VERBOSE: Calling mtxel  time = 14:38:52.435
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:52.502
+ *** VERBOSE: Computing bare X  time = 14:38:53.314
+ Computing Sigma diag   5 of   8
+ *** VERBOSE: Working on band            5  1st pool  time = 14:38:53.314
+ *** VERBOSE: Calling mtxel  time = 14:38:53.314
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:53.381
+ *** VERBOSE: Computing bare X  time = 14:38:54.194
+ Computing Sigma diag   6 of   8
+ *** VERBOSE: Working on band            6  1st pool  time = 14:38:54.194
+ *** VERBOSE: Calling mtxel  time = 14:38:54.194
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:54.261
+ *** VERBOSE: Computing bare X  time = 14:38:55.101
+ Computing Sigma diag   7 of   8
+ *** VERBOSE: Working on band            7  1st pool  time = 14:38:55.102
+ *** VERBOSE: Calling mtxel  time = 14:38:55.102
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:55.169
+ *** VERBOSE: Computing bare X  time = 14:38:55.981
+ Computing Sigma diag   8 of   8
+ *** VERBOSE: Working on band            8  1st pool  time = 14:38:55.981
+ *** VERBOSE: Calling mtxel  time = 14:38:55.981
+ *** VERBOSE: Calling mtxel_sxch for diagonal matrix elements  time = 
+ 14:38:56.048
+ *** VERBOSE: Computing bare X  time = 14:38:56.860
+ 
+ 
+ *** VERBOSE: Calling MPI_Allreduce xdum1 to xdum2  time = 14:38:56.860
+ *** VERBOSE: Done reduction of xdum1 to xdum2  time = 14:38:56.860
+#kpt=      0.000000    0.000000    0.000000
+#qpt=      0.166667    0.500000    0.666667
+# irq =    16  neq =    12
+# q0vec =     0.005000    0.005000    0.005000
+# q0len =     0.006855731998
+#diagonal      1 ispin     1
+#diagonal      2 ispin     1
+#diagonal      3 ispin     1
+#diagonal      4 ispin     1
+#diagonal      5 ispin     1
+#diagonal      6 ispin     1
+#diagonal      7 ispin     1
+#diagonal      8 ispin     1
+ Unsymmetrized values for ik =   1 spin = 1
+
+   n        elda        ecor           x        sx-x          ch         sig         vxc     Sig Im. GPP
+   1     -7.977     -7.977    -29.999     17.455    -10.422    -22.966    -18.239      0.000
+   2      9.354      9.354    -23.860     13.323    -11.955    -22.491    -20.140      0.000
+   3      9.354      9.354    -25.839     14.346    -11.762    -23.255    -20.140      0.000
+   4      9.354      9.354    -26.031     14.459    -11.727    -23.299    -20.140      0.000
+   5     14.214     14.214     -7.664      4.501     -8.312    -11.475    -12.088      0.000
+   6     25.238     25.238     -3.460      1.760     -6.263     -7.963     -8.909      0.000
+   7     25.238     25.238     -3.014      1.639     -6.261     -7.636     -8.909      0.000
+   8     25.238     25.238     -3.093      1.413     -6.081     -7.761     -8.909      0.000
+  -29.9993004407322       0.000000000000000E+000  0.000000000000000E+000 asig1:
+  -29.9993004407322     
+  -29.9993004407322        17.4554810128945       -10.4221393707436      asig2:
+  -22.9659587985813     
+  -29.9993004407322        17.4143671721742       -10.5172198645514      asig3:
+  -23.1021531331094     
+ calculate zrenorm:   -23.1021531331094       -22.9659587985813     
+  0.785923377282003     
+  -25.2432108328359       0.000000000000000E+000  0.000000000000000E+000 asig1:
+  -25.2432108328359     
+  -25.2432108328359        14.0425764262816       -11.8144228245518      asig2:
+  -23.0150572311061     
+  -25.2432108328359        14.0682999054592       -11.9312913441008      asig3:
+  -23.1062022714775     
+ calculate zrenorm:   -23.1062022714775       -23.0150572311061     
+  0.845816112549861     
+  -25.2432108328359       0.000000000000000E+000  0.000000000000000E+000 asig1:
+  -25.2432108328359     
+  -25.2432108328359        14.0425764262816       -11.8144228245518      asig2:
+  -23.0150572311061     
+  -25.2432108328359        14.0682999054592       -11.9312913441008      asig3:
+  -23.1062022714775     
+ calculate zrenorm:   -23.1062022714775       -23.0150572311061     
+  0.845816112549861     
+  -25.2432108328359       0.000000000000000E+000  0.000000000000000E+000 asig1:
+  -25.2432108328359     
+  -25.2432108328359        14.0425764262816       -11.8144228245518      asig2:
+  -23.0150572311061     
+  -25.2432108328359        14.0682999054592       -11.9312913441008      asig3:
+  -23.1062022714775     
+ calculate zrenorm:   -23.1062022714775       -23.0150572311061     
+  0.845816112549861     
+  -7.66409425762738       0.000000000000000E+000  0.000000000000000E+000 asig1:
+  -7.66409425762738     
+  -7.66409425762738        4.50104146450348       -8.31213453616281      asig2:
+  -11.4751873292867     
+  -7.66409425762738        4.53949462569776       -8.42231884345855      asig3:
+  -11.5469184753882     
+ calculate zrenorm:   -11.5469184753882       -11.4751873292867     
+  0.874536927731538     
+  -3.18885646105315       0.000000000000000E+000  0.000000000000000E+000 asig1:
+  -3.18885646105315     
+  -3.18885646105315        1.60400407501770       -6.20184846294122      asig2:
+  -7.78670084897668     
+  -3.18885646105315        1.63709264117193       -6.30084640893693      asig3:
+  -7.85261022881815     
+ calculate zrenorm:   -7.85261022881815       -7.78670084897668     
+  0.883533685446355     
+  -3.18885646105315       0.000000000000000E+000  0.000000000000000E+000 asig1:
+  -3.18885646105315     
+  -3.18885646105315        1.60400407501770       -6.20184846294122      asig2:
+  -7.78670084897668     
+  -3.18885646105315        1.63709264117193       -6.30084640893693      asig3:
+  -7.85261022881815     
+ calculate zrenorm:   -7.85261022881815       -7.78670084897668     
+  0.883533685446355     
+  -3.18885646105315       0.000000000000000E+000  0.000000000000000E+000 asig1:
+  -3.18885646105315     
+  -3.18885646105315        1.60400407501770       -6.20184846294122      asig2:
+  -7.78670084897668     
+  -3.18885646105315        1.63709264117193       -6.30084640893693      asig3:
+  -7.85261022881815     
+ calculate zrenorm:   -7.85261022881815       -7.78670084897668     
+  0.883533685446355     
+
+ Symmetrized values from band-averaging:
+
+       k =  0.000000  0.000000  0.000000 ik =   1 spin = 1
+
+   n       elda       ecor          x       sx-x         ch        sig        vxc       eqp0       eqp1        Znk
+   1    -7.9775    -7.9775   -29.9993    17.4555   -10.4221   -22.9660   -18.2386   -12.7048   -11.6928     0.7859
+   2     9.3540     9.3540   -25.2432    14.0426   -11.8144   -23.0151   -20.1404     6.4794     6.9226     0.8458
+   3     9.3540     9.3540   -25.2432    14.0426   -11.8144   -23.0151   -20.1404     6.4794     6.9226     0.8458
+   4     9.3540     9.3540   -25.2432    14.0426   -11.8144   -23.0151   -20.1404     6.4794     6.9226     0.8458
+   5    14.2138    14.2138    -7.6641     4.5010    -8.3121   -11.4752   -12.0882    14.8268    14.7499     0.8745
+   6    25.2382    25.2382    -3.1889     1.6040    -6.2018    -7.7867    -8.9094    26.3609    26.2301     0.8835
+   7    25.2382    25.2382    -3.1889     1.6040    -6.2018    -7.7867    -8.9094    26.3609    26.2301     0.8835
+   8    25.2382    25.2382    -3.1889     1.6040    -6.2018    -7.7867    -8.9094    26.3609    26.2301     0.8835
+*** VERBOSE: Deallocated random numbers.
+
+    n = band index
+ elda = energy eigenvalue
+ ecor = corrected energy eigenvalue
+    x = bare exchange
+   sx = screened exchange at energy ecor
+   ch = coulomb hole at energy ecor
+  sig = sx + ch = self-energy at energy ecor
+  vxc = exchange-correlation potential
+ eqp0 = elda - vxc + sig(ecor)
+ eqp1 = eqp0 + (dsig/de) / (1 - dsig/de) * (eqp0 - ecor)
+  Znk = quasiparticle renormalization factor
+
+        finite_difference_form from sigma.inp file:
+        none     = -2 : dsig/de = 0 [skip the expansion]
+        backward = -1 : dsig/de = (sig(ecor) - sig(ecor-de)) / de
+        central  =  0 : dsig/de = (sig(ecor+de) - sig(ecor-de)) / (2*de)
+        forward  =  1 : dsig/de = (sig(ecor+de) - sig(ecor)) / de
+        default  =  2 : forward for diagonal and none for off-diagonal
+        de is finite_difference_spacing from sigma.inp file
+        elda,ecor,x,sx,ch,sig,vxc,eqp0,eqp,de are in eV
+        elda and vxc both contain vxc0 so it cancels out
+        eqp1 and eqp0 are Eqs. (36-37) from Hybertsen & Louie PRB 34 5390
+
+*** VERBOSE: Destroying   36 x  36 x  36 FFTW plans.
+
+                      CPU [s]        WALL [s]           #
+
+FULLBZ:                 0.000           0.007           1
+IRRBZ:                  0.000           0.002           1
+SUBGRP:                 0.000           0.000           1
+GMAP:                   0.000           0.002          16
+INPUT:                  0.090           0.832           1
+INPUT (READ):           0.040           0.635        5696
+INPUT (WRITE):          0.000           0.011        5600
+INPUT_OUTER:            0.000           0.001           1
+GENWF:                  0.040           0.067          16
+WF COMM:                0.000           0.000           1
+WF_CH COMM:             0.000           0.000           0
+EPSCOPY:                0.050           0.143           1
+EPSREAD:                0.010           0.011          16
+MTXEL:                  8.490           8.568         128
+MTXEL_CH:               0.000           0.000           0
+MTXEL COMM:             0.000           0.000          16
+VCOUL:                  0.710           0.774          16
+VXC:                    5.610           5.609           2
+BARE X:                 0.010           0.020         129
+SX CH:                103.640         103.975         128
+ 
+TOTAL:                118.760         121.282
+ 
