@@ -1,0 +1,12 @@
+source leaprc.protein.ff14SB
+source leaprc.DNA.OL15
+
+source leaprc.water.tip3p
+source leaprc.gaff2
+loadAmberParams frcmod.meoh
+loadamberparams molecule.frcmod
+CHR_SOLV = loadmol2 molecule.mol2
+check CHR_SOLV
+solvateOct CHR_SOLV MEOHBOX 15
+saveAmberParm CHR_SOLV molecule_solv.top molecule_solv.crd
+quit

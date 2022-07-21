@@ -1,0 +1,50 @@
+  paratec release paratecSGL-1.1wx  Date: 2009/03                    LDA+U module by P. Zhang                                                
+
+
+ ------------ Iteration number:   0 ------------
+
+ number of symmetry operations: 48
+ total energy (not enthalpy) =   -42.3410323783
+
+ lattice vectors (a.u.)
+
+coord     0.00000000000000   3.96850262992050   3.96850262992050
+coord     3.96850262992050   0.00000000000000   3.96850262992050
+coord     3.96850262992050   3.96850262992050   0.00000000000000
+
+ volume   125.0000000000 au.
+
+ atomic positions:
+newtype O    0.01000
+coord       0.00000000000000  0.00000000000000  0.00000000000000
+newtype Mg   0.01000
+coord       0.50000000000000  0.50000000000000  0.50000000000000
+
+ number of processors used:   12
+
+ grid of k-points:    6   6   6
+
+ k-grid shift:    0.0000   0.0000   0.0000
+
+ number of irreducible k-points:  16
+ energy cutoff [Ry]:      90.00000
+ gaussian smearing [eV]:   0.01000
+
+ antiferromagnetic moment [Bohr magneton]:   0.00000
+ magnetic energy:   0.00000
+
+ forces :               coord                   cartesian force [Ry/a.u.]
+            a1    a2    a3           -x-            -y-            -z-
+    1    0.000 0.000 0.000    0.000000000000  0.000000000000  0.000000000000
+    2    0.500 0.500 0.500    0.000000000000  0.000000000000  0.000000000000
+
+
+ stress :                         sigma * v (ry)
+(cartes)  -xx-        -yy-        -zz-        -xy-        -yz-        -zx-
+          0.00000     0.00000     0.00000     0.00000     0.00000     0.00000
+
+                                    sigma (gpa)
+          -xx-        -yy-        -zz-        -xy-        -yz-        -zx-
+          0.00000     0.00000     0.00000     0.00000     0.00000     0.00000
+
+ total time:              13.06030s   =   0.00363h

@@ -1,0 +1,61 @@
+job relax
+relax_what force
+relax_max_iter 0
+relax_accuracy 0.0001
+
+# NSCF
+begin pw_jobs
+pw_job nonselfcon
+end pw_jobs
+
+begin coordinates
+newtype O    0.01000
+coord     0.00000000000000   0.00000000000000   0.00000000000000
+newtype Mg   0.01000
+coord     0.50000000000000   0.50000000000000   0.50000000000000
+end coordinates
+
+begin latticevecs
+coord     0.00000000000000   1.00000000000000   1.00000000000000
+coord     1.00000000000000   0.00000000000000   1.00000000000000
+coord     1.00000000000000   1.00000000000000   0.00000000000000
+volume 125.0000
+end latticevecs
+
+k_grid  6 6 6
+k_grid_shift 0.0 0.0 0.0
+
+
+exchange_correlation pbe
+
+number_bands 5
+
+energy_cutoff 90
+
+# defines approximately the temperature of electrons (in eV)
+gaussian_smearing 0.01
+
+pp_format 1
+
+mixing_energy_cutoff 10
+submatrix_energy_cutoff  10
+
+diagonalization_method Grassmann
+
+screening_type previous
+
+accuracy_diag 1e-12
+
+max_iter_diag 60
+max_iter_diag_band 150
+
+potential_convergence_criterion 1e-6
+
+max_iter_scfloop 10
+
+# slightly shifted grid for calculating epsilon(q=0)
+# see PRB 34, 5390 (1986)
+gw_shift 0.005 0.005 0.005
+
+gw_sum 2
+output_flags gwr

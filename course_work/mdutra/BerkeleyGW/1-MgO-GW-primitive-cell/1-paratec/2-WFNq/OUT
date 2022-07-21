@@ -1,0 +1,1024 @@
+  PARATEC RELEASE paratecSGL-1.1wx  Date: 2009/03                   
+   LDA+U module by P. Zhang                                                
+
+               RUN Wed Jul 13 14:09:18 2022 ON   12 PROCESSORS
+
+ Lattice information
+ -------------------
+
+ atomic positions relative to lattice vectors:
+
+ O  #   1:     0.000000000000000     0.000000000000000     0.000000000000000     0.01
+ Mg #   1:     0.500000000000000     0.500000000000000     0.500000000000000     0.01
+
+ atomic positions in cartesian coordinates:
+
+ O  #   1:     0.000000000000000     0.000000000000000     0.000000000000000     0.01
+ Mg #   1:     3.968502629920499     3.968502629920499     3.968502629920499     0.01
+
+ Cell volume =      125.0000 au.
+
+ lattice vectors (a.u.)
+
+      0.000000000000000     3.968502629920499     3.968502629920499
+      3.968502629920499     0.000000000000000     3.968502629920499
+      3.968502629920499     3.968502629920499     0.000000000000000
+
+ reciprocal basis (a.u.)
+
+     -0.791631742890575     0.791631742890575     0.791631742890575
+      0.791631742890575    -0.791631742890575     0.791631742890575
+      0.791631742890575     0.791631742890575    -0.791631742890575
+ 
+
+ atomic positions relative to lattice vectors:
+
+newtype O    0.01000
+coord          0.000000000000000     0.000000000000000     0.000000000000000
+newtype Mg   0.01000
+coord          0.500000000000000     0.500000000000000     0.500000000000000
+
+ The point group of the crystal is the full cubic       group
+
+ the space group of the crystal is symmorphic
+
+ Operation number    1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+
+
+
+ Operation number   25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48
+
+
+
+    Rotation matrices (r-lattice) and fractional translations (r-lattice)
+
+
+    1     1  0  0     0  1  0     0  0  1      0.00000  0.00000  0.00000 E    
+    2    -1 -1 -1     0  0  1     0  1  0      0.00000  0.00000  0.00000 C2   
+    3     0  0  1    -1 -1 -1     1  0  0      0.00000  0.00000  0.00000 C2   
+    4     0  1  0     1  0  0    -1 -1 -1      0.00000  0.00000  0.00000 C2   
+    5     0  0  1     1  0  0     0  1  0      0.00000  0.00000  0.00000 C3   
+    6     0  1  0    -1 -1 -1     0  0  1      0.00000  0.00000  0.00000 C3   
+    7     1  0  0     0  0  1    -1 -1 -1      0.00000  0.00000  0.00000 C3   
+    8    -1 -1 -1     0  1  0     1  0  0      0.00000  0.00000  0.00000 C3   
+    9     0  1  0     0  0  1     1  0  0      0.00000  0.00000  0.00000 C3   
+   10     0  0  1     0  1  0    -1 -1 -1      0.00000  0.00000  0.00000 C3   
+   11    -1 -1 -1     1  0  0     0  0  1      0.00000  0.00000  0.00000 C3   
+   12     1  0  0    -1 -1 -1     0  1  0      0.00000  0.00000  0.00000 C3   
+   13     0 -1  0    -1  0  0     0  0 -1      0.00000  0.00000  0.00000 C2   
+   14     0  0 -1     1  1  1     0 -1  0      0.00000  0.00000  0.00000 C4   
+   15     1  1  1     0  0 -1    -1  0  0      0.00000  0.00000  0.00000 C4   
+   16    -1  0  0     0 -1  0     1  1  1      0.00000  0.00000  0.00000 C2   
+   17    -1  0  0     0  0 -1     0 -1  0      0.00000  0.00000  0.00000 C2   
+   18     1  1  1     0 -1  0     0  0 -1      0.00000  0.00000  0.00000 C2   
+   19     0  0 -1    -1  0  0     1  1  1      0.00000  0.00000  0.00000 C4   
+   20     0 -1  0     1  1  1    -1  0  0      0.00000  0.00000  0.00000 C4   
+   21     0  0 -1     0 -1  0    -1  0  0      0.00000  0.00000  0.00000 C2   
+   22     0 -1  0     0  0 -1     1  1  1      0.00000  0.00000  0.00000 C4   
+   23    -1  0  0     1  1  1     0  0 -1      0.00000  0.00000  0.00000 C2   
+   24     1  1  1    -1  0  0     0 -1  0      0.00000  0.00000  0.00000 C4   
+   25    -1  0  0     0 -1  0     0  0 -1      0.00000  0.00000  0.00000 IE   
+   26     1  1  1     0  0 -1     0 -1  0      0.00000  0.00000  0.00000 IC2  
+   27     0  0 -1     1  1  1    -1  0  0      0.00000  0.00000  0.00000 IC2  
+   28     0 -1  0    -1  0  0     1  1  1      0.00000  0.00000  0.00000 IC2  
+   29     0  0 -1    -1  0  0     0 -1  0      0.00000  0.00000  0.00000 IC3  
+   30     0 -1  0     1  1  1     0  0 -1      0.00000  0.00000  0.00000 IC3  
+   31    -1  0  0     0  0 -1     1  1  1      0.00000  0.00000  0.00000 IC3  
+   32     1  1  1     0 -1  0    -1  0  0      0.00000  0.00000  0.00000 IC3  
+   33     0 -1  0     0  0 -1    -1  0  0      0.00000  0.00000  0.00000 IC3  
+   34     0  0 -1     0 -1  0     1  1  1      0.00000  0.00000  0.00000 IC3  
+   35     1  1  1    -1  0  0     0  0 -1      0.00000  0.00000  0.00000 IC3  
+   36    -1  0  0     1  1  1     0 -1  0      0.00000  0.00000  0.00000 IC3  
+   37     0  1  0     1  0  0     0  0  1      0.00000  0.00000  0.00000 IC2  
+   38     0  0  1    -1 -1 -1     0  1  0      0.00000  0.00000  0.00000 IC4  
+   39    -1 -1 -1     0  0  1     1  0  0      0.00000  0.00000  0.00000 IC4  
+   40     1  0  0     0  1  0    -1 -1 -1      0.00000  0.00000  0.00000 IC2  
+   41     1  0  0     0  0  1     0  1  0      0.00000  0.00000  0.00000 IC2  
+   42    -1 -1 -1     0  1  0     0  0  1      0.00000  0.00000  0.00000 IC2  
+   43     0  0  1     1  0  0    -1 -1 -1      0.00000  0.00000  0.00000 IC4  
+   44     0  1  0    -1 -1 -1     1  0  0      0.00000  0.00000  0.00000 IC4  
+   45     0  0  1     0  1  0     1  0  0      0.00000  0.00000  0.00000 IC2  
+   46     0  1  0     0  0  1    -1 -1 -1      0.00000  0.00000  0.00000 IC4  
+   47     1  0  0    -1 -1 -1     0  0  1      0.00000  0.00000  0.00000 IC2  
+   48    -1 -1 -1     1  0  0     0  1  0      0.00000  0.00000  0.00000 IC4  
+  skipping symmetry check!
+
+
+
+ EXCHANGE-CORRELATION: PERDEW-BURKE-ERNZERHORF 96
+
+ ENERGY CUTOFF EMAX               =    90.000000
+ BROYDEN MIXING CUTOFF            =    10.000000
+ ENERGY SUBMATRIX CUTOFF EMAX     =    10.000000
+ POTENTIAL CONVERGENCE CRITERION  = 0.100000E-05
+ SAFETY FOR DIAGONALIZATION       =     1.000000
+ DIAGONALIZATION ACCURACY         = 0.100000E-11
+ DIAGONALIZATION METHOD           = Grassmann   
+ POTENITAL MIXING  METHOD         = pulay_kerker
+         MIXING PARAMETER         = 0.770000    
+ GAUSSIAN BROADENING
+ SMEARING PARAMETER [eV]          =     0.010000
+ OPTIMIZING STARTING GUESS IN NMR CALCULATION
+ OPTIMIZING CGSOLVEGUESS IN NMR CALCULATION
+ ADDITIONAL OUTPUT: GWR
+
+
+ ================ JOB: NON-SELF-CONSISTENT =====================
+
+
+ SIZE OF POTENTIAL GSPACE =    14331 WITH FFT GRID     33    33    33
+
+  fftw_hitlist_plan: create new plan
+    size =         33
+    dirn =         -1  where FWD=        -1 BWD=         1
+    plan = 
+
+  fftw_hitlist_plan: create new plan
+    size =         33
+    dirn =          1  where FWD=        -1 BWD=         1
+    plan = 
+
+
+ POTENTIALS :
+ ------------
+
+ O   pb  rel  pcec
+ atom 5.70 05-DEC-20   Improved Troullier - Martinskb-loc= 1 
+ 2s(  2.00)r rc= 1.052p(  4.00)r rc= 1.05                              
+ NQL=1601 DELQL=0.025
+  ... consider upgrading to new kbconv ...
+
+ Mg  pb  rel  pcec
+ atom 5.70 09-JUL-22   Improved Troullier - Martinskb-loc= 0 
+ 3s(  0.50)r rc= 2.043p(  0.00)r rc= 2.503d(  0.00)r rc= 2.50          
+ NQL=1601 DELQL=0.025
+  ... consider upgrading to new kbconv ...
+
+ Nonlocal potential: 
+ ------------------
+ Number of projectors:     9
+  1.559999999881256E-002  PP setup time
+
+ NORMALIZED EWALD ENERGY =   -132.00701357
+
+ EWALD ANALYSIS
+ **************
+                                                  1/3
+ ENERGY :            ENERGY (RY)                *V    (RY*A.U.)
+                  -26.4014027131                -132.007013565
+
+ FORCES(CARTESIAN) :   N           COORD                   FORCE (RY/A.U.)
+                   A1    A2    A3           -X-       -Y-       -Z-
+            1    0.000 0.000 0.000      -0.000000 -0.000000 -0.000000
+            2    0.500 0.500 0.500       0.000000  0.000000  0.000000
+
+ STRESS(CARTESIAN) :                         SIGMA * V (RY)
+              -XX-      -YY-      -ZZ-      -XY-      -YZ-      -ZX-
+          -8.800468 -8.800468 -8.800468 -0.000000 -0.000000  0.000000
+
+
+ K POINT GENERATION:
+ ------------------
+    16 K POINTS GENERATED BY PROGRAM FROM PARAMETERS :
+    N =    6    6    6      S =  0.00  0.00  0.00      NB =    5
+
+    I       W                 RK                      RKCAR            EKIN
+
+    1     0.0046296     0.0000  0.0000  0.0000     0.000  0.000  0.000     0.000
+    2     0.0370370     0.0000  0.0000  0.1667     0.132  0.132 -0.132     0.052
+    3     0.0370370     0.0000  0.0000  0.3333     0.264  0.264 -0.264     0.209
+    4     0.0185185     0.0000  0.0000  0.5000     0.396  0.396 -0.396     0.470
+    5     0.0277778     0.0000  0.1667  0.1667     0.264  0.000  0.000     0.070
+    6     0.1111111     0.0000  0.1667  0.3333     0.396  0.132 -0.132     0.191
+    7     0.1111111     0.0000  0.1667  0.5000     0.528  0.264 -0.264     0.418
+    8     0.1111111     0.0000  0.1667  0.6667     0.132  0.396 -0.396     0.331
+    9     0.0555556     0.0000  0.1667  0.8333     0.000  0.264 -0.264     0.139
+   10     0.0277778     0.0000  0.3333  0.3333     0.528  0.000  0.000     0.279
+   11     0.1111111     0.0000  0.3333  0.5000     0.660  0.132 -0.132     0.470
+   12     0.0555556     0.0000  0.3333  0.6667     0.000  0.528 -0.528     0.557
+   13     0.0138889     0.0000  0.5000  0.5000     0.792  0.000  0.000     0.627
+   14     0.1111111     0.1667  0.3333  0.5000     0.528  0.264 -0.000     0.348
+   15     0.1111111     0.1667  0.3333  0.6667     0.660  0.396 -0.132     0.609
+   16     0.0555556     0.1667  0.5000  0.6667     0.792  0.264  0.000     0.696
+
+    56 K POINTS GENERATED FOR THE GW SLIGHTLY SHIFTED GRID
+
+ HAMILTON MATRIX DIMENSIONS:
+ ---------------------------
+            WEIGHT  K-POINT                    DIMENSION
+   1        0.0179    0.0050    0.0050    0.0050              1807
+   2        0.0179    0.0050    0.0050    0.1717              1820
+   3        0.0179    0.8383    0.8383    0.8383              1820
+   4        0.0179    0.0050    0.0050    0.8383              1820
+   5        0.0179    0.1717    0.1717    0.1717              1820
+   6        0.0179    0.0050    0.0050    0.3383              1820
+   7        0.0179    0.6717    0.6717    0.6717              1820
+   8        0.0179    0.0050    0.0050    0.6717              1820
+   9        0.0179    0.3383    0.3383    0.3383              1820
+  10        0.0179    0.0050    0.0050    0.5050              1802
+  11        0.0179    0.5050    0.5050    0.5050              1802
+  12        0.0179    0.0050    0.1717    0.1717              1802
+  13        0.0179    0.0050    0.8383    0.8383              1802
+  14        0.0179    0.0050    0.1717    0.3383              1810
+  15        0.0179    0.1717    0.8383    0.8383              1812
+  16        0.0179    0.8383    0.6717    0.6717              1813
+  17        0.0179    0.8383    0.0050    0.6717              1811
+  18        0.0179    0.1717    0.8383    0.1717              1808
+  19        0.0179    0.3383    0.1717    0.3383              1810
+  20        0.0179    0.0050    0.1717    0.5050              1798
+  21        0.0179    0.3383    0.8383    0.8383              1799
+  22        0.0179    0.6717    0.5050    0.5050              1803
+  23        0.0179    0.8383    0.0050    0.5050              1801
+  24        0.0179    0.1717    0.6717    0.1717              1799
+  25        0.0179    0.5050    0.3383    0.5050              1799
+  26        0.0179    0.0050    0.1717    0.6717              1800
+  27        0.0179    0.5050    0.8383    0.8383              1800
+  28        0.0179    0.5050    0.3383    0.3383              1800
+  29        0.0179    0.8383    0.0050    0.3383              1800
+  30        0.0179    0.1717    0.5050    0.1717              1800
+  31        0.0179    0.6717    0.5050    0.6717              1800
+  32        0.0179    0.0050    0.1717    0.8383              1817
+  33        0.0179    0.6717    0.8383    0.8383              1817
+  34        0.0179    0.3383    0.1717    0.1717              1817
+  35        0.0179    0.0050    0.3383    0.3383              1797
+  36        0.0179    0.0050    0.6717    0.6717              1802
+  37        0.0179    0.0050    0.3383    0.5050              1791
+  38        0.0179    0.1717    0.6717    0.6717              1791
+  39        0.0179    0.8383    0.5050    0.5050              1791
+  40        0.0179    0.6717    0.0050    0.5050              1791
+  41        0.0179    0.3383    0.8383    0.3383              1791
+  42        0.0179    0.5050    0.1717    0.5050              1791
+  43        0.0179    0.0050    0.3383    0.6717              1794
+  44        0.0179    0.3383    0.6717    0.6717              1792
+  45        0.0179    0.6717    0.3383    0.3383              1797
+  46        0.0179    0.0050    0.5050    0.5050              1772
+  47        0.0179    0.1717    0.3383    0.5050              1806
+  48        0.0179    0.8383    0.3383    0.1717              1806
+  49        0.0179    0.1717    0.6717    0.8383              1806
+  50        0.0179    0.8383    0.6717    0.5050              1806
+  51        0.0179    0.1717    0.3383    0.6717              1800
+  52        0.0179    0.8383    0.5050    0.1717              1801
+  53        0.0179    0.3383    0.6717    0.8383              1800
+  54        0.0179    0.6717    0.5050    0.3383              1797
+  55        0.0179    0.1717    0.5050    0.6717              1788
+  56        0.0179    0.8383    0.5050    0.3383              1789
+
+
+ SCREENING :
+ -----------
+ inside readgsdat
+
+ READING DATA FROM FILE: CD
+ WRITTEN ON THE Wed Jul 13 14:00:20 2022
+ about to read
+  readgsdat:       root block size =         1202
+  readgsdat: global min block size =         1190
+ READ    1202 OF   14331 COMPONENTS FOR THIS PROCESSOR IN        0.018 SECONDS
+ done with readgsdat
+ symmetrizing
+ generate potential
+ here, init_flag1,init_flag2           1           1
+
+-------------------- BEGIN OF SELF-CONSISTENT LOOP --------------------
+   2.63269999998738       SCFLOOP TIME  BEFORE ITERATION           1
+
+  MAX AND MIN OF POTENTIAL     4.1816  -31.8411
+  MAX AND MIN COMPLEX COMPONENT     0.17E-13 -0.59E-14
+
+
+ MEMORY USAGE:
+ ---------------------------
+                    STRUCTURE               Mb/proc
+                                  =
+            est. executable size  =         12.000000
+            FFT structure         =          0.274933
+            pot decl read_pseudo  =          0.183411
+            pot_gspace            =          0.388229
+            vout                  =          0.018341
+            k_gspace              =          0.907471
+            wavefunction- all k   =          1.298828
+            mixing in scfloop     =          0.770325
+            k-space NON-local     =          0.022247
+ +  start guess memory
+            glist-to map vloc     =          0.011963
+            dense ham             =          0.011963
+            vnlsub map Vnon-loc   =          0.007690
+ or +  diagonalization memory
+            wf copy in CG         =          0.115967
+            occupied space in CG  =          0.003052
+ here   1.00000000000000               10
+
+ Estimated total memory usage:           15.092 MBytes / proc
+ 
+ START GUESS SIZE    59
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  14
+ diagonalizing kpoint           1
+           9           5   new subspace
+ START GUESS SIZE    62
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  15
+ diagonalizing kpoint           2
+           9           5   new subspace
+ START GUESS SIZE    62
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  15
+ diagonalizing kpoint           3
+           9           5   new subspace
+ START GUESS SIZE    62
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  15
+ diagonalizing kpoint           4
+           9           5   new subspace
+ START GUESS SIZE    62
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  15
+ diagonalizing kpoint           5
+           9           5   new subspace
+ START GUESS SIZE    65
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint           6
+           9           5   new subspace
+ START GUESS SIZE    64
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint           7
+           9           5   new subspace
+ START GUESS SIZE    64
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint           8
+           9           5   new subspace
+ START GUESS SIZE    64
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint           9
+           9           5   new subspace
+ START GUESS SIZE    70
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          10
+           9           5   new subspace
+ START GUESS SIZE    70
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          11
+           9           5   new subspace
+ START GUESS SIZE    60
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  15
+ diagonalizing kpoint          12
+           9           5   new subspace
+ START GUESS SIZE    60
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  15
+ diagonalizing kpoint          13
+           9           5   new subspace
+ START GUESS SIZE    68
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          14
+           9           5   new subspace
+ START GUESS SIZE    68
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          15
+           9           5   new subspace
+ START GUESS SIZE    68
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          16
+           9           5   new subspace
+ START GUESS SIZE    68
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          17
+           9           5   new subspace
+ START GUESS SIZE    68
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          18
+           9           5   new subspace
+ START GUESS SIZE    68
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          19
+           9           5   new subspace
+ START GUESS SIZE    69
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          20
+           9           5   new subspace
+ START GUESS SIZE    69
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          21
+           9           5   new subspace
+ START GUESS SIZE    69
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          22
+           9           5   new subspace
+ START GUESS SIZE    69
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          23
+           9           5   new subspace
+ START GUESS SIZE    69
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          24
+           9           5   new subspace
+ START GUESS SIZE    69
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          25
+           9           5   new subspace
+ START GUESS SIZE    69
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          26
+           9           5   new subspace
+ START GUESS SIZE    69
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          27
+           9           5   new subspace
+ START GUESS SIZE    69
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          28
+           9           5   new subspace
+ START GUESS SIZE    69
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          29
+           9           5   new subspace
+ START GUESS SIZE    69
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          30
+           9           5   new subspace
+ START GUESS SIZE    69
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  17
+ diagonalizing kpoint          31
+           9           5   new subspace
+ START GUESS SIZE    63
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  15
+ diagonalizing kpoint          32
+           9           5   new subspace
+ START GUESS SIZE    63
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  15
+ diagonalizing kpoint          33
+           9           5   new subspace
+ START GUESS SIZE    63
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  15
+ diagonalizing kpoint          34
+           9           5   new subspace
+ START GUESS SIZE    72
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  18
+ diagonalizing kpoint          35
+           9           6   new subspace
+ START GUESS SIZE    72
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  18
+ diagonalizing kpoint          36
+           9           6   new subspace
+ START GUESS SIZE    65
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          37
+           9           7   new subspace
+ START GUESS SIZE    65
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          38
+           9           7   new subspace
+ START GUESS SIZE    65
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          39
+           9           7   new subspace
+ START GUESS SIZE    65
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          40
+           9           7   new subspace
+ START GUESS SIZE    65
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          41
+           9           7   new subspace
+ START GUESS SIZE    65
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          42
+           9           7   new subspace
+ START GUESS SIZE    67
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          43
+           9           7   new subspace
+ START GUESS SIZE    67
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          44
+           9           7   new subspace
+ START GUESS SIZE    67
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          45
+           9           7   new subspace
+ START GUESS SIZE    64
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          46
+           9           7   new subspace
+ START GUESS SIZE    65
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          47
+           9           7   new subspace
+ START GUESS SIZE    65
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          48
+           9           7   new subspace
+ START GUESS SIZE    65
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          49
+           9           7   new subspace
+ START GUESS SIZE    65
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          50
+           9           7   new subspace
+ START GUESS SIZE    66
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          51
+           9           7   new subspace
+ START GUESS SIZE    66
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          52
+           9           7   new subspace
+ START GUESS SIZE    66
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          53
+           9           7   new subspace
+ START GUESS SIZE    66
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          54
+           9           7   new subspace
+ START GUESS SIZE    66
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          55
+           9           7   new subspace
+ START GUESS SIZE    66
+ PROCESSOR GRID   3 x   4 BLOCKSIZE  16
+ diagonalizing kpoint          56
+           9           7   new subspace
+ here
+
+ The Fermi level (includes vxc(0)) is    0.22224523 Ry
+
+ vxc0=   -0.81817591 Ry
+ k-point:  1
+    -1.4045    -0.1308    -0.1307    -0.1307     0.2267
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point:  2
+    -1.3839    -0.2437    -0.1448    -0.1441     0.3316
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point:  3
+    -1.3854    -0.2369    -0.1435    -0.1435     0.3255
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point:  4
+    -1.3847    -0.2403    -0.1443    -0.1437     0.3286
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point:  5
+    -1.3832    -0.2471    -0.1449    -0.1449     0.3345
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point:  6
+    -1.3381    -0.4043    -0.1697    -0.1690     0.4427
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point:  7
+    -1.3399    -0.3991    -0.1684    -0.1684     0.4404
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point:  8
+    -1.3390    -0.4017    -0.1692    -0.1686     0.4416
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point:  9
+    -1.3372    -0.4070    -0.1697    -0.1697     0.4436
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 10
+    -1.3120    -0.4738    -0.1807    -0.1806     0.4603
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 11
+    -1.3121    -0.4737    -0.1806    -0.1806     0.4602
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 12
+    -1.3770    -0.2497    -0.1612    -0.1612     0.3688
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 13
+    -1.3785    -0.2447    -0.1597    -0.1597     0.3625
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 14
+    -1.3400    -0.3613    -0.1982    -0.1863     0.4911
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 15
+    -1.3411    -0.3605    -0.1957    -0.1849     0.4859
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 16
+    -1.3421    -0.3565    -0.1954    -0.1851     0.4850
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 17
+    -1.3416    -0.3585    -0.1957    -0.1849     0.4855
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 18
+    -1.3405    -0.3594    -0.1979    -0.1864     0.4907
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 19
+    -1.3395    -0.3634    -0.1983    -0.1862     0.4914
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 20
+    -1.3061    -0.4414    -0.2421    -0.1954     0.5435
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 21
+    -1.3068    -0.4434    -0.2376    -0.1943     0.5376
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 22
+    -1.3071    -0.4407    -0.2394    -0.1951     0.5408
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 23
+    -1.3069    -0.4420    -0.2386    -0.1947     0.5393
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 24
+    -1.3062    -0.4401    -0.2429    -0.1958     0.5450
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 25
+    -1.3060    -0.4428    -0.2412    -0.1950     0.5418
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 26
+    -1.3151    -0.4191    -0.2505    -0.1806     0.5415
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 27
+    -1.3159    -0.4208    -0.2453    -0.1799     0.5352
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 28
+    -1.3141    -0.4225    -0.2495    -0.1813     0.5406
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 29
+    -1.3150    -0.4217    -0.2474    -0.1806     0.5380
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 30
+    -1.3142    -0.4199    -0.2526    -0.1813     0.5442
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 31
+    -1.3160    -0.4182    -0.2484    -0.1799     0.5387
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 32
+    -1.3555    -0.3247    -0.2025    -0.1551     0.4431
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 33
+    -1.3567    -0.3216    -0.2004    -0.1544     0.4388
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 34
+    -1.3542    -0.3277    -0.2047    -0.1557     0.4473
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 35
+    -1.3187    -0.3907    -0.2124    -0.2123     0.5623     0.6148
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (
+ k-point: 36
+    -1.3204    -0.3876    -0.2111    -0.2111     0.5581     0.6189
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (
+ k-point: 37
+    -1.2939    -0.4179    -0.2757    -0.2219     0.5977     0.6706     0.8315
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 38
+    -1.2946    -0.4168    -0.2761    -0.2209     0.5989     0.6740     0.8321
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 39
+    -1.2948    -0.4178    -0.2720    -0.2217     0.5970     0.6662     0.8336
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 40
+    -1.2947    -0.4173    -0.2741    -0.2213     0.5980     0.6701     0.8328
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 41
+    -1.2939    -0.4185    -0.2736    -0.2223     0.5966     0.6668     0.8323
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 42
+    -1.2938    -0.4173    -0.2778    -0.2215     0.5987     0.6745     0.8307
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 43
+    -1.2921    -0.3723    -0.3643    -0.2071     0.6379     0.7814     0.7932
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 44
+    -1.2925    -0.3738    -0.3622    -0.2063     0.6380     0.7801     0.7961
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 45
+    -1.2917    -0.3708    -0.3661    -0.2078     0.6375     0.7828     0.7903
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 46
+    -1.2875    -0.4426    -0.2340    -0.2339     0.5487     0.6055     0.8472
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 47
+    -1.3083    -0.3961    -0.2746    -0.2091     0.6183     0.6968     0.8669
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 48
+    -1.3089    -0.3960    -0.2716    -0.2094     0.6161     0.6932     0.8684
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 49
+    -1.3096    -0.3952    -0.2729    -0.2070     0.6130     0.6989     0.8719
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 50
+    -1.3102    -0.3950    -0.2699    -0.2073     0.6108     0.6955     0.8735
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 51
+    -1.2917    -0.3989    -0.3211    -0.2280     0.6624     0.7595     0.8067
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 52
+    -1.2921    -0.4007    -0.3191    -0.2266     0.6586     0.7606     0.8093
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 53
+    -1.2925    -0.4026    -0.3168    -0.2252     0.6548     0.7616     0.8120
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 54
+    -1.2921    -0.4007    -0.3189    -0.2266     0.6587     0.7604     0.8094
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 55
+    -1.2856    -0.4012    -0.3036    -0.2563     0.6593     0.7142     0.7999
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 56
+    -1.2856    -0.4035    -0.3004    -0.2556     0.6541     0.7092     0.8028
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ here before etotal
+
+ NUMBER OF UNCONVERGED POTENTIAL COMPONENTS:         0
+ LARGEST POTENTIAL DIFFERENCE:  0.00000    
+ WITH KINETIC ENERGY:  348.434534
+
+
+
+           ITERATION NUMBER  1 :
+           ---------------------
+
+           BAND ENERGY          =       2.2857318790    0.0000000000
+           HXC  CORRECTION      =      16.4332184304    0.0000000000
+           ---------------------------------------------------------
+           KINETIC  ENERGY      =      25.3814739990    0.0000000000
+           IONIC    ENERGY      =     -42.8142179307    0.0000000000
+           NONLOCAL ENERGY      =       3.2852573804    0.0000000000
+           HARTREE  ENERGY      =      10.5529254960    0.0000000000
+           EXCHANGE CORRELATION =     -16.7619220051    0.0000000000
+           ---------------------------------------------------------
+           ALPHA TERM           =       4.4655012884    0.0000000000
+           EWALD TERM           =     -26.4014027131    0.0000000000
+           SMEARING CORRECTION  =      -0.0000000000    0.0000000000
+           MAGNETIC CORRECTION  =       0.0000000000    0.0000000000
+           ---------------------------------------------------------
+           LSDA+U CORRECTION    =       0.0000000000    0.0000000000
+           LSDA+U BAND CORRECT. =       0.0000000000    0.0000000000
+           ---------------------------------------------------------
+           TOTAL ENERGY(LSDA)   =     -42.2923844851    0.0000000000
+           NON-VARIATIONAL ETOT =     -42.2923844851    0.0000000000
+           TOTAL ENERGY(LSDA+U) =     -42.2923844851    0.0000000000
+ here after etotal
+  hijacked scf for nscf purposes:
+   scf convergence =  T
+  nscf convergence =  T
+ Is this nscf?  T
+        1746  SCFLOOP # H*Psi  AFTER ITERATION           1
+   5.01339999999618       SCFLOOP TIME  BEFORE ITERATION           2
+
+  MAX AND MIN OF POTENTIAL     4.1816  -31.8411
+  MAX AND MIN COMPLEX COMPONENT     0.17E-13 -0.59E-14
+
+ diagonalizing kpoint           1
+ diagonalizing kpoint           2
+ diagonalizing kpoint           3
+ diagonalizing kpoint           4
+ diagonalizing kpoint           5
+ diagonalizing kpoint           6
+ diagonalizing kpoint           7
+ diagonalizing kpoint           8
+ diagonalizing kpoint           9
+ diagonalizing kpoint          10
+ diagonalizing kpoint          11
+ diagonalizing kpoint          12
+ diagonalizing kpoint          13
+ diagonalizing kpoint          14
+ diagonalizing kpoint          15
+ diagonalizing kpoint          16
+ diagonalizing kpoint          17
+ diagonalizing kpoint          18
+ diagonalizing kpoint          19
+ diagonalizing kpoint          20
+ diagonalizing kpoint          21
+ diagonalizing kpoint          22
+ diagonalizing kpoint          23
+ diagonalizing kpoint          24
+ diagonalizing kpoint          25
+ diagonalizing kpoint          26
+ diagonalizing kpoint          27
+ diagonalizing kpoint          28
+ diagonalizing kpoint          29
+ diagonalizing kpoint          30
+ diagonalizing kpoint          31
+ diagonalizing kpoint          32
+ diagonalizing kpoint          33
+ diagonalizing kpoint          34
+ diagonalizing kpoint          35
+ diagonalizing kpoint          36
+ diagonalizing kpoint          37
+ diagonalizing kpoint          38
+ diagonalizing kpoint          39
+ diagonalizing kpoint          40
+ diagonalizing kpoint          41
+ diagonalizing kpoint          42
+ diagonalizing kpoint          43
+ diagonalizing kpoint          44
+ diagonalizing kpoint          45
+ diagonalizing kpoint          46
+ diagonalizing kpoint          47
+ diagonalizing kpoint          48
+ diagonalizing kpoint          49
+ diagonalizing kpoint          50
+ diagonalizing kpoint          51
+ diagonalizing kpoint          52
+ diagonalizing kpoint          53
+ diagonalizing kpoint          54
+ diagonalizing kpoint          55
+ diagonalizing kpoint          56
+ here
+
+ The Fermi level (includes vxc(0)) is    0.22681220 Ry
+
+ vxc0=   -0.81360893 Ry
+ k-point:  1
+    -1.3999    -0.1262    -0.1261    -0.1261     0.2312
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point:  2
+    -1.3793    -0.2391    -0.1403    -0.1395     0.3362
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point:  3
+    -1.3809    -0.2323    -0.1389    -0.1389     0.3301
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point:  4
+    -1.3801    -0.2357    -0.1398    -0.1391     0.3332
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point:  5
+    -1.3786    -0.2425    -0.1404    -0.1404     0.3391
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point:  6
+    -1.3335    -0.3998    -0.1651    -0.1644     0.4472
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point:  7
+    -1.3353    -0.3945    -0.1638    -0.1638     0.4449
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point:  8
+    -1.3344    -0.3971    -0.1646    -0.1640     0.4461
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point:  9
+    -1.3326    -0.4024    -0.1651    -0.1651     0.4482
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 10
+    -1.3075    -0.4692    -0.1761    -0.1760     0.4649
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 11
+    -1.3075    -0.4692    -0.1760    -0.1760     0.4648
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 12
+    -1.3725    -0.2451    -0.1567    -0.1567     0.3734
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 13
+    -1.3740    -0.2402    -0.1551    -0.1551     0.3670
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 14
+    -1.3354    -0.3568    -0.1937    -0.1817     0.4957
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 15
+    -1.3366    -0.3559    -0.1912    -0.1803     0.4905
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 16
+    -1.3376    -0.3519    -0.1909    -0.1805     0.4896
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 17
+    -1.3371    -0.3539    -0.1911    -0.1803     0.4901
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 18
+    -1.3359    -0.3548    -0.1934    -0.1819     0.4952
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 19
+    -1.3350    -0.3588    -0.1937    -0.1817     0.4960
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 20
+    -1.3015    -0.4369    -0.2376    -0.1908     0.5481
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 21
+    -1.3023    -0.4388    -0.2331    -0.1897     0.5422
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 22
+    -1.3025    -0.4361    -0.2348    -0.1906     0.5454
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 23
+    -1.3024    -0.4375    -0.2340    -0.1902     0.5439
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 24
+    -1.3016    -0.4356    -0.2384    -0.1912     0.5496
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 25
+    -1.3015    -0.4382    -0.2366    -0.1904     0.5464
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 26
+    -1.3105    -0.4145    -0.2460    -0.1761     0.5461
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 27
+    -1.3113    -0.4162    -0.2408    -0.1753     0.5398
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 28
+    -1.3095    -0.4180    -0.2449    -0.1768     0.5452
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 29
+    -1.3104    -0.4171    -0.2428    -0.1761     0.5425
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 30
+    -1.3096    -0.4153    -0.2481    -0.1768     0.5488
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 31
+    -1.3114    -0.4136    -0.2438    -0.1753     0.5432
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 32
+    -1.3509    -0.3201    -0.1979    -0.1505     0.4476
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 33
+    -1.3521    -0.3171    -0.1958    -0.1498     0.4433
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 34
+    -1.3497    -0.3231    -0.2001    -0.1512     0.4519
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (
+ k-point: 35
+    -1.3141    -0.3862    -0.2078    -0.2078     0.5668     0.6194
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (
+ k-point: 36
+    -1.3158    -0.3831    -0.2066    -0.2066     0.5626     0.6235
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (
+ k-point: 37
+    -1.2893    -0.4133    -0.2711    -0.2174     0.6023     0.6752     0.8360
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 38
+    -1.2901    -0.4122    -0.2716    -0.2163     0.6035     0.6785     0.8367
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 39
+    -1.2902    -0.4132    -0.2675    -0.2171     0.6015     0.6708     0.8381
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 40
+    -1.2902    -0.4127    -0.2695    -0.2167     0.6026     0.6746     0.8374
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 41
+    -1.2894    -0.4139    -0.2690    -0.2177     0.6011     0.6713     0.8368
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 42
+    -1.2892    -0.4128    -0.2733    -0.2169     0.6033     0.6791     0.8353
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 43
+    -1.2875    -0.3677    -0.3597    -0.2025     0.6424     0.7860     0.7978
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 44
+    -1.2879    -0.3693    -0.3577    -0.2018     0.6425     0.7846     0.8006
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 45
+    -1.2872    -0.3663    -0.3616    -0.2033     0.6421     0.7873     0.7949
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 46
+    -1.2829    -0.4380    -0.2294    -0.2294     0.5533     0.6100     0.8518
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 47
+    -1.3038    -0.3916    -0.2700    -0.2045     0.6228     0.7013     0.8715
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 48
+    -1.3043    -0.3915    -0.2671    -0.2048     0.6207     0.6978     0.8730
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 49
+    -1.3050    -0.3906    -0.2683    -0.2024     0.6175     0.7035     0.8765
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 50
+    -1.3056    -0.3905    -0.2654    -0.2027     0.6154     0.7000     0.8780
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 51
+    -1.2872    -0.3943    -0.3165    -0.2235     0.6670     0.7641     0.8113
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 52
+    -1.2875    -0.3961    -0.3145    -0.2220     0.6632     0.7651     0.8139
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 53
+    -1.2879    -0.3980    -0.3123    -0.2207     0.6593     0.7661     0.8166
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 54
+    -1.2876    -0.3962    -0.3143    -0.2220     0.6632     0.7650     0.8140
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 55
+    -1.2810    -0.3966    -0.2991    -0.2518     0.6638     0.7188     0.8044
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ k-point: 56
+    -1.2811    -0.3989    -0.2958    -0.2510     0.6587     0.7138     0.8073
+    (1.0000)   (1.0000)   (1.0000)   (1.0000)   (0.0000)   (0.0000)   (0.0000)  
+ here before etotal
+
+ NUMBER OF UNCONVERGED POTENTIAL COMPONENTS:         0
+ LARGEST POTENTIAL DIFFERENCE:  0.00000    
+ WITH KINETIC ENERGY:  348.434534
+
+
+
+           ITERATION NUMBER  2 :
+           ---------------------
+
+           BAND ENERGY          =       2.2857318790    0.0000000000
+           HXC  CORRECTION      =      16.4332184304    0.0000000000
+           ---------------------------------------------------------
+           KINETIC  ENERGY      =      25.3814739990    0.0000000000
+           IONIC    ENERGY      =     -42.8142179307    0.0000000000
+           NONLOCAL ENERGY      =       3.2852573804    0.0000000000
+           HARTREE  ENERGY      =      10.5529254960    0.0000000000
+           EXCHANGE CORRELATION =     -16.7619220051    0.0000000000
+           ---------------------------------------------------------
+           ALPHA TERM           =       4.4655012884    0.0000000000
+           EWALD TERM           =     -26.4014027131    0.0000000000
+           SMEARING CORRECTION  =      -0.0000000000    0.0000000000
+           MAGNETIC CORRECTION  =       0.0000000000    0.0000000000
+           ---------------------------------------------------------
+           LSDA+U CORRECTION    =       0.0000000000    0.0000000000
+           LSDA+U BAND CORRECT. =       0.0000000000    0.0000000000
+           ---------------------------------------------------------
+           TOTAL ENERGY(LSDA)   =     -42.2923844851    0.0000000000
+           NON-VARIATIONAL ETOT =     -42.2923844851    0.0000000000
+           TOTAL ENERGY(LSDA+U) =     -42.2923844851    0.0000000000
+ here after etotal
+  hijacked scf for nscf purposes:
+   scf convergence =  T
+  nscf convergence =  T
+ Is this nscf?  T
+        1802  SCFLOOP # H*Psi  AFTER ITERATION           2
+   5.24869999999646       SCFLOOP TIME  AFTER ITERATION           2
+ before gwout, use new format wavefunctions
+ after gwout
+
+  TOTAL COMPUTING TIME FOR JOB:       6.27
+
+  TOTAL ELAPSED COMPUTING TIME:       6.36
