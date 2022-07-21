@@ -1,0 +1,57 @@
+!--------------------------------------------------------------------
+!                            ACTION	flags
+!
+  DRIVER = slice_AO 
+	
+  QMMM = true		
+  nuclear_matter = MDynamics 
+  file_type    =  structure              
+  file_format  =  pdb                    
+
+  PBC = [ 1 , 1 , 1 ] 
+
+  electron_state = AZO:35
+  hole_state     = AZO:33
+
+  t_f  =  1.0d0                          ! <== final time in PICOseconds
+  n_t  =  100000
+!------------------------------------------------------------------------------
+!                          SYSTEM  INFO
+
+  N_of_molecules = 119                   ! <== total number of molecules
+  N_of_species   = 2                     ! <== total number of species
+
+  species(1) % residue         = COH     ! <== Residue label for species  1
+  species(1) % N_of_molecules  = 118     ! <== Number of molecules of species 1
+  species(1) % N_of_atoms      = 6       ! <== atoms in a single molecule of species 1
+  species(1) % flex            = true    ! <== Flexible : true , false
+
+  species(2) % residue         = AZO     ! <== Residue label for species 2
+  species(2) % N_of_molecules  = 1     
+  species(2) % N_of_atoms      = 24    
+  species(2) % flex            = true  
+
+!------------------------------------------------------------------------------
+!                        AD-HOC settings
+
+  OPT_parms = true
+  ad_hoc = true
+  ad_hoc:QM:QMMM(1:708)=MM
+
+!------------------------------------------------------------------------------
+!                    ENVIRONMENT parameters 
+
+  thermostat        =  Microcanonical   ! <== Berendsen, Nose_Hoover, Microcanonical
+  cutoff_radius     =  9.d0             ! <== Cut off radius (Angs.) for LR interactions
+  damping_Wolf      =  0.0032d0         ! <== damping parameter (Angs.^-1) 
+
+  driver_MM         =  MM_Dynamics
+
+  read_velocities   =  false 
+
+  MM_input_format   =  GMX  
+
+  MM_log_step       =  100             ! <== step for saving MM results & parameters
+  MM_frame_step     =  200             ! <== step for saving MM results & parameters
+
+

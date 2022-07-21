@@ -1,0 +1,608 @@
+   This run of MOLCAS is using the pymolcas driver
+
+                             OPE
+                             OPE          NMOL  CASOP  ENMOLC A   SO
+                 OPE        NMOLC        AS  OP EN  MO LC     AS  OP
+                OPENM       OL CA        SO  PE NM  OL CA     SOP EN
+                OP EN      MO   LC       AS  OP ENMOL  CASO   PENMOL
+                OP  EN     MO   LC       AS  OP EN     MO     LC ASO
+               OP   E  NMOL  C  AS       OP  EN MO     LC     AS  OP
+               OP  E   NMO   LC AS        OPEN  MO     LCASOP EN   M
+               O  PEN   MO  LCA  SO
+            OPE   NMO   L   CAS    OP
+        OPENMOL  CASOP     ENMOL   CASOPE
+     OPENMOLCA   SOPENMOLCASOPEN   MOLCASOPE
+    OPENMOLCAS   OP           EN   MOL    CAS
+    OPENMOLCAS       OP  ENM        O     LCA
+    OPENMOLCAS    OPEN  MOLCASO     P  E  NMO
+    OPENMOLCAS     OP               E  N  MOL
+    OPENMOLCA   SO           PENM   O  L  CAS    OPEN    MO    LCAS
+    OPENMOLCA   SOP           ENM   O  L  CAS   OP  EN  MOLC  AS   O
+    OPENMOLCA   SOPE           NM      O  LCA   S      OP  EN MO
+    OPENMOLC                AS         O  PEN   M      OL  CA  SOPE
+    OPENMO        LCASOPE  NMOL        C  ASO   P      ENMOLC     AS
+    OPE     NMO      LCA  SO     P     E   NM   OL  CA SO  PE N   MO
+          OPENMOLCA            SOPE   NMO        LCAS  O    P  ENMO
+     OPENMOLCASOPENMOLCASOPENMOLCASOPENMOLCA
+        OPENMOLCASOPENMOLCASOPENMOLCASOPE
+            OPENMOLCASOPENMOLCASOPENM
+               OPENMOLCASOPENMOLCA        version:
+                   OPENMOLCASO
+                       OPE                tag:
+
+ OpenMolcas is free software; you can redistribute it and/or modify it
+ under the terms of the GNU Lesser General Public License version 2.1.
+ OpenMolcas is distributed in the hope that it will be useful, but it
+ is provided "as is" and without any express or implied warranties.
+ For more details see the full text of the license in the file
+ LICENSE or in <http://www.gnu.org/licenses/>.
+
+                 Copyright (C) The OpenMolcas Authors
+           For the author list and the recommended citation,
+                   consult the file CONTRIBUTORS.md
+
+           *************************************************
+           * pymolcas version py2.18                       *
+           *   build 603b35e74725da5e9c3ba4c5da34d86f      *
+           *   (after the EMIL interpreter by V. Veryazov) *
+           *************************************************
+
+configuration info
+------------------
+Host name: manganese.itc.univie.ac.at (Linux)
+C Compiler ID: Intel
+C flags: -std=gnu99
+Fortran Compiler ID: Intel
+Fortran flags: -fpp -i8 -r8 -heap-arrays
+Definitions: _MOLCAS_;_I8_;_LINUX_
+Parallel: OFF (GA=OFF)
+
+
+   -----------------------------------------------------------------------------------------------------------
+  |
+  |           Project: MOLCAS
+  |    Submitted from: /projects/academic/cyberwksp21/Students/jstetzler/OpenMolcas_examples/1_example
+  |      Scratch area: /projects/academic/cyberwksp21/Students/jstetzler/OpenMolcas_examples/1_example/scratch
+  |   Save outputs to: /projects/academic/cyberwksp21/Students/jstetzler/OpenMolcas_examples/1_example
+  |            Molcas: /projects/academic/cyberwksp21/Software/openmolcas_V21.10
+  |
+  | Scratch area is NOT empty
+  |
+  |    MOLCAS_DRIVER = /projects/academic/cyberwksp21/Software/openmolcas_V21.10/bin/pymolcas
+  |    MOLCAS_MOLDEN = ON
+  |    MOLCAS_NPROCS = 1
+  |    MOLCAS_SOURCE = /projects/academic/cyberwksp21/Software/openmolcas_V21.10/
+  | MOLCAS_STRUCTURE = 0
+  |
+   -----------------------------------------------------------------------------------------------------------
+
+++ ---------   Input file   ---------
+
+>>> COPY -FORCE MOLCAS.JobIph JOB001
+
+&RASSI
+NROFJOBIPHS
+1 6
+1 2 3 4 5 6
+
+>>> COPY -FORCE MOLCAS.JobMix JOB001
+
+&RASSI
+NROFJOBIPHS
+1 6
+1 2 3 4 5 6
+EJOB
+
+-- ----------------------------------
+
+>>> COPY -FORCE MOLCAS.JobIph JOB001
+
+--- Start Module: rassi at Thu Jul  7 12:17:52 2022 ---
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                               &RASSI
+
+                                   only a single process is used
+                       available to each process: 2.0 GB of memory, 1 thread?
+                                             pid: 28944
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+ 
+      ********************************************************************************
+      *                                                                              *
+      *                             General data section                             *
+      *                                                                              *
+      ********************************************************************************
+ 
+   Specific data for JOBIPH file 
+ JOB001                                                                         
+                                                  
+   -------------------------------------
+ 
+   Header from SEWARD:
+                                                                               
+        Integrals generated by Gateway/Seward, Thu Jul  7 11:43:45 2022        
+ 
+   CASSCF title (first line only):
+       (No title given)                                                        
+ 
+   STATE IRREP:                             1
+   SPIN MULTIPLICITY:                       1
+   ACTIVE ELECTRONS:                        6
+   MAX RAS1 HOLES:                          0
+   MAX RAS3 ELECTRONS:                      0
+   NR OF CONFIG:                           10
+ 
+   The following data are common to all the states:
+   ------------------------------------------------
+   (note: frozen counts as inactive, deleted as secondary)
+ 
+      Nr of irreps: 1
+ 
+                 Total     No./Irrep 
+      Irrep                  1
+                             a
+ 
+      INACTIVE      12      12
+      ACTIVE         4       4
+      SECONDARY     60      60
+      BASIS         76      76
+ 
+      RAS1           0       0
+      RAS2           4       4
+      RAS3           0       0
+ 
+        MATRIX ELEMENTS WILL BE COMPUTED FOR THE FOLLOWING ONE-ELECTRON OPERATOR
+ S, UNLESS ZERO BY SYMMETRY.
+   (Herm=Hermitian, Anti=Antihermitian, Sing=Singlet operator, Trip=Triplet oper
+ ator)
+     MLTPL  0   1 (HERMSING)     MLTPL  1   1 (HERMSING)     MLTPL  1   2 (HERMSING)
+     MLTPL  1   3 (HERMSING)     MLTPL  2   1 (HERMSING)     MLTPL  2   2 (HERMSING)
+     MLTPL  2   3 (HERMSING)     MLTPL  2   4 (HERMSING)     MLTPL  2   5 (HERMSING)
+     MLTPL  2   6 (HERMSING)     VELOCITY   1 (ANTISING)     VELOCITY   2 (ANTISING)
+     VELOCITY   3 (ANTISING)     ANGMOM     1 (ANTISING)     ANGMOM     2 (ANTISING)
+     ANGMOM     3 (ANTISING)     MLTPV  2   1 (ANTISING)     MLTPV  2   2 (ANTISING)
+     MLTPV  2   3 (ANTISING)     MLTPV  2   4 (ANTISING)     MLTPV  2   5 (ANTISING)
+     MLTPV  2   6 (ANTISING)
+ 
+       EIGENSTATES OF A SPIN-FREE HAMILTONIAN WILL BE COMPUTED BASED ON:
+ 
+  A Hamiltonian matrix computed by RASSI.
+ 
+  Nr of states:                     6
+ 
+   State:        1   2   3   4   5   6
+  JobIph:        1   1   1   1   1   1
+ Root nr:        1   2   3   4   5   6
+ 
+  HAMILTONIAN MATRIX FOR THE ORIGINAL STATES:
+ 
+  Diagonal, with energies
+   -190.92921252   -190.77789485   -190.63916140   -190.57926578   -190.57679390
+   -190.37997093
+ 
+      OVERLAP MATRIX FOR THE ORIGINAL STATES:
+ 
+  Diagonal, with elements
+      1.00000000      1.00000000      1.00000000      1.00000000      1.00000000
+      1.00000000
+ 
+::    RASSI State    1     Total energy:   -190.92921252
+::    RASSI State    2     Total energy:   -190.77789485
+::    RASSI State    3     Total energy:   -190.63916140
+::    RASSI State    4     Total energy:   -190.57926578
+::    RASSI State    5     Total energy:   -190.57679390
+::    RASSI State    6     Total energy:   -190.37997093
+ 
+ 
+ 
+      ****************************************************************************************************
+      *                                                                                                  *
+      *                                         Spin-free section                                        *
+      *                                                                                                  *
+      *                 Note: index according to input order, order according to energy.                 *
+      *                                                                                                  *
+      ****************************************************************************************************
+ 
+ 
+ 
+  SPIN-FREE ENERGIES:
+  (Shifted by EMIN (a.u.) =       -190.9292125183)
+ 
+ SF State       Relative EMIN(au)   Rel lowest level(eV)    D:o, cm**(-1)
+ 
+     1             0.0000000000        0.0000000000              0.0000
+     2             0.1513176704        4.1175635750          33210.3899
+     3             0.2900511205        7.8926930702          63658.8627
+     4             0.3499467378        9.5225358473          76804.4313
+     5             0.3524186228        9.5897992666          77346.9473
+     6             0.5492415925       14.9456251166         120544.5960
+ 
+++ Dipole transition strengths (spin-free states):
+   -----------------------------------------------
+     for osc. strength at least  1.00000000E-05
+ 
+      From   To        Osc. strength     Einstein coefficients Ax, Ay, Az (sec-1)    Total A (sec-1)
+     -----------------------------------------------------------------------------------------------
+         1    3       6.69590799E-01  9.06926281E+08  9.03035716E+08  1.05356000E-08  1.80996200E+09
+         1    5       5.33074805E-01  1.28203907E+09  8.45202151E+08  3.79814894E-06  2.12724122E+09
+         1    6       1.50567101E-02  8.68606495E+07  5.90771551E+07  4.14501750E-06  1.45937805E+08
+         2    3       1.98147542E-05  1.31200036E-09  3.16361853E-12  1.22535505E+04  1.22535505E+04
+         2    4       3.33070462E-01  1.68515853E+08  2.53698127E+08  5.21412090E-09  4.22213981E+08
+         2    5       3.49677391E-05  2.12318648E-05  2.47923319E-05  4.54366906E+04  4.54366906E+04
+         2    6       1.48883092E-05  3.00826616E-07  3.28284645E-08  7.57454170E+04  7.57454170E+04
+         3    5       7.58078669E-03  8.03148715E+05  1.44269795E+05  5.28983803E-09  9.47418509E+05
+         3    6       7.36418962E-01  8.27356914E+08  7.62192055E+08  1.50232930E-06  1.58954897E+09
+         4    6       1.89832757E-05  1.30507219E-05  3.30719860E-05  2.42255815E+04  2.42255816E+04
+         5    6       3.21989567E-01  1.29157986E+08  2.71620356E+08  4.50352522E-08  4.00778343E+08
+     -----------------------------------------------------------------------------------------------
+--
+ 
+++ Velocity transition strengths (spin-free states):
+   -------------------------------------------------
+     for osc. strength at least  1.00000000E-05
+ 
+      From   To        Osc. strength     Einstein coefficients Ax, Ay, Az (sec-1)    Total A (sec-1)
+     -----------------------------------------------------------------------------------------------
+         1    2       1.43761556E-04  1.82040658E-09  1.39764048E-08  1.05762801E+05  1.05762801E+05
+         1    3       3.74774055E-01  4.92408299E+08  5.20638473E+08  2.04718709E-07  1.01304677E+09
+         1    5       2.23255789E-01  5.98348134E+08  2.92556693E+08  6.59347067E-06  8.90904827E+08
+         1    6       4.12466285E-03  3.96465956E+07  3.31874903E+05  2.89454736E-06  3.99784705E+07
+         2    4       2.64302650E-01  1.47978314E+08  1.87062726E+08  6.51960071E-10  3.35041040E+08
+         2    5       3.70449935E-05  1.76831823E-05  1.62078830E-05  4.81358519E+04  4.81358519E+04
+         3    4       1.67594824E-04  9.06425967E-07  3.39532325E-07  1.93179740E+04  1.93179740E+04
+         3    5       8.78558680E-02  8.27491626E+06  2.70498317E+06  5.01285421E-08  1.09798994E+07
+         3    6       3.48775575E-01  4.26820784E+08  3.26005915E+08  2.59740691E-06  7.52826699E+08
+         4    5       8.32192599E-05  3.53387328E-10  6.10565339E-11  1.63377137E+01  1.63377137E+01
+         4    6       3.45544200E-05  1.48030824E-05  3.09479296E-05  4.40967583E+04  4.40967584E+04
+         5    6       3.17803227E-01  1.49210942E+08  2.46356690E+08  7.81161255E-10  3.95567632E+08
+     -----------------------------------------------------------------------------------------------
+--
+ 
+++ Length and velocity gauge comparison (spin-free states):
+   --------------------------------------------------------
+ 
+ --------------------------------------------------
+ A comparison between the dipole oscillator strengths in 
+ length and velocity gauge will be performed
+ 
+     All dipole oscillator differences above the tolerance of   1.00000000E-01  will be printed 
+ 
+ Due to basis set deficiency these oscillator may be problematic 
+ 
+ The tolerance is defined as ABS(1-O_l/O_v) 
+ O_l : dipole oscillator strength in length gauge
+ O_p : dipole oscillator strength in velocity gauge
+ --------------------------------------------------
+ 
+  Problematic transitions have been found
+ 
+      From   To       Difference (%) Osc. st. (len.) Osc. st. (vel.)
+     ---------------------------------------------------------------
+         1    2      --------------- below threshold  1.43761556E-04
+         1    3            78.665196  6.69590799E-01  3.74774055E-01
+         1    5           138.773117  5.33074805E-01  2.23255789E-01
+         1    6           265.040990  1.50567101E-02  4.12466285E-03
+         2    3      ---------------  1.98147542E-05 below threshold
+         2    4            26.018586  3.33070462E-01  2.64302650E-01
+         2    6      ---------------  1.48883092E-05 below threshold
+         3    4      --------------- below threshold  1.67594824E-04
+         3    5            91.371337  7.58078669E-03  8.78558680E-02
+         3    6           111.144075  7.36418962E-01  3.48775575E-01
+         4    5      --------------- below threshold  8.32192599E-05
+         4    6            45.062670  1.89832757E-05  3.45544200E-05
+     ---------------------------------------------------------------
+ 
+ Number of problematic transitions =                     12
+ 
+--
+ 
+ Electric-dipole - electric-octupole not included
+ Electric-dipole - magnetic-quadrupole not included
+ 
+ 
+      ****************************************************************************************************
+      *                                                                                                  *
+      *                                    Special properties section                                    *
+      *                                                                                                  *
+      ****************************************************************************************************
+ 
+ 
+++ I/O STATISTICS
+ 
+  I. General I/O information
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  Unit  Name          Flsize      Write/Read            MBytes           Write/Read
+                      (MBytes)       Calls              In/Out           Time, sec.
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   1  SCRATCH           0.00 .       6/      21 .      0.0/      0.0 .       0/       0
+   2  ANNI              0.00 .       0/       0 .      0.0/      0.0 .       0/       0
+   3  RUNFILE           0.48 .      91/    1833 .      0.6/     13.2 .       0/       0
+   4  ONEINT            2.09 .       0/    2389 .      0.0/   1321.6 .       0/       0
+   5  JOB001            1.78 .       0/      55 .      0.0/      0.2 .       0/       0
+   6  ORDINT           47.28 .       1/     379 .      0.0/     94.5 .       0/       0
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   *  TOTAL            51.64 .      98/    4677 .      0.7/   1429.6 .       0/       0
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ 
+  II. I/O Access Patterns
+  - - - - - - - - - - - - - - - - - - - -
+  Unit  Name               % of random
+                         Write/Read calls
+  - - - - - - - - - - - - - - - - - - - -
+   1  SCRATCH             83.3/ 100.0
+   2  ANNI                 0.0/   0.0
+   3  RUNFILE             28.6/  11.1
+   4  ONEINT               0.0/  59.4
+   5  JOB001               0.0/  72.7
+   6  ORDINT             100.0/   0.5
+  - - - - - - - - - - - - - - - - - - - -
+--
+--- Stop Module: rassi at Thu Jul  7 12:17:57 2022 /rc=_RC_ALL_IS_WELL_ ---
+*** files: MOLCAS.rassi.h5 xmldump
+    saved to directory /projects/academic/cyberwksp21/Students/jstetzler/OpenMolcas_examples/1_example
+--- Module rassi spent 5 seconds ---
+
+>>> COPY -FORCE MOLCAS.JobMix JOB001
+
+--- Start Module: rassi at Thu Jul  7 12:17:57 2022 ---
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                               &RASSI
+
+                                   only a single process is used
+                       available to each process: 2.0 GB of memory, 1 thread?
+                                             pid: 28952
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+ 
+      ********************************************************************************
+      *                                                                              *
+      *                             General data section                             *
+      *                                                                              *
+      ********************************************************************************
+ 
+   Specific data for JOBIPH file 
+ JOB001                                                                         
+                                                  
+   -------------------------------------
+ 
+   Header from SEWARD:
+                                                                               
+        Integrals generated by Gateway/Seward, Thu Jul  7 11:43:45 2022        
+ 
+   CASSCF title (first line only):
+       (No title given)                                                        
+ 
+   STATE IRREP:                             1
+   SPIN MULTIPLICITY:                       1
+   ACTIVE ELECTRONS:                        6
+   MAX RAS1 HOLES:                          0
+   MAX RAS3 ELECTRONS:                      0
+   NR OF CONFIG:                           10
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: EJOB used when HEFF is available, possible                  ###
+ ###    extra interaction between states is ignored!                         ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+ 
+   The following data are common to all the states:
+   ------------------------------------------------
+   (note: frozen counts as inactive, deleted as secondary)
+ 
+      Nr of irreps: 1
+ 
+                 Total     No./Irrep 
+      Irrep                  1
+                             a
+ 
+      INACTIVE      12      12
+      ACTIVE         4       4
+      SECONDARY     60      60
+      BASIS         76      76
+ 
+      RAS1           0       0
+      RAS2           4       4
+      RAS3           0       0
+ 
+        MATRIX ELEMENTS WILL BE COMPUTED FOR THE FOLLOWING ONE-ELECTRON OPERATOR
+ S, UNLESS ZERO BY SYMMETRY.
+   (Herm=Hermitian, Anti=Antihermitian, Sing=Singlet operator, Trip=Triplet oper
+ ator)
+     MLTPL  0   1 (HERMSING)     MLTPL  1   1 (HERMSING)     MLTPL  1   2 (HERMSING)
+     MLTPL  1   3 (HERMSING)     MLTPL  2   1 (HERMSING)     MLTPL  2   2 (HERMSING)
+     MLTPL  2   3 (HERMSING)     MLTPL  2   4 (HERMSING)     MLTPL  2   5 (HERMSING)
+     MLTPL  2   6 (HERMSING)     VELOCITY   1 (ANTISING)     VELOCITY   2 (ANTISING)
+     VELOCITY   3 (ANTISING)     ANGMOM     1 (ANTISING)     ANGMOM     2 (ANTISING)
+     ANGMOM     3 (ANTISING)     MLTPV  2   1 (ANTISING)     MLTPV  2   2 (ANTISING)
+     MLTPV  2   3 (ANTISING)     MLTPV  2   4 (ANTISING)     MLTPV  2   5 (ANTISING)
+     MLTPV  2   6 (ANTISING)
+ 
+       EIGENSTATES OF A SPIN-FREE HAMILTONIAN WILL BE COMPUTED BASED ON:
+ 
+  a Hamiltonian matrix assumed to be diagonal with energies read from the wavefu
+ nction file(s).
+ 
+  Nr of states:                     6
+ 
+   State:        1   2   3   4   5   6
+  JobIph:        1   1   1   1   1   1
+ Root nr:        1   2   3   4   5   6
+ 
+  HAMILTONIAN MATRIX FOR THE ORIGINAL STATES:
+ 
+  Diagonal, with energies
+   -191.51450602   -191.38579829   -191.27513094   -191.21808144   -191.21170881
+   -191.10183952
+ 
+      OVERLAP MATRIX FOR THE ORIGINAL STATES:
+ 
+  Diagonal, with elements
+      1.00000000      1.00000000      1.00000000      1.00000000      1.00000000
+      1.00000000
+ 
+::    RASSI State    1     Total energy:   -191.51450602
+::    RASSI State    2     Total energy:   -191.38579829
+::    RASSI State    3     Total energy:   -191.27513094
+::    RASSI State    4     Total energy:   -191.21808144
+::    RASSI State    5     Total energy:   -191.21170881
+::    RASSI State    6     Total energy:   -191.10183952
+ 
+ 
+ 
+      ****************************************************************************************************
+      *                                                                                                  *
+      *                                         Spin-free section                                        *
+      *                                                                                                  *
+      *                 Note: index according to input order, order according to energy.                 *
+      *                                                                                                  *
+      ****************************************************************************************************
+ 
+ 
+ 
+  SPIN-FREE ENERGIES:
+  (Shifted by EMIN (a.u.) =       -191.5145060158)
+ 
+ SF State       Relative EMIN(au)   Rel lowest level(eV)    D:o, cm**(-1)
+ 
+     1             0.0000000000        0.0000000000              0.0000
+     2             0.1287077274        3.5023156821          28248.0810
+     3             0.2393750762        6.5137276563          52536.7566
+     4             0.2964245742        8.0661235806          65057.6741
+     5             0.3027972051        8.2395317013          66456.3050
+     6             0.4126664969       11.2292274366          90569.8273
+ 
+++ Dipole transition strengths (spin-free states):
+   -----------------------------------------------
+     for osc. strength at least  1.00000000E-05
+ 
+      From   To        Osc. strength     Einstein coefficients Ax, Ay, Az (sec-1)    Total A (sec-1)
+     -----------------------------------------------------------------------------------------------
+         1    3       7.60410019E-01  7.38234137E+08  6.61728914E+08  7.04778640E-08  1.39996305E+09
+         1    4       1.60496001E-01  3.01878367E+08  1.51231489E+08  1.50580597E-06  4.53109857E+08
+         1    6       4.57496150E-02  1.45451176E+08  1.04869516E+08  1.49804924E-06  2.50320691E+08
+         2    3       2.92709865E-05  1.76977026E-05  2.25480665E-05  1.15182700E+04  1.15182700E+04
+         2    4       1.16173885E-05  2.04710423E-04  2.68125158E-04  1.04996000E+04  1.04996005E+04
+         2    5       2.85790200E-01  1.17201246E+08  1.61092381E+08  9.08547947E-08  2.78293627E+08
+         3    4       6.09018334E-03  6.05570617E+05  3.12907502E+04  1.11219354E-10  6.36861367E+05
+         3    6       6.15217904E-01  3.00139208E+08  2.93460903E+08  5.26824104E-07  5.93600111E+08
+         4    6       6.42250606E-02  4.88742266E+06  2.29956722E+07  2.54109750E-09  2.78830948E+07
+         5    6       1.30449217E-05  7.11380122E-05  1.52136057E-04  5.05946962E+03  5.05946984E+03
+     -----------------------------------------------------------------------------------------------
+--
+ 
+++ Velocity transition strengths (spin-free states):
+   -------------------------------------------------
+     for osc. strength at least  1.00000000E-05
+ 
+      From   To        Osc. strength     Einstein coefficients Ax, Ay, Az (sec-1)    Total A (sec-1)
+     -----------------------------------------------------------------------------------------------
+         1    2       1.84312580E-04  1.77920533E-07  1.00948702E-07  9.81013775E+04  9.81013775E+04
+         1    3       6.28785240E-01  5.92183861E+08  5.65449626E+08  7.87619961E-07  1.15763349E+09
+         1    4       1.06433111E-01  2.31009089E+08  6.94712439E+07  5.21198304E-06  3.00480333E+08
+         1    6       1.52659197E-02  7.14182928E+07  1.21097449E+07  2.46593689E-06  8.35280378E+07
+         2    4       3.36022543E-05  2.41932891E-04  2.88516498E-04  3.03691522E+04  3.03691527E+04
+         2    5       3.01558655E-01  1.29696362E+08  1.63952097E+08  4.45500620E-08  2.93648459E+08
+         3    4       5.18108234E-02  4.83887248E+06  5.79078013E+05  2.26161243E-09  5.41795050E+06
+         3    5       1.99100781E-04  2.14796149E-06  1.11892637E-05  2.57315223E+04  2.57315223E+04
+         3    6       7.53885085E-01  3.86856257E+08  3.40538488E+08  2.18269896E-06  7.27394745E+08
+         4    5       3.24701261E-05  1.11227020E-06  8.14316056E-07  4.23674542E+01  4.23674562E+01
+         4    6       2.24669063E-01  3.04229767E+07  6.71163441E+07  1.88994445E-08  9.75393208E+07
+         5    6       3.84197442E-05  3.84643642E-04  5.25221159E-04  1.49010879E+04  1.49010888E+04
+     -----------------------------------------------------------------------------------------------
+--
+ 
+++ Length and velocity gauge comparison (spin-free states):
+   --------------------------------------------------------
+ 
+ --------------------------------------------------
+ A comparison between the dipole oscillator strengths in 
+ length and velocity gauge will be performed
+ 
+     All dipole oscillator differences above the tolerance of   1.00000000E-01  will be printed 
+ 
+ Due to basis set deficiency these oscillator may be problematic 
+ 
+ The tolerance is defined as ABS(1-O_l/O_v) 
+ O_l : dipole oscillator strength in length gauge
+ O_p : dipole oscillator strength in velocity gauge
+ --------------------------------------------------
+ 
+  Problematic transitions have been found
+ 
+      From   To       Difference (%) Osc. st. (len.) Osc. st. (vel.)
+     ---------------------------------------------------------------
+         1    2      --------------- below threshold  1.84312580E-04
+         1    3            20.933185  7.60410019E-01  6.28785240E-01
+         1    4            50.795179  1.60496001E-01  1.06433111E-01
+         1    6           199.684631  4.57496150E-02  1.52659197E-02
+         2    3      ---------------  2.92709865E-05 below threshold
+         2    4            65.426759  1.16173885E-05  3.36022543E-05
+         3    4            88.245345  6.09018334E-03  5.18108234E-02
+         3    5      --------------- below threshold  1.99100781E-04
+         3    6            18.393676  6.15217904E-01  7.53885085E-01
+         4    5      --------------- below threshold  3.24701261E-05
+         4    6            71.413483  6.42250606E-02  2.24669063E-01
+         5    6            66.046308  1.30449217E-05  3.84197442E-05
+     ---------------------------------------------------------------
+ 
+ Number of problematic transitions =                     12
+ 
+--
+ 
+ Electric-dipole - electric-octupole not included
+ Electric-dipole - magnetic-quadrupole not included
+ 
+ 
+      ****************************************************************************************************
+      *                                                                                                  *
+      *                                    Special properties section                                    *
+      *                                                                                                  *
+      ****************************************************************************************************
+ 
+ 
+++ I/O STATISTICS
+ 
+  I. General I/O information
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  Unit  Name          Flsize      Write/Read            MBytes           Write/Read
+                      (MBytes)       Calls              In/Out           Time, sec.
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   1  SCRATCH           0.00 .       6/      21 .      0.0/      0.0 .       0/       0
+   2  ANNI              0.00 .       0/       0 .      0.0/      0.0 .       0/       0
+   3  RUNFILE           0.48 .      91/    1833 .      0.6/     13.2 .       0/       0
+   4  ONEINT            2.09 .       0/    2385 .      0.0/   1320.2 .       0/       0
+   5  JOB001            1.78 .       0/      56 .      0.0/      1.2 .       0/       0
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   *  TOTAL             4.36 .      97/    4295 .      0.6/   1334.6 .       0/       0
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ 
+  II. I/O Access Patterns
+  - - - - - - - - - - - - - - - - - - - -
+  Unit  Name               % of random
+                         Write/Read calls
+  - - - - - - - - - - - - - - - - - - - -
+   1  SCRATCH             83.3/ 100.0
+   2  ANNI                 0.0/   0.0
+   3  RUNFILE             28.6/  11.1
+   4  ONEINT               0.0/  59.5
+   5  JOB001               0.0/  73.2
+  - - - - - - - - - - - - - - - - - - - -
+--
+--- Stop Module: rassi at Thu Jul  7 12:18:02 2022 /rc=_RC_ALL_IS_WELL_ ---
+*** files: MOLCAS.rassi.h5 xmldump
+    saved to directory /projects/academic/cyberwksp21/Students/jstetzler/OpenMolcas_examples/1_example
+--- Module rassi spent 4 seconds ---
+
+.##################.
+.# Happy landing! #.
+.##################.
+
+    Timing: Wall=10.08 User=4.82 System=0.53

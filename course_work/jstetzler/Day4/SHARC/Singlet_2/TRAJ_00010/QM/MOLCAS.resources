@@ -1,0 +1,6 @@
+molcas $MOLCAS/
+scratchdir $SCRADIR/Tutorial/Traj//Singlet_2/TRAJ_00010//
+savedir /projects/academic/cyberwksp21/Students/jstetzler/SHARC_examples/copy/Tutorial/traj/Singlet_2/TRAJ_00010//restart
+memory 500
+ncpu 1
+project MOLCAS
