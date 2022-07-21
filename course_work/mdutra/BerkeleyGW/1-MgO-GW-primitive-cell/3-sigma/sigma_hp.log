@@ -1,0 +1,96 @@
+
+ frequency_dependence   1
+
+ band_index     1     8
+ sigma_matrix     0   0
+
+ finite_difference_form   2
+ finite_difference_spacing  0.500000
+
+ symmetries
+ ntran  = 48
+ mtrx01 =  1  0  0  0  1  0  0  0  1
+ mtrx02 = -1 -1 -1  0  0  1  0  1  0
+ mtrx03 =  0  0  1 -1 -1 -1  1  0  0
+ mtrx04 =  0  1  0  1  0  0 -1 -1 -1
+ mtrx05 =  0  0  1  1  0  0  0  1  0
+ mtrx06 =  0  1  0 -1 -1 -1  0  0  1
+ mtrx07 =  1  0  0  0  0  1 -1 -1 -1
+ mtrx08 = -1 -1 -1  0  1  0  1  0  0
+ mtrx09 =  0  1  0  0  0  1  1  0  0
+ mtrx10 =  0  0  1  0  1  0 -1 -1 -1
+ mtrx11 = -1 -1 -1  1  0  0  0  0  1
+ mtrx12 =  1  0  0 -1 -1 -1  0  1  0
+ mtrx13 =  0 -1  0 -1  0  0  0  0 -1
+ mtrx14 =  0  0 -1  1  1  1  0 -1  0
+ mtrx15 =  1  1  1  0  0 -1 -1  0  0
+ mtrx16 = -1  0  0  0 -1  0  1  1  1
+ mtrx17 = -1  0  0  0  0 -1  0 -1  0
+ mtrx18 =  1  1  1  0 -1  0  0  0 -1
+ mtrx19 =  0  0 -1 -1  0  0  1  1  1
+ mtrx20 =  0 -1  0  1  1  1 -1  0  0
+ mtrx21 =  0  0 -1  0 -1  0 -1  0  0
+ mtrx22 =  0 -1  0  0  0 -1  1  1  1
+ mtrx23 = -1  0  0  1  1  1  0  0 -1
+ mtrx24 =  1  1  1 -1  0  0  0 -1  0
+ mtrx25 = -1  0  0  0 -1  0  0  0 -1
+ mtrx26 =  1  1  1  0  0 -1  0 -1  0
+ mtrx27 =  0  0 -1  1  1  1 -1  0  0
+ mtrx28 =  0 -1  0 -1  0  0  1  1  1
+ mtrx29 =  0  0 -1 -1  0  0  0 -1  0
+ mtrx30 =  0 -1  0  1  1  1  0  0 -1
+ mtrx31 = -1  0  0  0  0 -1  1  1  1
+ mtrx32 =  1  1  1  0 -1  0 -1  0  0
+ mtrx33 =  0 -1  0  0  0 -1 -1  0  0
+ mtrx34 =  0  0 -1  0 -1  0  1  1  1
+ mtrx35 =  1  1  1 -1  0  0  0  0 -1
+ mtrx36 = -1  0  0  1  1  1  0 -1  0
+ mtrx37 =  0  1  0  1  0  0  0  0  1
+ mtrx38 =  0  0  1 -1 -1 -1  0  1  0
+ mtrx39 = -1 -1 -1  0  0  1  1  0  0
+ mtrx40 =  1  0  0  0  1  0 -1 -1 -1
+ mtrx41 =  1  0  0  0  0  1  0  1  0
+ mtrx42 = -1 -1 -1  0  1  0  0  0  1
+ mtrx43 =  0  0  1  1  0  0 -1 -1 -1
+ mtrx44 =  0  1  0 -1 -1 -1  1  0  0
+ mtrx45 =  0  0  1  0  1  0  1  0  0
+ mtrx46 =  0  1  0  0  0  1 -1 -1 -1
+ mtrx47 =  1  0  0 -1 -1 -1  0  0  1
+ mtrx48 = -1 -1 -1  1  0  0  0  1  0
+ 
+       k =  0.000000  0.000000  0.000000 ik =   1 spin = 1
+
+   n        elda        ecor           x        sx-x          ch         sig         vxc        eqp0        eqp1         Znk
+   1   -7.977490   -7.977490  -29.999300   17.455481  -10.422139  -22.965959  -18.238638  -12.704811  -11.692802    0.785923
+   2    9.354042    9.354042  -25.243211   14.042576  -11.814423  -23.015057  -20.140370    6.479355    6.922586    0.845816
+   3    9.354042    9.354042  -25.243211   14.042576  -11.814423  -23.015057  -20.140370    6.479355    6.922586    0.845816
+   4    9.354042    9.354042  -25.243211   14.042576  -11.814423  -23.015057  -20.140370    6.479355    6.922586    0.845816
+   5   14.213778   14.213778   -7.664094    4.501041   -8.312135  -11.475187  -12.088236   14.826827   14.749912    0.874537
+   6   25.238180   25.238180   -3.188856    1.604004   -6.201848   -7.786701   -8.909373   26.360852   26.230099    0.883534
+   7   25.238180   25.238180   -3.188856    1.604004   -6.201848   -7.786701   -8.909373   26.360852   26.230099    0.883534
+   8   25.238180   25.238180   -3.188856    1.604004   -6.201848   -7.786701   -8.909373   26.360852   26.230099    0.883534
+ 
+
+    n = band index
+ elda = energy eigenvalue
+ ecor = corrected energy eigenvalue
+    x = bare exchange
+   sx = screened exchange at energy ecor
+   ch = coulomb hole at energy ecor
+  sig = sx + ch = self-energy at energy ecor
+  vxc = exchange-correlation potential
+ eqp0 = elda - vxc + sig(ecor)
+ eqp1 = eqp0 + (dsig/de) / (1 - dsig/de) * (eqp0 - ecor)
+  Znk = quasiparticle renormalization factor
+
+        finite_difference_form from sigma.inp file:
+        none     = -2 : dsig/de = 0 [skip the expansion]
+        backward = -1 : dsig/de = (sig(ecor) - sig(ecor-de)) / de
+        central  =  0 : dsig/de = (sig(ecor+de) - sig(ecor-de)) / (2*de)
+        forward  =  1 : dsig/de = (sig(ecor+de) - sig(ecor)) / de
+        default  =  2 : forward for diagonal and none for off-diagonal
+        de is finite_difference_spacing from sigma.inp file
+        elda,ecor,x,sx,ch,sig,vxc,eqp0,eqp,de are in eV
+        elda and vxc both contain vxc0 so it cancels out
+        eqp1 and eqp0 are Eqs. (36-37) from Hybertsen & Louie PRB 34 5390
+

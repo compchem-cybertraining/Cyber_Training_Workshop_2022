@@ -1,0 +1,13 @@
+../Singlet_1/ ../Singlet_2/ end          #Path:  [end] (autocomplete enabled) 
+../Singlet_1/                            #Path:  [end] (autocomplete enabled) 
+../Singlet_2/                            #Path:  [end] (autocomplete enabled) 
+end                                      #Path:  [end] (autocomplete enabled) 
+20                                       #Analyze mode: 
+no                                       #Run data_extractor.x? [True] 
+                                         #Number of states: [3 0 3] 
+                                         #Normalize the populations? [True] 
+700                                      #Simulation time (in fs):  [1000.0] 
+                                         #Save data for bootstrapping? [False] 
+yes                                      #Gnuplot script? [False] 
+                                         #Gnuplot script filename? [populations.gp] (autocomplete enabled) 
+                                         #Do you want to do the specified analysis? [True] 

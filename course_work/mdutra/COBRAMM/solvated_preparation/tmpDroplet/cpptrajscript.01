@@ -1,0 +1,6 @@
+ parm input00.top
+ trajin input00.crd
+ center :1 
+ image familiar
+ trajout input01.crd restart
+ go

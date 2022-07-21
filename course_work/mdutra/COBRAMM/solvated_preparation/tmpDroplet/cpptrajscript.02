@@ -1,0 +1,6 @@
+ parm input00.top
+ trajin input01.crd
+ reference input01.crd
+ strip :1>:12.0 outprefix droplet
+ trajout input02.crd restart
+ go
