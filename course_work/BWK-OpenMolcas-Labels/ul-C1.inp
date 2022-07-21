@@ -1,0 +1,30 @@
+&GATEWAY
+	Title = Benzene MR with Symmetry
+	Coord = optimized.xyz
+	Basis = aug-cc-pVTZ
+	Group = NoSym
+
+&SEWARD
+	grid input
+	grid=ultrafine
+	end of grid input
+
+&RASSCF
+	FileOrb = unlabeled-C1.ScfOrb
+	nActEl = 6
+	Ras2 = 6
+	Charge = 0
+	Spin = 1
+	CIRoot = 6 6 1
+	OutOrbital = Natural; 6
+	
+&CASPT2
+	MaxIter = 10000
+
+&MCPDFT
+	KSDFT = T:BLYP
+
+&GRID_IT
+	FileOrb = $Project.RasOrb
+	Sparse; Pack
+	All

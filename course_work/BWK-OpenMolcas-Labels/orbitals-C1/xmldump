@@ -1,0 +1,22 @@
+<module value="gateway">
+</module>
+<module value="seward">
+</module>
+<module value="scf">
+<method> "rdft"</method>
+<energy appear="Total KS-DFT energy" units="a.u." level="1" type="real"> -232.33557230</energy>
+<kinetic appear="Kinetic energy" units="a.u." level="2" type="real"> 230.84975521</kinetic>
+<virial appear="Virial coefficient" units="a.u." level="2" type="real"> 1.00643629</virial>
+<spin appear="UHF spin" level="1" type="real"> 0.00000000</spin>
+<potnuc appear="Nuclear repulsion energy" units="a.u." level="1" type="real"> 204.04227156</potnuc>
+<energy1el appear="One electron energy" units="a.u." level="1" type="real"> -743.55874514</energy1el>
+<energy2el appear="Two electron energy" units="a.u." level="1" type="real"> 307.18090128</energy2el>
+<nsym appear="Number of irreps" level="1" type="int"> 1</nsym>
+<nbas appear="Number of basis functions" level="1" type="int"> 414</nbas>
+<norb appear="Number of orbitals" level="1" type="int"> 414</norb>
+<nocc appear="Number of occupied orbitals" level="1" type="int"> 21</nocc>
+<FormalCharge appear="Total charge" units="a.u" type="real"> -0.00000000</FormalCharge>
+<dipole appear="Dipole moment" units="Debye" level="1" type="real" nx="3"><v> -0.00000000</v><v> 0.00000000</v><v> -0.00000000</v></dipole>
+</module>
+<module value="grid_it">
+</module>
