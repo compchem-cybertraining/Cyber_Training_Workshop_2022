@@ -1,0 +1,3415 @@
+   This run of MOLCAS is using the pymolcas driver
+
+                             OPE
+                             OPE          NMOL  CASOP  ENMOLC A   SO
+                 OPE        NMOLC        AS  OP EN  MO LC     AS  OP
+                OPENM       OL CA        SO  PE NM  OL CA     SOP EN
+                OP EN      MO   LC       AS  OP ENMOL  CASO   PENMOL
+                OP  EN     MO   LC       AS  OP EN     MO     LC ASO
+               OP   E  NMOL  C  AS       OP  EN MO     LC     AS  OP
+               OP  E   NMO   LC AS        OPEN  MO     LCASOP EN   M
+               O  PEN   MO  LCA  SO
+            OPE   NMO   L   CAS    OP
+        OPENMOL  CASOP     ENMOL   CASOPE
+     OPENMOLCA   SOPENMOLCASOPEN   MOLCASOPE
+    OPENMOLCAS   OP           EN   MOL    CAS
+    OPENMOLCAS       OP  ENM        O     LCA
+    OPENMOLCAS    OPEN  MOLCASO     P  E  NMO
+    OPENMOLCAS     OP               E  N  MOL
+    OPENMOLCA   SO           PENM   O  L  CAS    OPEN    MO    LCAS
+    OPENMOLCA   SOP           ENM   O  L  CAS   OP  EN  MOLC  AS   O
+    OPENMOLCA   SOPE           NM      O  LCA   S      OP  EN MO
+    OPENMOLC                AS         O  PEN   M      OL  CA  SOPE
+    OPENMO        LCASOPE  NMOL        C  ASO   P      ENMOLC     AS
+    OPE     NMO      LCA  SO     P     E   NM   OL  CA SO  PE N   MO
+          OPENMOLCA            SOPE   NMO        LCAS  O    P  ENMO
+     OPENMOLCASOPENMOLCASOPENMOLCASOPENMOLCA
+        OPENMOLCASOPENMOLCASOPENMOLCASOPE
+            OPENMOLCASOPENMOLCASOPENM
+               OPENMOLCASOPENMOLCA        version:
+                   OPENMOLCASO
+                       OPE                tag:
+
+ OpenMolcas is free software; you can redistribute it and/or modify it
+ under the terms of the GNU Lesser General Public License version 2.1.
+ OpenMolcas is distributed in the hope that it will be useful, but it
+ is provided "as is" and without any express or implied warranties.
+ For more details see the full text of the license in the file
+ LICENSE or in <http://www.gnu.org/licenses/>.
+
+                 Copyright (C) The OpenMolcas Authors
+           For the author list and the recommended citation,
+                   consult the file CONTRIBUTORS.md
+
+           *************************************************
+           * pymolcas version py2.18                       *
+           *   build 603b35e74725da5e9c3ba4c5da34d86f      *
+           *   (after the EMIL interpreter by V. Veryazov) *
+           *************************************************
+
+configuration info
+------------------
+Host name: manganese.itc.univie.ac.at (Linux)
+C Compiler ID: Intel
+C flags: -std=gnu99
+Fortran Compiler ID: Intel
+Fortran flags: -fpp -i8 -r8 -heap-arrays
+Definitions: _MOLCAS_;_I8_;_LINUX_
+Parallel: OFF (GA=OFF)
+
+
+   -----------------------------------------------------------------------------------------------------------------------------------------------------
+  |
+  |           Project: MOLCAS
+  |    Submitted from: /projects/academic/cyberwksp21/Students/jstetzler/Project/OpenMOLCAS_PEC_Calcuation/More_Excited_States/NAC/Geom_2.128300
+  |      Scratch area: /projects/academic/cyberwksp21/Students/jstetzler/Project/OpenMOLCAS_PEC_Calcuation/More_Excited_States/NAC/Geom_2.128300/scratch
+  |   Save outputs to: /projects/academic/cyberwksp21/Students/jstetzler/Project/OpenMOLCAS_PEC_Calcuation/More_Excited_States/NAC/Geom_2.128300
+  |            Molcas: /projects/academic/cyberwksp21/Software/openmolcas_V21.10
+  |
+  | Scratch area is NOT empty
+  |
+  |    MOLCAS_DRIVER = /projects/academic/cyberwksp21/Software/openmolcas_V21.10/bin/pymolcas
+  |    MOLCAS_MOLDEN = ON
+  |    MOLCAS_NPROCS = 1
+  |    MOLCAS_SOURCE = /projects/academic/cyberwksp21/Software/openmolcas_V21.10/
+  | MOLCAS_STRUCTURE = 0
+  |
+   -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+++ ---------   Input file   ---------
+
+>>> COPY -FORCE MOLCAS.ScfOrb sratch/MOLCAS.scfOrb
+
+&RASSCF
+NActEl=10,0,0
+Spin=1
+LumOrb
+TypeIndex
+CIRoot=16,16,1
+
+&ALASKA
+NAC=1 2
+
+&ALASKA
+Root=1 2
+
+-- ----------------------------------
+
+>>> COPY -FORCE MOLCAS.ScfOrb sratch/MOLCAS.scfOrb
+
+*** symbolic link created: INPORB -> MOLCAS.RasOrb
+--- Start Module: rasscf at Tue Jul 19 21:08:53 2022 ---
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                              &RASSCF
+
+                                   only a single process is used
+                       available to each process: 2.0 GB of memory, 1 thread?
+                                             pid: 18783
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+ 
+      Header of the ONEINT file:
+      --------------------------
+      
+      Integrals generated by Gateway/Seward, Thu Jul 14 13:38:58 2022
+ 
+ 
+      OrdInt status: non-squared
+ 
+ 
+      Cartesian coordinates in Angstrom:
+      -----------------------------------------------------
+      No.  Label        X            Y            Z        
+      -----------------------------------------------------
+       1   C1         0.00000000   0.00000000   0.00000000
+       2   O2         0.00000000   0.00000000   2.12830000
+      -----------------------------------------------------
+      Nuclear repulsion energy =   11.93464555
+ 
+++    Wave function specifications:
+      -----------------------------
+ 
+      Number of closed shell electrons           4
+      Number of electrons in active shells      10
+      Max number of holes in RAS1 space          0
+      Max nr of electrons in RAS3 space          0
+      Number of inactive orbitals                2
+      Number of active orbitals                 11
+      Number of secondary orbitals              53
+      Spin quantum number                      0.0
+      State symmetry                             1
+--
+ 
+++    Orbital specifications:
+      -----------------------
+ 
+      Symmetry species                           1
+                                                 a
+      Frozen orbitals                            0
+      Inactive orbitals                          2
+      Active orbitals                           11
+      RAS1 orbitals                              0
+      RAS2 orbitals                             11
+      RAS3 orbitals                              0
+      Secondary orbitals                        53
+      Deleted orbitals                           0
+      Number of basis functions                 66
+--
+ 
+++    CI expansion specifications:
+      ----------------------------
+ 
+      Number of CSFs                         60984
+      Number of determinants                106953
+      Number of root(s) required                16
+      Root chosen for geometry opt.             16
+      CI roots used                              1     2     3     4     5     6     7     8     9    10
+                                                11    12    13    14    15    16
+      weights                                0.062 0.062 0.062 0.062 0.062 0.062 0.062 0.062 0.062 0.062
+                                             0.062 0.062 0.062 0.062 0.062 0.062
+      highest root included in the CI           16
+      max. size of the explicit Hamiltonian    200
+--
+ 
+++    Optimization specifications:
+      ----------------------------
+ 
+      RASSCF algorithm: Conventional
+      Maximum number of macro iterations       200
+      Maximum number of SX iterations          100
+      Threshold for RASSCF energy            0.100E-07
+      Threshold for max MO rotation          0.100E+00
+      Threshold for max BLB element          0.100E-03
+      Level shift parameter                  0.500E+00
+      Make Quasi-Newton update
+--
+ 
+      The MO-coefficients are taken from the file:
+      INPORB                                                                                                                          
+      Title: RASSCF average (pseudo-natural) orbitals                                      
+ 
+      Total molecular charge    0.00
+ 
+      ************************************************************************************************************************
+      *                                                                                                                      *
+      *                                            Wave function control section                                             *
+      *                                                                                                                      *
+      ************************************************************************************************************************
+ 
+ 
+                                         RASSCF iterations: Energy and convergence statistics
+                                         ----------------------------------------------------
+ 
+      Iter CI   SX   CI       RASSCF       Energy    max ROT     max BLB   max BLB  Level Ln srch  Step   QN   Walltime
+          iter iter root      energy       change     param      element    value   shift minimum  type update hh:mm:ss
+ Nr of preliminary CI iterations:  11
+        1   1    5    0  -112.57613782    0.00E+00   0.12E-03    5  52 1 -0.17E-03*  0.11   0.00    SX    NO    0:00:33
+        2   2    4    0  -112.57614030   -0.25E-05*  0.29E-04    5  64 1 -0.15E-04   0.11   0.00    SX    NO    0:00:06
+        3   2    4    0  -112.57614434   -0.40E-05* -0.48E-04    3  27 1  0.11E-04   0.11   0.00    SX    NO    0:00:07
+        No convergence in the CI section: MAXJT will be increased to 
+                    60
+        4  47    6    0  -112.57622009   -0.76E-04* -0.10E-01    5  57 1  0.54E-02*  0.11   0.00    SX    NO    0:01:51
+        5  15    5    0  -112.57627786   -0.58E-04*  0.17E-01    1  34 1 -0.91E-03*  0.12   1.65    QN   YES    0:00:27
+        6  18    5    0  -112.57630867   -0.31E-04*  0.24E-01    5  57 1 -0.15E-02*  0.12   1.79    QN   YES    0:00:34
+        7  20    5    0  -112.57633209   -0.23E-04*  0.21E-01    5  57 1 -0.18E-02*  0.12   1.96    LS   YES    0:00:39
+        8  37    6    0  -112.57648649   -0.15E-03*  0.94E-02    5  57 1  0.56E-02*  0.13   1.06    QN   YES    0:01:18
+        9  11    6    0  -112.57644412    0.42E-04*  0.58E-02    5  57 1  0.94E-02*  0.13  -0.50    SX   YES    0:00:18
+       10  23    6    0  -112.57657572   -0.13E-03*  0.45E-01    5  57 1  0.37E-02*  0.13   1.93    QN   YES    0:00:41
+       11  34    7    0  -112.57670333   -0.13E-03*  0.15E+00*  10  35 1  0.28E-02*  0.13   1.83    QN   YES    0:00:58
+       12  21    8    0  -112.57632199    0.38E-03*  0.61E-01    5  57 1 -0.17E-01*  0.13   0.27    LS   YES    0:00:48
+       13  12    8    0  -112.57667880   -0.36E-03*  0.41E-01    5  57 1 -0.11E-01*  0.13   1.78    LS   YES    0:00:25
+       14  11    7    0  -112.57676284   -0.84E-04*  0.46E-02    5  57 1 -0.71E-02*  0.13   1.15    QN   YES    0:00:23
+       15  19    7    0  -112.57678770   -0.25E-04* -0.50E-02    5  57 1 -0.43E-02*  0.13   1.66    QN   YES    0:00:25
+       16  17    6    0  -112.57679925   -0.12E-04*  0.25E-02    7  58 1 -0.61E-03*  0.13   1.19    QN   YES    0:00:26
+       17   9    6    0  -112.57680029   -0.10E-05* -0.62E-03    9  37 1 -0.16E-03*  0.13   1.34    QN   YES    0:00:17
+       18  14    5    0  -112.57680053   -0.24E-06*  0.96E-03    5  57 1  0.11E-03*  0.13   1.40    QN   YES    0:00:23
+       19  15    5    0  -112.57680060   -0.69E-07*  0.63E-03    2  23 1 -0.54E-04   0.13   1.29    QN   YES    0:00:21
+       20   5    4    0  -112.57680061   -0.11E-07*  0.19E-03    2  23 1 -0.12E-04   0.13   1.24    QN   YES    0:00:15
+       21   4    3    0  -112.57680061   -0.13E-08   0.27E-04    5  57 1 -0.44E-05   0.13   1.12    QN   YES    0:00:13
+      Convergence after 21 iterations
+       22   1    3    0  -112.57680061   -0.41E-10   0.27E-04    5  57 1 -0.25E-05   0.13   1.12    QN   YES    0:00:11
+ 
+      ************************************************************************************************************************
+                                                      Wave function printout:
+                       occupation of active orbitals, and spin coupling of open shells (u,d: Spin up or down)
+      ************************************************************************************************************************
+ 
+      Note: transformation to natural orbitals
+      has been made, which may change the order of the CSFs.
+ 
+      printout of CI-coefficients larger than  0.05 for root  1
+      energy=    -112.693843
+      conf/sym  11111111111     Coeff  Weight
+             1  22222000000   0.42854 0.18365
+             4  2222u00d000  -0.24157 0.05836
+             8  222u2d00000   0.05023 0.00252
+             9  222u20d0000   0.51229 0.26244
+            14  22u22d00000   0.51229 0.26244
+            15  22u220d0000  -0.05023 0.00252
+            37  22220002000  -0.06941 0.00482
+            57  222ud0ud000   0.07168 0.00514
+            77  22u2du0d000   0.07168 0.00514
+           139  22202020000  -0.05379 0.00289
+           221  22022200000  -0.05379 0.00289
+           349  222uu0dd000   0.16296 0.02656
+           363  22u2ud0d000   0.16296 0.02656
+           407  22uu2dd0000  -0.15341 0.02353
+           504  222u00d2000   0.14289 0.02042
+           573  22u20d02000   0.14289 0.02042
+          1480  22uuddud000  -0.07600 0.00578
+          2317  202u22d0000   0.06728 0.00453
+          2878  20u22d20000  -0.06728 0.00453
+          8547  22uuuddd000  -0.12737 0.01622
+ 
+      printout of CI-coefficients larger than  0.05 for root  2
+      energy=    -112.658257
+      conf/sym  11111111111     Coeff  Weight
+             8  222u2d00000  -0.57209 0.32729
+             9  222u20d0000   0.15834 0.02507
+            14  22u22d00000  -0.15832 0.02507
+            15  22u220d0000  -0.57188 0.32704
+           348  222uud0d000  -0.26890 0.07231
+           349  222uu0dd000   0.07442 0.00554
+           363  22u2ud0d000  -0.07441 0.00554
+           364  22u2u0dd000  -0.26880 0.07225
+           503  222u0d02000  -0.18047 0.03257
+           574  22u200d2000  -0.18040 0.03255
+          2318  202u2d20000   0.08067 0.00651
+          2877  20u222d0000  -0.08064 0.00650
+ 
+      printout of CI-coefficients larger than  0.05 for root  3
+      energy=    -112.658257
+      conf/sym  11111111111     Coeff  Weight
+             8  222u2d00000  -0.15837 0.02508
+             9  222u20d0000  -0.57198 0.32716
+            14  22u22d00000   0.57199 0.32717
+            15  22u220d0000  -0.15829 0.02506
+           348  222uud0d000  -0.07444 0.00554
+           349  222uu0dd000  -0.26885 0.07228
+           363  22u2ud0d000   0.26885 0.07228
+           364  22u2u0dd000  -0.07440 0.00554
+           504  222u00d2000  -0.18044 0.03256
+           573  22u20d02000   0.18044 0.03256
+           782  2220u02d000   0.05981 0.00358
+          1059  2202u20d000  -0.05980 0.00358
+          2317  202u22d0000  -0.08065 0.00650
+          2878  20u22d20000  -0.08065 0.00651
+ 
+      printout of CI-coefficients larger than  0.05 for root  4
+      energy=    -112.657718
+      conf/sym  11111111111     Coeff  Weight
+             8  222u2d00000  -0.59287 0.35149
+             9  222u20d0000   0.05816 0.00338
+            14  22u22d00000   0.05813 0.00338
+            15  22u220d0000   0.59310 0.35177
+           348  222uud0d000  -0.27501 0.07563
+           364  22u2u0dd000   0.27511 0.07569
+           503  222u0d02000  -0.18570 0.03448
+           574  22u200d2000   0.18577 0.03451
+          1061  2202uudd000  -0.05070 0.00257
+          2318  202u2d20000   0.08482 0.00719
+          2877  20u222d0000   0.08485 0.00720
+ 
+      printout of CI-coefficients larger than  0.05 for root  5
+      energy=    -112.625751
+      conf/sym  11111111111     Coeff  Weight
+             2  2222ud00000  -0.46910 0.22006
+           347  222uudd0000  -0.78203 0.61158
+           362  22u2udd0000   0.09513 0.00905
+           500  222u0dud000  -0.24300 0.05905
+           501  222u0udd000   0.15159 0.02298
+           778  2220ud20000   0.11820 0.01397
+           847  22udu2d0000   0.08013 0.00642
+          1477  22uud2d0000  -0.05131 0.00263
+          2320  202u2dud000  -0.05707 0.00326
+         10009  202uudd2000   0.09899 0.00980
+ 
+      printout of CI-coefficients larger than  0.05 for root  6
+      energy=    -112.625750
+      conf/sym  11111111111     Coeff  Weight
+             3  2222u0d0000   0.46910 0.22005
+           347  222uudd0000  -0.09514 0.00905
+           362  22u2udd0000  -0.78204 0.61158
+           570  22u20dud000  -0.25278 0.06390
+           571  22u20udd000   0.13465 0.01813
+           848  22udud20000   0.08014 0.00642
+          1057  2202u2d0000   0.11819 0.01397
+          1478  22uudd20000   0.05131 0.00263
+          2880  20u22dud000  -0.05844 0.00341
+         10849  20u2udd2000   0.09899 0.00980
+ 
+      printout of CI-coefficients larger than  0.05 for root  7
+      energy=    -112.602604
+      conf/sym  11111111111     Coeff  Weight
+             1  22222000000  -0.20980 0.04402
+             4  2222u00d000   0.28440 0.08088
+             9  222u20d0000   0.06207 0.00385
+            14  22u22d00000   0.06207 0.00385
+           349  222uu0dd000  -0.16436 0.02702
+           363  22u2ud0d000  -0.16437 0.02702
+           407  22uu2dd0000  -0.79365 0.62989
+           504  222u00d2000  -0.08408 0.00707
+           573  22u20d02000  -0.08408 0.00707
+          1480  22uuddud000  -0.19173 0.03676
+          1481  22uududd000   0.11070 0.01225
+          1898  22u02d20000   0.11571 0.01339
+          2107  220u22d0000   0.11570 0.01339
+          8547  22uuuddd000  -0.20730 0.04297
+         12424  20uu2dd2000   0.10622 0.01128
+ 
+      printout of CI-coefficients larger than  0.05 for root  8
+      energy=    -112.562135
+      conf/sym  11111111111     Coeff  Weight
+            10  222u200d000   0.08225 0.00677
+            16  22u2200d000   0.43955 0.19321
+           408  22uu2d0d000  -0.06989 0.00488
+           409  22uu20dd000   0.79907 0.63851
+          1484  22uud0d2000   0.29152 0.08498
+          1902  22u0202d000  -0.11942 0.01426
+          2111  220u2udd000  -0.09916 0.00983
+          2879  20u2220d000   0.05989 0.00359
+         12422  20uu22dd000  -0.11748 0.01380
+ 
+      printout of CI-coefficients larger than  0.05 for root  9
+      energy=    -112.562135
+      conf/sym  11111111111     Coeff  Weight
+            10  222u200d000   0.43955 0.19320
+            16  22u2200d000  -0.08225 0.00676
+           408  22uu2d0d000  -0.79907 0.63851
+           409  22uu20dd000  -0.06989 0.00488
+          1483  22uudd02000  -0.29152 0.08498
+          1900  22u02dud000   0.08742 0.00764
+          2109  220u220d000   0.11941 0.01426
+          2322  202u202d000   0.05989 0.00359
+         12423  20uu2d2d000  -0.11748 0.01380
+ 
+      printout of CI-coefficients larger than  0.05 for root 10
+      energy=    -112.543435
+      conf/sym  11111111111     Coeff  Weight
+             2  2222ud00000   0.73392 0.53863
+            35  22220u0d000  -0.35195 0.12387
+            54  222udud0000   0.15552 0.02419
+            74  22u2d200000   0.17430 0.03038
+           140  22202u0d000   0.07844 0.00615
+           224  22022u0d000   0.07475 0.00559
+           347  222uudd0000  -0.41387 0.17129
+           409  22uu20dd000  -0.05188 0.00269
+           500  222u0dud000  -0.10249 0.01050
+           569  22u2020d000  -0.10135 0.01027
+          1268  2022ud20000  -0.11193 0.01253
+ 
+      printout of CI-coefficients larger than  0.05 for root 11
+      energy=    -112.543435
+      conf/sym  11111111111     Coeff  Weight
+             3  2222u0d0000  -0.73392 0.53864
+            36  222200ud000   0.35194 0.12386
+            55  222ud020000  -0.17430 0.03038
+            75  22u2dud0000  -0.15552 0.02419
+           141  222020ud000  -0.07475 0.00559
+           225  220220ud000  -0.07844 0.00615
+           362  22u2udd0000  -0.41387 0.17129
+           408  22uu2d0d000  -0.05188 0.00269
+           502  222u002d000   0.10135 0.01027
+           571  22u20udd000   0.10458 0.01094
+          1267  2022u2d0000  -0.11193 0.01253
+ 
+      printout of CI-coefficients larger than  0.05 for root 12
+      energy=    -112.542939
+      conf/sym  11111111111     Coeff  Weight
+             1  22222000000   0.41503 0.17225
+             4  2222u00d000  -0.58964 0.34768
+             9  222u20d0000  -0.24568 0.06036
+            14  22u22d00000  -0.24567 0.06035
+            32  22220200000  -0.09359 0.00876
+            34  22220020000  -0.09359 0.00876
+            37  22220002000   0.26511 0.07028
+            57  222ud0ud000  -0.05525 0.00305
+            77  22u2du0d000  -0.05525 0.00305
+           142  22202002000  -0.07103 0.00505
+           226  22022002000  -0.07103 0.00505
+           284  20222200000  -0.06018 0.00362
+           286  20222020000  -0.06018 0.00362
+           331  02222002000  -0.05033 0.00253
+           349  222uu0dd000  -0.23651 0.05594
+           363  22u2ud0d000  -0.23651 0.05594
+           407  22uu2dd0000  -0.24066 0.05792
+          1269  2022u20d000  -0.07758 0.00602
+          1272  2022u02d000  -0.07758 0.00602
+          1480  22uuddud000  -0.05133 0.00263
+ 
+      printout of CI-coefficients larger than  0.05 for root 13
+      energy=    -112.490976
+      conf/sym  11111111111     Coeff  Weight
+            32  22220200000  -0.57841 0.33456
+            33  22220ud0000   0.29193 0.08522
+            34  22220020000   0.57845 0.33460
+           137  22202200000   0.14630 0.02140
+           138  22202ud0000  -0.08670 0.00752
+           139  22202020000  -0.19719 0.03888
+           221  22022200000   0.19718 0.03888
+           222  22022ud0000  -0.08666 0.00751
+           223  22022020000  -0.14631 0.02141
+           349  222uu0dd000   0.08404 0.00706
+           363  22u2ud0d000  -0.08404 0.00706
+           497  222u02d0000   0.06779 0.00460
+           568  22u20d20000   0.06779 0.00460
+           779  2220u20d000  -0.07212 0.00520
+           782  2220u02d000   0.08806 0.00775
+          1059  2202u20d000  -0.08806 0.00775
+          1062  2202u02d000   0.07213 0.00520
+          1269  2022u20d000   0.05520 0.00305
+          1272  2022u02d000  -0.05520 0.00305
+          4035  20220202000   0.05620 0.00316
+          4037  20220022000  -0.05620 0.00316
+ 
+      printout of CI-coefficients larger than  0.05 for root 14
+      energy=    -112.490975
+      conf/sym  11111111111     Coeff  Weight
+            32  22220200000  -0.20643 0.04262
+            33  22220ud0000  -0.81803 0.66918
+            34  22220020000   0.20643 0.04261
+           137  22202200000   0.05753 0.00331
+           138  22202ud0000   0.24292 0.05901
+           139  22202020000  -0.06506 0.00423
+           221  22022200000   0.06505 0.00423
+           222  22022ud0000   0.24283 0.05897
+           223  22022020000  -0.05751 0.00331
+           285  20222ud0000   0.05323 0.00283
+           348  222uud0d000  -0.08407 0.00707
+           364  22u2u0dd000  -0.08400 0.00706
+           498  222u0d20000   0.06779 0.00460
+           567  22u202d0000  -0.06779 0.00460
+           780  2220udud000  -0.05176 0.00268
+           781  2220uudd000  -0.10092 0.01019
+          1060  2202udud000  -0.06149 0.00378
+          1061  2202uudd000  -0.09526 0.00907
+          1271  2022uudd000   0.06761 0.00457
+          4036  20220ud2000   0.07948 0.00632
+ 
+      printout of CI-coefficients larger than  0.05 for root 15
+      energy=    -112.485857
+      conf/sym  11111111111     Coeff  Weight
+             4  2222u00d000   0.09653 0.00932
+             9  222u20d0000   0.20790 0.04322
+            14  22u22d00000   0.20786 0.04321
+            32  22220200000  -0.06395 0.00409
+            34  22220020000  -0.06392 0.00409
+            57  222ud0ud000  -0.29405 0.08647
+            77  22u2du0d000  -0.29398 0.08643
+           137  22202200000  -0.14770 0.02182
+           138  22202ud0000   0.05772 0.00333
+           139  22202020000   0.26466 0.07004
+           158  22ud2200000   0.05770 0.00333
+           159  22ud2ud0000   0.41232 0.17000
+           160  22ud2020000  -0.05773 0.00333
+           221  22022200000   0.26462 0.07003
+           222  22022ud0000  -0.05772 0.00333
+           223  22022020000  -0.14773 0.02182
+           349  222uu0dd000  -0.31640 0.10011
+           363  22u2ud0d000  -0.31634 0.10007
+           407  22uu2dd0000   0.15393 0.02369
+           779  2220u20d000   0.06311 0.00398
+           782  2220u02d000  -0.11024 0.01215
+           850  22ududud000  -0.08667 0.00751
+           851  22uduudd000  -0.15011 0.02253
+          1059  2202u20d000  -0.11023 0.01215
+          1062  2202u02d000   0.06312 0.00398
+          1898  22u02d20000   0.05721 0.00327
+          2107  220u22d0000   0.05721 0.00327
+          7291  20ud2ud2000  -0.05680 0.00323
+          8547  22uuuddd000   0.06719 0.00451
+ 
+      printout of CI-coefficients larger than  0.05 for root 16
+      energy=    -112.484742
+      conf/sym  11111111111     Coeff  Weight
+            53  222ud200000   0.42137 0.17755
+            54  222udud0000  -0.28418 0.08076
+            55  222ud020000  -0.42155 0.17770
+            74  22u2d200000   0.20080 0.04032
+            75  22u2dud0000   0.59556 0.35469
+            76  22u2d020000  -0.20088 0.04035
+           179  2u2d2200000   0.05596 0.00313
+           181  2u2d2020000  -0.05596 0.00313
+           243  2ud22ud0000   0.07906 0.00625
+           499  222u020d000  -0.10432 0.01088
+           501  222u0udd000   0.06093 0.00371
+           502  222u002d000   0.10436 0.01089
+           570  22u20dud000  -0.07374 0.00544
+           571  22u20udd000  -0.12770 0.01631
+           848  22udud20000  -0.05910 0.00349
+          1131  2ud2uudd000   0.05031 0.00253
+          5821  20u2dud2000  -0.07000 0.00490
+ 
+      Natural orbitals and occupation numbers for root  1
+      sym 1:   1.989601   1.954004   1.678653   1.678651   1.751249   0.330848   0.330850   0.255431   0.009345   0.010684
+               0.010684
+ 
+      Natural orbitals and occupation numbers for root  2
+      sym 1:   1.989983   1.951526   1.486051   1.485691   1.711732   0.524992   0.524643   0.290865   0.009225   0.012648
+               0.012644
+ 
+      Natural orbitals and occupation numbers for root  3
+      sym 1:   1.989983   1.951526   1.485941   1.485801   1.711732   0.524886   0.524749   0.290865   0.009225   0.012645
+               0.012647
+ 
+      Natural orbitals and occupation numbers for root  4
+      sym 1:   1.990202   1.952238   1.484668   1.485055   1.713839   0.525181   0.525555   0.288895   0.009209   0.012576
+               0.012580
+ 
+      Natural orbitals and occupation numbers for root  5
+      sym 1:   1.988925   1.953534   1.979369   1.396965   0.984013   1.001918   0.600894   0.062283   0.008819   0.016482
+               0.006797
+ 
+      Natural orbitals and occupation numbers for root  6
+      sym 1:   1.988925   1.953534   1.396965   1.979369   0.984013   0.600894   1.001918   0.062283   0.008819   0.006797
+               0.016482
+ 
+      Natural orbitals and occupation numbers for root  7
+      sym 1:   1.989645   1.957558   1.154874   1.154873   1.795634   0.844598   0.844598   0.234118   0.008481   0.007811
+               0.007811
+ 
+      Natural orbitals and occupation numbers for root  8
+      sym 1:   1.991479   1.944231   0.996547   1.370248   1.976468   0.055144   0.630158   1.016945   0.007990   0.005240
+               0.005548
+ 
+      Natural orbitals and occupation numbers for root  9
+      sym 1:   1.991479   1.944231   1.370249   0.996547   1.976468   0.630157   0.055145   1.016945   0.007990   0.005548
+               0.005241
+ 
+      Natural orbitals and occupation numbers for root 10
+      sym 1:   1.983764   1.942724   1.924449   1.803012   0.921846   1.032071   0.204300   0.144377   0.009359   0.017498
+               0.016601
+ 
+      Natural orbitals and occupation numbers for root 11
+      sym 1:   1.983764   1.942724   1.803010   1.924447   0.921845   0.204302   1.032072   0.144378   0.009359   0.016600
+               0.017499
+ 
+      Natural orbitals and occupation numbers for root 12
+      sym 1:   1.984098   1.935428   1.861373   1.861373   1.744328   0.160574   0.160576   0.249057   0.009827   0.016683
+               0.016683
+ 
+      Natural orbitals and occupation numbers for root 13
+      sym 1:   1.988801   1.952181   1.796485   1.796440   0.390998   0.993084   0.993194   0.051924   0.007950   0.014471
+               0.014471
+ 
+      Natural orbitals and occupation numbers for root 14
+      sym 1:   1.988800   1.952181   1.796552   1.796407   0.390963   0.993154   0.993128   0.051922   0.007950   0.014472
+               0.014471
+ 
+      Natural orbitals and occupation numbers for root 15
+      sym 1:   1.990380   1.953378   1.282517   1.282420   1.605097   0.730012   0.730143   0.399980   0.007498   0.009288
+               0.009287
+ 
+      Natural orbitals and occupation numbers for root 16
+      sym 1:   1.991076   1.943443   1.487465   1.486731   1.002929   0.998251   0.998625   0.061119   0.007751   0.011308
+               0.011302
+ 
+      ************************************************************************************************************************
+      *                                                                                                                      *
+      *                                                    Final results                                                     *
+      *                                                                                                                      *
+      ************************************************************************************************************************
+ 
+ 
+++    Wave function specifications:
+      -----------------------------
+ 
+      Number of closed shell electrons           4
+      Number of electrons in active shells      10
+      Max number of holes in RAS1 space          0
+      Max nr of electrons in RAS3 space          0
+      Number of inactive orbitals                2
+      Number of active orbitals                 11
+      Number of secondary orbitals              53
+      Spin quantum number                      0.0
+      State symmetry                             1
+--
+ 
+++    Orbital specifications:
+      -----------------------
+ 
+      Symmetry species                           1
+                                                 a
+      Frozen orbitals                            0
+      Inactive orbitals                          2
+      Active orbitals                           11
+      RAS1 orbitals                              0
+      RAS2 orbitals                             11
+      RAS3 orbitals                              0
+      Secondary orbitals                        53
+      Deleted orbitals                           0
+      Number of basis functions                 66
+--
+ 
+++    CI expansion specifications:
+      ----------------------------
+ 
+      Number of CSFs                         60984
+      Number of determinants                106953
+      Number of root(s) required                16
+      CI roots used                              1     2     3     4     5     6     7     8     9    10
+                                                11    12    13    14    15    16
+      weights                                0.062 0.062 0.062 0.062 0.062 0.062 0.062 0.062 0.062 0.062
+                                             0.062 0.062 0.062 0.062 0.062 0.062
+      highest root included in the CI           16
+      Root passed to geometry opt.              16
+--
+ 
+++    Final optimization conditions:
+      ------------------------------
+ 
+      Average CI energy                            -112.57680061
+      RASSCF energy for state 16                   -112.48474245
+      Super-CI energy                                -0.00000000
+      RASSCF energy change                            0.00000000
+      Max change in MO coefficients               0.343E-04
+      Max non-diagonal density matrix element     0.265E-04
+      Maximum BLB matrix element                 -0.248E-05
+      (orbital pair   5,  57 in symmetry   1)
+      Norm of electronic gradient            0.102E+00
+--
+ 
+ 
+      Final state energy(ies):
+      ------------------------
+ 
+::    RASSCF root number  1 Total energy:   -112.69384266
+::    RASSCF root number  2 Total energy:   -112.65825657
+::    RASSCF root number  3 Total energy:   -112.65825657
+::    RASSCF root number  4 Total energy:   -112.65771845
+::    RASSCF root number  5 Total energy:   -112.62575070
+::    RASSCF root number  6 Total energy:   -112.62575043
+::    RASSCF root number  7 Total energy:   -112.60260442
+::    RASSCF root number  8 Total energy:   -112.56213543
+::    RASSCF root number  9 Total energy:   -112.56213532
+::    RASSCF root number 10 Total energy:   -112.54343498
+::    RASSCF root number 11 Total energy:   -112.54343485
+::    RASSCF root number 12 Total energy:   -112.54293866
+::    RASSCF root number 13 Total energy:   -112.49097593
+::    RASSCF root number 14 Total energy:   -112.49097532
+::    RASSCF root number 15 Total energy:   -112.48585706
+::    RASSCF root number 16 Total energy:   -112.48474245
+ 
+++    Molecular orbitals:
+      -------------------
+ 
+      Pseudonatural active orbitals and approximate occupation numbers
+ 
+ 
+ 
+ 
+      Molecular orbitals for symmetry species 1: a  
+ 
+ 
+      Orbital                 1         2         3         4         5         6         7         8         9        10
+      Energy           -20.6876  -11.3654    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+      Occ. No.           2.0000    2.0000    1.9883    1.9486    1.5175    1.5174    1.2681    0.6779    0.6779    0.3705
+ 
+     1 C1     1s         0.0000    0.9999   -0.0001   -0.0107    0.0000    0.0000    0.0083    0.0000   -0.0000    0.0062
+     2 C1     2s         0.0002   -0.0108    0.0691   -0.9871    0.0000    0.0000    0.1883    0.0000   -0.0000    0.1402
+     3 C1     3s         0.0001   -0.0004    0.0090   -0.0336    0.0000    0.0000    0.0215    0.0000   -0.0000    0.0143
+     4 C1     4s         0.0000   -0.0002    0.0022   -0.0053    0.0000    0.0000    0.0059    0.0000   -0.0000    0.0013
+     5 C1     2px       -0.0000   -0.0000   -0.0000   -0.0000   -0.0374    0.1154   -0.0000   -0.3970   -0.9106   -0.0000
+     6 C1     3px        0.0000   -0.0000   -0.0000   -0.0000   -0.0029    0.0089   -0.0000   -0.0238   -0.0545    0.0000
+     7 C1     4px        0.0000   -0.0000   -0.0000    0.0000   -0.0010    0.0029   -0.0000   -0.0069   -0.0159    0.0000
+     8 C1     5px        0.0000    0.0000    0.0000    0.0000   -0.0002    0.0007   -0.0000   -0.0014   -0.0033   -0.0000
+     9 C1     2py       -0.0000   -0.0000    0.0000   -0.0000    0.1154    0.0374   -0.0000    0.9106   -0.3970   -0.0000
+    10 C1     3py        0.0000   -0.0000   -0.0000   -0.0000    0.0089    0.0029   -0.0000    0.0545   -0.0238    0.0000
+    11 C1     4py        0.0000   -0.0000   -0.0000    0.0000    0.0029    0.0010   -0.0000    0.0159   -0.0069    0.0000
+    12 C1     5py       -0.0000    0.0000    0.0000    0.0000    0.0007    0.0002   -0.0000    0.0033   -0.0014   -0.0000
+    13 C1     2pz        0.0000    0.0002    0.0306    0.0130   -0.0000   -0.0000   -0.4068    0.0000   -0.0000    0.9427
+    14 C1     3pz        0.0001   -0.0002    0.0085    0.0054   -0.0000   -0.0000   -0.0121    0.0000   -0.0000    0.0346
+    15 C1     4pz       -0.0000    0.0002    0.0001    0.0021   -0.0000   -0.0000   -0.0024    0.0000   -0.0000    0.0074
+    16 C1     5pz       -0.0000   -0.0002   -0.0009   -0.0001    0.0000    0.0000    0.0000    0.0000   -0.0000    0.0025
+    17 C1     3d2-      -0.0000    0.0000   -0.0000    0.0000   -0.0000   -0.0000   -0.0000    0.0000   -0.0000   -0.0000
+    18 C1     4d2-       0.0000   -0.0000   -0.0000   -0.0000   -0.0000    0.0000   -0.0000   -0.0000   -0.0000    0.0000
+    19 C1     3d1-       0.0000    0.0000   -0.0000   -0.0000    0.0103    0.0033   -0.0000    0.0039   -0.0017    0.0000
+    20 C1     4d1-       0.0000   -0.0000   -0.0000   -0.0000    0.0033    0.0011   -0.0000    0.0007   -0.0003    0.0000
+    21 C1     3d0        0.0001   -0.0001    0.0126   -0.0002   -0.0000   -0.0000   -0.0156   -0.0000    0.0000   -0.0027
+    22 C1     4d0        0.0000    0.0000    0.0060    0.0012   -0.0000   -0.0000   -0.0024   -0.0000    0.0000   -0.0019
+    23 C1     3d1+       0.0000    0.0000   -0.0000   -0.0000   -0.0033    0.0103   -0.0000   -0.0017   -0.0039    0.0000
+    24 C1     4d1+       0.0000   -0.0000   -0.0000   -0.0000   -0.0011    0.0033   -0.0000   -0.0003   -0.0007    0.0000
+    25 C1     3d2+      -0.0000    0.0000   -0.0000    0.0000   -0.0000    0.0000   -0.0000   -0.0000    0.0000   -0.0000
+    26 C1     4d2+       0.0000   -0.0000   -0.0000   -0.0000   -0.0000    0.0000   -0.0000   -0.0000    0.0000    0.0000
+    27 C1     4f3-       0.0000    0.0000   -0.0000    0.0000    0.0000   -0.0000    0.0000    0.0000    0.0000   -0.0000
+    28 C1     4f2-      -0.0000   -0.0000   -0.0000   -0.0000   -0.0000   -0.0000   -0.0000   -0.0000    0.0000    0.0000
+    29 C1     4f1-       0.0000   -0.0000   -0.0000   -0.0000    0.0028    0.0009   -0.0000    0.0009   -0.0004   -0.0000
+    30 C1     4f0        0.0000    0.0000    0.0036   -0.0003   -0.0000   -0.0000   -0.0031   -0.0000    0.0000   -0.0017
+    31 C1     4f1+       0.0000   -0.0000   -0.0000   -0.0000   -0.0009    0.0028   -0.0000   -0.0004   -0.0009   -0.0000
+    32 C1     4f2+      -0.0000   -0.0000   -0.0000   -0.0000   -0.0000    0.0000   -0.0000   -0.0000   -0.0000    0.0000
+    33 C1     4f3+      -0.0000   -0.0000    0.0000    0.0000   -0.0000   -0.0000   -0.0000   -0.0000    0.0000    0.0000
+    34 O2     1s         1.0000    0.0001    0.0006    0.0052    0.0000    0.0000    0.0046   -0.0000    0.0000   -0.0140
+    35 O2     2s        -0.0024   -0.0000    0.9784    0.1459    0.0000    0.0000    0.0561   -0.0000    0.0000   -0.1899
+    36 O2     3s        -0.0003    0.0002    0.0182    0.0089    0.0000    0.0000    0.0213   -0.0000    0.0000   -0.0347
+    37 O2     4s         0.0002   -0.0000   -0.0179   -0.0055   -0.0000   -0.0000   -0.0037    0.0000   -0.0000    0.0129
+    38 O2     2px       -0.0000   -0.0000   -0.0000   -0.0000   -0.3003    0.9269   -0.0000    0.0796    0.1825   -0.0000
+    39 O2     3px       -0.0000   -0.0000   -0.0000   -0.0000   -0.0329    0.1015   -0.0000    0.0084    0.0193    0.0000
+    40 O2     4px        0.0000   -0.0000   -0.0000   -0.0000   -0.0089    0.0276   -0.0000    0.0032    0.0074    0.0000
+    41 O2     5px       -0.0000   -0.0000    0.0000   -0.0000   -0.0019    0.0059   -0.0000    0.0008    0.0019    0.0000
+    42 O2     2py       -0.0000   -0.0000   -0.0000   -0.0000    0.9269    0.3003   -0.0001   -0.1825    0.0796   -0.0000
+    43 O2     3py       -0.0000   -0.0000   -0.0000   -0.0000    0.1015    0.0329   -0.0000   -0.0193    0.0084    0.0000
+    44 O2     4py        0.0000   -0.0000   -0.0000   -0.0000    0.0276    0.0089   -0.0000   -0.0074    0.0032    0.0000
+    45 O2     5py       -0.0000   -0.0000    0.0000   -0.0000    0.0059    0.0019   -0.0000   -0.0019    0.0008    0.0000
+    46 O2     2pz       -0.0000    0.0010    0.0072    0.0926    0.0001    0.0000    0.8467    0.0000   -0.0000    0.5664
+    47 O2     3pz        0.0002   -0.0000    0.0113    0.0024    0.0000    0.0000    0.0730    0.0000   -0.0000    0.0169
+    48 O2     4pz       -0.0001   -0.0001    0.0055   -0.0012    0.0000    0.0000    0.0110    0.0000   -0.0000    0.0042
+    49 O2     5pz        0.0001   -0.0001    0.0014   -0.0010    0.0000    0.0000    0.0011   -0.0000    0.0000    0.0009
+    50 O2     3d2-      -0.0000   -0.0000   -0.0000   -0.0000   -0.0000   -0.0000    0.0000   -0.0000    0.0000    0.0000
+    51 O2     4d2-       0.0000   -0.0000   -0.0000   -0.0000   -0.0000   -0.0000   -0.0000   -0.0000   -0.0000    0.0000
+    52 O2     3d1-       0.0000    0.0000    0.0000    0.0000   -0.0055   -0.0018    0.0000   -0.0043    0.0019   -0.0000
+    53 O2     4d1-      -0.0000    0.0000    0.0000    0.0000   -0.0025   -0.0008    0.0000   -0.0015    0.0007   -0.0000
+    54 O2     3d0       -0.0002   -0.0001   -0.0011   -0.0074   -0.0000   -0.0000   -0.0091    0.0000   -0.0000    0.0116
+    55 O2     4d0       -0.0000   -0.0001   -0.0013   -0.0028   -0.0000   -0.0000   -0.0036    0.0000   -0.0000    0.0040
+    56 O2     3d1+       0.0000    0.0000    0.0000    0.0000    0.0018   -0.0055    0.0000    0.0019    0.0043   -0.0000
+    57 O2     4d1+      -0.0000    0.0000    0.0000    0.0000    0.0008   -0.0025    0.0000    0.0007    0.0015   -0.0000
+    58 O2     3d2+      -0.0000    0.0000   -0.0000   -0.0000    0.0000    0.0000    0.0000   -0.0000   -0.0000    0.0000
+    59 O2     4d2+       0.0000   -0.0000   -0.0000   -0.0000    0.0000    0.0000   -0.0000   -0.0000   -0.0000    0.0000
+    60 O2     4f3-      -0.0000    0.0000   -0.0000    0.0000    0.0000    0.0000   -0.0000   -0.0000   -0.0000   -0.0000
+    61 O2     4f2-       0.0000    0.0000    0.0000    0.0000   -0.0000   -0.0000    0.0000   -0.0000   -0.0000   -0.0000
+    62 O2     4f1-      -0.0000   -0.0000    0.0000   -0.0000    0.0027    0.0009   -0.0000    0.0002   -0.0001   -0.0000
+    63 O2     4f0        0.0000    0.0000   -0.0001    0.0012    0.0000    0.0000    0.0015   -0.0000    0.0000   -0.0024
+    64 O2     4f1+      -0.0000   -0.0000    0.0000   -0.0000   -0.0009    0.0027   -0.0000   -0.0001   -0.0002   -0.0000
+    65 O2     4f2+       0.0000    0.0000    0.0000    0.0000    0.0000    0.0000   -0.0000   -0.0000    0.0000   -0.0000
+    66 O2     4f3+       0.0000   -0.0000    0.0000   -0.0000   -0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+ 
+ 
+      Orbital                11        12        13
+      Energy             0.0000    0.0000    0.0000
+      Occ. No.           0.0088    0.0125    0.0125
+ 
+     1 C1     1s        -0.0017    0.0000    0.0000
+     2 C1     2s        -0.0782    0.0000    0.0000
+     3 C1     3s         0.0462    0.0000    0.0000
+     4 C1     4s         0.0069    0.0000    0.0000
+     5 C1     2px        0.0000    0.0298   -0.1354
+     6 C1     3px       -0.0000   -0.0029    0.0132
+     7 C1     4px       -0.0000   -0.0002    0.0009
+     8 C1     5px        0.0000    0.0004   -0.0019
+     9 C1     2py        0.0000   -0.1354   -0.0298
+    10 C1     3py       -0.0000    0.0132    0.0029
+    11 C1     4py       -0.0000    0.0009    0.0002
+    12 C1     5py        0.0000   -0.0019   -0.0004
+    13 C1     2pz       -0.1100    0.0000    0.0000
+    14 C1     3pz        0.0198   -0.0000   -0.0000
+    15 C1     4pz        0.0001    0.0000    0.0000
+    16 C1     5pz       -0.0014    0.0000    0.0000
+    17 C1     3d2-      -0.0000   -0.0000   -0.0000
+    18 C1     4d2-       0.0000    0.0000   -0.0000
+    19 C1     3d1-      -0.0000    0.0538    0.0118
+    20 C1     4d1-      -0.0000    0.0099    0.0022
+    21 C1     3d0        0.0472   -0.0000   -0.0000
+    22 C1     4d0        0.0108   -0.0000   -0.0000
+    23 C1     3d1+      -0.0000   -0.0118    0.0538
+    24 C1     4d1+      -0.0000   -0.0022    0.0099
+    25 C1     3d2+      -0.0000   -0.0000    0.0000
+    26 C1     4d2+       0.0000    0.0000   -0.0000
+    27 C1     4f3-      -0.0000   -0.0000    0.0000
+    28 C1     4f2-      -0.0000    0.0000   -0.0000
+    29 C1     4f1-      -0.0000    0.0102    0.0022
+    30 C1     4f0        0.0097   -0.0000   -0.0000
+    31 C1     4f1+      -0.0000   -0.0022    0.0102
+    32 C1     4f2+      -0.0000    0.0000   -0.0000
+    33 C1     4f3+       0.0000    0.0000    0.0000
+    34 O2     1s        -0.0012   -0.0000   -0.0000
+    35 O2     2s        -0.0392   -0.0000   -0.0000
+    36 O2     3s         0.5708    0.0000    0.0000
+    37 O2     4s        -0.7726   -0.0000   -0.0000
+    38 O2     2px        0.0000    0.0235   -0.1068
+    39 O2     3px       -0.0000   -0.2103    0.9568
+    40 O2     4px        0.0000    0.0187   -0.0851
+    41 O2     5px        0.0000    0.0039   -0.0179
+    42 O2     2py        0.0000   -0.1068   -0.0235
+    43 O2     3py       -0.0000    0.9568    0.2103
+    44 O2     4py        0.0000   -0.0851   -0.0187
+    45 O2     5py        0.0000   -0.0179   -0.0039
+    46 O2     2pz       -0.0317   -0.0000   -0.0000
+    47 O2     3pz        0.2279    0.0000    0.0000
+    48 O2     4pz       -0.0194   -0.0000   -0.0000
+    49 O2     5pz       -0.0057   -0.0000   -0.0000
+    50 O2     3d2-      -0.0000   -0.0000    0.0000
+    51 O2     4d2-      -0.0000   -0.0000   -0.0000
+    52 O2     3d1-      -0.0000   -0.0435   -0.0096
+    53 O2     4d1-       0.0000   -0.0025   -0.0005
+    54 O2     3d0        0.0409   -0.0000   -0.0000
+    55 O2     4d0       -0.0385    0.0000    0.0000
+    56 O2     3d1+      -0.0000    0.0096   -0.0435
+    57 O2     4d1+       0.0000    0.0005   -0.0025
+    58 O2     3d2+      -0.0000   -0.0000   -0.0000
+    59 O2     4d2+      -0.0000    0.0000   -0.0000
+    60 O2     4f3-      -0.0000    0.0000   -0.0000
+    61 O2     4f2-       0.0000   -0.0000   -0.0000
+    62 O2     4f1-      -0.0000    0.0109    0.0024
+    63 O2     4f0        0.0026    0.0000    0.0000
+    64 O2     4f1+      -0.0000   -0.0024    0.0109
+    65 O2     4f2+       0.0000    0.0000   -0.0000
+    66 O2     4f3+       0.0000   -0.0000    0.0000
+--
+ 
+      Von Neumann Entropy (Root   1) =  1.98706
+ 
+
+      Mulliken population analysis for root number:  1
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                C1      O2    
+      1s       2.0000  2.0000
+      2s       1.9401  1.9579
+      2px      0.5610  1.4059
+      2pz      0.7826  1.2317
+      2py      0.5610  1.4059
+      3s       0.0018 -0.0028
+      3px      0.0064  0.0384
+      3pz      0.0076  0.0195
+      3py      0.0064  0.0384
+      4s       0.0006  0.0060
+      3d2+     0.0000  0.0000
+      3d1+     0.0022  0.0005
+      3d0      0.0076  0.0024
+      3d1-     0.0022  0.0005
+      3d2-     0.0000  0.0000
+      4px      0.0009  0.0028
+      4pz     -0.0004 -0.0007
+      4py      0.0009  0.0028
+      4d2+     0.0000  0.0000
+      4d1+     0.0009  0.0003
+      4d0      0.0035  0.0015
+      4d1-     0.0009  0.0003
+      4d2-     0.0000  0.0000
+      5px      0.0000  0.0003
+      5pz     -0.0000 -0.0006
+      5py      0.0000  0.0003
+      4f3+     0.0000  0.0000
+      4f2+     0.0000  0.0000
+      4f1+     0.0004  0.0001
+      4f0      0.0011  0.0002
+      4f1-     0.0004  0.0001
+      4f2-     0.0000  0.0000
+      4f3-     0.0000  0.0000
+      Total    5.8883  8.1117
+ 
+      N-E      0.1117 -0.1117
+ 
+      Total electronic charge=   14.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number:  1
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X=  3.6384E-08               Y=  2.4072E-08               Z= -1.1936E+00           Total=  1.1936E+00
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    1.2160
+                  XX= -1.1422E+01              XY= -4.8676E-06              XZ= -5.9482E-06              YY= -1.1422E+01
+                  YZ= -1.9588E-05              ZZ= -1.1190E+01
+      In traceless form (Debye*Ang)
+                  XX= -1.1569E-01              XY= -7.3015E-06              XZ= -8.9224E-06              YY= -1.1568E-01
+                  YZ= -2.9382E-05              ZZ=  2.3136E-01
+--
+ 
+
+      LoProp population analysis for root number:  1
+      -----------------------------------------------
+ 
+ 
+++    LoProp analysis:
+      ----------------
+ 
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+++    Static properties:
+      ------------------
+ 
+ 
+      LoProp Charges per center
+ 
+
+                   C1       O2    
+      Nuclear      6.0000   8.0000
+      Electronic  -5.9063  -8.0937
+ 
+      Total        0.0937  -0.0937
+--
+ 
+ 
+      Natural Bond Order analysis for root number:  1
+ 
+++    Natural Bond Order analysis
+      ---------------------------
+      Based on LoProp computed density
+      -------------------------------------------------------------------------------------
+      Atom A       Atom B       Bond Order
+      -------------------------------------------------------------------------------------
+      NBO located      1.000 non-bonded electrons on atom C1        
+      NBO located      0.991 non-bonded electrons on atom C1        
+      The remaining    5.171 electrons are to be considered as diffuse
+--
+ 
+--
+ 
+      Von Neumann Entropy (Root   2) =  2.41657
+ 
+
+      Mulliken population analysis for root number:  2
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                C1      O2    
+      1s       2.0000  2.0000
+      2s       1.9409  1.9607
+      2px      0.5279  1.4579
+      2pz      0.8611  1.1442
+      2py      0.5282  1.4582
+      3s       0.0020 -0.0040
+      3px      0.0023  0.0296
+      3pz      0.0074  0.0197
+      3py      0.0023  0.0296
+      4s       0.0006  0.0060
+      3d2+     0.0000  0.0000
+      3d1+     0.0020  0.0003
+      3d0      0.0074  0.0026
+      3d1-     0.0020  0.0003
+      3d2-     0.0000  0.0000
+      4px      0.0003  0.0014
+      4pz     -0.0004 -0.0007
+      4py      0.0003  0.0014
+      4d2+     0.0000  0.0000
+      4d1+     0.0009  0.0002
+      4d0      0.0035  0.0017
+      4d1-     0.0009  0.0002
+      4d2-     0.0000  0.0000
+      5px      0.0000  0.0000
+      5pz     -0.0000 -0.0006
+      5py      0.0000  0.0000
+      4f3+     0.0000  0.0000
+      4f2+     0.0000  0.0000
+      4f1+     0.0004  0.0000
+      4f0      0.0011  0.0002
+      4f1-     0.0004  0.0000
+      4f2-     0.0000  0.0000
+      4f3-     0.0000  0.0000
+      Total    5.8912  8.1088
+ 
+      N-E      0.1088 -0.1088
+ 
+      Total electronic charge=   14.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number:  2
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X= -2.1354E-07               Y= -7.9931E-07               Z= -1.0857E+00           Total=  1.0857E+00
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    1.2160
+                  XX= -1.1175E+01              XY=  2.5049E-04              XZ= -2.2285E-06              YY= -1.1176E+01
+                  YZ= -6.8321E-06              ZZ= -1.1828E+01
+      In traceless form (Debye*Ang)
+                  XX=  3.2734E-01              XY=  3.7573E-04              XZ= -3.3428E-06              YY=  3.2579E-01
+                  YZ= -1.0248E-05              ZZ= -6.5313E-01
+--
+ 
+
+      LoProp population analysis for root number:  2
+      -----------------------------------------------
+ 
+ 
+++    LoProp analysis:
+      ----------------
+ 
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+++    Static properties:
+      ------------------
+ 
+ 
+      LoProp Charges per center
+ 
+
+                   C1       O2    
+      Nuclear      6.0000   8.0000
+      Electronic  -5.8894  -8.1106
+ 
+      Total        0.1106  -0.1106
+--
+ 
+ 
+      Natural Bond Order analysis for root number:  2
+ 
+++    Natural Bond Order analysis
+      ---------------------------
+      Based on LoProp computed density
+      -------------------------------------------------------------------------------------
+      Atom A       Atom B       Bond Order
+      -------------------------------------------------------------------------------------
+      NBO located      1.000 non-bonded electrons on atom C1        
+      NBO located      0.985 non-bonded electrons on atom C1        
+      The remaining    5.092 electrons are to be considered as diffuse
+--
+ 
+--
+ 
+      Von Neumann Entropy (Root   3) =  2.41657
+ 
+
+      Mulliken population analysis for root number:  3
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                C1      O2    
+      1s       2.0000  2.0000
+      2s       1.9409  1.9607
+      2px      0.5281  1.4581
+      2pz      0.8611  1.1442
+      2py      0.5281  1.4580
+      3s       0.0020 -0.0040
+      3px      0.0023  0.0296
+      3pz      0.0074  0.0197
+      3py      0.0023  0.0296
+      4s       0.0006  0.0060
+      3d2+     0.0000  0.0000
+      3d1+     0.0020  0.0003
+      3d0      0.0074  0.0026
+      3d1-     0.0020  0.0003
+      3d2-     0.0000  0.0000
+      4px      0.0003  0.0014
+      4pz     -0.0004 -0.0007
+      4py      0.0003  0.0014
+      4d2+     0.0000  0.0000
+      4d1+     0.0009  0.0002
+      4d0      0.0035  0.0017
+      4d1-     0.0009  0.0002
+      4d2-     0.0000  0.0000
+      5px      0.0000  0.0000
+      5pz     -0.0000 -0.0006
+      5py      0.0000  0.0000
+      4f3+     0.0000  0.0000
+      4f2+     0.0000  0.0000
+      4f1+     0.0004  0.0000
+      4f0      0.0011  0.0002
+      4f1-     0.0004  0.0000
+      4f2-     0.0000  0.0000
+      4f3-     0.0000  0.0000
+      Total    5.8912  8.1088
+ 
+      N-E      0.1088 -0.1088
+ 
+      Total electronic charge=   14.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number:  3
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X= -2.7499E-07               Y= -6.8852E-07               Z= -1.0857E+00           Total=  1.0857E+00
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    1.2160
+                  XX= -1.1175E+01              XY=  1.9942E-04              XZ= -2.0256E-06              YY= -1.1175E+01
+                  YZ= -7.0115E-06              ZZ= -1.1828E+01
+      In traceless form (Debye*Ang)
+                  XX=  3.2641E-01              XY=  2.9913E-04              XZ= -3.0384E-06              YY=  3.2671E-01
+                  YZ= -1.0517E-05              ZZ= -6.5313E-01
+--
+ 
+
+      LoProp population analysis for root number:  3
+      -----------------------------------------------
+ 
+ 
+++    LoProp analysis:
+      ----------------
+ 
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+++    Static properties:
+      ------------------
+ 
+ 
+      LoProp Charges per center
+ 
+
+                   C1       O2    
+      Nuclear      6.0000   8.0000
+      Electronic  -5.8894  -8.1106
+ 
+      Total        0.1106  -0.1106
+--
+ 
+ 
+      Natural Bond Order analysis for root number:  3
+ 
+++    Natural Bond Order analysis
+      ---------------------------
+      Based on LoProp computed density
+      -------------------------------------------------------------------------------------
+      Atom A       Atom B       Bond Order
+      -------------------------------------------------------------------------------------
+      NBO located      1.000 non-bonded electrons on atom C1        
+      NBO located      0.985 non-bonded electrons on atom C1        
+      The remaining    5.092 electrons are to be considered as diffuse
+--
+ 
+--
+ 
+      Von Neumann Entropy (Root   4) =  2.41415
+ 
+
+      Mulliken population analysis for root number:  4
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                C1      O2    
+      1s       2.0000  2.0000
+      2s       1.9416  1.9608
+      2px      0.5300  1.4557
+      2pz      0.8573  1.1483
+      2py      0.5298  1.4554
+      3s       0.0020 -0.0040
+      3px      0.0024  0.0296
+      3pz      0.0074  0.0197
+      3py      0.0024  0.0296
+      4s       0.0006  0.0060
+      3d2+     0.0000  0.0000
+      3d1+     0.0020  0.0003
+      3d0      0.0074  0.0026
+      3d1-     0.0020  0.0003
+      3d2-     0.0000  0.0000
+      4px      0.0003  0.0014
+      4pz     -0.0004 -0.0007
+      4py      0.0003  0.0014
+      4d2+     0.0000  0.0000
+      4d1+     0.0009  0.0002
+      4d0      0.0035  0.0017
+      4d1-     0.0009  0.0002
+      4d2-     0.0000  0.0000
+      5px      0.0000  0.0000
+      5pz     -0.0000 -0.0006
+      5py      0.0000  0.0000
+      4f3+     0.0000  0.0000
+      4f2+     0.0000  0.0000
+      4f1+     0.0004  0.0000
+      4f0      0.0011  0.0002
+      4f1-     0.0004  0.0000
+      4f2-     0.0000  0.0000
+      4f3-     0.0000  0.0000
+      Total    5.8919  8.1081
+ 
+      N-E      0.1081 -0.1081
+ 
+      Total electronic charge=   14.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number:  4
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X= -3.1828E-07               Y= -8.0839E-07               Z= -1.0804E+00           Total=  1.0804E+00
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    1.2160
+                  XX= -1.1180E+01              XY= -4.5997E-04              XZ= -1.9200E-06              YY= -1.1179E+01
+                  YZ= -6.6879E-06              ZZ= -1.1818E+01
+      In traceless form (Debye*Ang)
+                  XX=  3.1864E-01              XY= -6.8995E-04              XZ= -2.8800E-06              YY=  3.1991E-01
+                  YZ= -1.0032E-05              ZZ= -6.3855E-01
+--
+ 
+
+      LoProp population analysis for root number:  4
+      -----------------------------------------------
+ 
+ 
+++    LoProp analysis:
+      ----------------
+ 
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+++    Static properties:
+      ------------------
+ 
+ 
+      LoProp Charges per center
+ 
+
+                   C1       O2    
+      Nuclear      6.0000   8.0000
+      Electronic  -5.8905  -8.1095
+ 
+      Total        0.1095  -0.1095
+--
+ 
+ 
+      Natural Bond Order analysis for root number:  4
+ 
+++    Natural Bond Order analysis
+      ---------------------------
+      Based on LoProp computed density
+      -------------------------------------------------------------------------------------
+      Atom A       Atom B       Bond Order
+      -------------------------------------------------------------------------------------
+      NBO located      1.000 non-bonded electrons on atom C1        
+      NBO located      0.986 non-bonded electrons on atom C1        
+      The remaining    5.093 electrons are to be considered as diffuse
+--
+ 
+--
+ 
+      Von Neumann Entropy (Root   5) =  2.21704
+ 
+
+      Mulliken population analysis for root number:  5
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                C1      O2    
+      1s       2.0000  2.0000
+      2s       1.9486  1.9587
+      2px      0.9146  1.2281
+      2pz      0.1124  0.9480
+      2py      0.9835  1.7912
+      3s       0.0016 -0.0004
+      3px      0.0058  0.0255
+      3pz      0.0061  0.0033
+      3py      0.0042  0.0361
+      4s       0.0004  0.0067
+      3d2+     0.0000  0.0000
+      3d1+     0.0017  0.0005
+      3d0      0.0069  0.0013
+      3d1-     0.0025  0.0005
+      3d2-     0.0000  0.0000
+      4px      0.0007  0.0019
+      4pz      0.0002 -0.0014
+      4py      0.0004  0.0017
+      4d2+     0.0000  0.0000
+      4d1+     0.0007  0.0004
+      4d0      0.0035  0.0009
+      4d1-     0.0011  0.0003
+      4d2-     0.0000  0.0000
+      5px      0.0000  0.0001
+      5pz      0.0001 -0.0005
+      5py      0.0000  0.0000
+      4f3+     0.0000  0.0000
+      4f2+     0.0000  0.0000
+      4f1+     0.0003  0.0001
+      4f0      0.0010  0.0001
+      4f1-     0.0004  0.0001
+      4f2-     0.0000  0.0000
+      4f3-     0.0000  0.0000
+      Total    5.9968  8.0032
+ 
+      N-E      0.0032 -0.0032
+ 
+      Total electronic charge=   14.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number:  5
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X=  2.2580E-06               Y= -4.2672E-06               Z= -1.4517E-01           Total=  1.4517E-01
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    1.2160
+                  XX= -1.1763E+01              XY=  4.6432E-01              XZ= -2.7522E-06              YY= -1.2548E+01
+                  YZ= -1.0912E-06              ZZ= -9.6198E+00
+      In traceless form (Debye*Ang)
+                  XX= -6.7888E-01              XY=  6.9648E-01              XZ= -4.1284E-06              YY= -1.8569E+00
+                  YZ= -1.6369E-06              ZZ=  2.5357E+00
+--
+ 
+
+      LoProp population analysis for root number:  5
+      -----------------------------------------------
+ 
+ 
+++    LoProp analysis:
+      ----------------
+ 
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+++    Static properties:
+      ------------------
+ 
+ 
+      LoProp Charges per center
+ 
+
+                   C1       O2    
+      Nuclear      6.0000   8.0000
+      Electronic  -5.9985  -8.0015
+ 
+      Total        0.0015  -0.0015
+--
+ 
+ 
+      Natural Bond Order analysis for root number:  5
+ 
+++    Natural Bond Order analysis
+      ---------------------------
+      Based on LoProp computed density
+      -------------------------------------------------------------------------------------
+      Atom A       Atom B       Bond Order
+      -------------------------------------------------------------------------------------
+      NBO located      1.000 non-bonded electrons on atom C1        
+      NBO located      0.966 non-bonded electrons on atom C1        
+      The remaining    5.076 electrons are to be considered as diffuse
+--
+ 
+--
+ 
+      Von Neumann Entropy (Root   6) =  2.21704
+ 
+
+      Mulliken population analysis for root number:  6
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                C1      O2    
+      1s       2.0000  2.0000
+      2s       1.9486  1.9587
+      2px      0.9835  1.7912
+      2pz      0.1124  0.9480
+      2py      0.9146  1.2281
+      3s       0.0016 -0.0004
+      3px      0.0042  0.0361
+      3pz      0.0061  0.0033
+      3py      0.0058  0.0255
+      4s       0.0004  0.0067
+      3d2+     0.0000  0.0000
+      3d1+     0.0025  0.0005
+      3d0      0.0069  0.0013
+      3d1-     0.0017  0.0005
+      3d2-     0.0000  0.0000
+      4px      0.0004  0.0017
+      4pz      0.0002 -0.0014
+      4py      0.0007  0.0019
+      4d2+     0.0000  0.0000
+      4d1+     0.0011  0.0003
+      4d0      0.0035  0.0009
+      4d1-     0.0007  0.0004
+      4d2-     0.0000  0.0000
+      5px      0.0000  0.0000
+      5pz      0.0001 -0.0005
+      5py      0.0000  0.0001
+      4f3+     0.0000  0.0000
+      4f2+     0.0000  0.0000
+      4f1+     0.0004  0.0001
+      4f0      0.0010  0.0001
+      4f1-     0.0003  0.0001
+      4f2-     0.0000  0.0000
+      4f3-     0.0000  0.0000
+      Total    5.9968  8.0032
+ 
+      N-E      0.0032 -0.0032
+ 
+      Total electronic charge=   14.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number:  6
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X= -3.7191E-06               Y= -1.8740E-06               Z= -1.4516E-01           Total=  1.4516E-01
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    1.2160
+                  XX= -1.2548E+01              XY= -4.6433E-01              XZ=  1.3899E-06              YY= -1.1763E+01
+                  YZ= -1.8435E-06              ZZ= -9.6198E+00
+      In traceless form (Debye*Ang)
+                  XX= -1.8569E+00              XY= -6.9649E-01              XZ=  2.0849E-06              YY= -6.7887E-01
+                  YZ= -2.7653E-06              ZZ=  2.5357E+00
+--
+ 
+
+      LoProp population analysis for root number:  6
+      -----------------------------------------------
+ 
+ 
+++    LoProp analysis:
+      ----------------
+ 
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+++    Static properties:
+      ------------------
+ 
+ 
+      LoProp Charges per center
+ 
+
+                   C1       O2    
+      Nuclear      6.0000   8.0000
+      Electronic  -5.9985  -8.0015
+ 
+      Total        0.0015  -0.0015
+--
+ 
+ 
+      Natural Bond Order analysis for root number:  6
+ 
+++    Natural Bond Order analysis
+      ---------------------------
+      Based on LoProp computed density
+      -------------------------------------------------------------------------------------
+      Atom A       Atom B       Bond Order
+      -------------------------------------------------------------------------------------
+      NBO located      1.000 non-bonded electrons on atom C1        
+      NBO located      0.966 non-bonded electrons on atom C1        
+      The remaining    5.076 electrons are to be considered as diffuse
+--
+ 
+--
+ 
+      Von Neumann Entropy (Root   7) =  2.60089
+ 
+
+      Mulliken population analysis for root number:  7
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                C1      O2    
+      1s       2.0000  2.0000
+      2s       1.9556  1.9608
+      2px      0.8582  1.1256
+      2pz      0.3468  1.6865
+      2py      0.8582  1.1256
+      3s      -0.0002 -0.0006
+      3px      0.0033  0.0160
+      3pz      0.0061  0.0090
+      3py      0.0033  0.0160
+      4s       0.0005  0.0058
+      3d2+     0.0000  0.0000
+      3d1+     0.0013  0.0004
+      3d0      0.0088  0.0017
+      3d1-     0.0013  0.0004
+      3d2-     0.0000  0.0000
+      4px      0.0003  0.0010
+      4pz      0.0001 -0.0015
+      4py      0.0003  0.0010
+      4d2+     0.0000  0.0000
+      4d1+     0.0006  0.0003
+      4d0      0.0038  0.0011
+      4d1-     0.0006  0.0003
+      4d2-     0.0000  0.0000
+      5px      0.0000 -0.0000
+      5pz      0.0002 -0.0006
+      5py      0.0000 -0.0000
+      4f3+     0.0000  0.0000
+      4f2+     0.0000  0.0000
+      4f1+     0.0002  0.0000
+      4f0      0.0013  0.0001
+      4f1-     0.0002  0.0000
+      4f2-     0.0000  0.0000
+      4f3-     0.0000  0.0000
+      Total    6.0509  7.9491
+ 
+      N-E     -0.0509  0.0509
+ 
+      Total electronic charge=   14.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number:  7
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X=  7.8755E-07               Y=  2.7141E-06               Z=  4.4621E-01           Total=  4.4621E-01
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    1.2160
+                  XX= -1.1337E+01              XY= -2.5130E-06              XZ=  8.0503E-07              YY= -1.1337E+01
+                  YZ=  7.1867E-06              ZZ= -1.1542E+01
+      In traceless form (Debye*Ang)
+                  XX=  1.0288E-01              XY= -3.7695E-06              XZ=  1.2075E-06              YY=  1.0288E-01
+                  YZ=  1.0780E-05              ZZ= -2.0576E-01
+--
+ 
+
+      LoProp population analysis for root number:  7
+      -----------------------------------------------
+ 
+ 
+++    LoProp analysis:
+      ----------------
+ 
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+++    Static properties:
+      ------------------
+ 
+ 
+      LoProp Charges per center
+ 
+
+                   C1       O2    
+      Nuclear      6.0000   8.0000
+      Electronic  -6.0546  -7.9454
+ 
+      Total       -0.0546   0.0546
+--
+ 
+ 
+      Natural Bond Order analysis for root number:  7
+ 
+++    Natural Bond Order analysis
+      ---------------------------
+      Based on LoProp computed density
+      -------------------------------------------------------------------------------------
+      Atom A       Atom B       Bond Order
+      -------------------------------------------------------------------------------------
+      NBO located      1.000 non-bonded electrons on atom C1        
+      NBO located      0.965 non-bonded electrons on atom C1        
+      The remaining    5.051 electrons are to be considered as diffuse
+--
+ 
+--
+ 
+      Von Neumann Entropy (Root   8) =  2.17905
+ 
+
+      Mulliken population analysis for root number:  8
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                C1      O2    
+      1s       2.0000  2.0000
+      2s       1.9472  1.9706
+      2px      0.7142  1.0433
+      2pz      1.0582  1.9331
+      2py      0.2519  0.9998
+      3s      -0.0013 -0.0061
+      3px      0.0049  0.0212
+      3pz      0.0033  0.0092
+      3py      0.0019  0.0162
+      4s       0.0005  0.0048
+      3d2+     0.0000  0.0000
+      3d1+     0.0015  0.0004
+      3d0      0.0092  0.0029
+      3d1-     0.0012  0.0002
+      3d2-     0.0000  0.0000
+      4px      0.0006  0.0016
+      4pz      0.0001 -0.0018
+      4py      0.0003  0.0013
+      4d2+     0.0000  0.0000
+      4d1+     0.0006  0.0003
+      4d0      0.0041  0.0018
+      4d1-     0.0006  0.0001
+      4d2-     0.0000  0.0000
+      5px      0.0000  0.0001
+      5pz      0.0003 -0.0006
+      5py      0.0000  0.0001
+      4f3+     0.0000  0.0000
+      4f2+     0.0000  0.0000
+      4f1+     0.0003  0.0001
+      4f0      0.0014  0.0003
+      4f1-     0.0002  0.0000
+      4f2-     0.0000  0.0000
+      4f3-     0.0000  0.0000
+      Total    6.0010  7.9990
+ 
+      N-E     -0.0010  0.0010
+ 
+      Total electronic charge=   14.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number:  8
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X= -4.5023E-07               Y= -2.3553E-06               Z=  4.0309E-02           Total=  4.0309E-02
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    1.2160
+                  XX= -1.0969E+01              XY= -8.0400E-01              XZ=  3.7889E-06              YY= -9.9294E+00
+                  YZ= -6.6379E-06              ZZ= -1.2986E+01
+      In traceless form (Debye*Ang)
+                  XX=  4.8804E-01              XY= -1.2060E+00              XZ=  5.6834E-06              YY=  2.0481E+00
+                  YZ= -9.9569E-06              ZZ= -2.5362E+00
+--
+ 
+
+      LoProp population analysis for root number:  8
+      -----------------------------------------------
+ 
+ 
+++    LoProp analysis:
+      ----------------
+ 
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+++    Static properties:
+      ------------------
+ 
+ 
+      LoProp Charges per center
+ 
+
+                   C1       O2    
+      Nuclear      6.0000   8.0000
+      Electronic  -6.0032  -7.9968
+ 
+      Total       -0.0032   0.0032
+--
+ 
+ 
+      Natural Bond Order analysis for root number:  8
+ 
+++    Natural Bond Order analysis
+      ---------------------------
+      Based on LoProp computed density
+      -------------------------------------------------------------------------------------
+      Atom A       Atom B       Bond Order
+      -------------------------------------------------------------------------------------
+      NBO located      1.000 non-bonded electrons on atom C1        
+      NBO located      0.961 non-bonded electrons on atom C1        
+      The remaining    4.995 electrons are to be considered as diffuse
+--
+ 
+--
+ 
+      Von Neumann Entropy (Root   9) =  2.17905
+ 
+
+      Mulliken population analysis for root number:  9
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                C1      O2    
+      1s       2.0000  2.0000
+      2s       1.9472  1.9706
+      2px      0.2519  0.9998
+      2pz      1.0582  1.9331
+      2py      0.7142  1.0433
+      3s      -0.0013 -0.0061
+      3px      0.0019  0.0162
+      3pz      0.0033  0.0092
+      3py      0.0049  0.0212
+      4s       0.0005  0.0048
+      3d2+     0.0000  0.0000
+      3d1+     0.0012  0.0002
+      3d0      0.0092  0.0029
+      3d1-     0.0015  0.0004
+      3d2-     0.0000  0.0000
+      4px      0.0003  0.0013
+      4pz      0.0001 -0.0018
+      4py      0.0006  0.0016
+      4d2+     0.0000  0.0000
+      4d1+     0.0006  0.0001
+      4d0      0.0041  0.0018
+      4d1-     0.0006  0.0003
+      4d2-     0.0000  0.0000
+      5px      0.0000  0.0001
+      5pz      0.0003 -0.0006
+      5py      0.0000  0.0001
+      4f3+     0.0000  0.0000
+      4f2+     0.0000  0.0000
+      4f1+     0.0002  0.0000
+      4f0      0.0014  0.0003
+      4f1-     0.0003  0.0001
+      4f2-     0.0000  0.0000
+      4f3-     0.0000  0.0000
+      Total    6.0010  7.9990
+ 
+      N-E     -0.0010  0.0010
+ 
+      Total electronic charge=   14.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number:  9
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X=  3.5050E-07               Y= -1.2710E-06               Z=  4.0310E-02           Total=  4.0310E-02
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    1.2160
+                  XX= -9.9294E+00              XY=  8.0400E-01              XZ= -5.0092E-06              YY= -1.0969E+01
+                  YZ= -3.1530E-06              ZZ= -1.2986E+01
+      In traceless form (Debye*Ang)
+                  XX=  2.0481E+00              XY=  1.2060E+00              XZ= -7.5138E-06              YY=  4.8804E-01
+                  YZ= -4.7294E-06              ZZ= -2.5362E+00
+--
+ 
+
+      LoProp population analysis for root number:  9
+      -----------------------------------------------
+ 
+ 
+++    LoProp analysis:
+      ----------------
+ 
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+++    Static properties:
+      ------------------
+ 
+ 
+      LoProp Charges per center
+ 
+
+                   C1       O2    
+      Nuclear      6.0000   8.0000
+      Electronic  -6.0032  -7.9968
+ 
+      Total       -0.0032   0.0032
+--
+ 
+ 
+      Natural Bond Order analysis for root number:  9
+ 
+++    Natural Bond Order analysis
+      ---------------------------
+      Based on LoProp computed density
+      -------------------------------------------------------------------------------------
+      Atom A       Atom B       Bond Order
+      -------------------------------------------------------------------------------------
+      NBO located      1.000 non-bonded electrons on atom C1        
+      NBO located      0.961 non-bonded electrons on atom C1        
+      The remaining    4.995 electrons are to be considered as diffuse
+--
+ 
+--
+ 
+      Von Neumann Entropy (Root  10) =  2.01162
+ 
+
+      Mulliken population analysis for root number: 10
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                C1      O2    
+      1s       2.0000  2.0000
+      2s       1.9230  1.9489
+      2px      0.3115  1.7786
+      2pz      0.5285  0.5627
+      2py      0.9771  1.8225
+      3s       0.0033 -0.0031
+      3px      0.0007  0.0420
+      3pz      0.0071  0.0115
+      3py      0.0048  0.0472
+      4s       0.0005  0.0074
+      3d2+     0.0000  0.0000
+      3d1+     0.0026  0.0002
+      3d0      0.0060  0.0021
+      3d1-     0.0029  0.0005
+      3d2-     0.0000  0.0000
+      4px      0.0001  0.0013
+      4pz     -0.0001 -0.0007
+      4py      0.0005  0.0018
+      4d2+     0.0000  0.0000
+      4d1+     0.0011  0.0001
+      4d0      0.0033  0.0013
+      4d1-     0.0012  0.0003
+      4d2-     0.0000  0.0000
+      5px      0.0000  0.0000
+      5pz     -0.0000 -0.0005
+      5py      0.0000  0.0001
+      4f3+     0.0000  0.0000
+      4f2+     0.0000  0.0000
+      4f1+     0.0005  0.0000
+      4f0      0.0009  0.0002
+      4f1-     0.0005  0.0001
+      4f2-     0.0000  0.0000
+      4f3-     0.0000  0.0000
+      Total    5.7756  8.2244
+ 
+      N-E      0.2244 -0.2244
+ 
+      Total electronic charge=   14.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number: 10
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X=  3.5491E-06               Y= -1.3506E-05               Z= -2.2983E+00           Total=  2.2983E+00
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    1.2160
+                  XX= -1.1216E+01              XY=  6.2771E-01              XZ= -7.5213E-05              YY= -1.2678E+01
+                  YZ=  1.6928E-04              ZZ= -9.6470E+00
+      In traceless form (Debye*Ang)
+                  XX= -5.3985E-02              XY=  9.4157E-01              XZ= -1.1282E-04              YY= -2.2461E+00
+                  YZ=  2.5392E-04              ZZ=  2.3001E+00
+--
+ 
+
+      LoProp population analysis for root number: 10
+      -----------------------------------------------
+ 
+ 
+++    LoProp analysis:
+      ----------------
+ 
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+++    Static properties:
+      ------------------
+ 
+ 
+      LoProp Charges per center
+ 
+
+                   C1       O2    
+      Nuclear      6.0000   8.0000
+      Electronic  -5.7686  -8.2314
+ 
+      Total        0.2314  -0.2314
+--
+ 
+ 
+      Natural Bond Order analysis for root number: 10
+ 
+++    Natural Bond Order analysis
+      ---------------------------
+      Based on LoProp computed density
+      -------------------------------------------------------------------------------------
+      Atom A       Atom B       Bond Order
+      -------------------------------------------------------------------------------------
+      NBO located      1.000 non-bonded electrons on atom C1        
+      NBO located      0.967 non-bonded electrons on atom C1        
+      The remaining    5.096 electrons are to be considered as diffuse
+--
+ 
+--
+ 
+      Von Neumann Entropy (Root  11) =  2.01163
+ 
+
+      Mulliken population analysis for root number: 11
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                C1      O2    
+      1s       2.0000  2.0000
+      2s       1.9230  1.9489
+      2px      0.9771  1.8225
+      2pz      0.5285  0.5627
+      2py      0.3115  1.7786
+      3s       0.0033 -0.0031
+      3px      0.0048  0.0472
+      3pz      0.0071  0.0115
+      3py      0.0007  0.0420
+      4s       0.0005  0.0074
+      3d2+     0.0000  0.0000
+      3d1+     0.0029  0.0005
+      3d0      0.0060  0.0021
+      3d1-     0.0026  0.0002
+      3d2-     0.0000  0.0000
+      4px      0.0005  0.0018
+      4pz     -0.0001 -0.0007
+      4py      0.0001  0.0013
+      4d2+     0.0000  0.0000
+      4d1+     0.0012  0.0003
+      4d0      0.0033  0.0013
+      4d1-     0.0011  0.0001
+      4d2-     0.0000  0.0000
+      5px      0.0000  0.0001
+      5pz     -0.0000 -0.0005
+      5py      0.0000  0.0000
+      4f3+     0.0000  0.0000
+      4f2+     0.0000  0.0000
+      4f1+     0.0005  0.0001
+      4f0      0.0009  0.0002
+      4f1-     0.0005  0.0000
+      4f2-     0.0000  0.0000
+      4f3-     0.0000  0.0000
+      Total    5.7756  8.2244
+ 
+      N-E      0.2244 -0.2244
+ 
+      Total electronic charge=   14.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number: 11
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X= -8.3704E-06               Y= -4.3390E-06               Z= -2.2982E+00           Total=  2.2982E+00
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    1.2160
+                  XX= -1.2678E+01              XY= -6.2772E-01              XZ=  1.2036E-04              YY= -1.1216E+01
+                  YZ=  2.4175E-05              ZZ= -9.6470E+00
+      In traceless form (Debye*Ang)
+                  XX= -2.2461E+00              XY= -9.4158E-01              XZ=  1.8054E-04              YY= -5.3980E-02
+                  YZ=  3.6262E-05              ZZ=  2.3001E+00
+--
+ 
+
+      LoProp population analysis for root number: 11
+      -----------------------------------------------
+ 
+ 
+++    LoProp analysis:
+      ----------------
+ 
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+++    Static properties:
+      ------------------
+ 
+ 
+      LoProp Charges per center
+ 
+
+                   C1       O2    
+      Nuclear      6.0000   8.0000
+      Electronic  -5.7686  -8.2314
+ 
+      Total        0.2314  -0.2314
+--
+ 
+ 
+      Natural Bond Order analysis for root number: 11
+ 
+++    Natural Bond Order analysis
+      ---------------------------
+      Based on LoProp computed density
+      -------------------------------------------------------------------------------------
+      Atom A       Atom B       Bond Order
+      -------------------------------------------------------------------------------------
+      NBO located      1.000 non-bonded electrons on atom C1        
+      NBO located      0.967 non-bonded electrons on atom C1        
+      The remaining    5.096 electrons are to be considered as diffuse
+--
+ 
+--
+ 
+      Von Neumann Entropy (Root  12) =  1.53368
+ 
+
+      Mulliken population analysis for root number: 12
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                C1      O2    
+      1s       2.0000  2.0000
+      2s       1.9168  1.9572
+      2px      0.1700  1.8195
+      2pz      1.4169  0.5858
+      2py      0.1700  1.8195
+      3s       0.0035 -0.0088
+      3px     -0.0007  0.0445
+      3pz      0.0066  0.0229
+      3py     -0.0007  0.0445
+      4s       0.0007  0.0064
+      3d2+     0.0000  0.0000
+      3d1+     0.0027  0.0001
+      3d0      0.0059  0.0037
+      3d1-     0.0027  0.0001
+      3d2-     0.0000  0.0000
+      4px     -0.0001  0.0010
+      4pz     -0.0006 -0.0003
+      4py     -0.0001  0.0010
+      4d2+     0.0000  0.0000
+      4d1+     0.0011  0.0000
+      4d0      0.0033  0.0023
+      4d1-     0.0011  0.0000
+      4d2-     0.0000  0.0000
+      5px     -0.0000 -0.0000
+      5pz     -0.0001 -0.0005
+      5py     -0.0000 -0.0000
+      4f3+     0.0000  0.0000
+      4f2+     0.0000  0.0000
+      4f1+     0.0005 -0.0000
+      4f0      0.0009  0.0003
+      4f1-     0.0005 -0.0000
+      4f2-     0.0000  0.0000
+      4f3-     0.0000  0.0000
+      Total    5.7011  8.2989
+ 
+      N-E      0.2989 -0.2989
+ 
+      Total electronic charge=   14.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number: 12
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X=  2.0215E-06               Y=  9.9423E-06               Z= -2.9955E+00           Total=  2.9955E+00
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    1.2160
+                  XX= -1.0890E+01              XY= -6.2874E-06              XZ= -6.7292E-05              YY= -1.0890E+01
+                  YZ= -2.6543E-04              ZZ= -1.1647E+01
+      In traceless form (Debye*Ang)
+                  XX=  3.7879E-01              XY= -9.4311E-06              XZ= -1.0094E-04              YY=  3.7880E-01
+                  YZ= -3.9814E-04              ZZ= -7.5759E-01
+--
+ 
+
+      LoProp population analysis for root number: 12
+      -----------------------------------------------
+ 
+ 
+++    LoProp analysis:
+      ----------------
+ 
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+++    Static properties:
+      ------------------
+ 
+ 
+      LoProp Charges per center
+ 
+
+                   C1       O2    
+      Nuclear      6.0000   8.0000
+      Electronic  -5.6808  -8.3192
+ 
+      Total        0.3192  -0.3192
+--
+ 
+ 
+      Natural Bond Order analysis for root number: 12
+ 
+++    Natural Bond Order analysis
+      ---------------------------
+      Based on LoProp computed density
+      -------------------------------------------------------------------------------------
+      Atom A       Atom B       Bond Order
+      -------------------------------------------------------------------------------------
+      NBO located      1.000 non-bonded electrons on atom C1        
+      NBO located      0.975 non-bonded electrons on atom C1        
+      The remaining    5.052 electrons are to be considered as diffuse
+--
+ 
+--
+ 
+      Von Neumann Entropy (Root  13) =  2.05501
+ 
+
+      Mulliken population analysis for root number: 13
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                C1      O2    
+      1s       2.0000  2.0000
+      2s       1.9222  1.9623
+      2px      0.9965  1.7638
+      2pz      0.0699  0.4111
+      2py      0.9964  1.7638
+      3s       0.0032 -0.0021
+      3px      0.0039  0.0335
+      3pz      0.0056  0.0027
+      3py      0.0039  0.0335
+      4s       0.0004  0.0061
+      3d2+     0.0000  0.0000
+      3d1+     0.0023  0.0005
+      3d0      0.0053  0.0014
+      3d1-     0.0023  0.0005
+      3d2-     0.0000  0.0000
+      4px      0.0004  0.0015
+      4pz      0.0002 -0.0009
+      4py      0.0004  0.0015
+      4d2+     0.0000  0.0000
+      4d1+     0.0010  0.0003
+      4d0      0.0032  0.0010
+      4d1-     0.0010  0.0003
+      4d2-     0.0000  0.0000
+      5px      0.0000 -0.0000
+      5pz      0.0000 -0.0005
+      5py      0.0000 -0.0000
+      4f3+     0.0000  0.0000
+      4f2+     0.0000  0.0000
+      4f1+     0.0004  0.0001
+      4f0      0.0008  0.0001
+      4f1-     0.0004  0.0001
+      4f2-     0.0000  0.0000
+      4f3-     0.0000  0.0000
+      Total    6.0199  7.9801
+ 
+      N-E     -0.0199  0.0199
+ 
+      Total electronic charge=   14.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number: 13
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X= -3.0413E-06               Y= -2.0293E-05               Z= -1.0573E-01           Total=  1.0573E-01
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    1.2160
+                  XX= -1.2505E+01              XY= -1.7316E-05              XZ= -4.8219E-06              YY= -1.2505E+01
+                  YZ= -4.8416E-05              ZZ= -8.5753E+00
+      In traceless form (Debye*Ang)
+                  XX= -1.9651E+00              XY= -2.5974E-05              XZ= -7.2329E-06              YY= -1.9648E+00
+                  YZ= -7.2623E-05              ZZ=  3.9299E+00
+--
+ 
+
+      LoProp population analysis for root number: 13
+      -----------------------------------------------
+ 
+ 
+++    LoProp analysis:
+      ----------------
+ 
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+++    Static properties:
+      ------------------
+ 
+ 
+      LoProp Charges per center
+ 
+
+                   C1       O2    
+      Nuclear      6.0000   8.0000
+      Electronic  -6.0106  -7.9894
+ 
+      Total       -0.0106   0.0106
+--
+ 
+ 
+      Natural Bond Order analysis for root number: 13
+ 
+++    Natural Bond Order analysis
+      ---------------------------
+      Based on LoProp computed density
+      -------------------------------------------------------------------------------------
+      Atom A       Atom B       Bond Order
+      -------------------------------------------------------------------------------------
+      NBO located      1.000 non-bonded electrons on atom C1        
+      NBO located      0.961 non-bonded electrons on atom C1        
+      The remaining    5.061 electrons are to be considered as diffuse
+--
+ 
+--
+ 
+      Von Neumann Entropy (Root  14) =  2.05497
+ 
+
+      Mulliken population analysis for root number: 14
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                C1      O2    
+      1s       2.0000  2.0000
+      2s       1.9222  1.9623
+      2px      0.9964  1.7638
+      2pz      0.0699  0.4110
+      2py      0.9965  1.7639
+      3s       0.0032 -0.0021
+      3px      0.0039  0.0335
+      3pz      0.0056  0.0027
+      3py      0.0039  0.0335
+      4s       0.0004  0.0061
+      3d2+     0.0000  0.0000
+      3d1+     0.0023  0.0005
+      3d0      0.0053  0.0014
+      3d1-     0.0023  0.0005
+      3d2-     0.0000  0.0000
+      4px      0.0004  0.0015
+      4pz      0.0002 -0.0009
+      4py      0.0004  0.0015
+      4d2+     0.0000  0.0000
+      4d1+     0.0010  0.0003
+      4d0      0.0032  0.0010
+      4d1-     0.0010  0.0003
+      4d2-     0.0000  0.0000
+      5px      0.0000 -0.0000
+      5pz      0.0000 -0.0005
+      5py      0.0000 -0.0000
+      4f3+     0.0000  0.0000
+      4f2+     0.0000  0.0000
+      4f1+     0.0004  0.0001
+      4f0      0.0008  0.0001
+      4f1-     0.0004  0.0001
+      4f2-     0.0000  0.0000
+      4f3-     0.0000  0.0000
+      Total    6.0199  7.9801
+ 
+      N-E     -0.0199  0.0199
+ 
+      Total electronic charge=   14.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number: 14
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X= -5.2193E-06               Y= -1.5833E-05               Z= -1.0575E-01           Total=  1.0575E-01
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    1.2160
+                  XX= -1.2505E+01              XY=  6.1182E-05              XZ= -1.0930E-05              YY= -1.2505E+01
+                  YZ= -2.9375E-05              ZZ= -8.5753E+00
+      In traceless form (Debye*Ang)
+                  XX= -1.9649E+00              XY=  9.1772E-05              XZ= -1.6396E-05              YY= -1.9651E+00
+                  YZ= -4.4063E-05              ZZ=  3.9300E+00
+--
+ 
+
+      LoProp population analysis for root number: 14
+      -----------------------------------------------
+ 
+ 
+++    LoProp analysis:
+      ----------------
+ 
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+++    Static properties:
+      ------------------
+ 
+ 
+      LoProp Charges per center
+ 
+
+                   C1       O2    
+      Nuclear      6.0000   8.0000
+      Electronic  -6.0106  -7.9894
+ 
+      Total       -0.0106   0.0106
+--
+ 
+ 
+      Natural Bond Order analysis for root number: 14
+ 
+++    Natural Bond Order analysis
+      ---------------------------
+      Based on LoProp computed density
+      -------------------------------------------------------------------------------------
+      Atom A       Atom B       Bond Order
+      -------------------------------------------------------------------------------------
+      NBO located      1.000 non-bonded electrons on atom C1        
+      NBO located      0.961 non-bonded electrons on atom C1        
+      The remaining    5.061 electrons are to be considered as diffuse
+--
+ 
+--
+ 
+      Von Neumann Entropy (Root  15) =  2.74502
+ 
+
+      Mulliken population analysis for root number: 15
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                C1      O2    
+      1s       2.0000  2.0000
+      2s       1.9513  1.9640
+      2px      0.7989  1.1856
+      2pz      0.4393  1.5737
+      2py      0.7989  1.1857
+      3s      -0.0002 -0.0025
+      3px      0.0044  0.0275
+      3pz      0.0049  0.0053
+      3py      0.0044  0.0275
+      4s       0.0005  0.0054
+      3d2+     0.0000  0.0000
+      3d1+     0.0017  0.0005
+      3d0      0.0084  0.0019
+      3d1-     0.0017  0.0005
+      3d2-     0.0000  0.0000
+      4px      0.0005  0.0013
+      4pz      0.0002 -0.0016
+      4py      0.0005  0.0013
+      4d2+     0.0000  0.0000
+      4d1+     0.0007  0.0003
+      4d0      0.0038  0.0012
+      4d1-     0.0007  0.0003
+      4d2-     0.0000  0.0000
+      5px      0.0000  0.0000
+      5pz      0.0002 -0.0006
+      5py      0.0000  0.0000
+      4f3+     0.0000  0.0000
+      4f2+     0.0000  0.0000
+      4f1+     0.0003  0.0001
+      4f0      0.0013  0.0002
+      4f1-     0.0003  0.0001
+      4f2-     0.0000  0.0000
+      4f3-     0.0000  0.0000
+      Total    6.0226  7.9774
+ 
+      N-E     -0.0226  0.0226
+ 
+      Total electronic charge=   14.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number: 15
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X= -7.1326E-07               Y= -9.2211E-06               Z=  1.1923E-01           Total=  1.1923E-01
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    1.2160
+                  XX= -1.1442E+01              XY= -9.0587E-05              XZ= -7.5672E-05              YY= -1.1442E+01
+                  YZ= -2.9137E-04              ZZ= -1.1190E+01
+      In traceless form (Debye*Ang)
+                  XX= -1.2599E-01              XY= -1.3588E-04              XZ= -1.1351E-04              YY= -1.2588E-01
+                  YZ= -4.3706E-04              ZZ=  2.5187E-01
+--
+ 
+
+      LoProp population analysis for root number: 15
+      -----------------------------------------------
+ 
+ 
+++    LoProp analysis:
+      ----------------
+ 
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+++    Static properties:
+      ------------------
+ 
+ 
+      LoProp Charges per center
+ 
+
+                   C1       O2    
+      Nuclear      6.0000   8.0000
+      Electronic  -6.0295  -7.9705
+ 
+      Total       -0.0295   0.0295
+--
+ 
+ 
+      Natural Bond Order analysis for root number: 15
+ 
+++    Natural Bond Order analysis
+      ---------------------------
+      Based on LoProp computed density
+      -------------------------------------------------------------------------------------
+      Atom A       Atom B       Bond Order
+      -------------------------------------------------------------------------------------
+      NBO located      1.000 non-bonded electrons on atom C1        
+      NBO located      0.960 non-bonded electrons on atom C1        
+      The remaining    5.042 electrons are to be considered as diffuse
+--
+ 
+--
+ 
+      Von Neumann Entropy (Root  16) =  2.45166
+ 
+
+      Mulliken population analysis for root number: 16
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                C1      O2    
+      1s       2.0000  2.0000
+      2s       1.8936  1.9635
+      2px      0.9969  1.4660
+      2pz      0.1345  0.9818
+      2py      0.9967  1.4666
+      3s       0.0020 -0.0014
+      3px      0.0035  0.0251
+      3pz      0.0060  0.0077
+      3py      0.0035  0.0252
+      4s       0.0005  0.0056
+      3d2+     0.0000  0.0000
+      3d1+     0.0018  0.0004
+      3d0      0.0068  0.0015
+      3d1-     0.0018  0.0004
+      3d2-     0.0000  0.0000
+      4px      0.0003  0.0010
+      4pz      0.0001 -0.0009
+      4py      0.0003  0.0010
+      4d2+     0.0000  0.0000
+      4d1+     0.0008  0.0003
+      4d0      0.0034  0.0010
+      4d1-     0.0008  0.0003
+      4d2-     0.0000  0.0000
+      5px      0.0000 -0.0001
+      5pz      0.0001 -0.0005
+      5py      0.0000 -0.0001
+      4f3+     0.0000  0.0000
+      4f2+     0.0000  0.0000
+      4f1+     0.0003  0.0000
+      4f0      0.0010  0.0001
+      4f1-     0.0003  0.0000
+      4f2-     0.0000  0.0000
+      4f3-     0.0000  0.0000
+      Total    6.0553  7.9447
+ 
+      N-E     -0.0553  0.0553
+ 
+      Total electronic charge=   14.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number: 16
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X= -4.2007E-06               Y= -4.4463E-06               Z=  3.1795E-01           Total=  3.1795E-01
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    1.2160
+                  XX= -1.2086E+01              XY= -5.8613E-05              XZ= -2.7048E-05              YY= -1.2087E+01
+                  YZ= -3.9498E-05              ZZ= -9.7237E+00
+      In traceless form (Debye*Ang)
+                  XX= -1.1813E+00              XY= -8.7920E-05              XZ= -4.0572E-05              YY= -1.1817E+00
+                  YZ= -5.9247E-05              ZZ=  2.3630E+00
+--
+ 
+
+      LoProp population analysis for root number: 16
+      -----------------------------------------------
+ 
+ 
+++    LoProp analysis:
+      ----------------
+ 
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+++    Static properties:
+      ------------------
+ 
+ 
+      LoProp Charges per center
+ 
+
+                   C1       O2    
+      Nuclear      6.0000   8.0000
+      Electronic  -6.0536  -7.9464
+ 
+      Total       -0.0536   0.0536
+--
+ 
+ 
+      Natural Bond Order analysis for root number: 16
+ 
+++    Natural Bond Order analysis
+      ---------------------------
+      Based on LoProp computed density
+      -------------------------------------------------------------------------------------
+      Atom A       Atom B       Bond Order
+      -------------------------------------------------------------------------------------
+      NBO located      1.000 non-bonded electrons on atom C1        
+      NBO located      0.944 non-bonded electrons on atom C1        
+      The remaining    5.090 electrons are to be considered as diffuse
+--
+ 
+--
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+ 
+  Input file to MOLDEN was generated!
+ 
+      Average orbitals are written to the RASORB file
+      Natural orbitals for root   1 are written to the RASORB.1 file
+      Natural orbitals for root   2 are written to the RASORB.2 file
+      Natural orbitals for root   3 are written to the RASORB.3 file
+      Natural orbitals for root   4 are written to the RASORB.4 file
+      Natural orbitals for root   5 are written to the RASORB.5 file
+      Natural orbitals for root   6 are written to the RASORB.6 file
+      Natural orbitals for root   7 are written to the RASORB.7 file
+      Natural orbitals for root   8 are written to the RASORB.8 file
+      Natural orbitals for root   9 are written to the RASORB.9 file
+      Natural orbitals for root  10 are written to the RASORB.10 file
+      Natural orbitals for root  11 are written to the RASORB.11 file
+      Natural orbitals for root  12 are written to the RASORB.12 file
+      Natural orbitals for root  13 are written to the RASORB.13 file
+      Natural orbitals for root  14 are written to the RASORB.14 file
+      Natural orbitals for root  15 are written to the RASORB.15 file
+      Natural orbitals for root  16 are written to the RASORB.16 file
+      Spin density orbitals for root   1 are written to the SPDORB.1 file
+      Spin density orbitals for root   2 are written to the SPDORB.2 file
+      Spin density orbitals for root   3 are written to the SPDORB.3 file
+      Spin density orbitals for root   4 are written to the SPDORB.4 file
+      Spin density orbitals for root   5 are written to the SPDORB.5 file
+      Spin density orbitals for root   6 are written to the SPDORB.6 file
+      Spin density orbitals for root   7 are written to the SPDORB.7 file
+      Spin density orbitals for root   8 are written to the SPDORB.8 file
+      Spin density orbitals for root   9 are written to the SPDORB.9 file
+      Spin density orbitals for root  10 are written to the SPDORB.10 file
+      Spin density orbitals for root  11 are written to the SPDORB.11 file
+      Spin density orbitals for root  12 are written to the SPDORB.12 file
+      Spin density orbitals for root  13 are written to the SPDORB.13 file
+      Spin density orbitals for root  14 are written to the SPDORB.14 file
+      Spin density orbitals for root  15 are written to the SPDORB.15 file
+      Spin density orbitals for root  16 are written to the SPDORB.16 file
+ 
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: RunFile label Unique Atom Name                              ###
+ ###    was used       65 times                                              ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: RunFile label LP_L                                          ###
+ ###    was used       48 times                                              ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: RunFile label BirthCertificate                              ###
+ ###    was used      103 times                                              ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: RunFile label Unique Coordinat                              ###
+ ###    was used       81 times                                              ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: RunFile label Center Index                                  ###
+ ###    was used       64 times                                              ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: RunFile label nBas                                          ###
+ ###    was used      119 times                                              ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: RunFile label nOrb                                          ###
+ ###    was used       49 times                                              ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+--- Stop Module: rasscf at Tue Jul 19 21:21:50 2022 /rc=_RC_ALL_IS_WELL_ ---
+*** files: MOLCAS.LprOrb MOLCAS.rasscf.molden MOLCAS.rasscf.molden.1 MOLCAS.rasscf.molden.10 MOLCAS.rasscf.molden.11 MOLCAS.rasscf.molden.12 MOLCAS.rasscf.molden.13
+           MOLCAS.rasscf.molden.14 MOLCAS.rasscf.molden.15 MOLCAS.rasscf.molden.16 MOLCAS.rasscf.molden.2 MOLCAS.rasscf.molden.3 MOLCAS.rasscf.molden.4 MOLCAS.rasscf.molden.5
+           MOLCAS.rasscf.molden.6 MOLCAS.rasscf.molden.7 MOLCAS.rasscf.molden.8 MOLCAS.rasscf.molden.9 MOLCAS.LoProp.molden MOLCAS.RasOrb MOLCAS.RasOrb.1 MOLCAS.RasOrb.10
+           MOLCAS.RasOrb.11 MOLCAS.RasOrb.12 MOLCAS.RasOrb.13 MOLCAS.RasOrb.14 MOLCAS.RasOrb.15 MOLCAS.RasOrb.16 MOLCAS.RasOrb.2 MOLCAS.RasOrb.3 MOLCAS.RasOrb.4 MOLCAS.RasOrb.5
+           MOLCAS.RasOrb.6 MOLCAS.RasOrb.7 MOLCAS.RasOrb.8 MOLCAS.RasOrb.9 MOLCAS.rasscf.h5 MOLCAS.SpdOrb.1 MOLCAS.SpdOrb.10 MOLCAS.SpdOrb.11 MOLCAS.SpdOrb.12 MOLCAS.SpdOrb.13
+           MOLCAS.SpdOrb.14 MOLCAS.SpdOrb.15 MOLCAS.SpdOrb.16 MOLCAS.SpdOrb.2 MOLCAS.SpdOrb.3 MOLCAS.SpdOrb.4 MOLCAS.SpdOrb.5 MOLCAS.SpdOrb.6 MOLCAS.SpdOrb.7 MOLCAS.SpdOrb.8
+           MOLCAS.SpdOrb.9 xmldump
+    saved to directory /projects/academic/cyberwksp21/Students/jstetzler/Project/OpenMOLCAS_PEC_Calcuation/More_Excited_States/NAC/Geom_2.128300
+--- Module rasscf spent 12 minutes 56 seconds ---
+
+*** symbolic link created: INPORB -> MOLCAS.RasOrb
+--- Start Module: alaska at Tue Jul 19 21:21:51 2022 ---
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                              &ALASKA
+
+                                   only a single process is used
+                       available to each process: 2.0 GB of memory, 1 thread?
+                                             pid: 20056
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+[ process      0]: xquit (rc =     65): _INVOKED_OTHER_MODULE_
+--- Stop Module: alaska at Tue Jul 19 21:21:52 2022 /rc=_RC_INVOKED_OTHER_MODULE_ ---
+*** files: xmldump
+    saved to directory /projects/academic/cyberwksp21/Students/jstetzler/Project/OpenMOLCAS_PEC_Calcuation/More_Excited_States/NAC/Geom_2.128300
+
+*** symbolic link created: INPORB -> MOLCAS.RasOrb
+--- Start Module: mclr at Tue Jul 19 21:21:52 2022 ---
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                               &MCLR
+
+                                   only a single process is used
+                       available to each process: 2.0 GB of memory, 1 thread?
+                                             pid: 20059
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+ Ordinary integral handling
+ No .RLXPT2  or MCKINT  , I hope that is OK
+ Seward mode is assumed, reading perturbation from ONEINT  
+ OrdInt status: non-squared
+ 
+++   Wave function specifications:
+     -----------------------------
+ 
+     Number of closed shell electrons              4
+     Number of electrons in active shells         10
+     Max number of holes in RAS1 space             0
+     Max number of electrons in RAS3 space         0
+     Number of inactive orbitals                   2
+     Number of active orbitals                    11
+     Number of secondary orbitals                 53
+     Spin quantum number                         0.0
+     State symmetry                                1
+     Number of roots                              16
+     States considered                             1     2     3     4     5     6     7     8     9    10
+                                                  11    12    13    14    15    16
+     Weights                                   0.062 0.062 0.062 0.062 0.062 0.062 0.062 0.062 0.062 0.062
+                                               0.062 0.062 0.062 0.062 0.062 0.062
+ 
+     Symmetry species                              1
+     Skiped sym. species                           0
+     Frozen orbitals                               0
+     Inactive orbitals                             2
+     Active orbitals                              11
+     RAS1 orbitals                                 0
+     RAS2 orbitals                                11
+     RAS3 orbitals                                 0
+     Deleted orbitals                              0
+     Number of basis functions                    66
+     Number of Orbitals                           66
+     Number of configurations                  60984
+     Number of combinations                   106953
+     Natural orbitals are used in the last CI
+     RASSCF state energy =           -112.6938426602
+     Size of explicit Hamiltonian in PCG:        100
+--
+ 
+     Convergence threshold=               1.0000E-04
+     Max number of iterations in PCG:            200
+     Lagrangian multipliers are calculated for states no.   1/  2
+ 
+ 
+        Iteration       Delta           Res(kappa)       Res(CI)          DeltaK
+            DeltaC
+            1      2.125630400E-02  9.426963124E-03  6.838860979E-03  2.740827695E-05  2.227838647E-05
+            2      2.030618938E-02  9.973121677E-03  5.816365562E-03  1.924110999E-05  2.822465813E-05
+            3      2.008603651E-02  1.362155375E-02  3.063027403E-03  4.259297969E-06  4.269186228E-05
+            4      1.922070892E-03  2.127161630E-03  2.493985802E-03  2.810316212E-06  1.682529273E-06
+            5      1.888211311E-03  2.728350252E-03  1.821419404E-03  1.509087106E-06  2.904611524E-06
+            6      9.169863230E-04  2.363396849E-03  9.290790295E-04  7.011143021E-07  1.442343506E-06
+            7      3.792077307E-04  1.002013862E-03  8.107981286E-04  4.991143546E-07  3.872846581E-07
+            8      3.350377533E-04  1.285784910E-03  6.871701410E-04  3.006689584E-07  4.824826222E-07
+            9      2.886373393E-04  1.345155127E-03  7.663222777E-04  3.782527853E-07  2.964377123E-07
+           10      3.664310943E-04  1.349122061E-03  8.063103401E-04  3.388943982E-07  5.176391950E-07
+           11      3.757468976E-04  1.409008132E-03  9.564700196E-04  5.263979837E-07  3.519113229E-07
+           12      5.290816616E-04  2.031618354E-03  9.400842183E-04  4.381304999E-07  7.985991985E-07
+           13      4.016786048E-04  1.106588141E-03  9.814100897E-04  5.795862596E-07  3.593384770E-07
+           14      4.531443940E-04  1.521475287E-03  8.603516801E-04  3.626869662E-07  6.965391804E-07
+           15      2.966047082E-04  8.912559373E-04  8.059399888E-04  4.017375847E-07  2.915766576E-07
+           16      3.179628774E-04  1.248250942E-03  6.893893894E-04  2.750450939E-07  4.681939220E-07
+           17      1.866594356E-04  7.384733605E-04  7.198595061E-04  2.858907540E-07  1.504261403E-07
+           18      2.458817287E-04  1.139772761E-03  6.138129896E-04  1.950013212E-07  3.797478304E-07
+           19      1.556401202E-04  7.238799555E-04  6.306730581E-04  2.067138517E-07  1.570953160E-07
+           20      1.549501524E-04  8.361717591E-04  5.527568761E-04  1.540973762E-07  2.080989901E-07
+           21      1.086284124E-04  7.548592102E-04  5.144947633E-04  1.563427842E-07  9.757639965E-08
+           22      1.209006869E-04  9.233452152E-04  4.691407458E-04  1.183599342E-07  1.642457218E-07
+           23      9.526465688E-05  5.180345858E-04  5.102809885E-04  1.547653300E-07  6.791604215E-08
+           24      1.412501552E-04  9.648245689E-04  4.750051115E-04  1.106254512E-07  2.195471376E-07
+           25      1.023353681E-04  6.000042926E-04  5.344420520E-04  1.648935487E-07  7.431562844E-08
+           26      1.377119125E-04  1.114901516E-03  4.754640395E-04  1.176979031E-07  2.042040344E-07
+           27      8.100793693E-05  6.358271249E-04  4.991013077E-04  1.401606760E-07  4.919557787E-08
+           28      9.663937351E-05  9.844851432E-04  4.248584086E-04  9.427247945E-08  1.316222962E-07
+           29      6.893047769E-05  5.011077090E-04  4.129987957E-04  1.101529122E-07  5.097225058E-08
+           30      6.703080587E-05  6.137648007E-04  3.872788637E-04  9.878600347E-08  5.789867178E-08
+           31      6.631877847E-05  8.273409486E-04  3.730584310E-04  7.661857806E-08  7.840173137E-08
+           32      5.535413519E-05  4.957700263E-04  3.857084151E-04  8.661991424E-08  4.277051427E-08
+           33      7.766588841E-05  5.970339856E-04  3.261453723E-04  5.590032613E-08  1.256438810E-07
+           34      3.847138080E-05  4.289101920E-04  3.412499116E-04  5.888485881E-08  3.104208939E-08
+           35      4.901174328E-05  6.792332929E-04  2.758669149E-04  3.921059977E-08  7.535447189E-08
+           36      2.788570610E-05  2.905697724E-04  2.687632879E-04  3.983084612E-08  2.535206116E-08
+           37      3.077375752E-05  4.914770201E-04  2.325487111E-04  2.747078594E-08  4.446294870E-08
+           38      1.889633607E-05  3.236430939E-04  2.277150916E-04  2.851463996E-08  1.565559255E-08
+           39      2.162670364E-05  4.170510951E-04  1.920614229E-04  1.867969383E-08  3.187277966E-08
+           40      1.426180026E-05  2.318783046E-04  1.842192318E-04  1.811946394E-08  1.521752959E-08
+           41      1.541674823E-05  2.620862039E-04  1.661162624E-04  1.483451971E-08  2.120216759E-08
+           42      1.281818837E-05  2.933172266E-04  1.585026040E-04  1.323018800E-08  1.673235916E-08
+           43      1.078543258E-05  2.379025792E-04  1.618215048E-04  1.399859486E-08  1.121238059E-08
+           44      1.257072746E-05  2.991792496E-04  1.537323998E-04  1.175241918E-08  1.763168749E-08
+           45      9.940075010E-06  1.923818971E-04  1.605364623E-04  1.334633742E-08  9.888612607E-09
+           46      1.373976625E-05  3.372222894E-04  1.384049710E-04  9.364199963E-09  2.275253779E-08
+           47      7.803340568E-06  1.651260303E-04  1.551339143E-04  1.292136844E-08  5.318959524E-09
+           48      1.136900128E-05  3.599474094E-04  1.349386663E-04  9.375162923E-09  1.719990581E-08
+           49      7.887030230E-06  2.350950660E-04  1.500918815E-04  1.221638762E-08  6.219565133E-09
+           50      1.197874870E-05  2.788603055E-04  1.386836977E-04  9.506229870E-09  1.849412497E-08
+           51      8.176355534E-06  1.695303196E-04  1.509173493E-04  1.169406475E-08  7.418186622E-09
+           52      1.029922222E-05  3.316348026E-04  1.234896192E-04  6.907711618E-09  1.716674591E-08
+           53      5.387058062E-06  1.399099224E-04  1.245629854E-04  8.520292081E-09  4.071969521E-09
+           54      6.965622074E-06  2.118141355E-04  9.573725555E-05  4.340710295E-09  1.194144861E-08
+           55      3.411828179E-06  1.086848308E-04  9.509919153E-05  4.991616374E-09  2.983540471E-09
+           56      3.961000476E-06  1.709548240E-04  7.695567490E-05  2.979181498E-09  6.279666955E-09
+           57      2.393187890E-06  1.096092476E-04  7.475807403E-05  2.997523279E-09  2.596559358E-09
+           58      2.287135769E-06  1.222608052E-04  6.617009538E-05  2.256460665E-09  3.089724877E-09
+           59      1.842573509E-06  1.038074563E-04  5.993564093E-05  1.940582991E-09  2.366437164E-09
+           60      1.452879994E-06  9.108709276E-05  5.777614115E-05  1.803265885E-09  1.592844711E-09
+           61      1.472983432E-06  1.099166362E-04  5.201574537E-05  1.463502688E-09  1.979599744E-09
+      Perturbation no:    1 converged in   61 steps.
+ 
+ 
+      The response parameters are written to the file RESP.
+--- Stop Module: mclr at Tue Jul 19 21:31:51 2022 /rc=_RC_ALL_IS_WELL_ ---
+*** files: xmldump
+    saved to directory /projects/academic/cyberwksp21/Students/jstetzler/Project/OpenMOLCAS_PEC_Calcuation/More_Excited_States/NAC/Geom_2.128300
+--- Module mclr spent 9 minutes 58 seconds ---
+
+*** symbolic link created: INPORB -> MOLCAS.RasOrb
+--- Start Module: alaska at Tue Jul 19 21:31:51 2022 ---
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                              &ALASKA
+
+                                   only a single process is used
+                       available to each process: 2.0 GB of memory, 1 thread?
+                                             pid: 28117
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+ 
+                     Threshold for contributions to the gradient: 0.100E-06
+ 
+ 
+                    ********************************************
+                    * Symmetry Adapted Cartesian Displacements *
+                    ********************************************
+ 
+ 
+           Irreducible representation : a  
+           Basis function(s) of irrep: x, y, xy, Rz, z, xz, Ry, yz, Rx, I                                              
+ 
+ Basis Label        Type   Center Phase
+   1   C1           x         1     1
+   2   C1           y         1     1
+   3   C1           z         1     1
+   4   O2           x         2     1
+   5   O2           y         2     1
+   6   O2           z         2     1
+ 
+                     No automatic utilization of translational and rotational invariance of the energy is employed.
+ 
+ Skipping Nuclear Charge Contribution
+ Conventional ERI gradients!
+ 
+ Wavefunction type: State average CASSCF
+ 
+ 
+ *****************************************************
+ *                                                   *
+ *              CI derivative coupling               *
+ *                                                   *
+ *****************************************************
+ 
+  Irreducible representation: a  
+ ------------------------------------------------------------------------------------------
+                              X                       Y                       Z
+ ------------------------------------------------------------------------------------------
+  C1               -1.77993069570100E-07   -1.59541829278440E-07   -6.30668623899986E-07
+  O2                1.77993069570101E-07    1.59541829278440E-07    6.30668623899989E-07
+ ------------------------------------------------------------------------------------------
+ 
+ 
+ ******************************************************
+ *                                                    *
+ *              CSF derivative coupling               *
+ *                                                    *
+ ******************************************************
+ 
+  Irreducible representation: a  
+ ------------------------------------------------------------------------------------------
+                              X                       Y                       Z
+ ------------------------------------------------------------------------------------------
+  C1                1.56624727882887E-07    1.15352120209480E-07   -1.74410387504737E-07
+  O2               -1.91207990555785E-07   -1.60527111118869E-07   -1.28213268294579E-07
+ ------------------------------------------------------------------------------------------
+ 
+               Energy difference: -3.558609E-02
+ 
+ *******************************************************
+ *                                                     *
+ *              Total derivative coupling              *
+ *                                                     *
+ *******************************************************
+ 
+  Irreducible representation: a  
+ ------------------------------------------------------------------------------------------
+                              X                       Y                       Z
+ ------------------------------------------------------------------------------------------
+  C1                5.15838484579105E-06    4.59861633240814E-06    1.75479266577398E-05
+  O2               -5.19296810846398E-06   -4.64379132331752E-06   -1.78505503135392E-05
+ ------------------------------------------------------------------------------------------
+ 
+               norm:       0.0000
+--- Stop Module: alaska at Tue Jul 19 21:31:56 2022 /rc=_RC_ALL_IS_WELL_ ---
+*** files: xmldump
+    saved to directory /projects/academic/cyberwksp21/Students/jstetzler/Project/OpenMOLCAS_PEC_Calcuation/More_Excited_States/NAC/Geom_2.128300
+--- Module alaska spent 4 seconds ---
+
+*** symbolic link created: INPORB -> MOLCAS.RasOrb
+--- Start Module: alaska at Tue Jul 19 21:31:56 2022 ---
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                              &ALASKA
+
+                                   only a single process is used
+                       available to each process: 2.0 GB of memory, 1 thread?
+                                             pid: 28123
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+[ process      0]: xquit (rc =     65): _INVOKED_OTHER_MODULE_
+--- Stop Module: alaska at Tue Jul 19 21:31:57 2022 /rc=_RC_INVOKED_OTHER_MODULE_ ---
+*** files: xmldump
+    saved to directory /projects/academic/cyberwksp21/Students/jstetzler/Project/OpenMOLCAS_PEC_Calcuation/More_Excited_States/NAC/Geom_2.128300
+
+*** symbolic link created: INPORB -> MOLCAS.RasOrb
+--- Start Module: mclr at Tue Jul 19 21:31:57 2022 ---
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                               &MCLR
+
+                                   only a single process is used
+                       available to each process: 2.0 GB of memory, 1 thread?
+                                             pid: 28127
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+ Ordinary integral handling
+ No .RLXPT2  or MCKINT  , I hope that is OK
+ Seward mode is assumed, reading perturbation from ONEINT  
+ OrdInt status: non-squared
+ 
+++   Wave function specifications:
+     -----------------------------
+ 
+     Number of closed shell electrons              4
+     Number of electrons in active shells         10
+     Max number of holes in RAS1 space             0
+     Max number of electrons in RAS3 space         0
+     Number of inactive orbitals                   2
+     Number of active orbitals                    11
+     Number of secondary orbitals                 53
+     Spin quantum number                         0.0
+     State symmetry                                1
+     Number of roots                              16
+     States considered                             1     2     3     4     5     6     7     8     9    10
+                                                  11    12    13    14    15    16
+     Weights                                   0.062 0.062 0.062 0.062 0.062 0.062 0.062 0.062 0.062 0.062
+                                               0.062 0.062 0.062 0.062 0.062 0.062
+ 
+     Symmetry species                              1
+     Skiped sym. species                           0
+     Frozen orbitals                               0
+     Inactive orbitals                             2
+     Active orbitals                              11
+     RAS1 orbitals                                 0
+     RAS2 orbitals                                11
+     RAS3 orbitals                                 0
+     Deleted orbitals                              0
+     Number of basis functions                    66
+     Number of Orbitals                           66
+     Number of configurations                  60984
+     Number of combinations                   106953
+     Natural orbitals are used in the last CI
+     RASSCF state energy =           -112.6938426602
+     Size of explicit Hamiltonian in PCG:        100
+--
+ 
+     Convergence threshold=               1.0000E-04
+     Max number of iterations in PCG:            200
+     Lagrangian multipliers are calculated for state no.   1
+ 
+ 
+        Iteration       Delta           Res(kappa)       Res(CI)          DeltaK
+            DeltaC
+            1      4.381663321E-02  2.022042180E-02  1.206267663E-02  1.107907727E-04  1.675881884E-04
+            2      2.390369206E-02  1.382506109E-02  1.113039868E-02  8.412797198E-05  6.773867031E-05
+            3      2.540042922E-02  1.885034031E-02  7.744155542E-03  3.833150969E-05  1.230443100E-04
+            4      9.138948751E-03  9.589145507E-03  7.161235200E-03  3.373104968E-05  2.433117173E-05
+            5      6.243243767E-03  7.536888948E-03  4.774914648E-03  1.230731016E-05  2.735771170E-05
+            6      2.896086435E-03  6.033125584E-03  4.017518536E-03  8.459303829E-06  9.940319191E-06
+            7      1.563391774E-03  4.427653625E-03  3.303480319E-03  5.204258030E-06  4.728394162E-06
+            8      1.381446701E-03  4.447015237E-03  2.416444884E-03  3.626361545E-06  5.150344226E-06
+            9      7.457006657E-04  2.897678779E-03  2.303528948E-03  2.553299461E-06  2.184339226E-06
+           10      5.084088920E-04  2.768372515E-03  1.875097049E-03  1.712596734E-06  1.517462922E-06
+           11      4.383904414E-04  2.988844419E-03  1.594334624E-03  1.269037403E-06  1.516176035E-06
+           12      2.425453265E-04  1.937060339E-03  1.341420924E-03  8.600023829E-07  6.809538949E-07
+           13      1.985522280E-04  1.695982322E-03  1.052961205E-03  5.430244526E-07  7.184317323E-07
+           14      1.133565146E-04  1.215439991E-03  9.027184457E-04  3.832548733E-07  3.369298253E-07
+           15      9.949918030E-05  1.318348505E-03  7.454148479E-04  2.803759330E-07  3.517693601E-07
+           16      6.651564049E-05  1.139675292E-03  6.417577711E-04  1.932291375E-07  2.293627766E-07
+           17      4.411092997E-05  8.199929440E-04  5.824102066E-04  1.539109389E-07  1.263377694E-07
+           18      3.225603735E-05  8.643530079E-04  4.429418386E-04  9.398922996E-08  1.109421285E-07
+           19      2.164962093E-05  5.986045073E-04  3.797549877E-04  7.292101226E-08  6.462490447E-08
+           20      1.561761036E-05  5.487177246E-04  2.865143474E-04  3.823749148E-08  6.098542525E-08
+           21      8.831695662E-06  3.778952949E-04  2.625477274E-04  3.407721742E-08  2.203294174E-08
+           22      8.491053173E-06  3.834058399E-04  1.981261471E-04  1.868778883E-08  3.525817617E-08
+           23      4.614488916E-06  2.121015387E-04  1.980760245E-04  1.839841203E-08  1.091868827E-08
+           24      5.774541971E-06  3.807840548E-04  1.586782847E-04  1.228193649E-08  2.440529567E-08
+           25      3.152996112E-06  1.679758595E-04  1.541782460E-04  1.208794184E-08  7.943898073E-09
+           26      3.143616697E-06  2.538408076E-04  1.332371911E-04  7.740623630E-09  1.223162631E-08
+           27      2.170143605E-06  1.944891574E-04  1.229362684E-04  8.702038459E-09  5.085472767E-09
+           28      1.688399642E-06  1.784148360E-04  1.014745872E-04  5.330636768E-09  5.396224335E-09
+           29      1.238724025E-06  1.382746771E-04  9.160920866E-05  4.528465099E-09  3.341484781E-09
+           30      9.767588175E-07  1.230483813E-04  7.991142376E-05  3.378316259E-09  2.827297567E-09
+           31      8.697727763E-07  1.291697974E-04  6.954525320E-05  2.692360768E-09  2.833541706E-09
+           32      6.049352848E-07  9.298447228E-05  6.412277581E-05  2.109685508E-09  1.733632515E-09
+           33      5.465557552E-07  9.196571574E-05  5.590205041E-05  1.657592708E-09  1.814824321E-09
+      Perturbation no:    1 converged in   33 steps.
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X=  1.2751E-07               Y=  2.0045E-06               Z= -1.4619E+00           Total=  1.4619E+00
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    1.2160
+                  XX= -1.1375E+01              XY=  1.0093E-05              XZ= -5.5120E-07              YY= -1.1375E+01
+                  YZ= -5.2608E-06              ZZ= -1.0633E+01
+      In traceless form (Debye*Ang)
+                  XX= -3.7095E-01              XY=  1.5139E-05              XZ= -8.2680E-07              YY= -3.7091E-01
+                  YZ= -7.8912E-06              ZZ=  7.4186E-01
+--
+ 
+ 
+      The response parameters are written to the file RESP.
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: RunFile label nBas                                          ###
+ ###    was used       58 times                                              ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+--- Stop Module: mclr at Tue Jul 19 21:36:32 2022 /rc=_RC_ALL_IS_WELL_ ---
+*** files: xmldump
+    saved to directory /projects/academic/cyberwksp21/Students/jstetzler/Project/OpenMOLCAS_PEC_Calcuation/More_Excited_States/NAC/Geom_2.128300
+--- Module mclr spent 4 minutes 34 seconds ---
+
+*** symbolic link created: INPORB -> MOLCAS.RasOrb
+--- Start Module: alaska at Tue Jul 19 21:36:32 2022 ---
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                              &ALASKA
+
+                                   only a single process is used
+                       available to each process: 2.0 GB of memory, 1 thread?
+                                             pid: 28446
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+ 
+                     Threshold for contributions to the gradient: 0.100E-06
+ 
+ 
+                    ********************************************
+                    * Symmetry Adapted Cartesian Displacements *
+                    ********************************************
+ 
+ 
+           Irreducible representation : a  
+           Basis function(s) of irrep: x, y, xy, Rz, z, xz, Ry, yz, Rx, I                                              
+ 
+ Basis Label        Type   Center Phase
+   1   C1           x         1     1
+   2   C1           y         1     1
+   3   C1           z         1     1
+   4   O2           x         2     1
+   5   O2           y         2     1
+   6   O2           z         2     1
+ 
+                     No automatic utilization of translational and rotational invariance of the energy is employed.
+ 
+ Conventional ERI gradients!
+ 
+ Wavefunction type: State average CASSCF
+ 
+ 
+ **************************************************
+ *                                                *
+ *              Molecular gradients               *
+ *                                                *
+ **************************************************
+ 
+  Irreducible representation: a  
+ ------------------------------------------------------------------------------------------
+                              X                       Y                       Z
+ ------------------------------------------------------------------------------------------
+  C1               -5.79812316456245E-08   -1.29202489244789E-08   -9.97420670406539E-02
+  O2                5.79812316456241E-08    1.29202489244786E-08    9.97420670406566E-02
+ ------------------------------------------------------------------------------------------
+ 
+--- Stop Module: alaska at Tue Jul 19 21:36:36 2022 /rc=_RC_ALL_IS_WELL_ ---
+*** files: xmldump
+    saved to directory /projects/academic/cyberwksp21/Students/jstetzler/Project/OpenMOLCAS_PEC_Calcuation/More_Excited_States/NAC/Geom_2.128300
+--- Module alaska spent 4 seconds ---
+
+.##################.
+.# Happy landing! #.
+.##################.
+
+    Timing: Wall=1660.82 User=1508.37 System=62.45
