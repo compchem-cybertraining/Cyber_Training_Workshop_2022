@@ -1,0 +1,26 @@
+&SYSTEM
+ TYP_CAL                = "TSHFS"
+ MODEL_POTENTIAL        = "CO"
+ NEW_POTENTIAL          = T
+ N_DOF                  = 1
+ NSTATES                = 2
+ INITIAL_CONDITION_SEED = 24  
+/
+
+&DYNAMICS
+ FINAL_TIME      = 800.0D0
+ DT              = 0.10D0
+ DUMP            = 200
+ INIT_BOSTATE    = 2
+ NTRAJ           = 300
+ R_INIT          = 2.55555D0
+ K_INIT          = 0.D0
+ SIGMAR_INIT     = 0.08851280783395272D0
+ MASS_INPUT      = 12596.99780086933D0
+/
+
+&EXTERNAL_FILES
+ POSITIONS_FILE   = ""
+ MOMENTA_FILE     = ""
+ OUTPUT_FOLDER    = "./"
+/
