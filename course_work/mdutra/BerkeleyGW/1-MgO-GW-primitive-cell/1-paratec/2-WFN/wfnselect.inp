@@ -1,0 +1,5 @@
+24                 ! startingband1 4 valence + 2 atoms * 10 bands/atom
+0.25               ! energystep1
+50.0               ! startingenergy2
+0.25               ! energystep2
+0                  ! If equals to 1, just calculate weight.dat; if equals to 0, write wfns

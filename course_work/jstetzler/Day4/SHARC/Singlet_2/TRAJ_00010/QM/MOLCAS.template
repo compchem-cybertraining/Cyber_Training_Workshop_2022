@@ -1,0 +1,15 @@
+basis cc-pVDZ
+ras2 4
+nactel 6
+inactive 5
+roots 4  0  3 
+
+no-douglas-kroll
+method CASSCF
+
+
+#     Infos:
+#     jstetzler@srv-p22-13.cbls.ccr.buffalo.edu
+#     Date: 2022-07-07 15:50:47.686567
+#     Current directory: /projects/academic/cyberwksp21/Students/jstetzler/SHARC_examples/copy/Tutorial
+

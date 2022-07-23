@@ -1,0 +1,3089 @@
+   This run of MOLCAS is using the pymolcas driver
+
+                             OPE
+                             OPE          NMOL  CASOP  ENMOLC A   SO
+                 OPE        NMOLC        AS  OP EN  MO LC     AS  OP
+                OPENM       OL CA        SO  PE NM  OL CA     SOP EN
+                OP EN      MO   LC       AS  OP ENMOL  CASO   PENMOL
+                OP  EN     MO   LC       AS  OP EN     MO     LC ASO
+               OP   E  NMOL  C  AS       OP  EN MO     LC     AS  OP
+               OP  E   NMO   LC AS        OPEN  MO     LCASOP EN   M
+               O  PEN   MO  LCA  SO
+            OPE   NMO   L   CAS    OP
+        OPENMOL  CASOP     ENMOL   CASOPE
+     OPENMOLCA   SOPENMOLCASOPEN   MOLCASOPE
+    OPENMOLCAS   OP           EN   MOL    CAS
+    OPENMOLCAS       OP  ENM        O     LCA
+    OPENMOLCAS    OPEN  MOLCASO     P  E  NMO
+    OPENMOLCAS     OP               E  N  MOL
+    OPENMOLCA   SO           PENM   O  L  CAS    OPEN    MO    LCAS
+    OPENMOLCA   SOP           ENM   O  L  CAS   OP  EN  MOLC  AS   O
+    OPENMOLCA   SOPE           NM      O  LCA   S      OP  EN MO
+    OPENMOLC                AS         O  PEN   M      OL  CA  SOPE
+    OPENMO        LCASOPE  NMOL        C  ASO   P      ENMOLC     AS
+    OPE     NMO      LCA  SO     P     E   NM   OL  CA SO  PE N   MO
+          OPENMOLCA            SOPE   NMO        LCAS  O    P  ENMO
+     OPENMOLCASOPENMOLCASOPENMOLCASOPENMOLCA
+        OPENMOLCASOPENMOLCASOPENMOLCASOPE
+            OPENMOLCASOPENMOLCASOPENM
+               OPENMOLCASOPENMOLCA        version: 22.02
+                   OPENMOLCASO
+                       OPE                tag: 112-ge90b629
+
+ OpenMolcas is free software; you can redistribute it and/or modify it
+ under the terms of the GNU Lesser General Public License version 2.1.
+ OpenMolcas is distributed in the hope that it will be useful, but it
+ is provided "as is" and without any express or implied warranties.
+ For more details see the full text of the license in the file
+ LICENSE or in <http://www.gnu.org/licenses/>.
+
+                 Copyright (C) The OpenMolcas Authors
+           For the author list and the recommended citation,
+                   consult the file CONTRIBUTORS.md
+
+           *************************************************
+           * pymolcas version py2.22                       *
+           *   build 8f5156e7c298caa029894eefd30f00af      *
+           *   (after the EMIL interpreter by V. Veryazov) *
+           *************************************************
+
+configuration info
+------------------
+Host name: d3070 (Linux)
+C Compiler ID: Intel
+C flags: -O2 -fpic -march=skylake-avx512 -std=gnu99 -gcc-sys -qopenmp
+Fortran Compiler ID: Intel
+Fortran flags: -O2 -fpic -march=skylake-avx512  -fpp -i8 -r8 -heap-arrays -qopenmp
+Definitions: _MOLCAS_;_I8_;_LINUX_;_MOLCAS_MPP_;_SCALAPACK_;_GA_
+Parallel: ON (GA=ON)
+
+
+   --------------------------------------------------------------------------------------
+  |
+  |              Project: ul-D2h
+  |       Submitted from: /work/donglab/kaufold.b/Label-Tutorial
+  |         Scratch area: /scratch/kaufold.b/OpenMolcas/29124419_0/ul-D2h
+  |      Save outputs to: /work/donglab/kaufold.b/Label-Tutorial/ul-D2h
+  |               Molcas: /shared/centos7/openmolcas/22.02-intel-cascadelake-wfa
+  |
+  | Scratch area is empty
+  |
+  |       MOLCAS_DRIVER = /shared/centos7/openmolcas/22.02-intel-cascadelake-wfa/pymolcas
+  | MOLCAS_KEEP_WORKDIR = NO
+  |      MOLCAS_MAXITER = 10000
+  |       MOLCAS_MAXMEM = 51975
+  |       MOLCAS_MOLDEN = ON
+  | MOLCAS_NEW_DEFAULTS = NO
+  |       MOLCAS_NPROCS = 1
+  |         MOLCAS_SAVE = ORIG
+  |       MOLCAS_SOURCE = /shared/centos7/openmolcas/22.02-intel-cascadelake-wfa
+  |    MOLCAS_STRUCTURE = 0
+  |      MOLCAS_TIMELIM = 21360
+  |     MOLCAS_VALIDATE = YES
+  |
+   --------------------------------------------------------------------------------------
+
+
+--- Start Module: gateway at Mon Jul 18 10:17:59 2022 ---
+
+-- Input validation for gateway
+lxml python module not found, no validation possible
+--
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                              &GATEWAY
+
+                       only a single process is used, running in SERIAL mode
+                       available to each process: 46 GB of memory, 16 threads
+                                            pid: 186462
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+      Found SYMMETRY generators: x y z
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    Warning! XYZ coordinates will be modified to match                   ###
+ ###    the specified/detected symmetry. Use SYMT = 0.0 if                   ###
+ ###    this is not desired.                                                 ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+ 
+ Title:
+                                    Benzene MR with Symmetry                            
+ 
+ 
+++    Symmetry information:
+      ---------------------
+ 
+                    --- Group Generators ---
+                    Reflection in the yz-plane  
+                    Reflection in the xz-plane  
+                    Reflection in the xy-plane  
+ 
+                    Character Table for D2h
+ 
+                             E   s(yz) s(xz) C2(z) s(xy) C2(y) C2(x)   i  
+                    ag       1     1     1     1     1     1     1     1  
+                    b3u      1    -1     1    -1     1    -1     1    -1  x
+                    b2u      1     1    -1    -1     1     1    -1    -1  y
+                    b1g      1    -1    -1     1     1    -1    -1     1  xy, Rz
+                    b1u      1     1     1     1    -1    -1    -1    -1  z
+                    b2g      1    -1     1    -1    -1     1    -1     1  xz, Ry
+                    b3g      1     1    -1    -1    -1    -1     1     1  yz, Rx
+                    au       1    -1    -1     1    -1     1     1    -1  I
+--
+ 
+ 
+++    Basis set information:
+      ----------------------
+ 
+ 
+      Basis set label: H.AUG-CC-PVTZ.........
+ 
+      Electronic valence basis set:
+      ------------------
+      Associated Effective Charge   1.000000 au
+      Associated Actual Charge      1.000000 au
+      Nuclear Model: Point charge
+ 
+      Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+         s       6       4        X                  
+         p       3       3        X                  
+         d       2       2                 X         
+ 
+ 
+      Basis set label: C.AUG-CC-PVTZ.........
+ 
+      Electronic valence basis set:
+      ------------------
+      Associated Effective Charge   6.000000 au
+      Associated Actual Charge      6.000000 au
+      Nuclear Model: Point charge
+ 
+      Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+         s      11       5        X                  
+         p       6       4        X                  
+         d       3       3                 X         
+         f       2       2                 X         
+--
+ 
+ 
+++    Molecular structure info:
+      -------------------------
+ 
+                    ************************************************ 
+                    **** Cartesian Coordinates / Bohr, Angstrom **** 
+                    ************************************************ 
+ 
+     Center  Label                x              y              z                     x              y              z
+        1      H1               0.000000       4.672658       0.000000              0.000000       2.472664       0.000000
+        2      H1               0.000000      -4.672658       0.000000              0.000000      -2.472664       0.000000
+        3      H2               4.047232       2.335660       0.000000              2.141703       1.235978       0.000000
+        4      H2              -4.047232       2.335660       0.000000             -2.141703       1.235978       0.000000
+        5      H2               4.047232      -2.335660       0.000000              2.141703      -1.235978       0.000000
+        6      H2              -4.047232      -2.335660       0.000000             -2.141703      -1.235978       0.000000
+        7      C3               0.000000       2.628293       0.000000              0.000000       1.390833       0.000000
+        8      C3               0.000000      -2.628293       0.000000              0.000000      -1.390833       0.000000
+        9      C4               2.276482       1.314007       0.000000              1.204663       0.695343       0.000000
+       10      C4              -2.276482       1.314007       0.000000             -1.204663       0.695343       0.000000
+       11      C4               2.276482      -1.314007       0.000000              1.204663      -0.695343       0.000000
+       12      C4              -2.276482      -1.314007       0.000000             -1.204663      -0.695343       0.000000
+ 
+                    *************************************** 
+                    *    InterNuclear Distances / Bohr    * 
+                    *************************************** 
+ 
+               1 H1            2 H1            3 H2            4 H2            5 H2            6 H2    
+    1 H1       0.000000
+    2 H1       9.345316        0.000000
+    3 H2       4.673505        8.092997        0.000000
+    4 H2       4.673505        8.092997        8.094465        0.000000
+    5 H2       8.092997        4.673505        4.671319        9.345672        0.000000
+    6 H2       8.092997        4.673505        9.345672        4.671319        8.094465        0.000000
+    7 C3       2.044365        7.300951        4.057798        4.057798        6.404757        6.404757
+    8 C3       7.300951        2.044365        6.404757        6.404757        4.057798        4.057798
+    9 C4       4.057451        6.404883        2.044341        6.405712        4.056553        7.301331
+   10 C4       4.057451        6.404883        6.405712        2.044341        7.301331        4.056553
+   11 C4       6.404883        4.057451        4.056553        7.301331        2.044341        6.405712
+   12 C4       6.404883        4.057451        7.301331        4.056553        6.405712        2.044341
+ 
+               7 C3            8 C3            9 C4           10 C4           11 C4           12 C4    
+    7 C3       0.000000
+    8 C3       5.256586        0.000000
+    9 C4       2.628635        4.552373        0.000000
+   10 C4       2.628635        4.552373        4.552965        0.000000
+   11 C4       4.552373        2.628635        2.628014        5.256990        0.000000
+   12 C4       4.552373        2.628635        5.256990        2.628014        4.552965        0.000000
+ 
+                    ******************************************* 
+                    *    InterNuclear Distances / Angstrom    * 
+                    ******************************************* 
+ 
+               1 H1            2 H1            3 H2            4 H2            5 H2            6 H2    
+    1 H1       0.000000
+    2 H1       4.945328        0.000000
+    3 H2       2.473112        4.282630        0.000000
+    4 H2       2.473112        4.282630        4.283406        0.000000
+    5 H2       4.282630        2.473112        2.471956        4.945517        0.000000
+    6 H2       4.282630        2.473112        4.945517        2.471956        4.283406        0.000000
+    7 C3       1.081831        3.863497        2.147294        2.147294        3.389252        3.389252
+    8 C3       3.863497        1.081831        3.389252        3.389252        2.147294        2.147294
+    9 C4       2.147111        3.389318        1.081819        3.389757        2.146635        3.863698
+   10 C4       2.147111        3.389318        3.389757        1.081819        3.863698        2.146635
+   11 C4       3.389318        2.147111        2.146635        3.863698        1.081819        3.389757
+   12 C4       3.389318        2.147111        3.863698        2.146635        3.389757        1.081819
+ 
+               7 C3            8 C3            9 C4           10 C4           11 C4           12 C4    
+    7 C3       0.000000
+    8 C3       2.781666        0.000000
+    9 C4       1.391014        2.409012        0.000000
+   10 C4       1.391014        2.409012        2.409325        0.000000
+   11 C4       2.409012        1.391014        1.390685        2.781879        0.000000
+   12 C4       2.409012        1.391014        2.781879        1.390685        2.409325        0.000000
+ 
+                    ************************************** 
+                    *    Valence Bond Angles / Degree    * 
+                    ************************************** 
+                          Atom centers                 Phi
+                      1 H1       7 C3       9 C4       120.00
+                      1 H1       7 C3      10 C4       120.00
+                      9 C4       7 C3      10 C4       120.00
+                      2 H1       8 C3      11 C4       120.00
+                      2 H1       8 C3      12 C4       120.00
+                     11 C4       8 C3      12 C4       120.00
+                      3 H2       9 C4       7 C3       120.02
+                      3 H2       9 C4      11 C4       119.98
+                      7 C3       9 C4      11 C4       120.00
+                      4 H2      10 C4       7 C3       120.02
+                      4 H2      10 C4      12 C4       119.98
+                      7 C3      10 C4      12 C4       120.00
+                      5 H2      11 C4       8 C3       120.02
+                      5 H2      11 C4       9 C4       119.98
+                      8 C3      11 C4       9 C4       120.00
+                      6 H2      12 C4       8 C3       120.02
+                      6 H2      12 C4      10 C4       119.98
+                      8 C3      12 C4      10 C4       120.00
+ 
+           ***************************************************************
+           *              Valence Dihedral Angles / Degree               *
+           ***************************************************************
+                    Atom centers                       Phi1     Phi2     Theta 
+           1 H1       7 C3       9 C4       3 H2        120.00   120.02     0.00
+           1 H1       7 C3       9 C4      11 C4        120.00   120.00  -180.00
+          10 C4       7 C3       9 C4      11 C4        120.00   120.00     0.00
+           1 H1       7 C3      10 C4       4 H2        120.00   120.02     0.00
+           1 H1       7 C3      10 C4      12 C4        120.00   120.00  -180.00
+           9 C4       7 C3      10 C4      12 C4        120.00   120.00     0.00
+           2 H1       8 C3      11 C4       5 H2        120.00   120.02     0.00
+           2 H1       8 C3      11 C4       9 C4        120.00   120.00  -180.00
+           2 H1       8 C3      12 C4       6 H2        120.00   120.02     0.00
+           2 H1       8 C3      12 C4      10 C4        120.00   120.00  -180.00
+           3 H2       9 C4       7 C3      10 C4        120.02   120.00  -180.00
+           3 H2       9 C4      11 C4       5 H2        119.98   119.98     0.00
+           3 H2       9 C4      11 C4       8 C3        119.98   120.00  -180.00
+           7 C3       9 C4      11 C4       8 C3        120.00   120.00     0.00
+           4 H2      10 C4       7 C3       9 C4        120.02   120.00  -180.00
+           4 H2      10 C4      12 C4       6 H2        119.98   119.98     0.00
+           4 H2      10 C4      12 C4       8 C3        119.98   120.00  -180.00
+           7 C3      10 C4      12 C4       8 C3        120.00   120.00     0.00
+           5 H2      11 C4       8 C3      12 C4        120.02   120.00  -180.00
+           9 C4      11 C4       8 C3      12 C4        120.00   120.00     0.00
+           5 H2      11 C4       9 C4       7 C3        119.98   120.00  -180.00
+           6 H2      12 C4       8 C3      11 C4        120.02   120.00  -180.00
+          10 C4      12 C4       8 C3      11 C4        120.00   120.00     0.00
+           6 H2      12 C4      10 C4       7 C3        119.98   120.00  -180.00
+--
+ 
+ 
+            Nuclear Potential Energy            204.04227156 au
+ 
+The total execution time is limited to 21360 seconds.
+--- Stop Module: gateway at Mon Jul 18 10:17:59 2022 /rc=_RC_ALL_IS_WELL_ ---
+*** files: xmldump
+    saved to directory /work/donglab/kaufold.b/Label-Tutorial/ul-D2h
+
+--- Start Module: seward at Mon Jul 18 10:17:59 2022 ---
+
+-- Input validation for seward
+lxml python module not found, no validation possible
+--
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                              &SEWARD
+
+                       only a single process is used, running in SERIAL mode
+                       available to each process: 46 GB of memory, 16 threads
+                                            pid: 186480
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+               SEWARD will generate:
+                  Multipole Moment integrals up to order  2
+                  Kinetic Energy integrals
+                  Nuclear Attraction integrals (point charge)
+                  One-Electron Hamiltonian integrals
+                  Velocity integrals
+                  Orbital angular momentum around ( 0.0000  0.0000  0.0000 )
+                  Velocity quadrupole around ( 0.0000  0.0000  0.0000 )
+                  Two-Electron Repulsion integrals
+ 
+ Title:
+                                    Benzene MR with Symmetry                            
+ 
+ 
+                   Integrals are discarded if absolute value <: 0.10E-13
+                   Integral cutoff threshold is set to       <: 0.10E-15
+ 
+                    Unitary symmetry adaptation
+ 
+ 
+            Nuclear Potential Energy            204.04227156 au
+ 
+ 
+      Basis set specifications :
+      Symmetry species         ag   b3u  b2u  b1g  b1u  b2g  b3g  au 
+      Basis functions           76   62   76   62   39   30   39   30
+ 
+ 
+      Input file to MOLDEN was generated!
+ 
+The total execution time is limited to 21360 seconds.
+--- Stop Module: seward at Mon Jul 18 10:30:04 2022 /rc=_RC_ALL_IS_WELL_ ---
+*** files: ul-D2h.GssOrb ul-D2h.guessorb.h5 ul-D2h.guessorb.molden xmldump
+    saved to directory /work/donglab/kaufold.b/Label-Tutorial/ul-D2h
+--- Module seward spent 12 minutes 4 seconds ---
+
+*** symbolic link created: INPORB -> ul-D2h.GssOrb
+--- Start Module: rasscf at Mon Jul 18 10:30:04 2022 ---
+
+-- Input validation for rasscf
+lxml python module not found, no validation possible
+--
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                              &RASSCF
+
+                       only a single process is used, running in SERIAL mode
+                       available to each process: 46 GB of memory, 16 threads
+                                            pid: 187560
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: CHARGE and NACTEL are only compatible if INACTIVE           ###
+ ###    is not given and the symmetry group is C1. Hence the                 ###
+ ###    CHARGE command will be ignored.                                      ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+ 
+      Header of the ONEINT file:
+      --------------------------
+      
+      Integrals generated by Gateway/Seward, Mon Jul 18 10:17:59 2022
+ 
+ 
+      OrdInt status: non-squared
+ 
+ 
+      Cartesian coordinates in Angstrom:
+      -----------------------------------------------------
+      No.  Label        X            Y            Z        
+      -----------------------------------------------------
+       1   H1         0.00000000   2.47266405   0.00000000
+       2   H2         2.14170318   1.23597787   0.00000000
+       3   C3         0.00000000   1.39083283   0.00000000
+       4   C4         1.20466254   0.69534255   0.00000000
+       5   H1         0.00000000  -2.47266405   0.00000000
+       6   H2        -2.14170318   1.23597787   0.00000000
+       7   H2         2.14170318  -1.23597787   0.00000000
+       8   H2        -2.14170318  -1.23597787   0.00000000
+       9   C3         0.00000000  -1.39083283   0.00000000
+      10   C4        -1.20466254   0.69534255   0.00000000
+      11   C4         1.20466254  -0.69534255   0.00000000
+      12   C4        -1.20466254  -0.69534255   0.00000000
+      -----------------------------------------------------
+      Nuclear repulsion energy =  204.04227156
+ 
+++    Wave function specifications:
+      -----------------------------
+ 
+      Number of closed shell electrons          36
+      Number of electrons in active shells       6
+      Max number of holes in RAS1 space          0
+      Max nr of electrons in RAS3 space          0
+      Number of inactive orbitals               18
+      Number of active orbitals                  6
+      Number of secondary orbitals             390
+      Spin quantum number                      0.0
+      State symmetry                             1
+--
+ 
+++    Orbital specifications:
+      -----------------------
+ 
+      Symmetry species                           1   2   3   4   5   6   7   8
+                                                ag b3u b2u b1g b1u b2g b3g  au
+      Frozen orbitals                            0   0   0   0   0   0   0   0
+      Inactive orbitals                          6   4   5   3   0   0   0   0
+      Active orbitals                            0   0   0   0   2   1   2   1
+      RAS1 orbitals                              0   0   0   0   0   0   0   0
+      RAS2 orbitals                              0   0   0   0   2   1   2   1
+      RAS3 orbitals                              0   0   0   0   0   0   0   0
+      Secondary orbitals                        70  58  71  59  37  29  37  29
+      Deleted orbitals                           0   0   0   0   0   0   0   0
+      Number of basis functions                 76  62  76  62  39  30  39  30
+--
+ 
+++    CI expansion specifications:
+      ----------------------------
+ 
+      Number of CSFs                            52
+      Number of determinants                    62
+      Number of root(s) required                 6
+      Root chosen for geometry opt.              6
+      CI roots used                              1     2     3     4     5     6
+      weights                                0.167 0.167 0.167 0.167 0.167 0.167
+      highest root included in the CI            6
+      max. size of the explicit Hamiltonian     52
+--
+ 
+++    Optimization specifications:
+      ----------------------------
+ 
+      RASSCF algorithm: Conventional
+      Maximum number of macro iterations       200
+      Maximum number of SX iterations          100
+      Threshold for RASSCF energy            0.100E-07
+      Threshold for max MO rotation          0.100E+00
+      Threshold for max BLB element          0.100E-03
+      Level shift parameter                  0.500E+00
+      Make Quasi-Newton update
+--
+ 
+      The MO-coefficients are taken from the file:
+      /work/donglab/kaufold.b/Label-Tutorial/unlabeled-D2h.ScfOrb                                                                                                                                                                                                     
+      Title: RKS-DFT orbitals / B3LYP                                                      
+ 
+      Total molecular charge    0.00
+ 
+      ************************************************************************************************************************
+      *                                                                                                                      *
+      *                                            Wave function control section                                             *
+      *                                                                                                                      *
+      ************************************************************************************************************************
+ 
+ 
+                                         RASSCF iterations: Energy and convergence statistics
+                                         ----------------------------------------------------
+ 
+      Iter CI   SX   CI       RASSCF       Energy    max ROT     max BLB   max BLB  Level Ln srch  Step   QN   Walltime
+          iter iter root      energy       change     param      element    value   shift minimum  type update hh:mm:ss
+ Nr of preliminary CI iterations:   1
+        1   1   11    0  -230.43697866    0.00E+00  -0.15E-01    3  75 3  0.88E-01*  0.49   0.00    SX    NO    0:00:16
+        2   1    6    0  -230.47240485   -0.35E-01*  0.11E-01    6  52 1 -0.15E-01*  0.50   0.00    SX    NO    0:00:06
+        3   1    6    0  -230.47515806   -0.28E-02* -0.10E-01    5  20 1 -0.64E-02*  0.50   0.00    SX    NO    0:00:06
+        4   1    6    0  -230.47571183   -0.55E-03*  0.11E-01    5  20 1 -0.33E-02*  0.50   0.00    SX    NO    0:00:06
+        5   1    6    0  -230.47589206   -0.18E-03* -0.16E-01    1   2 8  0.18E-02*  0.50   2.50    LS   YES    0:00:06
+        6   1    6    0  -230.47601390   -0.12E-03* -0.21E-01    2   3 7  0.12E-02*  0.50   1.26    QN   YES    0:00:06
+        7   1    6    0  -230.47610588   -0.92E-04*  0.25E+00*   2   3 7  0.14E-02*  0.50   2.50    QN   YES    0:00:06
+        8   1    6    0  -230.47728601   -0.12E-02* -0.38E+00*   5  20 1  0.61E-02*  0.47   2.50    QN   YES    0:00:06
+        9   1    6    0  -230.47775292   -0.47E-03*  0.13E+00*   2   8 5  0.15E-01*  0.43   0.67    QN   YES    0:00:06
+       10   1    6    0  -230.47814266   -0.39E-03*  0.69E-02    5  13 1 -0.12E-01*  0.44   1.04    QN   YES    0:00:07
+       11   1    6    0  -230.47827900   -0.14E-03* -0.57E-01    5  13 1 -0.11E-01*  0.44   2.50    QN   YES    0:00:06
+       12   1    6    0  -230.47887437   -0.60E-03*  0.67E-01    3  11 2  0.11E-01*  0.43   1.82    QN   YES    0:00:06
+       13   1    6    0  -230.47950991   -0.64E-03*  0.10E+00    6  16 1 -0.13E-01*  0.42   2.15    QN   YES    0:00:07
+       14   1    7    0  -230.48064357   -0.11E-02*  0.13E+00*   1   2 8 -0.14E-01*  0.41   2.13    QN   YES    0:00:06
+       15   1    7    0  -230.48253784   -0.19E-02*  0.14E+00*   1   2 8 -0.14E-01*  0.38   1.97    QN   YES    0:00:06
+       16   1    7    0  -230.48521814   -0.27E-02*  0.93E-01    1   2 8 -0.12E-01*  0.36   1.82    QN   YES    0:00:06
+       17   1    6    0  -230.48822046   -0.30E-02* -0.73E-01    2   4 5 -0.10E-01*  0.34   1.81    QN   YES    0:00:06
+       18   1    6    0  -230.49050612   -0.23E-02* -0.59E-01    2   4 5 -0.67E-02*  0.33   1.66    QN   YES    0:00:06
+       19   1    6    0  -230.49135192   -0.85E-03* -0.85E-01    2   4 5 -0.29E-02*  0.34   1.18    QN   YES    0:00:06
+       20   1    6    0  -230.49149934   -0.15E-03*  0.32E-01    5  13 1 -0.21E-02*  0.34   0.69    QN   YES    0:00:06
+       21   1    5    0  -230.49160355   -0.10E-03* -0.13E-01    1   7 8 -0.11E-02*  0.34   1.43    QN   YES    0:00:06
+       22   1    5    0  -230.49163390   -0.30E-04*  0.34E-02    2   3 5  0.66E-03*  0.34   1.50    QN   YES    0:00:06
+       23   1    5    0  -230.49164336   -0.95E-05* -0.27E-02    2   3 5  0.41E-03*  0.34   1.33    QN   YES    0:00:06
+       24   1    5    0  -230.49164531   -0.20E-05* -0.16E-02    2   3 5  0.24E-03*  0.34   1.48    QN   YES    0:00:06
+       25   1    5    0  -230.49164605   -0.75E-06* -0.11E-02    2   3 5  0.12E-03*  0.34   1.54    QN   YES    0:00:06
+       26   1    4    0  -230.49164636   -0.31E-06*  0.87E-03    1   3 5  0.39E-04   0.34   1.40    QN   YES    0:00:06
+       27   1    4    0  -230.49164643   -0.72E-07*  0.33E-03    5  13 1  0.18E-04   0.34   1.26    QN   YES    0:00:06
+       28   1    3    0  -230.49164644   -0.87E-08  -0.41E-04    4  10 2  0.67E-05   0.34   1.24    QN   YES    0:00:06
+      Convergence after 28 iterations
+       29   1    3    0  -230.49164644   -0.10E-08  -0.41E-04    2   5 5 -0.26E-05   0.34   1.24    QN   YES    0:00:07
+ 
+      ************************************************************************************************************************
+                                                      Wave function printout:
+                       occupation of active orbitals, and spin coupling of open shells (u,d: Spin up or down)
+      ************************************************************************************************************************
+ 
+      Note: transformation to natural orbitals
+      has been made, which may change the order of the CSFs.
+ 
+      printout of CI-coefficients larger than  0.05 for root  1
+      energy=    -230.841064
+      conf/sym  55 6 77 8     Coeff  Weight
+             1  22 2 00 0   0.13845 0.01917
+             6  20 2 20 0  -0.94638 0.89564
+            11  ud 2 ud 0  -0.07630 0.00582
+            18  2u d u0 d   0.17213 0.02963
+            22  uu 2 dd 0   0.06930 0.00480
+            28  20 0 20 2   0.14135 0.01998
+            43  u0 d 2u d   0.10238 0.01048
+ 
+      printout of CI-coefficients larger than  0.05 for root  2
+      energy=    -230.545855
+      conf/sym  55 6 77 8     Coeff  Weight
+             1  22 2 00 0   0.44561 0.19857
+             2  22 0 20 0  -0.20052 0.04021
+             3  22 0 ud 0   0.08672 0.00752
+             7  20 2 ud 0  -0.37743 0.14246
+             8  20 2 02 0  -0.08966 0.00804
+             9  20 2 00 2  -0.14168 0.02007
+            10  ud 2 20 0  -0.57235 0.32758
+            13  ud 2 00 2   0.10011 0.01002
+            14  02 2 20 0  -0.11314 0.01280
+            18  2u d u0 d  -0.17230 0.02969
+            19  2u d 0u d  -0.11748 0.01380
+            20  u2 d u0 d  -0.12261 0.01503
+            22  uu 2 dd 0  -0.11085 0.01229
+            23  2u u d0 d  -0.29709 0.08826
+            27  20 0 22 0   0.09411 0.00886
+            28  20 0 20 2  -0.10896 0.01187
+            40  00 2 20 2   0.11724 0.01374
+            43  u0 d 2u d   0.06945 0.00482
+            44  u0 d u2 d   0.05245 0.00275
+            45  0u d 2u d   0.07040 0.00496
+            48  u0 u 2d d  -0.10280 0.01057
+ 
+      printout of CI-coefficients larger than  0.05 for root  3
+      energy=    -230.425214
+      conf/sym  55 6 77 8     Coeff  Weight
+             1  22 2 00 0  -0.48499 0.23522
+             2  22 0 20 0   0.11231 0.01261
+             5  22 0 00 2   0.13593 0.01848
+             6  20 2 20 0  -0.24193 0.05853
+             9  20 2 00 2   0.09599 0.00921
+            11  ud 2 ud 0   0.16978 0.02883
+            14  02 2 20 0   0.08523 0.00726
+            18  2u d u0 d  -0.33511 0.11230
+            21  u2 d 0u d  -0.08490 0.00721
+            22  uu 2 dd 0  -0.07057 0.00498
+            23  2u u d0 d  -0.47376 0.22445
+            27  20 0 22 0   0.05608 0.00315
+            28  20 0 20 2  -0.46430 0.21558
+            33  ud 0 ud 2  -0.07256 0.00526
+            39  00 2 22 0  -0.07532 0.00567
+            40  00 2 20 2   0.08555 0.00732
+            43  u0 d 2u d  -0.13540 0.01833
+            47  uu 0 dd 2   0.05513 0.00304
+            48  u0 u 2d d  -0.11364 0.01291
+ 
+      printout of CI-coefficients larger than  0.05 for root  4
+      energy=    -230.406934
+      conf/sym  55 6 77 8     Coeff  Weight
+             1  22 2 00 0  -0.16726 0.02798
+             2  22 0 20 0  -0.39808 0.15847
+             3  22 0 ud 0   0.12551 0.01575
+             5  22 0 00 2   0.15006 0.02252
+             8  20 2 02 0   0.14105 0.01989
+             9  20 2 00 2  -0.37962 0.14411
+            11  ud 2 ud 0   0.08516 0.00725
+            13  ud 2 00 2   0.15675 0.02457
+            14  02 2 20 0   0.21795 0.04750
+            15  02 2 ud 0  -0.05071 0.00257
+            18  2u d u0 d   0.51458 0.26479
+            19  2u d 0u d   0.08443 0.00713
+            20  u2 d u0 d   0.11056 0.01222
+            22  uu 2 dd 0   0.09443 0.00892
+            24  2u u 0d d   0.15042 0.02263
+            25  u2 u d0 d   0.19324 0.03734
+            27  20 0 22 0   0.13798 0.01904
+            28  20 0 20 2  -0.16054 0.02577
+            29  20 0 ud 2  -0.12526 0.01569
+            32  ud 0 20 2  -0.15560 0.02421
+            39  00 2 22 0  -0.10106 0.01021
+            40  00 2 20 2   0.21156 0.04476
+            48  u0 u 2d d  -0.12067 0.01456
+            50  0u u 2d d  -0.05605 0.00314
+ 
+      printout of CI-coefficients larger than  0.05 for root  5
+      energy=    -230.389567
+      conf/sym  55 6 77 8     Coeff  Weight
+             1  22 2 00 0  -0.13225 0.01749
+             2  22 0 20 0  -0.26135 0.06830
+             7  20 2 ud 0   0.62109 0.38575
+             9  20 2 00 2   0.32374 0.10481
+            10  ud 2 20 0  -0.60537 0.36648
+            12  ud 2 02 0   0.06220 0.00387
+            14  02 2 20 0   0.06842 0.00468
+            15  02 2 ud 0  -0.07356 0.00541
+            20  u2 d u0 d   0.08290 0.00687
+            28  20 0 20 2   0.07335 0.00538
+            29  20 0 ud 2  -0.05825 0.00339
+            32  ud 0 20 2   0.08564 0.00733
+            40  00 2 20 2  -0.07087 0.00502
+            44  u0 d u2 d  -0.05349 0.00286
+ 
+      printout of CI-coefficients larger than  0.05 for root  6
+      energy=    -230.341245
+      conf/sym  55 6 77 8     Coeff  Weight
+             1  22 2 00 0  -0.42428 0.18001
+             2  22 0 20 0  -0.08813 0.00777
+             7  20 2 ud 0  -0.25426 0.06465
+             9  20 2 00 2  -0.20624 0.04253
+            10  ud 2 20 0  -0.12172 0.01482
+            11  ud 2 ud 0   0.12037 0.01449
+            14  02 2 20 0   0.09601 0.00922
+            18  2u d u0 d  -0.13557 0.01838
+            22  uu 2 dd 0  -0.09484 0.00900
+            23  2u u d0 d  -0.23994 0.05757
+            27  20 0 22 0  -0.05859 0.00343
+            28  20 0 20 2   0.72286 0.52253
+            40  00 2 20 2  -0.10180 0.01036
+            43  u0 d 2u d   0.14529 0.02111
+            48  u0 u 2d d   0.07213 0.00520
+ 
+      Natural orbitals and occupation numbers for root  1
+      sym 5:   1.966935   0.090557
+      sym 6:   1.907368
+      sym 7:   1.910260   0.031587
+      sym 8:   0.093293
+ 
+      Natural orbitals and occupation numbers for root  2
+      sym 5:   1.559685   1.027855
+      sym 6:   1.674155
+      sym 7:   1.192669   0.244852
+      sym 8:   0.300784
+ 
+      Natural orbitals and occupation numbers for root  3
+      sym 5:   1.868855   0.948348
+      sym 6:   1.101658
+      sym 7:   1.067484   0.113987
+      sym 8:   0.899669
+ 
+      Natural orbitals and occupation numbers for root  4
+      sym 5:   1.634562   1.023697
+      sym 6:   1.059741
+      sym 7:   1.082211   0.217326
+      sym 8:   0.982462
+ 
+      Natural orbitals and occupation numbers for root  5
+      sym 5:   1.575086   0.593184
+      sym 6:   1.806380
+      sym 7:   1.332482   0.423201
+      sym 8:   0.269667
+ 
+      Natural orbitals and occupation numbers for root  6
+      sym 5:   1.880841   0.524553
+      sym 6:   0.808720
+      sym 7:   1.372515   0.136809
+      sym 8:   1.276563
+ 
+      ************************************************************************************************************************
+      *                                                                                                                      *
+      *                                                    Final results                                                     *
+      *                                                                                                                      *
+      ************************************************************************************************************************
+ 
+ 
+++    Wave function specifications:
+      -----------------------------
+ 
+      Number of closed shell electrons          36
+      Number of electrons in active shells       6
+      Max number of holes in RAS1 space          0
+      Max nr of electrons in RAS3 space          0
+      Number of inactive orbitals               18
+      Number of active orbitals                  6
+      Number of secondary orbitals             390
+      Spin quantum number                      0.0
+      State symmetry                             1
+--
+ 
+++    Orbital specifications:
+      -----------------------
+ 
+      Symmetry species                           1   2   3   4   5   6   7   8
+                                                ag b3u b2u b1g b1u b2g b3g  au
+      Frozen orbitals                            0   0   0   0   0   0   0   0
+      Inactive orbitals                          6   4   5   3   0   0   0   0
+      Active orbitals                            0   0   0   0   2   1   2   1
+      RAS1 orbitals                              0   0   0   0   0   0   0   0
+      RAS2 orbitals                              0   0   0   0   2   1   2   1
+      RAS3 orbitals                              0   0   0   0   0   0   0   0
+      Secondary orbitals                        70  58  71  59  37  29  37  29
+      Deleted orbitals                           0   0   0   0   0   0   0   0
+      Number of basis functions                 76  62  76  62  39  30  39  30
+--
+ 
+++    CI expansion specifications:
+      ----------------------------
+ 
+      Number of CSFs                            52
+      Number of determinants                    62
+      Number of root(s) required                 6
+      CI roots used                              1     2     3     4     5     6
+      weights                                0.167 0.167 0.167 0.167 0.167 0.167
+      highest root included in the CI            6
+      Root passed to geometry opt.               6
+--
+ 
+++    Final optimization conditions:
+      ------------------------------
+ 
+      Average CI energy                            -230.49164644
+      RASSCF energy for state  6                   -230.34124489
+      Super-CI energy                                -0.00000000
+      RASSCF energy change                           -0.00000000
+      Max change in MO coefficients               0.223E-03
+      Max non-diagonal density matrix element    -0.408E-04
+      Maximum BLB matrix element                 -0.258E-05
+      (orbital pair   2,   5 in symmetry   5)
+      Norm of electronic gradient            0.628E-01
+--
+ 
+ 
+      Final state energy(ies):
+      ------------------------
+ 
+::    RASSCF root number  1 Total energy:   -230.84106376
+::    RASSCF root number  2 Total energy:   -230.54585500
+::    RASSCF root number  3 Total energy:   -230.42521386
+::    RASSCF root number  4 Total energy:   -230.40693366
+::    RASSCF root number  5 Total energy:   -230.38956748
+::    RASSCF root number  6 Total energy:   -230.34124489
+ 
+++    Molecular orbitals:
+      -------------------
+ 
+      Pseudonatural active orbitals and approximate occupation numbers
+ 
+ 
+      MOLECULAR ORBITALS FOR SYMMETRY SPECIES 1: ag 
+ 
+      INDEX  ENERGY  OCCUPATION COEFFICIENTS ...
+          1  -11.2336    2.0000                                                                                                           
+                28 C3     1s     ( 0.9702)  47 C4     1s     ( 0.2447)
+          2  -11.2302    2.0000                                                                                                           
+                28 C3     1s     (-0.2435)  47 C4     1s     ( 0.9703)
+          3   -1.1562    2.0000                                                                                                           
+                 1 H1     1s     ( 0.1205)  12 H2     1s     ( 0.1693)  29 C3     2s     ( 0.5189)  31 C3     *s     (-0.1111)
+                33 C3     2py    (-0.1399)  48 C4     2s     ( 0.7301)  50 C4     *s     (-0.1587)  52 C4     2px    (-0.1715)
+      
+          4   -0.8275    2.0000                                                                                                           
+                 1 H1     1s     (-0.3963)   2 H1     *s     ( 0.1055)   3 H1     *s     ( 0.1887)  12 H2     1s     ( 0.2789)
+                14 H2     *s     (-0.1326)  29 C3     2s     (-0.5949)  32 C3     *s     (-0.1356)  33 C3     2py    (-0.1270)
+                48 C4     2s     ( 0.4222)  52 C4     2px    ( 0.3506)  56 C4     2py    (-0.4342)  58 C4     *py    ( 0.1291)
+      
+          5   -0.7136    2.0000                                                                                                           
+                 1 H1     1s     ( 0.3994)   3 H1     *s     (-0.1675)  12 H2     1s     ( 0.5647)  13 H2     *s     (-0.1334)
+                14 H2     *s     (-0.2317)  33 C3     2py    ( 0.4163)  50 C4     *s     ( 0.1064)  52 C4     2px    ( 0.5084)
+                56 C4     2py    ( 0.2903)
+          6   -0.4963    2.0000                                                                                                           
+                 1 H1     1s     (-0.5836)   2 H1     *s     ( 0.1371)   3 H1     *s     ( 0.2405)  12 H2     1s     ( 0.4143)
+                14 H2     *s     (-0.1704)  31 C3     *s     (-0.2802)  32 C3     *s     (-0.1307)  33 C3     2py    (-0.4864)
+                50 C4     *s     ( 0.1984)  56 C4     2py    ( 0.7628)
+          7    0.0298    0.0000                                                                                                           
+                 2 H1     *s     (-0.3357)   3 H1     *s     (-2.1759)   4 H1     *s     (-1.3402)   6 H1     *py    ( 0.1158)
+                 7 H1     *py    ( 0.4037)  13 H2     *s     (-0.4750)  14 H2     *s     (-3.0767)  15 H2     *s     (-1.9061)
+                17 H2     *px    ( 0.1419)  18 H2     *px    ( 0.4941)  21 H2     *py    ( 0.2863)  31 C3     *s     ( 1.1822)
+                32 C3     *s     ( 2.0815)  34 C3     *py    ( 0.1053)  35 C3     *py    ( 0.8834)  36 C3     *py    ( 0.4850)
+                39 C3     *d0    (-0.1826)  42 C3     *d2+   (-0.1925)  50 C4     *s     ( 1.6812)  51 C4     *s     ( 2.9066)
+                53 C4     *px    ( 0.1288)  54 C4     *px    ( 1.0783)  55 C4     *px    ( 0.6029)  58 C4     *py    ( 0.6230)
+                59 C4     *py    ( 0.3438)  61 C4     *d2-   ( 0.1024)  62 C4     *d2-   ( 0.2362)  65 C4     *d0    (-0.2566)
+                68 C4     *d2+   ( 0.1393)
+          8    0.0486    0.0000                                                                                                           
+                 2 H1     *s     ( 0.3854)   3 H1     *s     ( 5.1995)   4 H1     *s     (*******)   6 H1     *py    (-0.1576)
+                 7 H1     *py    (-1.3098)  13 H2     *s     (-0.2727)  14 H2     *s     (-3.6769)  15 H2     *s     ( 8.1813)
+                17 H2     *px    ( 0.1193)  18 H2     *px    ( 0.9293)  21 H2     *py    ( 0.2432)  31 C3     *s     (-1.3061)
+                32 C3     *s     (*******)  34 C3     *py    (-0.1116)  35 C3     *py    (-0.4311)  36 C3     *py    (11.5053)
+                39 C3     *d0    ( 0.3035)  41 C3     *d2+   ( 0.1792)  42 C3     *d2+   ( 1.6245)  50 C4     *s     ( 0.9254)
+                51 C4     *s     (17.3599)  54 C4     *px    ( 0.8897)  55 C4     *px    (-7.5063)  57 C4     *py    ( 0.1215)
+                58 C4     *py    (-0.9304)  59 C4     *py    (-3.2702)  61 C4     *d2-   ( 0.1250)  62 C4     *d2-   ( 1.0275)
+                65 C4     *d0    (-0.2143)  68 C4     *d2+   ( 0.5188)
+          9    0.1148    0.0000                                                                                                           
+                 2 H1     *s     (-0.2160)   3 H1     *s     (-1.2116)   4 H1     *s     (-0.8331)   7 H1     *py    ( 0.1222)
+                13 H2     *s     (-0.3016)  14 H2     *s     (-1.6708)  15 H2     *s     (-1.2017)  18 H2     *px    ( 0.1415)
+                31 C3     *s     ( 1.7409)  32 C3     *s     ( 1.1145)  35 C3     *py    ( 0.8848)  36 C3     *py    ( 1.4355)
+                39 C3     *d0    ( 0.2448)  42 C3     *d2+   (-0.6607)  50 C4     *s     ( 2.4407)  51 C4     *s     ( 1.5204)
+                52 C4     2px    (-0.1028)  54 C4     *px    ( 1.0797)  55 C4     *px    ( 1.7900)  58 C4     *py    ( 0.6279)
+                59 C4     *py    ( 1.0386)  62 C4     *d2-   ( 0.7971)  65 C4     *d0    ( 0.3460)  68 C4     *d2+   ( 0.4548)
+      
+         10    0.1294    0.0000                                                                                                           
+                 2 H1     *s     ( 0.8177)   3 H1     *s     ( 5.1058)   4 H1     *s     (*******)   6 H1     *py    (-0.1780)
+                 7 H1     *py    (-1.1921)  13 H2     *s     (-0.5896)  14 H2     *s     (-3.6860)  15 H2     *s     (10.5751)
+                17 H2     *px    ( 0.1317)  18 H2     *px    ( 1.6437)  21 H2     *py    (-1.1304)  29 C3     2s     (-0.1051)
+                31 C3     *s     (-0.5253)  32 C3     *s     (*******)  35 C3     *py    (-3.2842)  36 C3     *py    (18.1428)
+                38 C3     *d0    ( 0.1229)  39 C3     *d0    ( 1.5104)  41 C3     *d2+   ( 0.1480)  42 C3     *d2+   (-1.0771)
+                44 C3     *f3-   ( 0.2411)  50 C4     *s     ( 0.4132)  51 C4     *s     (46.6086)  54 C4     *px    ( 2.0299)
+                55 C4     *px    (*******)  57 C4     *py    ( 0.2514)  58 C4     *py    ( 1.1891)  59 C4     *py    ( 1.4296)
+                61 C4     *d2-   ( 0.1063)  62 C4     *d2-   ( 1.0261)  65 C4     *d0    (-1.0740)  68 C4     *d2+   (-3.2861)
+                70 C4     *f3-   ( 0.1715)
+         11    0.1356    0.0000                                                                                                           
+                 2 H1     *s     (-0.8637)   3 H1     *s     (-5.8535)   4 H1     *s     (-1.7360)   6 H1     *py    ( 0.3256)
+                 7 H1     *py    ( 1.1574)  13 H2     *s     (-1.2106)  14 H2     *s     (-8.2443)  15 H2     *s     (-2.6487)
+                17 H2     *px    ( 0.3972)  18 H2     *px    ( 1.4036)  20 H2     *py    ( 0.2292)  21 H2     *py    ( 0.8280)
+                29 C3     2s     (-0.1837)  31 C3     *s     ( 2.9737)  32 C3     *s     ( 5.0216)  33 C3     2py    (-0.1022)
+                34 C3     *py    ( 0.2793)  35 C3     *py    ( 2.3295)  36 C3     *py    ( 0.8666)  38 C3     *d0    (-0.1259)
+                39 C3     *d0    (-0.5217)  41 C3     *d2+   (-0.2441)  42 C3     *d2+   (-0.4803)  48 C4     2s     (-0.2608)
+                50 C4     *s     ( 4.2245)  51 C4     *s     ( 6.1332)  52 C4     2px    (-0.1251)  53 C4     *px    ( 0.3424)
+                54 C4     *px    ( 2.8055)  55 C4     *px    ( 1.2992)  57 C4     *py    ( 0.1955)  58 C4     *py    ( 1.6135)
+                59 C4     *py    ( 0.6705)  61 C4     *d2-   ( 0.2978)  62 C4     *d2-   ( 0.6061)  64 C4     *d0    (-0.1766)
+                65 C4     *d0    (-0.7125)  67 C4     *d2+   ( 0.1723)  68 C4     *d2+   ( 0.3878)  70 C4     *f3-   ( 0.1129)
+      
+ 
+      MOLECULAR ORBITALS FOR SYMMETRY SPECIES 2: b3u
+ 
+      INDEX  ENERGY  OCCUPATION COEFFICIENTS ...
+          1  -11.2304    2.0000                                                                                                           
+                33 C4     1s     ( 1.0011)
+          2   -1.0167    2.0000                                                                                                           
+                 6 H2     1s     ( 0.3258)   7 H2     *s     (-0.1679)   8 H2     *s     (-0.2639)  22 C3     2px    ( 0.2499)
+                34 C4     2s     ( 0.9050)  36 C4     *s     (-0.1748)  40 C4     *px    ( 0.1094)  42 C4     2py    (-0.1942)
+      
+          3   -0.6240    2.0000                                                                                                           
+                22 C3     2px    ( 0.6015)  24 C3     *px    (-0.1030)  38 C4     2px    (-0.4279)  42 C4     2py    ( 0.7291)
+                44 C4     *py    (-0.1285)
+          4   -0.5909    2.0000                                                                                                           
+                 6 H2     1s     ( 0.7220)   7 H2     *s     (-0.1296)   8 H2     *s     (-0.2455)  22 C3     2px    (-0.1790)
+                24 C3     *px    (-0.1008)  34 C4     2s     (-0.1383)  36 C4     *s     ( 0.2660)  38 C4     2px    ( 0.6048)
+                42 C4     2py    ( 0.5078)
+          5    0.0352    0.0000                                                                                                           
+                 3 H1     *px    ( 0.2384)   8 H2     *s     (-0.8325)   9 H2     *s     ( 6.0324)  12 H2     *px    ( 0.3072)
+                24 C3     *px    (-1.0046)  25 C3     *px    (-5.0690)  28 C3     *d2-   (-0.1101)  36 C4     *s     ( 0.7229)
+                37 C4     *s     (11.6213)  40 C4     *px    (-0.5588)  41 C4     *px    (-4.5041)  44 C4     *py    ( 0.4977)
+                45 C4     *py    ( 1.5397)  51 C4     *d0    (-0.3757)  54 C4     *d2+   (-0.1305)
+          6    0.1181    0.0000                                                                                                           
+                 3 H1     *px    ( 1.4027)   7 H2     *s     (-0.6355)   8 H2     *s     (-9.2883)   9 H2     *s     ( 8.8867)
+                11 H2     *px    ( 0.1402)  12 H2     *px    ( 1.5654)  15 H2     *py    (-0.2424)  24 C3     *px    ( 0.8220)
+                25 C3     *px    (*******)  28 C3     *d2-   (-2.6413)  32 C3     *f3+   ( 0.1282)  36 C4     *s     (-3.4046)
+                37 C4     *s     (51.9263)  38 C4     2px    ( 0.1241)  40 C4     *px    ( 3.4218)  41 C4     *px    (-9.1900)
+                44 C4     *py    ( 1.3019)  45 C4     *py    (12.7106)  47 C4     *d2-   ( 0.1652)  48 C4     *d2-   ( 1.4962)
+                50 C4     *d0    (-0.1090)  51 C4     *d0    (-1.9435)  53 C4     *d2+   ( 0.1461)  54 C4     *d2+   (-1.2929)
+      
+          7    0.1244    0.0000                                                                                                           
+                 2 H1     *px    (-0.1024)   3 H1     *px    (-0.3659)  12 H2     *px    ( 0.2641)  14 H2     *py    (-0.1253)
+                15 H2     *py    (-0.4544)  21 H2     *d2+   (-0.1207)  24 C3     *px    ( 0.6108)  25 C3     *px    ( 2.6134)
+                28 C3     *d2-   (-0.2652)  32 C3     *f3+   (-0.1141)  37 C4     *s     ( 0.1129)  40 C4     *px    (-0.4136)
+                41 C4     *px    (-1.8899)  44 C4     *py    ( 0.7422)  45 C4     *py    ( 3.3063)  48 C4     *d2-   (-0.1765)
+                54 C4     *d2+   ( 0.3051)  62 C4     *f3+   (-0.1613)
+          8    0.1427    0.0000                                                                                                           
+                 3 H1     *px    ( 1.5420)   8 H2     *s     (-7.0523)   9 H2     *s     (-3.7969)  12 H2     *px    ( 0.6097)
+                15 H2     *py    (-0.9061)  17 H2     *d2-   ( 0.1283)  23 C3     *px    ( 0.1709)  24 C3     *px    ( 4.2236)
+                25 C3     *px    (*******)  27 C3     *d2-   (-0.2084)  28 C3     *d2-   (-3.8547)  32 C3     *f3+   (-0.1355)
+                36 C4     *s     (*******)  37 C4     *s     (24.9392)  38 C4     2px    (-0.1416)  40 C4     *px    ( 6.2387)
+                41 C4     *px    ( 5.6572)  43 C4     *py    (-0.1320)  44 C4     *py    ( 0.1503)  45 C4     *py    (14.6596)
+                48 C4     *d2-   ( 2.0374)  51 C4     *d0    (-1.0515)  53 C4     *d2+   (-0.1332)  54 C4     *d2+   (-1.9714)
+      
+ 
+      MOLECULAR ORBITALS FOR SYMMETRY SPECIES 3: b2u
+ 
+      INDEX  ENERGY  OCCUPATION COEFFICIENTS ...
+          1  -11.2336    2.0000                                                                                                           
+                28 C3     1s     ( 0.9834)  47 C4     1s     ( 0.1874)
+          2  -11.2291    2.0000                                                                                                           
+                28 C3     1s     (-0.1875)  47 C4     1s     ( 0.9834)
+          3   -1.0176    2.0000                                                                                                           
+                 1 H1     1s     ( 0.2662)   2 H1     *s     (-0.1377)   3 H1     *s     (-0.2151)  12 H2     1s     ( 0.1872)
+                14 H2     *s     (-0.1546)  29 C3     2s     ( 0.7405)  31 C3     *s     (-0.1415)  48 C4     2s     ( 0.5215)
+                50 C4     *s     (-0.1032)  52 C4     2px    (-0.1957)  56 C4     2py    ( 0.2383)
+          4   -0.6425    2.0000                                                                                                           
+                 1 H1     1s     (-0.4939)   2 H1     *s     ( 0.1251)   3 H1     *s     ( 0.2462)  12 H2     1s     ( 0.6882)
+                13 H2     *s     (-0.1744)  14 H2     *s     (-0.3442)  29 C3     2s     (-0.3445)  31 C3     *s     (-0.3488)
+                32 C3     *s     (-0.3603)  33 C3     2py    (-0.2845)  35 C3     *py    ( 0.1035)  48 C4     2s     ( 0.4906)
+                50 C4     *s     ( 0.4829)  51 C4     *s     ( 0.5111)  52 C4     2px    ( 0.3353)  54 C4     *px    (-0.1259)
+                56 C4     2py    ( 0.1969)
+          5   -0.5919    2.0000                                                                                                           
+                 1 H1     1s     ( 0.5847)   2 H1     *s     (-0.1051)   3 H1     *s     (-0.2004)  12 H2     1s     ( 0.4231)
+                14 H2     *s     (-0.1418)  29 C3     2s     (-0.1161)  31 C3     *s     ( 0.2167)  33 C3     2py    ( 0.6340)
+                50 C4     *s     ( 0.1592)  52 C4     2px    ( 0.5039)  58 C4     *py    (-0.1276)
+          6    0.0352    0.0000                                                                                                           
+                 3 H1     *s     (-0.6794)   4 H1     *s     ( 4.9145)   7 H1     *py    ( 0.2103)  14 H2     *s     (-0.4707)
+                15 H2     *s     ( 3.4947)  21 H2     *py    ( 0.3266)  31 C3     *s     ( 0.5875)  32 C3     *s     ( 9.4435)
+                35 C3     *py    (-0.1949)  36 C3     *py    (-2.5468)  39 C3     *d0    (-0.3062)  42 C3     *d2+   ( 0.1025)
+                50 C4     *s     ( 0.4214)  51 C4     *s     ( 6.7467)  54 C4     *px    ( 0.5007)  55 C4     *px    ( 1.5228)
+                58 C4     *py    (-1.1367)  59 C4     *py    (-6.2788)  62 C4     *d2-   (-0.1363)  65 C4     *d0    (-0.2170)
+      
+          7    0.0649    0.0000                                                                                                           
+                 2 H1     *s     ( 0.6163)   3 H1     *s     (11.6185)   4 H1     *s     (*******)   6 H1     *py    (-0.1161)
+                 7 H1     *py    (-2.2732)  13 H2     *s     (-0.8726)  14 H2     *s     (*******)  15 H2     *s     (25.7223)
+                17 H2     *px    ( 0.1423)  18 H2     *px    ( 2.7858)  21 H2     *py    ( 1.6075)  31 C3     *s     (-2.2252)
+                32 C3     *s     (*******)  35 C3     *py    (-3.1229)  36 C3     *py    (21.4157)  39 C3     *d0    ( 0.7865)
+                42 C3     *d2+   ( 2.5789)  44 C3     *f3-   ( 0.1452)  50 C4     *s     ( 3.1491)  51 C4     *s     (97.4315)
+                54 C4     *px    ( 3.8283)  55 C4     *px    (*******)  58 C4     *py    ( 2.2115)  59 C4     *py    (*******)
+                62 C4     *d2-   ( 3.1612)  65 C4     *d0    (-1.1121)  68 C4     *d2+   ( 1.8261)  70 C4     *f3-   ( 0.2055)
+                74 C4     *f1+   (-0.1051)
+          8    0.1180    0.0000                                                                                                           
+                 2 H1     *s     (-0.5181)   3 H1     *s     (-7.6096)   4 H1     *s     ( 7.2706)   6 H1     *py    ( 0.1045)
+                 7 H1     *py    ( 1.0127)  13 H2     *s     (-0.3654)  14 H2     *s     (-5.2990)  15 H2     *s     ( 5.1184)
+                18 H2     *px    (-0.2498)  20 H2     *py    ( 0.1237)  21 H2     *py    ( 1.8367)  31 C3     *s     (-2.7805)
+                32 C3     *s     (42.4064)  33 C3     2py    ( 0.1130)  35 C3     *py    ( 2.9465)  36 C3     *py    (-1.3356)
+                39 C3     *d0    (-1.5887)  41 C3     *d2+   (-0.1759)  42 C3     *d2+   (-0.5427)  50 C4     *s     (-1.9622)
+                51 C4     *s     (29.8998)  54 C4     *px    ( 1.3019)  55 C4     *px    (12.7119)  58 C4     *py    ( 1.9042)
+                59 C4     *py    (*******)  61 C4     *d2-   ( 0.1455)  62 C4     *d2-   (-1.3134)  65 C4     *d0    (-1.1192)
+                68 C4     *d2+   ( 2.9757)  76 C4     *f3+   ( 0.1564)
+          9    0.1427    0.0000                                                                                                           
+                 3 H1     *s     (-5.7842)   4 H1     *s     (-3.0595)  11 H1     *d2+   (-0.1222)  14 H2     *s     (-4.0366)
+                15 H2     *s     (-2.2284)  18 H2     *px    (-0.9151)  21 H2     *py    ( 1.6573)  31 C3     *s     (-8.2151)
+                32 C3     *s     (20.6076)  33 C3     2py    (-0.1315)  35 C3     *py    ( 4.4865)  36 C3     *py    ( 9.9283)
+                39 C3     *d0    (-0.8651)  42 C3     *d2+   (-0.6319)  50 C4     *s     (-5.8232)  51 C4     *s     (14.1861)
+                53 C4     *px    (-0.1319)  54 C4     *px    ( 0.1451)  55 C4     *px    (14.7464)  57 C4     *py    ( 0.1657)
+                58 C4     *py    ( 6.0467)  59 C4     *py    (*******)  61 C4     *d2-   (-0.1343)  62 C4     *d2-   (-1.9865)
+                65 C4     *d0    (-0.6077)  67 C4     *d2+   ( 0.2173)  68 C4     *d2+   ( 4.3200)  76 C4     *f3+   (-0.1668)
+      
+ 
+      MOLECULAR ORBITALS FOR SYMMETRY SPECIES 4: b1g
+ 
+      INDEX  ENERGY  OCCUPATION COEFFICIENTS ...
+          1  -11.2292    2.0000                                                                                                           
+                33 C4     1s     ( 0.9999)
+          2   -0.8275    2.0000                                                                                                           
+                 6 H2     1s     ( 0.4826)   7 H2     *s     (-0.1278)   8 H2     *s     (-0.2276)  22 C3     2px    ( 0.4533)
+                24 C3     *px    (-0.1237)  34 C4     2s     ( 0.7281)  36 C4     *s     ( 0.1123)  37 C4     *s     ( 0.1627)
+                42 C4     2py    ( 0.3530)
+          3   -0.4965    2.0000                                                                                                           
+                 6 H2     1s     ( 0.7175)   7 H2     *s     (-0.1681)   8 H2     *s     (-0.2962)  22 C3     2px    (-0.5563)
+                36 C4     *s     ( 0.3431)  37 C4     *s     ( 0.1585)  38 C4     2px    ( 0.7115)
+          4    0.0486    0.0000                                                                                                           
+                 3 H1     *px    ( 0.2093)   7 H2     *s     (-0.4716)   8 H2     *s     (-6.3662)   9 H2     *s     (14.1737)
+                11 H2     *px    ( 0.1540)  12 H2     *px    ( 1.3163)  14 H2     *py    ( 0.1191)  15 H2     *py    ( 0.9275)
+                24 C3     *px    ( 1.0320)  25 C3     *px    (-0.7716)  36 C4     *s     ( 1.5955)  37 C4     *s     (30.0586)
+                39 C4     *px    ( 0.1457)  40 C4     *px    ( 0.1035)  41 C4     *px    (*******)  44 C4     *py    ( 0.8754)
+                45 C4     *py    (-7.4805)  47 C4     *d2-   ( 0.1810)  48 C4     *d2-   ( 1.7076)  51 C4     *d0    (-0.3715)
+                53 C4     *d2+   ( 0.1255)  54 C4     *d2+   ( 1.0224)  56 C4     *f3-   ( 0.1026)
+          5    0.1294    0.0000                                                                                                           
+                 3 H1     *px    ( 1.4682)   7 H2     *s     (-1.0084)   8 H2     *s     (-6.3065)   9 H2     *s     (18.3504)
+                11 H2     *px    ( 0.1799)  12 H2     *px    ( 0.7526)  14 H2     *py    ( 0.1288)  15 H2     *py    ( 1.6357)
+                23 C3     *px    (-0.2099)  25 C3     *px    (-7.3236)  28 C3     *d2-   (-2.7394)  34 C4     2s     ( 0.1271)
+                36 C4     *s     ( 0.6672)  37 C4     *s     (80.6916)  39 C4     *px    ( 0.1574)  40 C4     *px    ( 3.5045)
+                41 C4     *px    (*******)  44 C4     *py    ( 2.0184)  45 C4     *py    (*******)  47 C4     *d2-   ( 0.1508)
+                48 C4     *d2-   (-2.1086)  50 C4     *d0    (-0.1515)  51 C4     *d0    (-1.8540)  53 C4     *d2+   ( 0.1042)
+                54 C4     *d2+   ( 1.0276)  56 C4     *f3-   ( 0.2964)
+ 
+      MOLECULAR ORBITALS FOR SYMMETRY SPECIES 5: b1u
+ 
+      INDEX  ENERGY  OCCUPATION COEFFICIENTS ...
+          1    0.0000    1.7428                                                                                                           
+                13 C3     2pz    ( 0.4472)  24 C4     2pz    ( 0.6430)
+          2    0.0000    0.7062                                                                                                           
+                13 C3     2pz    (-0.7409)  15 C3     *pz    (-0.1945)  16 C3     *pz    (-0.3321)  24 C4     2pz    ( 0.5367)
+                26 C4     *pz    ( 0.1319)  27 C4     *pz    ( 0.2268)
+          3    0.0972    0.0000                                                                                                           
+                 3 H1     *pz    (-0.1882)   8 H2     *pz    (-0.2673)  13 C3     2pz    (-0.1275)  16 C3     *pz    ( 0.3272)
+                24 C4     2pz    (-0.1619)  27 C4     *pz    ( 0.5763)  33 C4     *d1+   ( 0.1106)
+          4    0.1440    0.0000                                                                                                           
+                 2 H1     *pz    ( 0.1160)   3 H1     *pz    ( 0.1752)   5 H1     *d1-   (-0.1019)   8 H2     *pz    (-0.1182)
+                13 C3     2pz    ( 0.1610)  15 C3     *pz    (-1.7049)  16 C3     *pz    (-6.2437)  19 C3     *d1-   ( 0.8634)
+                21 C3     *f0    ( 0.1026)  24 C4     2pz    (-0.1109)  26 C4     *pz    ( 1.2053)  27 C4     *pz    ( 4.4074)
+                30 C4     *d1-   ( 0.2204)  33 C4     *d1+   (-0.8356)
+ 
+      MOLECULAR ORBITALS FOR SYMMETRY SPECIES 6: b2g
+ 
+      INDEX  ENERGY  OCCUPATION COEFFICIENTS ...
+          1    0.0000    1.3930                                                                                                           
+                15 C4     2pz    ( 0.8486)
+          2    0.1097    0.0000                                                                                                           
+                 5 H2     *pz    (-0.4932)  12 C3     *d1+   (-1.2775)  15 C4     2pz    (-0.1479)  17 C4     *pz    ( 1.6147)
+                18 C4     *pz    ( 2.0646)  21 C4     *d1-   ( 0.8849)  24 C4     *d1+   (-0.2741)
+ 
+      MOLECULAR ORBITALS FOR SYMMETRY SPECIES 7: b3g
+ 
+      INDEX  ENERGY  OCCUPATION COEFFICIENTS ...
+          1    0.0000    1.3242                                                                                                           
+                13 C3     2pz    ( 0.6889)  24 C4     2pz    ( 0.4835)
+          2    0.0000    0.1967                                                                                                           
+                13 C3     2pz    ( 0.6098)  15 C3     *pz    ( 0.4142)  16 C3     *pz    ( 0.6621)  24 C4     2pz    (-0.9453)
+                26 C4     *pz    (-0.5528)  27 C4     *pz    (-0.8262)
+          3    0.1104    0.0000                                                                                                           
+                 3 H1     *pz    (-0.4054)   8 H2     *pz    (-0.2860)  13 C3     2pz    (-0.1486)  15 C3     *pz    ( 1.2529)
+                16 C3     *pz    ( 1.2322)  19 C3     *d1-   ( 0.1902)  26 C4     *pz    ( 1.0322)  27 C4     *pz    ( 1.8316)
+                30 C4     *d1-   (-1.3135)  33 C4     *d1+   ( 0.8604)
+ 
+      MOLECULAR ORBITALS FOR SYMMETRY SPECIES 8: au 
+ 
+      INDEX  ENERGY  OCCUPATION COEFFICIENTS ...
+          1    0.0000    0.6371                                                                                                           
+                15 C4     2pz    ( 0.9390)  17 C4     *pz    ( 0.2283)  18 C4     *pz    ( 0.3151)
+          2    0.1430    0.0000                                                                                                           
+                 4 H2     *pz    (-0.1402)   5 H2     *pz    (-0.2061)  12 C3     *d1+   (-0.4927)  15 C4     2pz    (-0.1789)
+                17 C4     *pz    ( 2.0744)  18 C4     *pz    ( 7.6304)  21 C4     *d1-   (-0.8248)  24 C4     *d1+   (-0.7375)
+                28 C4     *f0    (-0.1245)
+--
+ 
+      Von Neumann Entropy (Root   1) =  0.65512
+ 
+
+      Mulliken population analysis for root number:  1
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                H1      H2      C3      C4    
+      1s       1.3966  1.3982  2.0014  2.0014
+      2s       0.0000  0.0000  1.5013  1.4985
+      2px      0.0000  0.0000  1.1742  1.2080
+      2pz      0.0000  0.0000  0.9537  0.9663
+      2py      0.0000  0.0000  1.2254  1.1838
+      *s      -0.8669 -0.8633 -0.0731 -0.0766
+      *px      0.0081 -0.0073 -0.2024 -0.1647
+      *pz      0.0163  0.0151  0.0142  0.0022
+      *py     -0.0122  0.0029 -0.1525 -0.1879
+      *d2+     0.0010  0.0002  0.0206  0.0128
+      *d1+    -0.0000  0.0029  0.0006  0.0074
+      *d0     -0.0013 -0.0014 -0.0069 -0.0069
+      *d1-     0.0040  0.0009  0.0076  0.0036
+      *d2-    -0.0000  0.0008  0.0092  0.0174
+      *f3+     0.0000  0.0000 -0.0202 -0.0202
+      *f2+     0.0000  0.0000  0.0004  0.0001
+      *f1+     0.0000  0.0000  0.0002  0.0004
+      *f0      0.0000  0.0000  0.0019  0.0018
+      *f1-     0.0000  0.0000  0.0004  0.0003
+      *f2-     0.0000  0.0000 -0.0000  0.0003
+      *f3-     0.0000  0.0000  0.0016  0.0016
+      Total    0.5455  0.5491  6.4575  6.4494
+ 
+      N-E      0.4545  0.4509 -0.4575 -0.4494
+ 
+      Total electronic charge=   42.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number:  1
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X= -2.2575E-15               Y=  0.0000E+00               Z=  0.0000E+00           Total=  2.2575E-15
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                  XX= -3.1403E+01              XY=  7.5363E-16              XZ=  0.0000E+00              YY= -3.1492E+01
+                  YZ=  0.0000E+00              ZZ= -4.0298E+01
+      In traceless form (Debye*Ang)
+                  XX=  4.4918E+00              XY=  1.1305E-15              XZ=  0.0000E+00              YY=  4.3590E+00
+                  YZ=  0.0000E+00              ZZ= -8.8508E+00
+--
+ 
+      Von Neumann Entropy (Root   2) =  2.21484
+ 
+
+      Mulliken population analysis for root number:  2
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                H1      H2      C3      C4    
+      1s       1.3966  1.3982  2.0014  2.0014
+      2s       0.0000  0.0000  1.5013  1.4985
+      2px      0.0000  0.0000  1.1742  1.2080
+      2pz      0.0000  0.0000  0.8934  0.9095
+      2py      0.0000  0.0000  1.2254  1.1838
+      *s      -0.8669 -0.8633 -0.0731 -0.0766
+      *px      0.0081 -0.0073 -0.2024 -0.1647
+      *pz      0.0275  0.0190  0.0646  0.0234
+      *py     -0.0122  0.0029 -0.1525 -0.1879
+      *d2+     0.0010  0.0002  0.0206  0.0128
+      *d1+    -0.0001  0.0025  0.0072  0.0159
+      *d0     -0.0013 -0.0014 -0.0069 -0.0069
+      *d1-     0.0036  0.0009  0.0112  0.0194
+      *d2-    -0.0000  0.0008  0.0092  0.0174
+      *f3+     0.0000  0.0000 -0.0202 -0.0202
+      *f2+     0.0000  0.0000  0.0010  0.0003
+      *f1+     0.0000  0.0000  0.0002  0.0004
+      *f0      0.0000  0.0000  0.0032  0.0023
+      *f1-     0.0000  0.0000  0.0004  0.0003
+      *f2-     0.0000  0.0000  0.0001  0.0008
+      *f3-     0.0000  0.0000  0.0016  0.0016
+      Total    0.5562  0.5526  6.4599  6.4393
+ 
+      N-E      0.4438  0.4474 -0.4599 -0.4393
+ 
+      Total electronic charge=   42.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number:  2
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X= -2.2575E-15               Y=  0.0000E+00               Z=  0.0000E+00           Total=  2.2575E-15
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                  XX= -3.4473E+01              XY=  7.5363E-16              XZ=  0.0000E+00              YY= -3.3956E+01
+                  YZ=  0.0000E+00              ZZ= -4.0791E+01
+      In traceless form (Debye*Ang)
+                  XX=  2.9005E+00              XY=  1.1305E-15              XZ=  0.0000E+00              YY=  3.6761E+00
+                  YZ=  0.0000E+00              ZZ= -6.5765E+00
+--
+ 
+      Von Neumann Entropy (Root   3) =  2.31324
+ 
+
+      Mulliken population analysis for root number:  3
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                H1      H2      C3      C4    
+      1s       1.3966  1.3982  2.0014  2.0014
+      2s       0.0000  0.0000  1.5013  1.4985
+      2px      0.0000  0.0000  1.1742  1.2080
+      2pz      0.0000  0.0000  0.8969  0.9025
+      2py      0.0000  0.0000  1.2254  1.1838
+      *s      -0.8669 -0.8633 -0.0731 -0.0766
+      *px      0.0081 -0.0073 -0.2024 -0.1647
+      *pz      0.0231  0.0202  0.0499  0.0243
+      *py     -0.0122  0.0029 -0.1525 -0.1879
+      *d2+     0.0010  0.0002  0.0206  0.0128
+      *d1+    -0.0002  0.0025  0.0262  0.0168
+      *d0     -0.0013 -0.0014 -0.0069 -0.0069
+      *d1-     0.0035  0.0007  0.0108  0.0213
+      *d2-    -0.0000  0.0008  0.0092  0.0174
+      *f3+     0.0000  0.0000 -0.0202 -0.0202
+      *f2+     0.0000  0.0000  0.0009  0.0005
+      *f1+     0.0000  0.0000  0.0002  0.0004
+      *f0      0.0000  0.0000  0.0029  0.0030
+      *f1-     0.0000  0.0000  0.0004  0.0003
+      *f2-     0.0000  0.0000  0.0006  0.0008
+      *f3-     0.0000  0.0000  0.0016  0.0016
+      Total    0.5517  0.5536  6.4672  6.4370
+ 
+      N-E      0.4483  0.4464 -0.4672 -0.4370
+ 
+      Total electronic charge=   42.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number:  3
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X= -2.2575E-15               Y=  0.0000E+00               Z=  0.0000E+00           Total=  2.2575E-15
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                  XX= -3.4090E+01              XY=  7.5363E-16              XZ=  0.0000E+00              YY= -3.4527E+01
+                  YZ=  0.0000E+00              ZZ= -4.0926E+01
+      In traceless form (Debye*Ang)
+                  XX=  3.6361E+00              XY=  1.1305E-15              XZ=  0.0000E+00              YY=  2.9818E+00
+                  YZ=  0.0000E+00              ZZ= -6.6178E+00
+--
+ 
+      Von Neumann Entropy (Root   4) =  2.54912
+ 
+
+      Mulliken population analysis for root number:  4
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                H1      H2      C3      C4    
+      1s       1.3966  1.3982  2.0014  2.0014
+      2s       0.0000  0.0000  1.5013  1.4985
+      2px      0.0000  0.0000  1.1742  1.2080
+      2pz      0.0000  0.0000  0.8836  0.8885
+      2py      0.0000  0.0000  1.2254  1.1838
+      *s      -0.8669 -0.8633 -0.0731 -0.0766
+      *px      0.0081 -0.0073 -0.2024 -0.1647
+      *pz      0.0250  0.0221  0.0582  0.0343
+      *py     -0.0122  0.0029 -0.1525 -0.1879
+      *d2+     0.0010  0.0002  0.0206  0.0128
+      *d1+    -0.0002  0.0025  0.0288  0.0174
+      *d0     -0.0013 -0.0014 -0.0069 -0.0069
+      *d1-     0.0035  0.0007  0.0108  0.0229
+      *d2-    -0.0000  0.0008  0.0092  0.0174
+      *f3+     0.0000  0.0000 -0.0202 -0.0202
+      *f2+     0.0000  0.0000  0.0010  0.0005
+      *f1+     0.0000  0.0000  0.0002  0.0004
+      *f0      0.0000  0.0000  0.0030  0.0031
+      *f1-     0.0000  0.0000  0.0004  0.0003
+      *f2-     0.0000  0.0000  0.0006  0.0009
+      *f3-     0.0000  0.0000  0.0016  0.0016
+      Total    0.5535  0.5554  6.4651  6.4353
+ 
+      N-E      0.4465  0.4446 -0.4651 -0.4353
+ 
+      Total electronic charge=   42.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number:  4
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X= -2.2575E-15               Y=  0.0000E+00               Z=  0.0000E+00           Total=  2.2575E-15
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                  XX= -3.4681E+01              XY=  7.5363E-16              XZ=  0.0000E+00              YY= -3.5247E+01
+                  YZ=  0.0000E+00              ZZ= -4.0951E+01
+      In traceless form (Debye*Ang)
+                  XX=  3.4184E+00              XY=  1.1305E-15              XZ=  0.0000E+00              YY=  2.5685E+00
+                  YZ=  0.0000E+00              ZZ= -5.9868E+00
+--
+ 
+      Von Neumann Entropy (Root   5) =  2.17832
+ 
+
+      Mulliken population analysis for root number:  5
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                H1      H2      C3      C4    
+      1s       1.3966  1.3982  2.0014  2.0014
+      2s       0.0000  0.0000  1.5013  1.4985
+      2px      0.0000  0.0000  1.1742  1.2080
+      2pz      0.0000  0.0000  0.8925  0.9299
+      2py      0.0000  0.0000  1.2254  1.1838
+      *s      -0.8669 -0.8633 -0.0731 -0.0766
+      *px      0.0081 -0.0073 -0.2024 -0.1647
+      *pz      0.0246  0.0199  0.0617  0.0185
+      *py     -0.0122  0.0029 -0.1525 -0.1879
+      *d2+     0.0010  0.0002  0.0206  0.0128
+      *d1+    -0.0001  0.0027  0.0061  0.0125
+      *d0     -0.0013 -0.0014 -0.0069 -0.0069
+      *d1-     0.0036  0.0009  0.0082  0.0121
+      *d2-    -0.0000  0.0008  0.0092  0.0174
+      *f3+     0.0000  0.0000 -0.0202 -0.0202
+      *f2+     0.0000  0.0000  0.0008  0.0002
+      *f1+     0.0000  0.0000  0.0002  0.0004
+      *f0      0.0000  0.0000  0.0026  0.0026
+      *f1-     0.0000  0.0000  0.0004  0.0003
+      *f2-     0.0000  0.0000  0.0001  0.0006
+      *f3-     0.0000  0.0000  0.0016  0.0016
+      Total    0.5533  0.5537  6.4512  6.4441
+ 
+      N-E      0.4467  0.4463 -0.4512 -0.4441
+ 
+      Total electronic charge=   42.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number:  5
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X= -2.2575E-15               Y=  0.0000E+00               Z=  0.0000E+00           Total=  2.2575E-15
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                  XX= -3.3961E+01              XY=  7.5363E-16              XZ=  0.0000E+00              YY= -3.3425E+01
+                  YZ=  0.0000E+00              ZZ= -4.0521E+01
+      In traceless form (Debye*Ang)
+                  XX=  3.0122E+00              XY=  1.1305E-15              XZ=  0.0000E+00              YY=  3.8155E+00
+                  YZ=  0.0000E+00              ZZ= -6.8277E+00
+--
+ 
+      Von Neumann Entropy (Root   6) =  2.16887
+ 
+
+      Mulliken population analysis for root number:  6
+      -----------------------------------------------
+ 
+ 
+++    Molecular charges:
+      ------------------
+ 
+      Mulliken charges per centre and basis function type
+      ---------------------------------------------------
+ 
+                H1      H2      C3      C4    
+      1s       1.3966  1.3982  2.0014  2.0014
+      2s       0.0000  0.0000  1.5013  1.4985
+      2px      0.0000  0.0000  1.1742  1.2080
+      2pz      0.0000  0.0000  0.8841  0.9129
+      2py      0.0000  0.0000  1.2254  1.1838
+      *s      -0.8669 -0.8633 -0.0731 -0.0766
+      *px      0.0081 -0.0073 -0.2024 -0.1647
+      *pz      0.0183  0.0225  0.0252  0.0349
+      *py     -0.0122  0.0029 -0.1525 -0.1879
+      *d2+     0.0010  0.0002  0.0206  0.0128
+      *d1+    -0.0002  0.0027  0.0380  0.0133
+      *d0     -0.0013 -0.0014 -0.0069 -0.0069
+      *d1-     0.0035  0.0006  0.0091  0.0177
+      *d2-    -0.0000  0.0008  0.0092  0.0174
+      *f3+     0.0000  0.0000 -0.0202 -0.0202
+      *f2+     0.0000  0.0000  0.0007  0.0006
+      *f1+     0.0000  0.0000  0.0002  0.0004
+      *f0      0.0000  0.0000  0.0024  0.0033
+      *f1-     0.0000  0.0000  0.0004  0.0003
+      *f2-     0.0000  0.0000  0.0008  0.0008
+      *f3-     0.0000  0.0000  0.0016  0.0016
+      Total    0.5468  0.5559  6.4395  6.4510
+ 
+      N-E      0.4532  0.4441 -0.4395 -0.4510
+ 
+      Total electronic charge=   42.000000
+ 
+      Total            charge=   -0.000000
+--
+ 
+ 
+
+      Expectation values of various properties for root number:  6
+      -----------------------------------------------------------
+ 
+ 
+++    Molecular properties:
+      ---------------------
+ 
+      Charge (e):
+                      =   -0.0000
+      Dipole Moment (Debye):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                   X= -2.2575E-15               Y=  0.0000E+00               Z=  0.0000E+00           Total=  2.2575E-15
+      Quadrupole Moment (Debye*Ang):
+      Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+                  XX= -3.3794E+01              XY=  7.5363E-16              XZ=  0.0000E+00              YY= -3.4536E+01
+                  YZ=  0.0000E+00              ZZ= -4.0789E+01
+      In traceless form (Debye*Ang)
+                  XX=  3.8678E+00              XY=  1.1305E-15              XZ=  0.0000E+00              YY=  2.7561E+00
+                  YZ=  0.0000E+00              ZZ= -6.6239E+00
+--
+ 
+ 
+      Input file to MOLDEN was generated!
+ 
+ 
+      Input file to MOLDEN was generated!
+ 
+ 
+      Input file to MOLDEN was generated!
+ 
+ 
+      Input file to MOLDEN was generated!
+ 
+ 
+      Input file to MOLDEN was generated!
+ 
+ 
+      Input file to MOLDEN was generated!
+ 
+ 
+      Input file to MOLDEN was generated!
+ 
+      Average orbitals are written to the RASORB file
+      Natural orbitals for root   1 are written to the RASORB.1 file
+      Natural orbitals for root   2 are written to the RASORB.2 file
+      Natural orbitals for root   3 are written to the RASORB.3 file
+      Natural orbitals for root   4 are written to the RASORB.4 file
+      Natural orbitals for root   5 are written to the RASORB.5 file
+      Natural orbitals for root   6 are written to the RASORB.6 file
+      Spin density orbitals for root   1 are written to the SPDORB.1 file
+      Spin density orbitals for root   2 are written to the SPDORB.2 file
+      Spin density orbitals for root   3 are written to the SPDORB.3 file
+      Spin density orbitals for root   4 are written to the SPDORB.4 file
+      Spin density orbitals for root   5 are written to the SPDORB.5 file
+      Spin density orbitals for root   6 are written to the SPDORB.6 file
+ 
+ ###############################################################################
+ ###############################################################################
+ ###                                                                         ###
+ ###                                                                         ###
+ ###    WARNING: RunFile label BirthCertificate                              ###
+ ###    was used       54 times                                              ###
+ ###                                                                         ###
+ ###                                                                         ###
+ ###############################################################################
+ ###############################################################################
+The total execution time is limited to 21360 seconds.
+--- Stop Module: rasscf at Mon Jul 18 10:33:52 2022 /rc=_RC_ALL_IS_WELL_ ---
+*** files: ul-D2h.rasscf.molden.3 ul-D2h.rasscf.molden.1 ul-D2h.rasscf.molden ul-D2h.rasscf.molden.4 ul-D2h.rasscf.molden.6 ul-D2h.rasscf.molden.5 ul-D2h.rasscf.molden.2
+           ul-D2h.RasOrb.4 ul-D2h.RasOrb.3 ul-D2h.RasOrb.2 ul-D2h.RasOrb.1 ul-D2h.RasOrb.6 ul-D2h.RasOrb.5 ul-D2h.RasOrb ul-D2h.rasscf.h5 ul-D2h.SpdOrb.6 ul-D2h.SpdOrb.5
+           ul-D2h.SpdOrb.4 ul-D2h.SpdOrb.3 ul-D2h.SpdOrb.1 ul-D2h.SpdOrb.2 xmldump
+    saved to directory /work/donglab/kaufold.b/Label-Tutorial/ul-D2h
+--- Module rasscf spent 3 minutes 48 seconds ---
+
+*** symbolic link created: INPORB -> ul-D2h.RasOrb
+--- Start Module: caspt2 at Mon Jul 18 10:33:53 2022 ---
+
+-- Input validation for caspt2
+lxml python module not found, no validation possible
+--
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                              &CASPT2
+
+                       only a single process is used, running in SERIAL mode
+                       available to each process: 46 GB of memory, 16 threads
+                                            pid: 187912
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+ 
+++    Wave function specifications:
+      -----------------------------
+ 
+      Number of closed shell electrons          24
+      Number of electrons in active shells       6
+      Max number of holes in RAS1 space          0
+      Max number of electrons in RAS3 space      0
+      Number of inactive orbitals               12
+      Number of active orbitals                  6
+      Number of secondary orbitals             390
+      Spin quantum number                      0.0
+      State symmetry                             1
+      Number of CSFs                            52
+      Number of root(s) available                6
+      Root passed to geometry opt.               6
+      A file JOBMIX will be created
+      This is a MULTI-STATE CASSCF reference
+      Number of CI roots used                    6
+      These are:                                 1   2   3   4   5   6
+      Heff is assumed diagonal
+--
+ 
+++    Orbital specifications:
+      -----------------------
+ 
+      Symmetry species                           1   2   3   4   5   6   7   8
+                                                ag b3u b2u b1g b1u b2g b3g  au
+      Frozen orbitals                            2   1   2   1   0   0   0   0
+      Inactive orbitals                          4   3   3   2   0   0   0   0
+      Active orbitals                            0   0   0   0   2   1   2   1
+      Secondary orbitals                        70  58  71  59  37  29  37  29
+      Deleted orbitals                           0   0   0   0   0   0   0   0
+      Number of basis functions                 76  62  76  62  39  30  39  30
+--
+ 
+++    CASPT2 specifications:
+      ----------------------
+ 
+      Type of calculation                        SS-CASPT2
+      Fock operator                              state-specific
+      IPEA shift                                 0.25
+      Real shift                                 0.00
+      Imaginary shift                            0.00
+      The input orbitals will be transformed to quasi-canonical
+--
+ 
+--------------------------------------------------------------------------------
+ Estimated memory requirements:
+  POLY3 :                   254050
+  RHS:                      670395
+  SIGMA :                  1068880
+  PRPCTL:                        0
+ Available workspace:   5197591417
+ 
+++ CASPT2 computation for group   1
+ 
+********************************************************************************
+ Multi-State initialization phase begins for group   1
+--------------------------------------------------------------------------------
+********************************************************************************
+ Compute H0 matrices for state    1
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ H0 matrices have been computed.
+ 
+********************************************************************************
+  CASPT2 EQUATION SOLUTION
+--------------------------------------------------------------------------------
+ 
+  Total nr of CASPT2 parameters:
+   Before reduction:     3213072
+   After  reduction:     3212081
+ 
+ The contributions to the second order correlation energy in atomic units.
+-----------------------------------------------------------------------------------------------------------------------------
+  IT.      VJTU        VJTI        ATVX        AIVX        VJAI        BVAT        BJAT        BJAI        TOTAL       RNORM  
+-----------------------------------------------------------------------------------------------------------------------------
+   1     0.000000   -0.004190   -0.015487   -0.107609   -0.026564   -0.033136   -0.210138   -0.501923   -0.899046    0.001401
+   2     0.000000   -0.004206   -0.015537   -0.107727   -0.026585   -0.033145   -0.210180   -0.501967   -0.899346    0.000070
+   3     0.000000   -0.004206   -0.015537   -0.107730   -0.026585   -0.033144   -0.210183   -0.501967   -0.899352    0.000004
+-----------------------------------------------------------------------------------------------------------------------------
+ 
+  FINAL CASPT2 RESULT:
+ 
+      Reference energy:        -230.8410637594
+      E2 (Non-variational):      -0.8993517110
+      E2 (Variational):          -0.8993516965
+      Total energy:            -231.7404154559
+      Residual norm:              0.0000002499
+      Reference weight:           0.77620
+ 
+      Contributions to the CASPT2 correlation energy
+      Active & Virtual Only:         -0.0486814989
+      One Inactive Excited:          -0.3179119222
+      Two Inactive Excited:          -0.5327582899
+ 
+ 
+++ Denominators, etc.
+--------------------------------------------------------------------------------------------------------------
+ Report on small energy denominators, large coefficients, and large energy contributions.
+CASE  SYMM ACTIVE-MIX  NON-ACTIVE INDICES          DENOMINATOR     RHS VALUE       COEFFICIENT     CONTRIBUTION
+--
+ 
+   (Skipping property calculation,
+    use PROP keyword to activate)
+--
+ 
+++ CASPT2 computation for group   2
+ 
+********************************************************************************
+ Multi-State initialization phase begins for group   2
+--------------------------------------------------------------------------------
+********************************************************************************
+ Compute H0 matrices for state    2
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ H0 matrices have been computed.
+ 
+********************************************************************************
+  CASPT2 EQUATION SOLUTION
+--------------------------------------------------------------------------------
+ 
+  Total nr of CASPT2 parameters:
+   Before reduction:     3213072
+   After  reduction:     3212015
+ 
+ The contributions to the second order correlation energy in atomic units.
+-----------------------------------------------------------------------------------------------------------------------------
+  IT.      VJTU        VJTI        ATVX        AIVX        VJAI        BVAT        BJAT        BJAI        TOTAL       RNORM  
+-----------------------------------------------------------------------------------------------------------------------------
+   1     0.000000   -0.003401   -0.020521   -0.088388   -0.029322   -0.025769   -0.224055   -0.502198   -0.893654    0.002465
+   2     0.000000   -0.003404   -0.022257   -0.087966   -0.029304   -0.025685   -0.223557   -0.502155   -0.894329    0.015760
+   3     0.000000   -0.003415   -0.022873   -0.088512   -0.029342   -0.025752   -0.224072   -0.502194   -0.896161    0.001358
+   4     0.000000   -0.003408   -0.022715   -0.088469   -0.029333   -0.025742   -0.224069   -0.502198   -0.895935    0.001579
+   5     0.000000   -0.003407   -0.022691   -0.088422   -0.029330   -0.025735   -0.224028   -0.502195   -0.895807    0.000190
+   6     0.000000   -0.003408   -0.022705   -0.088434   -0.029331   -0.025736   -0.224033   -0.502195   -0.895842    0.000031
+   7     0.000000   -0.003408   -0.022705   -0.088435   -0.029331   -0.025736   -0.224034   -0.502195   -0.895844    0.000004
+-----------------------------------------------------------------------------------------------------------------------------
+ 
+  FINAL CASPT2 RESULT:
+ 
+      Reference energy:        -230.5458549958
+      E2 (Non-variational):      -0.8958433503
+      E2 (Variational):          -0.8958433522
+      Total energy:            -231.4416983480
+      Residual norm:              0.0000004979
+      Reference weight:           0.31517
+ 
+      Contributions to the CASPT2 correlation energy
+      Active & Virtual Only:         -0.0484409886
+      One Inactive Excited:          -0.3124681458
+      Two Inactive Excited:          -0.5349342159
+ 
+ 
+++ Denominators, etc.
+--------------------------------------------------------------------------------------------------------------
+ Report on small energy denominators, large coefficients, and large energy contributions.
+CASE  SYMM ACTIVE-MIX  NON-ACTIVE INDICES          DENOMINATOR     RHS VALUE       COEFFICIENT     CONTRIBUTION
+ATVX     5  Mu5.0001  Se5.003                       0.00409104      0.00266169     -1.31766389     -0.00350721
+ATVX     5  Mu5.0002  Se5.003                       0.07308854     -0.00714690      0.11661925     -0.00083347
+ATVX     5  Mu5.0003  Se5.003                       0.23156225     -0.00394713      0.01409397     -0.00005563
+ATVX     5  Mu5.0001  Se5.004                       0.05089933      0.00239719     -0.04010251     -0.00009613
+ATVX     5  Mu5.0002  Se5.004                       0.11989684      0.00896019     -0.07849085     -0.00070329
+ATVX     5  Mu5.0003  Se5.004                       0.27837054     -0.00132434      0.00556908     -0.00000738
+ATVX     5  Mu5.0001  Se5.005                       0.16077817      0.00109572     -0.00703529     -0.00000771
+ATVX     5  Mu5.0002  Se5.005                       0.22977568     -0.00321736      0.01441210     -0.00004637
+ATVX     5  Mu5.0001  Se5.006                       0.28380263     -0.00259237      0.00814433     -0.00002111
+ATVX     5  Mu5.0002  Se5.006                       0.35280014     -0.00867953      0.02524226     -0.00021909
+ATVX     5  Mu5.0002  Se5.007                       0.41807291      0.01233320     -0.03002249     -0.00037027
+ATVX     5  Mu5.0002  Se5.008                       0.42268029      0.01742897     -0.04106853     -0.00071578
+ATVX     6  Mu6.0001  Se6.002                      -0.11214998      0.00146714      0.01309674      0.00001921
+ATVX     6  Mu6.0001  Se6.003                       0.08673235     -0.00150575      0.01761307     -0.00002652
+ATVX     6  Mu6.0001  Se6.004                       0.19630742      0.00324052     -0.01673441     -0.00005423
+ATVX     6  Mu6.0001  Se6.005                       0.21032887      0.00194112     -0.00928338     -0.00001802
+ATVX     7  Mu7.0001  Se7.003                      -0.18780305      0.00219907      0.01095594      0.00002409
+ATVX     7  Mu7.0002  Se7.003                       0.27669625      0.00478606     -0.01876588     -0.00008981
+ATVX     7  Mu7.0003  Se7.003                       0.29836498     -0.00303062      0.01038825     -0.00003148
+ATVX     7  Mu7.0001  Se7.004                      -0.12579141      0.00343786      0.02618496      0.00009002
+ATVX     7  Mu7.0001  Se7.005                       0.01037230     -0.00307225      0.32933026     -0.00101178
+ATVX     7  Mu7.0001  Se7.006                       0.13069570     -0.00721212      0.05467273     -0.00039431
+ATVX     7  Mu7.0001  Se7.007                       0.13383784      0.00226331     -0.01645859     -0.00003725
+ATVX     7  Mu7.0001  Se7.008                       0.23962937      0.00378751     -0.01561503     -0.00005914
+ATVX     8  Mu8.0001  Se8.002                       0.17615413      0.00593564     -0.03479381     -0.00020652
+ATVX     8  Mu8.0002  Se8.002                       0.18977393     -0.00086072      0.00472047     -0.00000406
+ATVX     8  Mu8.0003  Se8.002                       0.23702128      0.00138607     -0.00594651     -0.00000824
+AIVX     1  Mu1.0001  In1.006 Se1.007               0.09086124     -0.00017363      0.00195072     -0.00000034
+AIVX     1  Mu1.0001  In1.006 Se1.008               0.10982948      0.00027108     -0.00264993     -0.00000072
+AIVX     1  Mu1.0001  In1.006 Se1.009               0.17532995     -0.00034426      0.00200785     -0.00000069
+AIVX     1  Mu1.0001  In1.006 Se1.010               0.19082989     -0.00064809      0.00355533     -0.00000230
+AIVX     1  Mu1.0001  In1.006 Se1.011               0.19640343      0.00085377     -0.00440196     -0.00000376
+AIVX     1  Mu1.0001  In1.006 Se1.012               0.21970664     -0.00012007      0.00069547     -0.00000008
+AIVX     1  Mu1.0001  In2.003 Se2.005               0.22643239      0.00024598     -0.00109590     -0.00000027
+AIVX     1  Mu1.0001  In2.004 Se2.005               0.19238360     -0.00038635      0.00188598     -0.00000073
+AIVX     1  Mu1.0001  In2.004 Se2.006               0.27517230      0.00049257     -0.00167703     -0.00000083
+AIVX     1  Mu1.0001  In2.004 Se2.007               0.28149813     -0.00099284      0.00355409     -0.00000353
+AIVX     1  Mu1.0001  In2.004 Se2.008               0.29980109     -0.00068689      0.00217059     -0.00000149
+AIVX     1  Mu1.0001  In3.004 Se3.006               0.24262611     -0.00070027      0.00290299     -0.00000203
+AIVX     1  Mu1.0001  In3.005 Se3.006               0.19406667      0.00047331     -0.00258711     -0.00000122
+AIVX     1  Mu1.0001  In3.004 Se3.007               0.27247483      0.00000893     -0.00007498     -0.00000000
+AIVX     1  Mu1.0001  In3.005 Se3.007               0.22391539     -0.00017905      0.00080344     -0.00000014
+AIVX     1  Mu1.0001  In3.005 Se3.008               0.27664241     -0.00057569      0.00220814     -0.00000127
+AIVX     1  Mu1.0001  In4.003 Se4.004               0.11255081     -0.00024136      0.00201994     -0.00000049
+AIVX     1  Mu1.0001  In4.003 Se4.005               0.19306214      0.00066445     -0.00334443     -0.00000222
+AIVX     1  Mu1.0001  In4.003 Se4.006               0.22273395     -0.00005286      0.00009269     -0.00000000
+AIVX     1  Mu1.0001  In4.003 Se4.007               0.29575261      0.00014702     -0.00050154     -0.00000007
+BVATP    1  Mu1.0001  Se1.007 Se1.007               0.15355978     -0.00008261      0.00053799     -0.00000004
+BVATP    1  Mu1.0001  Se1.008 Se1.007               0.17252802      0.00005760     -0.00033386     -0.00000002
+BVATP    1  Mu1.0001  Se1.008 Se1.008               0.19149626     -0.00006050      0.00031591     -0.00000002
+BVATP    1  Mu1.0001  Se1.009 Se1.007               0.23802849     -0.00001379      0.00005795     -0.00000000
+BVATP    1  Mu1.0001  Se1.009 Se1.008               0.25699673      0.00002282     -0.00008880     -0.00000000
+BVATP    1  Mu1.0001  Se1.010 Se1.007               0.25352842     -0.00011817      0.00046609     -0.00000006
+BVATP    1  Mu1.0001  Se1.010 Se1.008               0.27249667      0.00014110     -0.00051780     -0.00000007
+BVATP    1  Mu1.0001  Se1.011 Se1.007               0.25910197      0.00020612     -0.00079553     -0.00000016
+BVATP    1  Mu1.0001  Se1.011 Se1.008               0.27807021     -0.00011265      0.00040512     -0.00000005
+BVATP    1  Mu1.0001  Se1.012 Se1.007               0.28240517      0.00000590     -0.00002088     -0.00000000
+BVATP    1  Mu1.0001  Se2.005 Se2.005               0.16481082     -0.00006841      0.00041511     -0.00000003
+BVATP    1  Mu1.0001  Se2.006 Se2.005               0.24759951      0.00018412     -0.00074363     -0.00000014
+BVATP    1  Mu1.0001  Se2.007 Se2.005               0.25392534      0.00012631     -0.00049741     -0.00000006
+BVATP    1  Mu1.0001  Se2.008 Se2.005               0.27222830     -0.00002775      0.00010194     -0.00000000
+BVATP    1  Mu1.0001  Se3.006 Se3.006               0.16430170     -0.00000969      0.00005896     -0.00000000
+BVATP    1  Mu1.0001  Se3.007 Se3.006               0.19415041     -0.00000156      0.00000803     -0.00000000
+BVATP    1  Mu1.0001  Se3.007 Se3.007               0.22399913     -0.00000800      0.00003572     -0.00000000
+BVATP    1  Mu1.0001  Se3.008 Se3.006               0.24687744      0.00001060     -0.00004296     -0.00000000
+BVATP    1  Mu1.0001  Se3.008 Se3.007               0.27672615      0.00000795     -0.00002874     -0.00000000
+BVATP    1  Mu1.0001  Se3.009 Se3.006               0.27159998     -0.00003419      0.00012588     -0.00000000
+BVATP    1  Mu1.0001  Se3.010 Se3.006               0.28454285      0.00000745     -0.00002617     -0.00000000
+BVATP    1  Mu1.0001  Se4.004 Se4.004               0.19119406     -0.00000850      0.00004444     -0.00000000
+BVATP    1  Mu1.0001  Se4.005 Se4.004               0.27170539      0.00003731     -0.00013733     -0.00000001
+BVATP    1  Mu1.0001  Se5.003 Se5.003               0.28741777     -0.00040812     -0.00038834      0.00000016
+BVATP    1  Mu1.0001  Se5.004 Se5.003               0.33422607     -0.00064695     -0.02798636      0.00001811
+BVATP    4  Mu4.0001  Se3.006 Se2.005               0.25458606     -0.00000007      0.00000026     -0.00000000
+BVATP    4  Mu4.0001  Se3.007 Se2.005               0.28443477      0.00000809     -0.00002846     -0.00000000
+BVATP    4  Mu4.0001  Se4.004 Se1.007               0.26240672      0.00002015     -0.00007679     -0.00000000
+BVATP    4  Mu4.0001  Se4.004 Se1.008               0.28137496      0.00003176     -0.00011288     -0.00000000
+--
+ 
+   (Skipping property calculation,
+    use PROP keyword to activate)
+--
+ 
+++ CASPT2 computation for group   3
+ 
+********************************************************************************
+ Multi-State initialization phase begins for group   3
+--------------------------------------------------------------------------------
+********************************************************************************
+ Compute H0 matrices for state    3
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ H0 matrices have been computed.
+ 
+********************************************************************************
+  CASPT2 EQUATION SOLUTION
+--------------------------------------------------------------------------------
+ 
+  Total nr of CASPT2 parameters:
+   Before reduction:     3213072
+   After  reduction:     3212044
+ 
+ The contributions to the second order correlation energy in atomic units.
+-----------------------------------------------------------------------------------------------------------------------------
+  IT.      VJTU        VJTI        ATVX        AIVX        VJAI        BVAT        BJAT        BJAI        TOTAL       RNORM  
+-----------------------------------------------------------------------------------------------------------------------------
+   1     0.000000   -0.005527   -0.026211   -0.112139   -0.029537   -0.035788   -0.224102   -0.502225   -0.935527    0.001480
+   2     0.000000   -0.005534   -0.026341   -0.112179   -0.029544   -0.035797   -0.224101   -0.502220   -0.935715    0.000261
+   3     0.000000   -0.005535   -0.026352   -0.112194   -0.029545   -0.035795   -0.224113   -0.502220   -0.935754    0.000029
+   4     0.000000   -0.005535   -0.026351   -0.112193   -0.029545   -0.035794   -0.224112   -0.502220   -0.935750    0.000004
+-----------------------------------------------------------------------------------------------------------------------------
+ 
+  FINAL CASPT2 RESULT:
+ 
+      Reference energy:        -230.4252138566
+      E2 (Non-variational):      -0.9357496521
+      E2 (Variational):          -0.9357497325
+      Total energy:            -231.3609635891
+      Residual norm:              0.0000005392
+      Reference weight:           0.73177
+ 
+      Contributions to the CASPT2 correlation energy
+      Active & Virtual Only:         -0.0621449583
+      One Inactive Excited:          -0.3363047333
+      Two Inactive Excited:          -0.5372999605
+ 
+ 
+++ Denominators, etc.
+--------------------------------------------------------------------------------------------------------------
+ Report on small energy denominators, large coefficients, and large energy contributions.
+CASE  SYMM ACTIVE-MIX  NON-ACTIVE INDICES          DENOMINATOR     RHS VALUE       COEFFICIENT     CONTRIBUTION
+ATVX     5  Mu5.0001  Se5.003                       0.06958068      0.00004388      0.00124587      0.00000005
+ATVX     5  Mu5.0002  Se5.003                       0.10180424     -0.00179765      0.01659726     -0.00002984
+ATVX     5  Mu5.0003  Se5.003                       0.12080648     -0.00159417      0.01272365     -0.00002028
+ATVX     5  Mu5.0004  Se5.003                       0.20966550      0.00296265     -0.01342554     -0.00003978
+ATVX     5  Mu5.0001  Se5.004                       0.11685001     -0.00380140      0.02754915     -0.00010473
+ATVX     5  Mu5.0002  Se5.004                       0.14907357     -0.00014316      0.00092517     -0.00000013
+ATVX     5  Mu5.0003  Se5.004                       0.16807581     -0.00193368      0.01128627     -0.00002182
+ATVX     5  Mu5.0004  Se5.004                       0.25693483      0.00308691     -0.01169257     -0.00003609
+ATVX     5  Mu5.0001  Se5.005                       0.22605778      0.00017053     -0.00074533     -0.00000013
+ATVX     5  Mu5.0002  Se5.005                       0.25828134      0.00033480     -0.00097026     -0.00000032
+ATVX     5  Mu5.0003  Se5.005                       0.27728358     -0.00084327      0.00312522     -0.00000264
+ATVX     6  Mu6.0001  Se6.002                      -0.14825749     -0.00653343     -0.04234256      0.00027664
+ATVX     6  Mu6.0001  Se6.003                       0.05039810      0.00584189     -0.11515618     -0.00067273
+ATVX     6  Mu6.0001  Se6.004                       0.15942395     -0.00003347      0.00041434     -0.00000001
+ATVX     6  Mu6.0002  Se6.004                       0.66713332     -0.02014465      0.03033877     -0.00061116
+ATVX     6  Mu6.0001  Se6.005                       0.17361057     -0.01280430      0.07299124     -0.00093460
+ATVX     7  Mu7.0001  Se7.003                      -0.15018948      0.00666425      0.04237368      0.00028239
+ATVX     7  Mu7.0001  Se7.004                      -0.08843721     -0.00061156     -0.00650238      0.00000398
+ATVX     7  Mu7.0001  Se7.005                       0.04809526     -0.00569081      0.11713265     -0.00066658
+ATVX     7  Mu7.0001  Se7.006                       0.16796608     -0.00396723      0.02339424     -0.00009281
+ATVX     7  Mu7.0001  Se7.007                       0.17179164      0.01208655     -0.06938691     -0.00083865
+ATVX     7  Mu7.0001  Se7.008                       0.27689065     -0.00050704      0.00175988     -0.00000089
+ATVX     8  Mu8.0001  Se8.002                       0.11956072     -0.00565315      0.04427568     -0.00025030
+ATVX     8  Mu8.0002  Se8.002                       0.16970073      0.00196648     -0.01119247     -0.00002201
+ATVX     8  Mu8.0003  Se8.002                       0.24652469     -0.00221848      0.00869261     -0.00001928
+BVATP    1  Mu1.0001  Se1.007 Se1.007               0.14255256     -0.00004614      0.00032367     -0.00000001
+BVATP    1  Mu1.0002  Se1.007 Se1.007               0.27766922      0.00023061     -0.00083051     -0.00000019
+BVATP    1  Mu1.0001  Se1.008 Se1.007               0.16150252     -0.00009571      0.00059259     -0.00000006
+BVATP    1  Mu1.0002  Se1.008 Se1.007               0.29661918     -0.00000018      0.00000062     -0.00000000
+BVATP    1  Mu1.0001  Se1.008 Se1.008               0.18045248     -0.00008388      0.00046485     -0.00000004
+BVATP    1  Mu1.0001  Se1.009 Se1.007               0.22683459     -0.00002974      0.00013113     -0.00000000
+BVATP    1  Mu1.0001  Se1.009 Se1.008               0.24578454      0.00009482     -0.00038579     -0.00000004
+BVATP    1  Mu1.0001  Se1.010 Se1.007               0.24214685      0.00014338     -0.00059212     -0.00000008
+BVATP    1  Mu1.0001  Se1.010 Se1.008               0.26109681      0.00019718     -0.00075520     -0.00000015
+BVATP    1  Mu1.0001  Se1.011 Se1.007               0.24780367      0.00009671     -0.00039025     -0.00000004
+BVATP    1  Mu1.0001  Se1.011 Se1.008               0.26675363      0.00014037     -0.00052623     -0.00000007
+BVATP    1  Mu1.0001  Se1.012 Se1.007               0.27155460      0.00022163     -0.00081614     -0.00000018
+BVATP    1  Mu1.0001  Se1.012 Se1.008               0.29050456      0.00009541     -0.00032842     -0.00000003
+BVATP    1  Mu1.0001  Se2.005 Se2.005               0.15346989      0.00003284     -0.00021396     -0.00000001
+BVATP    1  Mu1.0002  Se2.005 Se2.005               0.28858655      0.00010770     -0.00037318     -0.00000004
+BVATP    1  Mu1.0001  Se2.006 Se2.005               0.23615770     -0.00008408      0.00035603     -0.00000003
+BVATP    1  Mu1.0001  Se2.007 Se2.005               0.24273242      0.00011885     -0.00048964     -0.00000006
+BVATP    1  Mu1.0001  Se2.008 Se2.005               0.26077919      0.00003858     -0.00014796     -0.00000001
+BVATP    1  Mu1.0001  Se3.006 Se3.006               0.15379638     -0.00007896      0.00051338     -0.00000004
+BVATP    1  Mu1.0002  Se3.006 Se3.006               0.28891304      0.00010486     -0.00036295     -0.00000004
+BVATP    1  Mu1.0001  Se3.007 Se3.006               0.18344820      0.00007666     -0.00041787     -0.00000003
+BVATP    1  Mu1.0001  Se3.007 Se3.007               0.21310002     -0.00000541      0.00002539     -0.00000000
+BVATP    1  Mu1.0001  Se3.008 Se3.006               0.23649071      0.00020031     -0.00084701     -0.00000017
+BVATP    1  Mu1.0001  Se3.008 Se3.007               0.26614253     -0.00011674      0.00043863     -0.00000005
+BVATP    1  Mu1.0001  Se3.009 Se3.006               0.26116156     -0.00003906      0.00014957     -0.00000001
+BVATP    1  Mu1.0001  Se3.009 Se3.007               0.29081339      0.00006897     -0.00023717     -0.00000002
+BVATP    1  Mu1.0001  Se3.010 Se3.006               0.27379435     -0.00020552      0.00075062     -0.00000015
+BVATP    1  Mu1.0001  Se4.004 Se4.004               0.18039155      0.00005178     -0.00028703     -0.00000001
+BVATP    1  Mu1.0001  Se4.005 Se4.004               0.26114863     -0.00012755      0.00048843     -0.00000006
+BVATP    1  Mu1.0001  Se4.006 Se4.004               0.29036306      0.00006838     -0.00023552     -0.00000002
+BVATP    1  Mu1.0001  Se5.003 Se5.003               0.27606501     -0.00023844      0.00086902     -0.00000021
+BVATP    4  Mu4.0001  Se3.006 Se2.005               0.21551580      0.00006271     -0.00029099     -0.00000002
+BVATP    4  Mu4.0001  Se3.006 Se2.006               0.29820360     -0.00011536      0.00038684     -0.00000004
+BVATP    4  Mu4.0001  Se3.007 Se2.005               0.24516762      0.00006641     -0.00027088     -0.00000002
+BVATP    4  Mu4.0001  Se3.008 Se2.005               0.29821013     -0.00011562      0.00038772     -0.00000004
+BVATP    4  Mu4.0001  Se4.004 Se1.007               0.22335472     -0.00006600      0.00029550     -0.00000002
+BVATP    4  Mu4.0001  Se4.004 Se1.008               0.24230467      0.00009061     -0.00037395     -0.00000003
+--
+ 
+   (Skipping property calculation,
+    use PROP keyword to activate)
+--
+ 
+++ CASPT2 computation for group   4
+ 
+********************************************************************************
+ Multi-State initialization phase begins for group   4
+--------------------------------------------------------------------------------
+********************************************************************************
+ Compute H0 matrices for state    4
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ H0 matrices have been computed.
+ 
+********************************************************************************
+  CASPT2 EQUATION SOLUTION
+--------------------------------------------------------------------------------
+ 
+  Total nr of CASPT2 parameters:
+   Before reduction:     3213072
+   After  reduction:     3212044
+ 
+ The contributions to the second order correlation energy in atomic units.
+-----------------------------------------------------------------------------------------------------------------------------
+  IT.      VJTU        VJTI        ATVX        AIVX        VJAI        BVAT        BJAT        BJAI        TOTAL       RNORM  
+-----------------------------------------------------------------------------------------------------------------------------
+   1     0.000000   -0.004105   -0.020306   -0.093527   -0.030230   -0.029191   -0.228275   -0.502219   -0.907852    0.002416
+   2     0.000000   -0.004108   -0.020740   -0.093480   -0.030230   -0.029155   -0.228202   -0.502199   -0.908113    0.002400
+   3     0.000000   -0.004111   -0.020835   -0.093562   -0.030236   -0.029144   -0.228285   -0.502204   -0.908378    0.000363
+   4     0.000000   -0.004109   -0.020788   -0.093539   -0.030234   -0.029143   -0.228270   -0.502205   -0.908289    0.000306
+   5     0.000000   -0.004110   -0.020802   -0.093548   -0.030235   -0.029144   -0.228277   -0.502205   -0.908321    0.000121
+   6     0.000000   -0.004110   -0.020796   -0.093546   -0.030235   -0.029144   -0.228276   -0.502206   -0.908312    0.000030
+   7     0.000000   -0.004109   -0.020792   -0.093544   -0.030234   -0.029144   -0.228275   -0.502206   -0.908305    0.000029
+   8     0.000000   -0.004109   -0.020795   -0.093545   -0.030234   -0.029145   -0.228275   -0.502206   -0.908309    0.000008
+   9     0.000000   -0.004110   -0.020806   -0.093551   -0.030235   -0.029145   -0.228278   -0.502205   -0.908329    0.000098
+-----------------------------------------------------------------------------------------------------------------------------
+ 
+  FINAL CASPT2 RESULT:
+ 
+      Reference energy:        -230.4069336566
+      E2 (Non-variational):      -0.9083101618
+      E2 (Variational):          -0.9083102100
+      Total energy:            -231.3152438665
+      Residual norm:              0.0000004966
+      Reference weight:           0.69130
+ 
+      Contributions to the CASPT2 correlation energy
+      Active & Virtual Only:         -0.0499397028
+      One Inactive Excited:          -0.3218210368
+      Two Inactive Excited:          -0.5365494222
+ 
+ 
+++ Denominators, etc.
+--------------------------------------------------------------------------------------------------------------
+ Report on small energy denominators, large coefficients, and large energy contributions.
+CASE  SYMM ACTIVE-MIX  NON-ACTIVE INDICES          DENOMINATOR     RHS VALUE       COEFFICIENT     CONTRIBUTION
+ATVX     5  Mu5.0001  Se5.003                      -0.04458386     -0.00761264     -0.16235777      0.00123597
+ATVX     5  Mu5.0002  Se5.003                      -0.01744712     -0.00045528     -0.02098383      0.00000955
+ATVX     5  Mu5.0003  Se5.003                       0.09971530      0.00003301     -0.00041585     -0.00000001
+ATVX     5  Mu5.0004  Se5.003                       0.13519172      0.00068683     -0.00467325     -0.00000321
+ATVX     5  Mu5.0001  Se5.004                       0.00327037      0.00021546     -0.09572068     -0.00002062
+ATVX     5  Mu5.0002  Se5.004                       0.03040711     -0.00483569      0.16646300     -0.00080496
+ATVX     5  Mu5.0003  Se5.004                       0.14756954      0.00022773     -0.00134704     -0.00000031
+ATVX     5  Mu5.0004  Se5.004                       0.18304595     -0.00154000      0.00849211     -0.00001308
+ATVX     5  Mu5.0001  Se5.005                       0.11224653     -0.00483041      0.04372546     -0.00021121
+ATVX     5  Mu5.0002  Se5.005                       0.13938326      0.00010441     -0.00055621     -0.00000006
+ATVX     5  Mu5.0003  Se5.005                       0.25654569      0.00025895     -0.00102247     -0.00000026
+ATVX     5  Mu5.0004  Se5.005                       0.29202210      0.00029344     -0.00105761     -0.00000031
+ATVX     5  Mu5.0001  Se5.006                       0.23644527      0.00006578     -0.00021589     -0.00000001
+ATVX     5  Mu5.0002  Se5.006                       0.26358201      0.00460831     -0.01674902     -0.00007718
+ATVX     5  Mu5.0002  Se5.007                       0.32728042     -0.00902759      0.02684130     -0.00024231
+ATVX     5  Mu5.0001  Se5.008                       0.30143915      0.02168684     -0.07164663     -0.00155379
+ATVX     6  Mu6.0001  Se6.002                      -0.21430050      0.00043317      0.00211829      0.00000092
+ATVX     6  Mu6.0002  Se6.002                       0.20997122      0.00005423     -0.00014403     -0.00000001
+ATVX     6  Mu6.0003  Se6.002                       0.24660072     -0.00041045      0.00140856     -0.00000058
+ATVX     6  Mu6.0004  Se6.002                       0.26605264     -0.00048310      0.00270182     -0.00000131
+ATVX     6  Mu6.0001  Se6.003                      -0.01544368     -0.00033211     -0.02206212      0.00000733
+ATVX     6  Mu6.0001  Se6.004                       0.09287107     -0.00022153      0.00203800     -0.00000045
+ATVX     6  Mu6.0001  Se6.005                       0.10690884      0.00150266     -0.01440887     -0.00002165
+ATVX     7  Mu7.0001  Se7.003                      -0.21314108     -0.00050291     -0.00237088      0.00000119
+ATVX     7  Mu7.0002  Se7.003                       0.24517524      0.00306304     -0.01275952     -0.00003908
+ATVX     7  Mu7.0003  Se7.003                       0.26088709      0.00068684     -0.00385477     -0.00000265
+ATVX     7  Mu7.0001  Se7.004                      -0.15119078      0.00028815      0.00183550      0.00000053
+ATVX     7  Mu7.0001  Se7.005                      -0.01462633      0.00032176      0.02179929      0.00000701
+ATVX     7  Mu7.0001  Se7.006                       0.10499116      0.00016491     -0.00166895     -0.00000028
+ATVX     7  Mu7.0001  Se7.007                       0.10830450     -0.00147099      0.01371386     -0.00002017
+ATVX     7  Mu7.0001  Se7.008                       0.21383232      0.00031913     -0.00147425     -0.00000047
+ATVX     8  Mu8.0001  Se8.002                       0.02783926      0.00619380     -0.24949543     -0.00154532
+ATVX     8  Mu8.0002  Se8.002                       0.05436333     -0.00333698      0.06614571     -0.00022073
+ATVX     8  Mu8.0003  Se8.002                       0.14507550     -0.00030053      0.00170756     -0.00000051
+ATVX     8  Mu8.0004  Se8.002                       0.16020859      0.00029314      0.00000929      0.00000000
+ATVX     8  Mu8.0001  Se8.003                       0.26108520     -0.00663691      0.02511314     -0.00016667
+ATVX     8  Mu8.0002  Se8.003                       0.28760927      0.00366767     -0.01264675     -0.00004638
+ATVX     8  Mu8.0001  Se8.004                       0.32519524      0.01074163     -0.03276752     -0.00035198
+AIVX     2  Mu2.0001  In1.006 Se2.005               0.22490431      0.00033505     -0.00150848     -0.00000051
+AIVX     2  Mu2.0001  In4.003 Se3.006               0.22540410     -0.00029358      0.00129216     -0.00000038
+AIVX     2  Mu2.0001  In4.003 Se3.007               0.25505332      0.00000987     -0.00004307     -0.00000000
+BVATP    1  Mu1.0001  Se1.007 Se1.007               0.09656488      0.00024687     -0.00255656     -0.00000063
+BVATP    1  Mu1.0001  Se1.008 Se1.007               0.11568892      0.00000061     -0.00000527     -0.00000000
+BVATP    1  Mu1.0001  Se1.008 Se1.008               0.13481296      0.00008681     -0.00064395     -0.00000006
+BVATP    1  Mu1.0001  Se1.009 Se1.007               0.17992540      0.00012266     -0.00068172     -0.00000008
+BVATP    1  Mu1.0001  Se1.009 Se1.008               0.19904944      0.00001473     -0.00007400     -0.00000000
+BVATP    1  Mu1.0001  Se1.009 Se1.009               0.26328592      0.00054506     -0.00207021     -0.00000113
+BVATP    1  Mu1.0001  Se1.010 Se1.007               0.19636213      0.00002209     -0.00011252     -0.00000000
+BVATP    1  Mu1.0001  Se1.010 Se1.008               0.21548617     -0.00023315      0.00108199     -0.00000025
+BVATP    1  Mu1.0001  Se1.010 Se1.009               0.27972265     -0.00000383      0.00001368     -0.00000000
+BVATP    1  Mu1.0001  Se1.010 Se1.010               0.29615938      0.00036192     -0.00122205     -0.00000044
+BVATP    1  Mu1.0001  Se1.011 Se1.007               0.20139876     -0.00057101      0.00283521     -0.00000162
+BVATP    1  Mu1.0001  Se1.011 Se1.008               0.22052280     -0.00001197      0.00005429     -0.00000000
+BVATP    1  Mu1.0001  Se1.011 Se1.009               0.28475928     -0.00033603      0.00118004     -0.00000040
+BVATP    1  Mu1.0001  Se1.012 Se1.007               0.22582042     -0.00000050      0.00000223     -0.00000000
+BVATP    1  Mu1.0001  Se1.012 Se1.008               0.24494446     -0.00006713      0.00027404     -0.00000002
+BVATP    1  Mu1.0001  Se2.005 Se2.005               0.10773745      0.00011493     -0.00106678     -0.00000012
+BVATP    1  Mu1.0001  Se2.006 Se2.005               0.19024930     -0.00030156      0.00158506     -0.00000048
+BVATP    1  Mu1.0001  Se2.006 Se2.006               0.27276114      0.00045490     -0.00166775     -0.00000076
+BVATP    1  Mu1.0001  Se2.007 Se2.005               0.19708575     -0.00000843      0.00004279     -0.00000000
+BVATP    1  Mu1.0001  Se2.007 Se2.006               0.27959759      0.00001966     -0.00007032     -0.00000000
+BVATP    1  Mu1.0001  Se2.007 Se2.007               0.28643404      0.00025881     -0.00090357     -0.00000023
+BVATP    1  Mu1.0001  Se2.008 Se2.005               0.21481744      0.00005099     -0.00023738     -0.00000001
+BVATP    1  Mu1.0001  Se2.008 Se2.006               0.29732929     -0.00000379      0.00001274     -0.00000000
+BVATP    1  Mu1.0001  Se3.006 Se3.006               0.10816061      0.00010904     -0.00100816     -0.00000011
+BVATP    1  Mu1.0001  Se3.007 Se3.006               0.13780983      0.00000265     -0.00001924     -0.00000000
+BVATP    1  Mu1.0001  Se3.007 Se3.007               0.16745905      0.00002103     -0.00012558     -0.00000000
+BVATP    1  Mu1.0001  Se3.008 Se3.006               0.19068256     -0.00029157      0.00152909     -0.00000045
+BVATP    1  Mu1.0001  Se3.008 Se3.007               0.22033178     -0.00000233      0.00001057     -0.00000000
+BVATP    1  Mu1.0001  Se3.008 Se3.008               0.27320451      0.00044552     -0.00163072     -0.00000073
+BVATP    1  Mu1.0001  Se3.009 Se3.006               0.21531204      0.00004842     -0.00022490     -0.00000001
+BVATP    1  Mu1.0001  Se3.009 Se3.007               0.24496126     -0.00000045      0.00000185     -0.00000000
+BVATP    1  Mu1.0001  Se3.009 Se3.008               0.29783399      0.00000141     -0.00000474     -0.00000000
+BVATP    1  Mu1.0001  Se3.010 Se3.006               0.22822439     -0.00000360      0.00001576     -0.00000000
+BVATP    1  Mu1.0001  Se3.010 Se3.007               0.25787361     -0.00009038      0.00035048     -0.00000003
+BVATP    1  Mu1.0001  Se4.004 Se4.004               0.13474241      0.00007772     -0.00057683     -0.00000004
+BVATP    1  Mu1.0001  Se4.005 Se4.004               0.21557508     -0.00021230      0.00098483     -0.00000021
+BVATP    1  Mu1.0001  Se4.005 Se4.005               0.29640774      0.00033592     -0.00113331     -0.00000038
+BVATP    1  Mu1.0001  Se4.006 Se4.004               0.24476483      0.00006949     -0.00028392     -0.00000002
+BVATP    1  Mu1.0001  Se5.003 Se5.003               0.22851800      0.00102287     -0.00723745     -0.00000740
+BVATP    1  Mu1.0001  Se5.004 Se5.003               0.27637223     -0.00013853     -0.00182310      0.00000025
+BVATP    1  Mu1.0001  Se6.002 Se6.002               0.25559771      0.00083783     -0.00329046     -0.00000276
+BVATP    1  Mu1.0001  Se7.003 Se7.003               0.25728789      0.00090947     -0.00300001     -0.00000273
+BVATP    3  Mu3.0001  Se3.006 Se1.007               0.29451421     -0.00020975      0.00071218     -0.00000015
+--
+ 
+   (Skipping property calculation,
+    use PROP keyword to activate)
+--
+ 
+++ CASPT2 computation for group   5
+ 
+********************************************************************************
+ Multi-State initialization phase begins for group   5
+--------------------------------------------------------------------------------
+********************************************************************************
+ Compute H0 matrices for state    5
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ H0 matrices have been computed.
+ 
+********************************************************************************
+  CASPT2 EQUATION SOLUTION
+--------------------------------------------------------------------------------
+ 
+  Total nr of CASPT2 parameters:
+   Before reduction:     3213072
+   After  reduction:     3212081
+ 
+ The contributions to the second order correlation energy in atomic units.
+-----------------------------------------------------------------------------------------------------------------------------
+  IT.      VJTU        VJTI        ATVX        AIVX        VJAI        BVAT        BJAT        BJAI        TOTAL       RNORM  
+-----------------------------------------------------------------------------------------------------------------------------
+   1     0.000000   -0.006086   -0.039568   -0.147760   -0.028979   -0.043146   -0.223331   -0.502205   -0.991075    0.001776
+   2     0.000000   -0.006096   -0.040072   -0.147747   -0.028980   -0.043102   -0.223225   -0.502206   -0.991428    0.006218
+   3     0.000000   -0.006107   -0.040416   -0.147959   -0.028994   -0.043153   -0.223398   -0.502215   -0.992241    0.001200
+   4     0.000000   -0.006099   -0.040201   -0.147894   -0.028989   -0.043146   -0.223398   -0.502211   -0.991937    0.000591
+   5     0.000000   -0.006097   -0.040182   -0.147870   -0.028987   -0.043146   -0.223380   -0.502211   -0.991873    0.000071
+   6     0.000000   -0.006098   -0.040191   -0.147876   -0.028988   -0.043147   -0.223381   -0.502211   -0.991892    0.000017
+   7     0.000000   -0.006098   -0.040192   -0.147877   -0.028988   -0.043147   -0.223382   -0.502211   -0.991895    0.000004
+-----------------------------------------------------------------------------------------------------------------------------
+ 
+  FINAL CASPT2 RESULT:
+ 
+      Reference energy:        -230.3895674780
+      E2 (Non-variational):      -0.9918932590
+      E2 (Variational):          -0.9918933269
+      Total energy:            -231.3814608049
+      Residual norm:              0.0000004882
+      Reference weight:           0.54300
+ 
+      Contributions to the CASPT2 correlation energy
+      Active & Virtual Only:         -0.0833381822
+      One Inactive Excited:          -0.3712585164
+      Two Inactive Excited:          -0.5372965604
+ 
+ 
+++ Denominators, etc.
+--------------------------------------------------------------------------------------------------------------
+ Report on small energy denominators, large coefficients, and large energy contributions.
+CASE  SYMM ACTIVE-MIX  NON-ACTIVE INDICES          DENOMINATOR     RHS VALUE       COEFFICIENT     CONTRIBUTION
+ATVX     5  Mu5.0001  Se5.003                       0.00357713     -0.00092696      0.52132595     -0.00048325
+ATVX     5  Mu5.0002  Se5.003                       0.15784201      0.00030883     -0.00505813     -0.00000156
+ATVX     5  Mu5.0003  Se5.003                       0.28756064      0.00299251     -0.00976561     -0.00002922
+ATVX     5  Mu5.0001  Se5.004                       0.05028745      0.01222658     -0.24355507     -0.00297785
+ATVX     5  Mu5.0002  Se5.004                       0.20455233      0.00363210     -0.01712039     -0.00006218
+ATVX     5  Mu5.0001  Se5.005                       0.16040204     -0.00021906      0.00149675     -0.00000033
+ATVX     5  Mu5.0001  Se5.006                       0.28317326     -0.01484305      0.05136342     -0.00076239
+ATVX     5  Mu5.0001  Se5.007                       0.34858546      0.01390487     -0.03908584     -0.00054348
+ATVX     6  Mu6.0001  Se6.002                      -0.09133492      0.00442315      0.04639193      0.00020520
+ATVX     6  Mu6.0001  Se6.003                       0.10772851     -0.00504009      0.04627256     -0.00023322
+ATVX     6  Mu6.0001  Se6.004                       0.21870777      0.00941256     -0.04326139     -0.00040720
+ATVX     6  Mu6.0001  Se6.005                       0.23155404      0.00427343     -0.01794428     -0.00007668
+ATVX     6  Mu6.0001  Se6.008                       0.72083684     -0.01880331      0.02607187     -0.00049024
+ATVX     7  Mu7.0001  Se7.003                      -0.17999369     -0.00749161     -0.04105328      0.00030756
+ATVX     7  Mu7.0001  Se7.004                      -0.11816538      0.01714251      0.14082328      0.00241406
+ATVX     7  Mu7.0001  Se7.005                       0.01815539      0.00406776     -0.24395101     -0.00099233
+ATVX     7  Mu7.0001  Se7.006                       0.13849917     -0.02585205      0.18572357     -0.00480133
+ATVX     7  Mu7.0001  Se7.007                       0.14223138     -0.01310618      0.09231379     -0.00120988
+ATVX     7  Mu7.0001  Se7.008                       0.24751475      0.02001973     -0.08015723     -0.00160473
+ATVX     7  Mu7.0001  Se7.011                       0.60220739      0.03230913     -0.05313077     -0.00171661
+ATVX     8  Mu8.0001  Se8.002                       0.22511309      0.00105218     -0.00534495     -0.00000562
+ATVX     8  Mu8.0002  Se8.002                       0.25499045      0.00208258     -0.00819928     -0.00001708
+ATVX     8  Mu8.0003  Se8.002                       0.28212855     -0.00168905      0.00635092     -0.00001073
+AIVX     1  Mu1.0001  In1.005 Se1.007               0.26498242      0.00021434     -0.00079069     -0.00000017
+AIVX     1  Mu1.0001  In1.006 Se1.007               0.04700978      0.00128411     -0.02738538     -0.00003517
+AIVX     1  Mu1.0001  In1.005 Se1.008               0.28375504     -0.00255993      0.00898865     -0.00002301
+AIVX     1  Mu1.0001  In1.006 Se1.008               0.06578240      0.00118547     -0.01818782     -0.00002156
+AIVX     1  Mu1.0001  In1.006 Se1.009               0.13209897     -0.00099507      0.00722882     -0.00000719
+AIVX     1  Mu1.0001  In1.006 Se1.010               0.14676206     -0.00273160      0.01861122     -0.00005084
+AIVX     1  Mu1.0001  In1.006 Se1.011               0.15305395     -0.00037225      0.00226946     -0.00000084
+AIVX     1  Mu1.0001  In1.006 Se1.012               0.17567753     -0.00072671      0.00411655     -0.00000299
+AIVX     1  Mu1.0001  In1.006 Se1.013               0.27318368     -0.00332810      0.01215683     -0.00004046
+AIVX     1  Mu1.0001  In1.006 Se1.014               0.28717916     -0.00430883      0.01526520     -0.00006578
+AIVX     1  Mu1.0001  In1.005 Se1.016               0.58535060     -0.01556446      0.02648269     -0.00041219
+AIVX     1  Mu1.0001  In1.006 Se1.020               0.51990669      0.02189908     -0.04213446     -0.00092271
+AIVX     1  Mu1.0001  In2.003 Se2.005               0.18008466      0.00045384     -0.00251450     -0.00000114
+AIVX     1  Mu1.0001  In2.004 Se2.005               0.14614433     -0.00308433      0.02105045     -0.00006493
+AIVX     1  Mu1.0001  In2.003 Se2.006               0.26302297     -0.00117062      0.00442613     -0.00000518
+AIVX     1  Mu1.0001  In2.004 Se2.006               0.22908264      0.00447648     -0.01945905     -0.00008711
+AIVX     1  Mu1.0001  In2.003 Se2.007               0.26918233     -0.00016616      0.00060234     -0.00000010
+AIVX     1  Mu1.0001  In2.004 Se2.007               0.23524199     -0.00340009      0.01447052     -0.00004920
+AIVX     1  Mu1.0001  In2.003 Se2.008               0.28770060      0.00004023     -0.00014625     -0.00000001
+AIVX     1  Mu1.0001  In2.004 Se2.008               0.25376027     -0.00462450      0.01808911     -0.00008365
+AIVX     1  Mu1.0001  In2.003 Se2.013               0.60823983      0.01556537     -0.02552543     -0.00039731
+AIVX     1  Mu1.0001  In2.003 Se2.014               0.62025286     -0.03148767      0.05062095     -0.00159394
+AIVX     1  Mu1.0001  In2.003 Se2.016               0.66815448      0.02743218     -0.04097290     -0.00112398
+AIVX     1  Mu1.0001  In2.003 Se2.018               0.87522280      0.02518325     -0.02869331     -0.00072259
+AIVX     1  Mu1.0001  In2.003 Se2.020               0.96318459      0.02723411     -0.02818031     -0.00076747
+AIVX     1  Mu1.0001  In3.004 Se3.006               0.19958049     -0.00500197      0.02502313     -0.00012516
+AIVX     1  Mu1.0001  In3.005 Se3.006               0.15012966      0.00252333     -0.01679667     -0.00004238
+AIVX     1  Mu1.0001  In3.004 Se3.007               0.22941166     -0.00003692      0.00015757     -0.00000001
+AIVX     1  Mu1.0001  In3.005 Se3.007               0.17996083     -0.00134188      0.00743498     -0.00000998
+AIVX     1  Mu1.0001  In3.004 Se3.008               0.28231112      0.00823840     -0.02910784     -0.00023980
+AIVX     1  Mu1.0001  In3.005 Se3.008               0.23286029     -0.00355565      0.01523301     -0.00005416
+AIVX     1  Mu1.0001  In3.005 Se3.009               0.25757151      0.00367970     -0.01420676     -0.00005228
+AIVX     1  Mu1.0001  In3.005 Se3.010               0.27040727      0.00394301     -0.01449852     -0.00005717
+AIVX     1  Mu1.0001  In3.004 Se3.015               0.51154693      0.01343967     -0.02624180     -0.00035268
+AIVX     1  Mu1.0001  In3.004 Se3.018               0.68720486      0.01776705     -0.02584913     -0.00045926
+AIVX     1  Mu1.0001  In3.005 Se3.028               1.10844393     -0.03077495      0.02766079     -0.00085126
+AIVX     1  Mu1.0001  In4.003 Se4.004               0.06676011     -0.00146729      0.02213004     -0.00003247
+AIVX     1  Mu1.0001  In4.003 Se4.005               0.14743271      0.00311468     -0.02110136     -0.00006572
+AIVX     1  Mu1.0001  In4.003 Se4.006               0.17693550     -0.00137238      0.00769327     -0.00001056
+AIVX     1  Mu1.0001  In4.003 Se4.007               0.24986100      0.00055049     -0.00220915     -0.00000122
+AIVX     1  Mu1.0001  In4.003 Se4.008               0.27402755     -0.00336779      0.01226082     -0.00004129
+AIVX     1  Mu1.0001  In4.003 Se4.018               0.85908225     -0.03390506      0.03937116     -0.00133488
+AIVX     1  Mu1.0001  In4.003 Se4.022               1.12203609      0.03089165     -0.02744385     -0.00084779
+BVATP    1  Mu1.0001  Se1.007 Se1.007               0.15978484     -0.00009401      0.00058834     -0.00000006
+BVATP    1  Mu1.0001  Se1.008 Se1.007               0.17855745     -0.00008679      0.00048606     -0.00000004
+BVATP    1  Mu1.0001  Se1.008 Se1.008               0.19733007     -0.00001372      0.00006954     -0.00000000
+BVATP    1  Mu1.0001  Se1.009 Se1.007               0.24487403     -0.00007241      0.00029572     -0.00000002
+BVATP    1  Mu1.0001  Se1.009 Se1.008               0.26364664      0.00003547     -0.00013452     -0.00000000
+BVATP    1  Mu1.0001  Se1.010 Se1.007               0.25953711      0.00019044     -0.00073378     -0.00000014
+BVATP    1  Mu1.0001  Se1.010 Se1.008               0.27830973      0.00005582     -0.00020058     -0.00000001
+BVATP    1  Mu1.0001  Se1.011 Se1.007               0.26582900      0.00020356     -0.00076574     -0.00000016
+BVATP    1  Mu1.0001  Se1.011 Se1.008               0.28460162      0.00012965     -0.00045554     -0.00000006
+BVATP    1  Mu1.0001  Se1.012 Se1.007               0.28845258      0.00007285     -0.00025255     -0.00000002
+BVATP    1  Mu1.0001  Se2.005 Se2.005               0.17086771      0.00000438     -0.00002561     -0.00000000
+BVATP    1  Mu1.0001  Se2.006 Se2.005               0.25380601     -0.00000713      0.00002809     -0.00000000
+BVATP    1  Mu1.0001  Se2.007 Se2.005               0.25996537     -0.00008131      0.00031276     -0.00000003
+BVATP    1  Mu1.0001  Se2.008 Se2.005               0.27848365      0.00002145     -0.00007701     -0.00000000
+BVATP    1  Mu1.0001  Se3.006 Se3.006               0.17024973     -0.00008927      0.00052435     -0.00000005
+BVATP    1  Mu1.0001  Se3.007 Se3.006               0.20008090      0.00002927     -0.00014628     -0.00000000
+BVATP    1  Mu1.0001  Se3.007 Se3.007               0.22991207     -0.00000823      0.00003582     -0.00000000
+BVATP    1  Mu1.0001  Se3.008 Se3.006               0.25298037      0.00024496     -0.00096828     -0.00000024
+BVATP    1  Mu1.0001  Se3.008 Se3.007               0.28281153     -0.00005350      0.00018917     -0.00000001
+BVATP    1  Mu1.0001  Se3.009 Se3.006               0.27769158     -0.00000981      0.00003534     -0.00000000
+BVATP    1  Mu1.0001  Se3.010 Se3.006               0.29052734     -0.00007932      0.00027302     -0.00000002
+BVATP    1  Mu1.0001  Se4.004 Se4.004               0.19726345     -0.00002553      0.00012943     -0.00000000
+BVATP    1  Mu1.0001  Se4.005 Se4.004               0.27793605      0.00005883     -0.00021166     -0.00000001
+BVATP    1  Mu1.0001  Se5.003 Se5.003               0.29461836     -0.00035699      0.00231188     -0.00000083
+--
+ 
+   (Skipping property calculation,
+    use PROP keyword to activate)
+--
+ 
+++ CASPT2 computation for group   6
+ 
+********************************************************************************
+ Multi-State initialization phase begins for group   6
+--------------------------------------------------------------------------------
+********************************************************************************
+ Compute H0 matrices for state    6
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ H0 matrices have been computed.
+ 
+********************************************************************************
+  CASPT2 EQUATION SOLUTION
+--------------------------------------------------------------------------------
+ 
+  Total nr of CASPT2 parameters:
+   Before reduction:     3213072
+   After  reduction:     3212081
+ 
+ The contributions to the second order correlation energy in atomic units.
+-----------------------------------------------------------------------------------------------------------------------------
+  IT.      VJTU        VJTI        ATVX        AIVX        VJAI        BVAT        BJAT        BJAI        TOTAL       RNORM  
+-----------------------------------------------------------------------------------------------------------------------------
+   1     0.000000   -0.006087   -0.036331   -0.136728   -0.029591   -0.040516   -0.224883   -0.502207   -0.976343    0.002235
+   2     0.000000   -0.006094   -0.036772   -0.136756   -0.029595   -0.040505   -0.224852   -0.502202   -0.976775    0.001382
+   3     0.000000   -0.006098   -0.036962   -0.136811   -0.029600   -0.040488   -0.224882   -0.502202   -0.977042    0.000482
+   4     0.000000   -0.006095   -0.036837   -0.136782   -0.029597   -0.040491   -0.224872   -0.502202   -0.976876    0.000115
+   5     0.000000   -0.006095   -0.036841   -0.136787   -0.029597   -0.040492   -0.224876   -0.502202   -0.976890    0.000010
+   6     0.000000   -0.006095   -0.036840   -0.136786   -0.029597   -0.040492   -0.224876   -0.502202   -0.976888    0.000002
+-----------------------------------------------------------------------------------------------------------------------------
+ 
+  FINAL CASPT2 RESULT:
+ 
+      Reference energy:        -230.3412448913
+      E2 (Non-variational):      -0.9768880215
+      E2 (Variational):          -0.9768880584
+      Total energy:            -231.3181329497
+      Residual norm:              0.0000001643
+      Reference weight:           0.67162
+ 
+      Contributions to the CASPT2 correlation energy
+      Active & Virtual Only:         -0.0773314519
+      One Inactive Excited:          -0.3616614996
+      Two Inactive Excited:          -0.5378950700
+ 
+ 
+++ Denominators, etc.
+--------------------------------------------------------------------------------------------------------------
+ Report on small energy denominators, large coefficients, and large energy contributions.
+CASE  SYMM ACTIVE-MIX  NON-ACTIVE INDICES          DENOMINATOR     RHS VALUE       COEFFICIENT     CONTRIBUTION
+ATVX     5  Mu5.0001  Se5.003                       0.11955532     -0.00198863      0.01645869     -0.00003273
+ATVX     5  Mu5.0002  Se5.003                       0.13514495     -0.00017919      0.00112474     -0.00000020
+ATVX     5  Mu5.0003  Se5.003                       0.15525217     -0.00956630      0.06220328     -0.00059506
+ATVX     5  Mu5.0004  Se5.003                       0.23204967     -0.00539872      0.02284556     -0.00012334
+ATVX     5  Mu5.0005  Se5.003                       0.27479716     -0.00523973      0.01839830     -0.00009640
+ATVX     5  Mu5.0001  Se5.004                       0.16713232      0.00591328     -0.03547869     -0.00020980
+ATVX     5  Mu5.0002  Se5.004                       0.18272195      0.00175716     -0.00945240     -0.00001661
+ATVX     5  Mu5.0003  Se5.004                       0.20282917      0.00258034     -0.01278435     -0.00003299
+ATVX     5  Mu5.0004  Se5.004                       0.27962666     -0.00607222      0.02103979     -0.00012776
+ATVX     5  Mu5.0001  Se5.005                       0.27616967     -0.00040978      0.00145372     -0.00000060
+ATVX     5  Mu5.0002  Se5.005                       0.29175929     -0.00044092      0.00153020     -0.00000067
+ATVX     5  Mu5.0003  Se5.008                       0.50530998      0.02080236     -0.04145826     -0.00086243
+ATVX     5  Mu5.0004  Se5.008                       0.58210748      0.01644542     -0.02802913     -0.00046095
+ATVX     6  Mu6.0001  Se6.002                      -0.15121294     -0.00607482     -0.03838983      0.00023321
+ATVX     6  Mu6.0001  Se6.003                       0.04762945      0.00508718     -0.10602864     -0.00053939
+ATVX     6  Mu6.0001  Se6.004                       0.15665840      0.01860565     -0.12040164     -0.00224015
+ATVX     6  Mu6.0002  Se6.004                       0.69118625     -0.01740996      0.02520973     -0.00043890
+ATVX     6  Mu6.0005  Se6.004                       0.78938148     -0.02036104      0.02564150     -0.00052209
+ATVX     6  Mu6.0001  Se6.005                       0.17076483     -0.00938304      0.05421145     -0.00050867
+ATVX     6  Mu6.0001  Se6.008                       0.65713138     -0.02494798      0.03802896     -0.00094875
+ATVX     7  Mu7.0001  Se7.003                      -0.09058601     -0.00684938     -0.07234242      0.00049550
+ATVX     7  Mu7.0001  Se7.004                      -0.02884745      0.00698618      0.22329612      0.00155999
+ATVX     7  Mu7.0001  Se7.005                       0.10766821      0.00375272     -0.03442235     -0.00012918
+ATVX     7  Mu7.0001  Se7.006                       0.22753795     -0.00669437      0.02952968     -0.00019768
+ATVX     7  Mu7.0001  Se7.007                       0.23186833     -0.01272438      0.05466222     -0.00069554
+ATVX     8  Mu8.0001  Se8.002                       0.05893470     -0.01105809      0.19380464     -0.00214311
+ATVX     8  Mu8.0002  Se8.002                       0.23438058     -0.00118115      0.00510825     -0.00000603
+ATVX     8  Mu8.0001  Se8.003                       0.29220979      0.01273026     -0.04220663     -0.00053730
+ATVX     8  Mu8.0001  Se8.004                       0.35721547     -0.01254078      0.03401989     -0.00042664
+BVATP    1  Mu1.0001  Se1.007 Se1.007               0.10668697      0.00026085     -0.00244501     -0.00000064
+BVATP    1  Mu1.0001  Se1.008 Se1.007               0.12550365     -0.00002495      0.00019882     -0.00000000
+BVATP    1  Mu1.0001  Se1.008 Se1.008               0.14432034      0.00003432     -0.00023780     -0.00000001
+BVATP    1  Mu1.0001  Se1.009 Se1.007               0.19110509      0.00011754     -0.00061505     -0.00000007
+BVATP    1  Mu1.0001  Se1.009 Se1.008               0.20992177      0.00008604     -0.00040986     -0.00000004
+BVATP    1  Mu1.0001  Se1.009 Se1.009               0.27552321      0.00067231     -0.00244013     -0.00000164
+BVATP    1  Mu1.0001  Se1.010 Se1.007               0.20597568      0.00004924     -0.00023905     -0.00000001
+BVATP    1  Mu1.0001  Se1.010 Se1.008               0.22479237     -0.00011446      0.00050919     -0.00000006
+BVATP    1  Mu1.0001  Se1.010 Se1.009               0.29039380     -0.00016933      0.00058310     -0.00000010
+BVATP    1  Mu1.0001  Se1.011 Se1.007               0.21209395     -0.00063235      0.00298147     -0.00000189
+BVATP    1  Mu1.0001  Se1.011 Se1.008               0.23091063      0.00002090     -0.00009050     -0.00000000
+BVATP    1  Mu1.0001  Se1.011 Se1.009               0.29651207     -0.00040297      0.00135904     -0.00000055
+BVATP    1  Mu1.0001  Se1.012 Se1.007               0.23566344      0.00013796     -0.00058539     -0.00000008
+BVATP    1  Mu1.0001  Se1.012 Se1.008               0.25448012     -0.00004248      0.00016691     -0.00000001
+BVATP    1  Mu1.0001  Se2.005 Se2.005               0.11746307      0.00013274     -0.00113002     -0.00000015
+BVATP    1  Mu1.0001  Se2.006 Se2.005               0.20013955     -0.00033193      0.00165850     -0.00000055
+BVATP    1  Mu1.0001  Se2.006 Se2.006               0.28281603      0.00048526     -0.00171581     -0.00000083
+BVATP    1  Mu1.0001  Se2.007 Se2.005               0.20680741      0.00012777     -0.00061784     -0.00000008
+BVATP    1  Mu1.0001  Se2.007 Se2.006               0.28948389     -0.00025310      0.00087430     -0.00000022
+BVATP    1  Mu1.0001  Se2.007 Se2.007               0.29615175      0.00024534     -0.00082842     -0.00000020
+BVATP    1  Mu1.0001  Se2.008 Se2.005               0.22482717      0.00010149     -0.00045143     -0.00000005
+BVATP    1  Mu1.0001  Se3.006 Se3.006               0.11795947      0.00010172     -0.00086232     -0.00000009
+BVATP    1  Mu1.0001  Se3.007 Se3.006               0.14754834      0.00004488     -0.00030417     -0.00000001
+BVATP    1  Mu1.0001  Se3.007 Se3.007               0.17713722      0.00002762     -0.00015593     -0.00000000
+BVATP    1  Mu1.0001  Se3.008 Se3.006               0.20074554     -0.00028891      0.00143921     -0.00000042
+BVATP    1  Mu1.0001  Se3.008 Se3.007               0.23033441     -0.00006613      0.00028710     -0.00000002
+BVATP    1  Mu1.0001  Se3.008 Se3.008               0.28353161      0.00046402     -0.00163657     -0.00000076
+BVATP    1  Mu1.0001  Se3.009 Se3.006               0.22536792      0.00002084     -0.00009245     -0.00000000
+BVATP    1  Mu1.0001  Se3.009 Se3.007               0.25495680      0.00003836     -0.00015045     -0.00000001
+BVATP    1  Mu1.0001  Se3.010 Se3.006               0.23793451     -0.00012030      0.00050560     -0.00000006
+BVATP    1  Mu1.0001  Se3.010 Se3.007               0.26752338     -0.00011812      0.00044154     -0.00000005
+BVATP    1  Mu1.0001  Se4.004 Se4.004               0.14463624      0.00012615     -0.00087215     -0.00000011
+BVATP    1  Mu1.0001  Se4.005 Se4.004               0.22566169     -0.00033693      0.00149308     -0.00000050
+BVATP    1  Mu1.0001  Se4.006 Se4.004               0.25453295      0.00013497     -0.00053027     -0.00000007
+BVATP    1  Mu1.0001  Se5.003 Se5.003               0.24036599      0.00122665     -0.00513465     -0.00000630
+BVATP    1  Mu1.0001  Se5.004 Se5.003               0.28794299      0.00034704     -0.00061464     -0.00000021
+BVATP    1  Mu1.0001  Se6.002 Se6.002               0.26646924      0.00120068     -0.00656926     -0.00000789
+BVATP    1  Mu1.0001  Se7.003 Se7.003               0.26785818      0.00087229     -0.00406720     -0.00000355
+BVATP    4  Mu4.0001  Se3.006 Se2.005               0.26577877     -0.00000945      0.00003554     -0.00000000
+BVATP    4  Mu4.0001  Se3.007 Se2.005               0.29536764     -0.00001240      0.00004199     -0.00000000
+BVATP    4  Mu4.0001  Se4.004 Se1.007               0.27372911      0.00000820     -0.00002995     -0.00000000
+BVATP    4  Mu4.0001  Se4.004 Se1.008               0.29254579     -0.00002814      0.00009621     -0.00000000
+--
+ 
+   (Skipping property calculation,
+    use PROP keyword to activate)
+--
+ 
+  Total CASPT2 energies:
+::    CASPT2 Root  1     Total energy:   -231.74041546
+::    CASPT2 Root  2     Total energy:   -231.44169835
+::    CASPT2 Root  3     Total energy:   -231.36096359
+::    CASPT2 Root  4     Total energy:   -231.31524387
+::    CASPT2 Root  5     Total energy:   -231.38146080
+::    CASPT2 Root  6     Total energy:   -231.31813295
+ 
+  A NEW JOBIPH FILE NAMED 'JOBMIX' IS PREPARED.
+********************************************************************************
+The total execution time is limited to 21360 seconds.
+--- Stop Module: caspt2 at Mon Jul 18 10:38:18 2022 /rc=_RC_ALL_IS_WELL_ ---
+*** files: xmldump
+    saved to directory /work/donglab/kaufold.b/Label-Tutorial/ul-D2h
+--- Module caspt2 spent 4 minutes 25 seconds ---
+
+*** symbolic link created: INPORB -> ul-D2h.RasOrb
+--- Start Module: mcpdft at Mon Jul 18 10:38:19 2022 ---
+
+-- Input validation for mcpdft
+lxml python module not found, no validation possible
+--
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                              &MCPDFT
+
+                       only a single process is used, running in SERIAL mode
+                       available to each process: 46 GB of memory, 16 threads
+                                            pid: 188294
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+ 
+      Header of the ONEINT file:
+      --------------------------
+      
+      Integrals generated by Gateway/Seward, Mon Jul 18 10:17:59 2022
+ 
+ 
+      OrdInt status: non-squared
+ 
+ 
+      Cartesian coordinates in Angstrom:
+      -----------------------------------------------------
+      No.  Label        X            Y            Z        
+      -----------------------------------------------------
+       1   H1         0.00000000   2.47266405   0.00000000
+       2   H2         2.14170318   1.23597787   0.00000000
+       3   C3         0.00000000   1.39083283   0.00000000
+       4   C4         1.20466254   0.69534255   0.00000000
+       5   H1         0.00000000  -2.47266405   0.00000000
+       6   H2        -2.14170318   1.23597787   0.00000000
+       7   H2         2.14170318  -1.23597787   0.00000000
+       8   H2        -2.14170318  -1.23597787   0.00000000
+       9   C3         0.00000000  -1.39083283   0.00000000
+      10   C4        -1.20466254   0.69534255   0.00000000
+      11   C4         1.20466254  -0.69534255   0.00000000
+      12   C4        -1.20466254  -0.69534255   0.00000000
+      -----------------------------------------------------
+      Nuclear repulsion energy =  204.04227156
+ 
+++    Wave function specifications:
+      -----------------------------
+ 
+      Number of closed shell electrons          36
+      Number of electrons in active shells       6
+      Max number of holes in RAS1 space          0
+      Max nr of electrons in RAS3 space          0
+      Number of inactive orbitals               18
+      Number of active orbitals                  6
+      Number of secondary orbitals             390
+      Spin quantum number                      0.0
+      State symmetry                             1
+--
+ 
+++    Orbital specifications:
+      -----------------------
+ 
+      Symmetry species                           1   2   3   4   5   6   7   8
+                                                ag b3u b2u b1g b1u b2g b3g  au
+      Frozen orbitals                            0   0   0   0   0   0   0   0
+      Inactive orbitals                          6   4   5   3   0   0   0   0
+      Active orbitals                            0   0   0   0   2   1   2   1
+      RAS1 orbitals                              0   0   0   0   0   0   0   0
+      RAS2 orbitals                              0   0   0   0   2   1   2   1
+      RAS3 orbitals                              0   0   0   0   0   0   0   0
+      Secondary orbitals                        70  58  71  59  37  29  37  29
+      Deleted orbitals                           0   0   0   0   0   0   0   0
+      Number of basis functions                 76  62  76  62  39  30  39  30
+--
+ 
+++    CI expansion specifications:
+      ----------------------------
+ 
+      Number of CSFs                             0
+      Number of determinants                     0
+      Number of root(s) required                 6
+      Root chosen for geometry opt.              6
+      CI roots used                              1     2     3     4     5     6
+      weights                                0.167 0.167 0.167 0.167 0.167 0.167
+      highest root included in the CI            6
+      max. size of the explicit Hamiltonian    200
+--
+ 
+++    Optimization specifications:
+      ----------------------------
+ 
+      RASSCF algorithm: Conventional
+      This is a MC-PDFT calculation with functional: T:BLYP                                                                          
+      Exchange scaling factor                0.100E+01
+      Correlation scaling factor             0.100E+01
+      Maximum number of macro iterations       200
+      Maximum number of SX iterations          100
+      Threshold for RASSCF energy            0.100E-07
+      Threshold for max MO rotation          0.100E+00
+      Threshold for max BLB element          0.100E-03
+      Level shift parameter                  0.500E+00
+      Make Quasi-Newton update
+--
+ 
+ 
+      Numerical integration parameters
+      --------------------------------
+      Radial quadrature type:                         MHL       
+      Size of radial grid:                            99
+      Lebedev angular grid:                           41
+      Angular grid prunned with the crowding factor:  1.00E+10
+                                  and fading factor:  1.00E+01
+      Screening threshold for integral computation:   1.00E-11
+      Radial quadrature accuracy:                     1.00E-25
+      Maximum batch size:                             128
+      AO values are stored on disk
+ 
+      DFT functional specifications
+      -----------------------------
+      Using Libxc version: 5.2.2
+      Please cite the following reference:
+      S. Lehtola, C. Steigemann, M. J. Oliveira, and M. A. Marques, SoftwareX 7, 1 (2018) doi:10.1016/j.softx.2017.11.002
+ 
+      * Becke 88
+        - A. D. Becke, Phys. Rev. A 38, 3098 (1988) doi:10.1103/PhysRevA.38.3098
+      * Lee, Yang & Parr
+        - C. Lee, W. Yang, and R. G. Parr, Phys. Rev. B 37, 785 (1988) doi:10.1103/PhysRevB.37.785
+        - B. Miehlich, A. Savin, H. Stoll, and H. Preuss, Chem. Phys. Lett. 157, 200 (1989) doi:10.1016/0009-2614(89)87234-3
+ 
+   File JOBOLD not found -- use JOBIPH.
+      The MO-coefficients are taken from the file:
+      JOBIPH
+      Title:(No title given)                                                        
+
+      ********************************************************************************
+      ********************************************************************************
+      **                          MC-PDFT RESULTS, STATE 01                         ** 
+      ********************************************************************************
+      MCSCF reference energy                                             -230.84106376
+
+      Integrated total density:                                                 42.000
+      Integrated alpha density before functional transformation:                21.000
+      Integrated  beta density before functional transformation:                21.000
+      Integrated alpha density  after functional transformation:                22.277
+      Integrated  beta density  after functional transformation:                19.723
+      NOTE:
+      Densities after transformation are intermediate quantities
+      and should not be interpreted as real spin densities
+
+      Exchange energy scaling factor                                          1.000000
+      Correlation energy scaling factor                                       1.000000
+
+      Integrated alpha exchange energy                                      -17.289457
+      Integrated beta  exchange energy                                      -16.048197
+      Integrated  correlation   energy                                       -1.381644
+
+      Nuclear Repulsion energy                                            204.04227156
+      Core energy                                                        -193.38820652
+      CASSCF contribution energy                                         -197.43113577
+      On-top energy                                                       -34.71929801
+
+      Total MC-PDFT energy for state    1                                -232.15043378
+
+      ********************************************************************************
+
+
+      ********************************************************************************
+      ********************************************************************************
+      **                          MC-PDFT RESULTS, STATE 02                         ** 
+      ********************************************************************************
+      MCSCF reference energy                                             -230.54585500
+
+      Integrated total density:                                                 42.000
+      Integrated alpha density before functional transformation:                21.000
+      Integrated  beta density before functional transformation:                21.000
+      Integrated alpha density  after functional transformation:                23.017
+      Integrated  beta density  after functional transformation:                18.983
+      NOTE:
+      Densities after transformation are intermediate quantities
+      and should not be interpreted as real spin densities
+
+      Exchange energy scaling factor                                          1.000000
+      Correlation energy scaling factor                                       1.000000
+
+      Integrated alpha exchange energy                                      -17.639681
+      Integrated beta  exchange energy                                      -15.733710
+      Integrated  correlation   energy                                       -1.372106
+
+      Nuclear Repulsion energy                                            204.04227156
+      Core energy                                                        -193.38820652
+      CASSCF contribution energy                                         -197.09838581
+      On-top energy                                                       -34.74549743
+
+      Total MC-PDFT energy for state    2                                -231.84388324
+
+      ********************************************************************************
+
+
+      ********************************************************************************
+      ********************************************************************************
+      **                          MC-PDFT RESULTS, STATE 03                         ** 
+      ********************************************************************************
+      MCSCF reference energy                                             -230.42521386
+
+      Integrated total density:                                                 42.000
+      Integrated alpha density before functional transformation:                21.000
+      Integrated  beta density before functional transformation:                21.000
+      Integrated alpha density  after functional transformation:                22.142
+      Integrated  beta density  after functional transformation:                19.858
+      NOTE:
+      Densities after transformation are intermediate quantities
+      and should not be interpreted as real spin densities
+
+      Exchange energy scaling factor                                          1.000000
+      Correlation energy scaling factor                                       1.000000
+
+      Integrated alpha exchange energy                                      -17.234369
+      Integrated beta  exchange energy                                      -16.086916
+      Integrated  correlation   energy                                       -1.380739
+
+      Nuclear Repulsion energy                                            204.04227156
+      Core energy                                                        -193.38820652
+      CASSCF contribution energy                                         -197.09538226
+      On-top energy                                                       -34.70202369
+
+      Total MC-PDFT energy for state    3                                -231.79740595
+
+      ********************************************************************************
+
+
+      ********************************************************************************
+      ********************************************************************************
+      **                          MC-PDFT RESULTS, STATE 04                         ** 
+      ********************************************************************************
+      MCSCF reference energy                                             -230.40693366
+
+      Integrated total density:                                                 42.000
+      Integrated alpha density before functional transformation:                21.000
+      Integrated  beta density before functional transformation:                21.000
+      Integrated alpha density  after functional transformation:                22.912
+      Integrated  beta density  after functional transformation:                19.088
+      NOTE:
+      Densities after transformation are intermediate quantities
+      and should not be interpreted as real spin densities
+
+      Exchange energy scaling factor                                          1.000000
+      Correlation energy scaling factor                                       1.000000
+
+      Integrated alpha exchange energy                                      -17.585715
+      Integrated beta  exchange energy                                      -15.773231
+      Integrated  correlation   energy                                       -1.373769
+
+      Nuclear Repulsion energy                                            204.04227156
+      Core energy                                                        -193.38820652
+      CASSCF contribution energy                                         -197.00281412
+      On-top energy                                                       -34.73271522
+
+      Total MC-PDFT energy for state    4                                -231.73552934
+
+      ********************************************************************************
+
+
+      ********************************************************************************
+      ********************************************************************************
+      **                          MC-PDFT RESULTS, STATE 05                         ** 
+      ********************************************************************************
+      MCSCF reference energy                                             -230.38956748
+
+      Integrated total density:                                                 42.000
+      Integrated alpha density before functional transformation:                21.000
+      Integrated  beta density before functional transformation:                21.000
+      Integrated alpha density  after functional transformation:                21.745
+      Integrated  beta density  after functional transformation:                20.255
+      NOTE:
+      Densities after transformation are intermediate quantities
+      and should not be interpreted as real spin densities
+
+      Exchange energy scaling factor                                          1.000000
+      Correlation energy scaling factor                                       1.000000
+
+      Integrated alpha exchange energy                                      -17.009372
+      Integrated beta  exchange energy                                      -16.314128
+      Integrated  correlation   energy                                       -1.384785
+
+      Nuclear Repulsion energy                                            204.04227156
+      Core energy                                                        -193.38820652
+      CASSCF contribution energy                                         -197.12904134
+      On-top energy                                                       -34.70828561
+
+      Total MC-PDFT energy for state    5                                -231.83732696
+
+      ********************************************************************************
+
+
+      ********************************************************************************
+      ********************************************************************************
+      **                          MC-PDFT RESULTS, STATE 06                         ** 
+      ********************************************************************************
+      MCSCF reference energy                                             -230.34124489
+
+      Integrated total density:                                                 42.000
+      Integrated alpha density before functional transformation:                21.000
+      Integrated  beta density before functional transformation:                21.000
+      Integrated alpha density  after functional transformation:                21.735
+      Integrated  beta density  after functional transformation:                20.265
+      NOTE:
+      Densities after transformation are intermediate quantities
+      and should not be interpreted as real spin densities
+
+      Exchange energy scaling factor                                          1.000000
+      Correlation energy scaling factor                                       1.000000
+
+      Integrated alpha exchange energy                                      -17.026753
+      Integrated beta  exchange energy                                      -16.288581
+      Integrated  correlation   energy                                       -1.383392
+
+      Nuclear Repulsion energy                                            204.04227156
+      Core energy                                                        -193.38820652
+      CASSCF contribution energy                                         -197.08786900
+      On-top energy                                                       -34.69872630
+
+      Total MC-PDFT energy for state    6                                -231.78659530
+
+      ********************************************************************************
+
+ 
+The total execution time is limited to 21360 seconds.
+--- Stop Module: mcpdft at Mon Jul 18 10:39:30 2022 /rc=_RC_ALL_IS_WELL_ ---
+*** files: xmldump
+    saved to directory /work/donglab/kaufold.b/Label-Tutorial/ul-D2h
+--- Module mcpdft spent 1 minute 11 seconds ---
+
+*** symbolic link created: INPORB -> ul-D2h.RasOrb
+--- Start Module: grid_it at Mon Jul 18 10:39:30 2022 ---
+
+-- Input validation for grid_it
+lxml python module not found, no validation possible
+--
+ 
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+                                              &GRID_IT
+
+                       only a single process is used, running in SERIAL mode
+                       available to each process: 46 GB of memory, 16 threads
+                                            pid: 188427
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+ 
+ INPORB file: ul-D2h.RasOrb
+ 
+      Cartesian coordinates:
+      -----------------------------------------
+      No.  Label     X         Y         Z     
+      -----------------------------------------
+       1   H1         0.00000   4.67266   0.00000
+       2   H1         0.00000  -4.67266   0.00000
+       3   H2         4.04723   2.33566   0.00000
+       4   H2        -4.04723   2.33566   0.00000
+       5   H2         4.04723  -2.33566   0.00000
+       6   H2        -4.04723  -2.33566   0.00000
+       7   C3         0.00000   2.62829   0.00000
+       8   C3         0.00000  -2.62829   0.00000
+       9   C4         2.27648   1.31401   0.00000
+      10   C4        -2.27648   1.31401   0.00000
+      11   C4         2.27648  -1.31401   0.00000
+      12   C4        -2.27648  -1.31401   0.00000
+      -----------------------------------------
+      Grid Origin      =    -8.000000   -8.000000   -4.000000
+      Grid Axis Length =    16.000000   16.000000    8.000000
+      -----------------------------------------
+ 
+ 
+   Input vectors read from INPORB
+   Orbital file label: * RASSCF average (pseudo-natural) orbitals
+  Number of grid points in file:                   18513
+ 
+  Total number of MOs               :                   414
+  Number MOs for grid               :                   415
+  Batches processed in increments of:                 18432
+ 
+GridName=  3   76     19.6630 (0.00) s
+GridName=  2   62     19.3860 (0.00) s
+GridName=  3   75     19.3800 (0.00) s
+GridName=  1   76     17.1860 (0.00) s
+GridName=  4   62     16.1190 (0.00) s
+GridName=  1   75     16.1120 (0.00) s
+GridName=  4   61      7.4535 (0.00) s
+GridName=  3   74      7.2284 (0.00) s
+GridName=  4   60      7.0384 (0.00) s
+GridName=  4   59      6.8633 (0.00) s
+GridName=  1   74      6.8620 (0.00) s
+GridName=  2   61      6.6554 (0.00) s
+GridName=  3   73      6.6554 (0.00) s
+GridName=  3   72      6.3995 (0.00) s
+GridName=  2   60      6.3646 (0.00) s
+GridName=  3   71      6.3643 (0.00) s
+GridName=  1   73      6.2738 (0.00) s
+GridName=  4   58      6.2737 (0.00) s
+GridName=  2   59      6.1650 (0.00) s
+GridName=  3   70      6.1647 (0.00) s
+GridName=  3   69      5.9862 (0.00) s
+GridName=  1   72      5.9266 (0.00) s
+GridName=  7   39      5.8819 (0.00) s
+GridName=  4   57      5.8606 (0.00) s
+GridName=  1   71      5.7949 (0.00) s
+GridName=  4   56      5.7947 (0.00) s
+GridName=  3   68      5.7457 (0.00) s
+GridName=  2   58      5.7455 (0.00) s
+GridName=  2   57      5.5386 (0.00) s
+GridName=  1   70      5.5033 (0.00) s
+GridName=  8   30      5.4405 (0.00) s
+GridName=  5   39      5.4400 (0.00) s
+GridName=  2   56      5.4349 (0.00) s
+GridName=  3   67      5.4347 (0.00) s
+GridName=  7   38      5.3577 (0.00) s
+GridName=  8   29      5.3459 (0.00) s
+GridName=  1   69      5.3400 (0.00) s
+GridName=  4   55      5.3393 (0.00) s
+GridName=  4   54      5.2344 (0.00) s
+GridName=  1   68      5.2342 (0.00) s
+GridName=  4   53      5.1871 (0.00) s
+GridName=  3   66      5.1855 (0.00) s
+GridName=  7   37      5.1803 (0.00) s
+GridName=  6   30      5.1801 (0.00) s
+GridName=  8   28      5.1529 (0.00) s
+GridName=  5   38      5.1525 (0.00) s
+GridName=  2   55      5.1188 (0.00) s
+GridName=  5   37      5.1098 (0.00) s
+GridName=  4   52      5.0787 (0.00) s
+GridName=  1   67      5.0779 (0.00) s
+GridName=  6   29      5.0739 (0.00) s
+GridName=  7   36      5.0732 (0.00) s
+GridName=  2   54      5.0350 (0.00) s
+GridName=  3   65      5.0348 (0.00) s
+GridName=  7   35      4.9435 (0.00) s
+GridName=  3   64      4.9312 (0.00) s
+GridName=  1   66      4.9248 (0.00) s
+GridName=  4   51      4.8852 (0.00) s
+GridName=  1   65      4.8850 (0.00) s
+GridName=  7   34      4.7940 (0.00) s
+GridName=  6   28      4.7936 (0.00) s
+GridName=  5   36      4.7370 (0.00) s
+GridName=  3   63      4.7247 (0.00) s
+GridName=  2   53      4.7245 (0.00) s
+GridName=  8   27      4.7206 (0.00) s
+GridName=  5   35      4.7196 (0.00) s
+GridName=  4   50      4.7025 (0.00) s
+GridName=  8   26      4.6007 (0.00) s
+GridName=  4   49      4.5058 (0.00) s
+GridName=  1   64      4.5056 (0.00) s
+GridName=  3   62      4.4674 (0.00) s
+GridName=  2   52      4.4673 (0.00) s
+GridName=  3   61      4.4632 (0.00) s
+GridName=  8   25      4.4397 (0.00) s
+GridName=  5   34      4.4396 (0.00) s
+GridName=  4   48      4.4306 (0.00) s
+GridName=  1   63      4.4300 (0.00) s
+GridName=  4   47      4.4278 (0.00) s
+GridName=  2   51      4.3593 (0.00) s
+GridName=  3   60      4.3587 (0.00) s
+GridName=  2   50      4.3581 (0.00) s
+GridName=  7   33      4.3324 (0.00) s
+GridName=  6   27      4.3315 (0.00) s
+GridName=  7   32      4.2832 (0.00) s
+GridName=  1   62      4.2769 (0.00) s
+GridName=  8   24      4.2440 (0.00) s
+GridName=  5   33      4.2430 (0.00) s
+GridName=  3   59      4.2055 (0.00) s
+GridName=  6   26      4.1860 (0.00) s
+GridName=  8   23      4.1734 (0.00) s
+GridName=  1   61      4.1288 (0.00) s
+GridName=  4   46      4.1288 (0.00) s
+GridName=  1   60      4.1278 (0.00) s
+GridName=  7   31      4.1061 (0.00) s
+GridName=  6   25      4.1056 (0.00) s
+GridName=  7   30      4.0570 (0.00) s
+GridName=  4   45      4.0466 (0.00) s
+GridName=  1   59      4.0456 (0.00) s
+GridName=  2   49      4.0272 (0.00) s
+GridName=  3   58      4.0260 (0.00) s
+GridName=  3   57      3.9872 (0.00) s
+GridName=  2   48      3.9857 (0.00) s
+GridName=  3   56      3.9848 (0.00) s
+GridName=  2   47      3.9596 (0.00) s
+GridName=  3   55      3.9587 (0.00) s
+GridName=  6   24      3.8657 (0.00) s
+GridName=  7   29      3.8651 (0.00) s
+GridName=  8   22      3.8383 (0.00) s
+GridName=  5   32      3.8381 (0.00) s
+GridName=  1   58      3.8334 (0.00) s
+GridName=  4   44      3.8330 (0.00) s
+GridName=  3   54      3.8277 (0.00) s
+GridName=  2   46      3.8275 (0.00) s
+GridName=  1   57      3.8098 (0.00) s
+GridName=  3   53      3.8038 (0.00) s
+GridName=  2   45      3.7712 (0.00) s
+GridName=  7   28      3.7493 (0.00) s
+GridName=  3   52      3.6554 (0.00) s
+GridName=  1   56      3.6536 (0.00) s
+GridName=  4   43      3.6533 (0.00) s
+GridName=  6   23      3.6273 (0.00) s
+GridName=  1   55      3.6091 (0.00) s
+GridName=  5   31      3.5817 (0.00) s
+GridName=  8   21      3.5701 (0.00) s
+GridName=  5   30      3.5695 (0.00) s
+GridName=  6   22      3.5464 (0.00) s
+GridName=  7   27      3.5455 (0.00) s
+GridName=  5   29      3.5282 (0.00) s
+GridName=  8   20      3.5274 (0.00) s
+GridName=  2   44      3.5187 (0.00) s
+GridName=  3   51      3.5181 (0.00) s
+GridName=  4   42      3.4262 (0.00) s
+GridName=  1   54      3.4258 (0.00) s
+GridName=  1   53      3.4053 (0.00) s
+GridName=  2   43      3.3965 (0.00) s
+GridName=  5   28      3.3812 (0.00) s
+GridName=  6   21      3.3759 (0.00) s
+GridName=  7   26      3.3748 (0.00) s
+GridName=  2   42      3.3619 (0.00) s
+GridName=  3   50      3.3609 (0.00) s
+GridName=  5   27      3.3198 (0.00) s
+GridName=  1   52      3.3149 (0.00) s
+GridName=  4   41      3.3140 (0.00) s
+GridName=  6   20      3.2994 (0.00) s
+GridName=  8   19      3.2206 (0.00) s
+GridName=  5   26      3.2202 (0.00) s
+GridName=  6   19      3.1602 (0.00) s
+GridName=  7   25      3.1593 (0.00) s
+GridName=  1   51      3.1207 (0.00) s
+GridName=  2   41      3.0820 (0.00) s
+GridName=  3   49      3.0813 (0.00) s
+GridName=  2   40      2.9220 (0.00) s
+GridName=  1   50      2.8392 (0.00) s
+GridName=  4   40      2.8389 (0.00) s
+GridName=  1   49      2.8349 (0.00) s
+GridName=  4   39      2.7951 (0.00) s
+GridName=  4   38      2.7661 (0.00) s
+GridName=  8   18      2.7530 (0.00) s
+GridName=  2   39      2.7148 (0.00) s
+GridName=  5   25      2.6905 (0.00) s
+GridName=  4   37      2.5943 (0.00) s
+GridName=  1   48      2.5936 (0.00) s
+GridName=  3   48      2.5690 (0.00) s
+GridName=  3   47      2.5622 (0.00) s
+GridName=  2   38      2.5620 (0.00) s
+GridName=  1   47      2.5073 (0.00) s
+GridName=  4   36      2.5069 (0.00) s
+GridName=  7   24      2.4355 (0.00) s
+GridName=  3   46      2.3977 (0.00) s
+GridName=  6   18      2.3710 (0.00) s
+GridName=  7   23      2.3706 (0.00) s
+GridName=  2   37      2.3659 (0.00) s
+GridName=  3   45      2.3652 (0.00) s
+GridName=  4   35      2.3525 (0.00) s
+GridName=  8   17      2.3358 (0.00) s
+GridName=  5   24      2.3351 (0.00) s
+GridName=  4   34      2.2664 (0.00) s
+GridName=  1   46      2.2661 (0.00) s
+GridName=  5   23      2.2212 (0.00) s
+GridName=  8   16      2.2210 (0.00) s
+GridName=  7   22      2.1160 (0.00) s
+GridName=  3   44      2.0988 (0.00) s
+GridName=  2   36      2.0985 (0.00) s
+GridName=  3   43      2.0978 (0.00) s
+GridName=  7   21      2.0862 (0.00) s
+GridName=  6   17      2.0857 (0.00) s
+GridName=  3   42      2.0600 (0.00) s
+GridName=  1   45      2.0535 (0.00) s
+GridName=  4   33      2.0529 (0.00) s
+GridName=  2   35      2.0404 (0.00) s
+GridName=  4   32      2.0112 (0.00) s
+GridName=  1   44      2.0108 (0.00) s
+GridName=  3   41      2.0042 (0.00) s
+GridName=  2   34      2.0041 (0.00) s
+GridName=  5   22      1.9901 (0.00) s
+GridName=  8   15      1.9901 (0.00) s
+GridName=  5   21      1.9652 (0.00) s
+GridName=  1   43      1.9236 (0.00) s
+GridName=  1   42      1.9080 (0.00) s
+GridName=  4   31      1.9080 (0.00) s
+GridName=  6   16      1.8831 (0.00) s
+GridName=  7   20      1.8826 (0.00) s
+GridName=  7   19      1.8779 (0.00) s
+GridName=  1   41      1.8468 (0.00) s
+GridName=  1   40      1.8330 (0.00) s
+GridName=  4   30      1.8329 (0.00) s
+GridName=  2   33      1.8258 (0.00) s
+GridName=  3   40      1.8255 (0.00) s
+GridName=  8   14      1.8189 (0.00) s
+GridName=  2   32      1.7883 (0.00) s
+GridName=  6   15      1.7715 (0.00) s
+GridName=  2   31      1.7560 (0.00) s
+GridName=  3   39      1.7553 (0.00) s
+GridName=  2   30      1.7088 (0.00) s
+GridName=  3   38      1.7083 (0.00) s
+GridName=  4   29      1.7040 (0.00) s
+GridName=  6   14      1.6884 (0.00) s
+GridName=  7   18      1.6880 (0.00) s
+GridName=  5   20      1.6722 (0.00) s
+GridName=  8   13      1.6719 (0.00) s
+GridName=  5   19      1.6338 (0.00) s
+GridName=  3   37      1.5429 (0.00) s
+GridName=  2   29      1.5145 (0.00) s
+GridName=  3   36      1.5142 (0.00) s
+GridName=  1   39      1.5125 (0.00) s
+GridName=  1   38      1.5099 (0.00) s
+GridName=  4   28      1.5097 (0.00) s
+GridName=  7   17      1.4865 (0.00) s
+GridName=  6   13      1.4745 (0.00) s
+GridName=  7   16      1.4742 (0.00) s
+GridName=  3   35      1.4247 (0.00) s
+GridName=  5   18      1.3997 (0.00) s
+GridName=  8   12      1.3997 (0.00) s
+GridName=  3   34      1.3960 (0.00) s
+GridName=  2   28      1.3957 (0.00) s
+GridName=  4   27      1.3887 (0.00) s
+GridName=  8   11      1.3658 (0.00) s
+GridName=  1   37      1.3593 (0.00) s
+GridName=  4   26      1.3591 (0.00) s
+GridName=  5   17      1.3234 (0.00) s
+GridName=  5   16      1.2732 (0.00) s
+GridName=  8   10      1.2732 (0.00) s
+GridName=  3   33      1.2674 (0.00) s
+GridName=  1   36      1.2610 (0.00) s
+GridName=  1   35      1.2384 (0.00) s
+GridName=  4   25      1.2383 (0.00) s
+GridName=  4   24      1.2198 (0.00) s
+GridName=  1   34      1.2197 (0.00) s
+GridName=  2   27      1.2180 (0.00) s
+GridName=  3   32      1.2039 (0.00) s
+GridName=  2   26      1.2038 (0.00) s
+GridName=  4   23      1.1802 (0.00) s
+GridName=  1   33      1.1800 (0.00) s
+GridName=  6   12      1.1727 (0.00) s
+GridName=  7   15      1.1723 (0.00) s
+GridName=  3   31      1.1510 (0.00) s
+GridName=  2   25      1.1424 (0.00) s
+GridName=  3   30      1.1423 (0.00) s
+GridName=  2   24      1.1059 (0.00) s
+GridName=  3   29      1.1036 (0.00) s
+GridName=  6   11      1.1035 (0.00) s
+GridName=  2   23      1.1034 (0.00) s
+GridName=  4   22      1.1025 (0.00) s
+GridName=  7   14      1.0922 (0.00) s
+GridName=  1   32      1.0817 (0.00) s
+GridName=  4   21      1.0810 (0.00) s
+GridName=  1   31      1.0808 (0.00) s
+GridName=  6   10      1.0646 (0.00) s
+GridName=  7   13      1.0645 (0.00) s
+GridName=  7   12      1.0321 (0.00) s
+GridName=  6    9      1.0320 (0.00) s
+GridName=  5   15      1.0298 (0.00) s
+GridName=  8    9      1.0295 (0.00) s
+GridName=  3   28      0.9921 (0.00) s
+GridName=  2   22      0.9859 (0.00) s
+GridName=  3   27      0.9858 (0.00) s
+GridName=  5   14      0.9562 (0.00) s
+GridName=  1   30      0.9530 (0.00) s
+GridName=  8    8      0.9478 (0.00) s
+GridName=  5   13      0.9477 (0.00) s
+GridName=  6    8      0.9199 (0.00) s
+GridName=  1   29      0.9038 (0.00) s
+GridName=  4   20      0.9038 (0.00) s
+GridName=  5   12      0.8965 (0.00) s
+GridName=  7   11      0.8921 (0.00) s
+GridName=  1   28      0.8851 (0.00) s
+GridName=  5   11      0.8737 (0.00) s
+GridName=  8    7      0.8729 (0.00) s
+GridName=  4   19      0.8668 (0.00) s
+GridName=  1   27      0.8665 (0.00) s
+GridName=  2   21      0.8469 (0.00) s
+GridName=  3   26      0.8469 (0.00) s
+GridName=  1   26      0.8433 (0.00) s
+GridName=  4   18      0.8398 (0.00) s
+GridName=  2   20      0.8171 (0.00) s
+GridName=  3   25      0.8170 (0.00) s
+GridName=  3   24      0.7998 (0.00) s
+GridName=  2   19      0.7891 (0.00) s
+GridName=  6    7      0.7600 (0.00) s
+GridName=  7   10      0.7599 (0.00) s
+GridName=  3   23      0.7437 (0.00) s
+GridName=  3   22      0.7300 (0.00) s
+GridName=  2   18      0.7299 (0.00) s
+GridName=  1   25      0.7250 (0.00) s
+GridName=  8    6      0.7103 (0.00) s
+GridName=  4   17      0.7045 (0.00) s
+GridName=  4   16      0.7007 (0.00) s
+GridName=  1   24      0.7005 (0.00) s
+GridName=  3   21      0.6645 (0.00) s
+GridName=  2   17      0.6644 (0.00) s
+GridName=  4   15      0.6514 (0.00) s
+GridName=  1   23      0.6512 (0.00) s
+GridName=  6    6      0.6311 (0.00) s
+GridName=  7    9      0.6309 (0.00) s
+GridName=  8    5      0.6283 (0.00) s
+GridName=  5   10      0.6282 (0.00) s
+GridName=  3   20      0.6140 (0.00) s
+GridName=  5    9      0.5772 (0.00) s
+GridName=  4   14      0.5423 (0.00) s
+GridName=  1   22      0.5423 (0.00) s
+GridName=  7    8      0.5377 (0.00) s
+GridName=  3   19      0.5343 (0.00) s
+GridName=  4   13      0.5240 (0.00) s
+GridName=  1   21      0.5237 (0.00) s
+GridName=  2   16      0.5225 (0.00) s
+GridName=  3   18      0.5224 (0.00) s
+GridName=  4   12      0.5027 (0.00) s
+GridName=  1   20      0.5021 (0.00) s
+GridName=  4   11      0.4898 (0.00) s
+GridName=  1   19      0.4896 (0.00) s
+GridName=  2   15      0.4804 (0.00) s
+GridName=  2   14      0.4751 (0.00) s
+GridName=  3   17      0.4751 (0.00) s
+GridName=  2   13      0.4626 (0.00) s
+GridName=  3   16      0.4625 (0.00) s
+GridName=  5    8      0.4489 (0.00) s
+GridName=  5    7      0.4418 (0.00) s
+GridName=  8    4      0.4410 (0.00) s
+GridName=  7    7      0.4328 (0.00) s
+GridName=  6    5      0.4322 (0.00) s
+GridName=  7    6      0.4287 (0.00) s
+GridName=  6    4      0.4188 (0.00) s
+GridName=  1   18      0.3965 (0.00) s
+GridName=  5    6      0.3770 (0.00) s
+GridName=  8    3      0.3764 (0.00) s
+GridName=  1   17      0.3600 (0.00) s
+GridName=  4   10      0.3501 (0.00) s
+GridName=  1   16      0.3501 (0.00) s
+GridName=  2   12      0.3471 (0.00) s
+GridName=  3   15      0.3471 (0.00) s
+GridName=  3   14      0.3322 (0.00) s
+GridName=  2   11      0.3245 (0.00) s
+GridName=  3   13      0.3244 (0.00) s
+GridName=  7    5      0.3085 (0.00) s
+GridName=  6    3      0.3085 (0.00) s
+GridName=  2   10      0.3076 (0.00) s
+GridName=  3   12      0.3022 (0.00) s
+GridName=  4    9      0.2961 (0.00) s
+GridName=  1   15      0.2960 (0.00) s
+GridName=  1   14      0.2696 (0.00) s
+GridName=  4    8      0.2558 (0.00) s
+GridName=  1   13      0.2558 (0.00) s
+GridName=  5    5      0.2537 (0.00) s
+GridName=  2    9      0.2478 (0.00) s
+GridName=  3   11      0.2477 (0.00) s
+GridName=  4    7      0.2317 (0.00) s
+GridName=  7    4      0.1721 (0.00) s
+GridName=  4    6      0.1586 (0.00) s
+GridName=  1   12      0.1586 (0.00) s
+GridName=  3   10      0.1553 (0.00) s
+GridName=  5    4      0.1440 (0.00) s
+GridName=  8    2      0.1430 (0.00) s
+GridName=  2    8      0.1427 (0.00) s
+GridName=  3    9      0.1427 (0.00) s
+GridName=  1   11      0.1356 (0.00) s
+GridName=  1   10      0.1294 (0.00) s
+GridName=  4    5      0.1294 (0.00) s
+GridName=  2    7      0.1244 (0.00) s
+GridName=  2    6      0.1181 (0.00) s
+GridName=  3    8      0.1180 (0.00) s
+GridName=  1    9      0.1148 (0.00) s
+GridName=  7    3      0.1104 (0.00) s
+GridName=  6    2      0.1097 (0.00) s
+GridName=  5    3      0.0972 (0.00) s
+GridName=  3    7      0.0649 (0.00) s
+GridName=  1    8      0.0486 (0.00) s
+GridName=  4    4      0.0486 (0.00) s
+GridName=  3    6      0.0352 (0.00) s
+GridName=  2    5      0.0352 (0.00) s
+GridName=  1    7      0.0298 (0.00) s
+GridName=  7    2      0.0000 (0.20) 2
+GridName=  8    1      0.0000 (0.64) 2
+GridName=  5    2      0.0000 (0.71) 2
+GridName=  7    1      0.0000 (1.32) 2
+GridName=  6    1      0.0000 (1.39) 2
+GridName=  5    1      0.0000 (1.74) 2
+GridName=  1    6     -0.4963 (2.00) i
+GridName=  4    3     -0.4965 (2.00) i
+GridName=  2    4     -0.5909 (2.00) i
+GridName=  3    5     -0.5919 (2.00) i
+GridName=  2    3     -0.6240 (2.00) i
+GridName=  3    4     -0.6425 (2.00) i
+GridName=  1    5     -0.7136 (2.00) i
+GridName=  4    2     -0.8275 (2.00) i
+GridName=  1    4     -0.8275 (2.00) i
+GridName=  2    2     -1.0167 (2.00) i
+GridName=  3    3     -1.0176 (2.00) i
+GridName=  1    3     -1.1562 (2.00) i
+GridName=  3    2    -11.2290 (2.00) i
+GridName=  4    1    -11.2290 (2.00) i
+GridName=  1    2    -11.2300 (2.00) i
+GridName=  2    1    -11.2300 (2.00) i
+GridName=  1    1    -11.2340 (2.00) i
+GridName=  3    1    -11.2340 (2.00) i
+ 
+The total execution time is limited to 21360 seconds.
+--- Stop Module: grid_it at Mon Jul 18 10:39:31 2022 /rc=_RC_ALL_IS_WELL_ ---
+*** files: ul-D2h.lus xmldump
+    saved to directory /work/donglab/kaufold.b/Label-Tutorial/ul-D2h
+
+.##################.
+.# Happy landing! #.
+.##################.
+
+    Timing: Wall=1290.52 User=6437.36 System=548.95
+**************************************************************************
+*** WorkDir at /scratch/kaufold.b/OpenMolcas/29124419_0/ul-D2h cleaned ***
+**************************************************************************

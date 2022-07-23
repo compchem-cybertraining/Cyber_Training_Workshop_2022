@@ -1,0 +1,1 @@
+Results from calculations with BGW code for 1st example. Was able to run some initial parts of example 3 but ran into some errors and was unable to finish them so only results from example 1 are here.

@@ -1,0 +1,57 @@
+
+DATE: Jul/10/2022    ---    TIME: 14h:18min
+
+<======  ###############  ==>
+<====    PARAMETERS.F   ====>
+<==  ###############  ======>
+ 
+ DRIVER          : slice_AO   
+ QMMM            :.true. <==
+ OPT_parms       :.true. <==
+ SPECTRUM        :.false.   
+ Alpha_Tensor    :.false.   
+ GaussianCube    :.false.   
+ NetCharge       :.true. <== CH_and_DP_step = 5000000
+ DensityMatrix   :.false.   
+ AutoCorrelation :.false.   
+ VDOS_           :.false.   
+ EnvField_       :.false.   
+ Coulomb_        :.false.   
+ Induced_        :.false.   
+ frame_step      : 1
+ ad_hoc          :.true. <==
+ restart         :.false.   
+ t_f             : 0.5000      
+ n_t             : 50000
+ CT_dump_step    : 1
+ n_part          : 2
+ hole_state      : 15
+ electron_state  : 16
+ nnx , nny       : 0 0
+ PBC             : 0 0 0
+ 
+<======  ###############  ==>
+<====    parameters_MM.f   ====>
+<==  ###############  ======>
+ 
+ driver_MM       : MM_Dynamics <== thermostat  = Microcanonical
+                                   read_velocities :.false.   
+ Wolf_cutoff     : 50.00 
+ Wolf_damping    : 0.00050 
+ MM_input_format : GMX 
+ MM_log_step     : 50
+ MM_frame_step   : 100
+ 
+<======  ###############  ==>
+<====       TUNING.F       ====>
+<==  ###############  ======>
+ 
+==  Electronic Tuning  ==
+ 
+!      univ % atom(:) % etc
+    call ReadInputCard_ADHOC( structure=univ )
+where(univ % atom % residue == electron_fragment ) univ % atom % El = .true.
+where(univ % atom % residue == hole_fragment) univ % atom % Hl = .true.
+ 
+==  Nuclear Tuning  ==
+ 

@@ -1,0 +1,20 @@
+TITLE 
+REMARK         manipulated by charge-transfer
+TITLE          manipulated by charge-transfer     t=   0.00000
+REMARK         manipulated by charge-transfer
+CRYST1   38.835   38.835   38.835  90.00  90.00  90.00        P 1   1
+ MODEL        0
+HETATM    1   H  BZN        1    2.416   0.473   0.044 -0.00001  0.00000    H 
+HETATM    2   C  BZN        1    1.343   0.284   0.024 -0.00205  0.00000    C 
+HETATM    3   H  BZN        1    1.711  -1.895   0.004 -0.00005  0.00000    H 
+HETATM    4   C  BZN        1    0.929  -1.080   0.014 -0.02837  0.00000    C 
+HETATM    5   H  BZN        1   -0.738  -2.306   0.004  0.00008  0.00000    H 
+HETATM    6   C  BZN        1   -0.439  -1.298  -0.026  0.01849  0.00000    C 
+HETATM    7   H  BZN        1   -2.410  -0.610   0.004  0.00019  0.00000    H 
+HETATM    8   C  BZN        1   -1.344  -0.263   0.004  0.01323  0.00000    C 
+HETATM    9   H  BZN        1   -1.497   1.958   0.004  0.00008  0.00000    H 
+HETATM   10   C  BZN        1   -0.913   1.029  -0.026 -0.01472  0.00000    C 
+HETATM   11   H  BZN        1    0.756   2.359   0.004 -0.00001  0.00000    H 
+HETATM   12   C  BZN        1    0.403   1.330   0.004  0.01315  0.00000    C 
+TER
+ENDMDL

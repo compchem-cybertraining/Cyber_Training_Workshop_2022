@@ -1,0 +1,55 @@
+  
+ MM input format >>>   GMX    <<<
+  
+ Number of defined/different AtomTypes =   2/  2
+  
+ Number of atoms in         BZN =     12
+ Number of bonds in         BZN =     12
+ Number of angles in        BZN =     18
+ Number of dihedrals in     BZN =     30
+ Number of Torsion DHDs in  BZN =      0
+ Number of Improper DHDs in BZN =      0
+ Total MM_charge in BZN =    0.000000
+  
+Force Field Parameters:
+ NonBonded FF type       =      2
+ Combination Rule        =      3
+ Coulomb 1-4 scale       =  0.5000
+ van der Walls 1-4 scale =  0.5000
+  
+[ atomtypes ]
+    6 HA       1.57797     0.14437    
+    6 CA       1.88414     0.22053    
+  
+[ SpecialPairs ]
+  
+[ bondtypes ]
+HA  CA   1          0.10800     307105.600          0.000   
+CA  CA   1          0.14000     392459.200          0.000   
+  
+[ angletypes ]
+HA  CA  CA   1          120.000        292.880   
+CA  CA  CA   1          120.000        527.184   
+CA  CA  HA   1          120.000        292.880   
+  
+[ dihedraltypes ]
+HA  CA  CA  HA      3    30.33400     0.00000   -30.21400     0.00000     0.00000     0.00000   
+HA  CA  CA  CA      3    30.33400     0.00000   -30.23400     0.00000     0.00000     0.00000   
+CA  CA  CA  HA      3    30.33400     0.00000   -30.23400     0.00000     0.00000     0.00000   
+CA  CA  CA  CA      3    30.33400     0.00000   -30.22400     0.00000     0.00000     0.00000   
+HA  CA  CA  CA      4     0.00000     0.00000     0.00000<==
+  
+[ charges ]
+( BZN )
+   HA  0.1150     
+   CA -0.1150     
+   HA  0.1150     
+   CA -0.1150     
+   HA  0.1150     
+   CA -0.1150     
+   HA  0.1150     
+   CA -0.1150     
+   HA  0.1150     
+   CA -0.1150     
+   HA  0.1150     
+   CA -0.1150     

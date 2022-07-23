@@ -1,0 +1,8 @@
+>>>COPY FORCE MOLCAS.ScfOrb sratch/MOLCAS.scfOrb
+&RASSCF
+NActEl=10,0,0
+Spin=1
+LumOrb
+TypeIndex
+CIRoot=16,16,1
+

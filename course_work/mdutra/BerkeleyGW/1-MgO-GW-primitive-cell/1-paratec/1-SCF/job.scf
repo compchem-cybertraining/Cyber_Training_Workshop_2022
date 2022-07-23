@@ -1,0 +1,64 @@
+#!/bin/bash
+#SBATCH --time=1:00:00
+#SBATCH --output=slurm.out
+#SBATCH --job-name=paratec
+#SBATCH --nodes=1
+#SBATCH --tasks-per-node=12
+#SBATCH --mem=50000
+#SBATCH --mail-type=end
+##SBATCH --constraint=IB
+
+#SBATCH --cluster=faculty
+#SBATCH --partition=valhalla
+#SBATCH --qos=valhalla
+
+# #SBATCH --partition=general-compute
+# #SBATCH --qos=general-compute
+
+cd $SLURM_SUBMIT_DIR
+
+#
+# load module
+#
+
+module load     intel/20.1  intel-mpi/2020.1     mkl/2020.1
+
+ulimit -s  unlimited
+
+# determine node information
+
+echo "Determining node information ..."
+SLURM_NODEFILE=nodes.$SLURM_JOB_ID
+srun hostname -s > $SLURM_NODEFILE
+
+which mpiexec.hydra
+
+export NODELIST=tmp.$$
+echo "group main" > $NODELIST
+NODES=`cat $SLURM_NODEFILE`
+for node in $NODES ; do
+   echo "host "$node >> $NODELIST
+done
+
+echo "NODELIST = "$NODELIST
+echo "SLURM_NPROCS = "$SLURM_NPROCS
+
+# determine node information
+echo "Determining node information ..."
+NNuniq=$SLURM_NNODES
+
+mytaskpernode=`echo $SLURM_TASKS_PER_NODE | sed 's/(/ /' | awk '{print $1}'`
+NPROCS=`expr $mytaskpernode \* $SLURM_NNODES`
+
+
+export I_MPI_PMI_LIBRARY=/usr/lib64/libpmi.so
+
+DFT_DIR="../../..//paratec-bin/"
+
+srun --nodes=$NNuniq --tasks-per-node=$NPROCS --cpus-per-task=1 $DFT_DIR/paratec.mpi >run.out
+
+################################################################################
+rm tmp.$$
+rm nodes.$SLURM_JOB_ID
+echo "All Done!"
+

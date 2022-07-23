@@ -1,0 +1,30 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=0.75in, right=0.75in, top=1.00in, bottom=1.00in]{geometry}
+\author{Benjamin William Kaufold}
+\title{OpenMolcas: Labeling Specific Orbitals for Inclusion in MR Active Space}
+\begin{document}
+	\maketitle
+	This project makes use of a new technique in OpenMolcas multireference calculations, where active orbitals are chosen by a manual labeling procedure instead of a simple number.  The goal was to determine the potential benefits and drawbacks of doing so, as opposed to simply choosing the number of active electrons and orbitals.  In particular, the results of a multireference calculation using an ``intuitive'' active space based on the guidelines from the workshop was compared to one automatically chosen by OpenMolcas.
+	
+	My test case was benzene since it has an ``intuitive'' [6,6] active space consisting of all valence $\pi$ orbitals.  It was (correctly) assumed that this space would not be chosen by simply specifying 6 active electrons and orbitals in an OpenMolcas calculation.  In multireference calculations, when basis sets beyond the minimal basis are used, Rydberg states tend to be automatically included in the active space when they may not be desired.
+	
+	To run this comparison, I optimized benzene with B3LYP/\textit{aug}-cc-pVTZ and  \textit{D\textsubscript{2h}} symmetry in Gaussian, then generated starting orbitals in OpenMolcas again using B3LYP/\textit{aug}-cc-pVTZ but without symmetry.  Then, I ran two separate calculations in OpenMolcas using all of CASSCF, CASPT2 and MC-PDFT.  In one, a .ScfOrb file with the valence $\pi$ orbitals (whose indices were determined by graphical viewing in the Luscus GUI) labeled as active was used as the starting orbitals in the {\tt \&RASSCF} module, while in the other, no labels were changed in the starting orbitals, and the number of active orbitals was set with {\tt Ras2 = 6}.  In both calculations six active electrons were set with {\tt nActEl = 6}.  Six roots were calculated to capture up to five excited states.
+	
+	After these calculations were finished, Luscus was again used to view the state-averaged orbitals from {\tt \&RASSCF} to confirm that the desired orbitals were included in the active space of the labeled multireference calculation and that they were different from the orbitals in the active space for the unlabeled one.  It was found that the completely out-of-phase valence $\pi$ orbital in the labeled calculation was replaced by a $\sigma$-type Rydberg orbital in the unlabeled calculation, which isn't surprising, given that the in the ground state the $\pi$ valence orbital was found to be higher in energy than 21 Rydberg orbitals.
+	
+	To compare the accuracy of the calculations, the CASPT2 excitation energies from both were compared to high-accuracy excitation energies in the QUEST database.  It was found that when the active space was forced to include the valence $\pi$ orbitals, an excitation $^1E_{2g}(\pi\rightarrow\pi^*)$ was modeled reasonably well (within 0.16 eV) and was not captured in the automatically chosen [6,6] active space.  However, some of the other excitations were modeled more accurately with the automatic [6,6] active space.  Since some of the excitations in the QUEST database involved Rydberg states, which the manual [6,6] active space couldn't capture, this was to be expected.  Indeed, it was not supposed that the manually-selected active space would be more accurate overall, but that including different orbitals may model excitations involving these orbitals more accurately.
+	
+	A pair of calculations were also carried out where orbitals were allowed to have \textit{D\textsubscript{2h}} symmetry in OpenMolcas.  However, my specification of the active space in the unlabeled calculation happened to be the same as that in the labeled calculation owing to the symmetry restrictions on the orbitals.  Analyzing the results was skipped since there were no practical differences in the calculations.
+	
+	In summary, it was found that manually labeling the orbitals in the active space of an OpenMolcas calculation allows for more flexibility than leaving the program to choose the active orbitals on its own.  It is not guaranteed to \textit{improve} results overall, but it may allow users to study excitations with small active spaces which would not normally include the requisite orbitals.  This flexibility is expected to make studies on highly excited states more efficient by eschewing the need for a large active space.  However, users must take care to ensure the orbitals they choose to include are reasonable.
+	
+	\begin{footnotesize}
+		Micka\"{e}l V\'{e}ril \textit{et. al.}, ``QUESTDB: A database of highly accurate excitation energies for the electronic structure community'', WIREs Comput Mol Sci.2021;11:e1517
+	\end{footnotesize}
+\end{document}

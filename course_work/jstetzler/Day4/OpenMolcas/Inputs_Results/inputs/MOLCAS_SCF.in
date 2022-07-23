@@ -1,0 +1,6 @@
+&GATEWAY
+Coord=acrolein_opt.xyz
+Group=nosym
+Basis=ANO-R1
+&SEWARD
+&SCF

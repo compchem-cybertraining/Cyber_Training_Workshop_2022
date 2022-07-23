@@ -1,0 +1,19 @@
+ The Intel 20.1 compilers are in your path. This is adequate for compiling and
+running most codes. Source compilervars.sh for more features including the
+debugger. 
+ The Intel MPI 2020.1 is in your path. This is adequate for compiling and
+running most codes. Run "source
+/util/academic/intel/20.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/bin/mpivars.sh"
+for more features including the debugger. 
+ The MKL Libraries are in your library path. This is adequate for compiling and
+running most codes. Source $MKL/bin/mklvars.sh" for more features. 
+
+The following have been reloaded with a version change:
+  1) intel-mpi/2020.2 => intel-mpi/2020.1     2) intel/20.2 => intel/20.1
+
+Determining node information ...
+/util/academic/intel/20.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/bin/mpiexec.hydra
+NODELIST = tmp.4546
+SLURM_NPROCS = 12
+Determining node information ...
+All Done!

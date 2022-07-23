@@ -1,0 +1,149 @@
+
+CPPTRAJ: Trajectory Analysis. V6.4.4 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 07/07/22 10:05:08
+| Available memory: 115.616 GB
+
+INPUT: Reading input from 'cpptrajscript.01'
+  [parm input00.top]
+	Reading 'input00.top' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin input00.crd]
+	Reading 'input00.crd' as Amber Restart
+  [center :1]
+    CENTER: Centering coordinates using geometric center of atoms in mask (:1) to
+	box center.
+  [image familiar]
+    IMAGE: By molecule to box center based on first atom position using all atoms
+           Triclinic On, familiar shape.
+  [trajout input01.crd restart]
+	Writing 'input01.crd' as Amber Restart
+  [go]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: input00.top, 5596 atoms, 929 res, box: Truncated octahedron, 929 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'input00.crd' is an AMBER restart file with velocity info, Parm input00.top (Truncated octahedron box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+OUTPUT TRAJECTORIES (1 total):
+  'input01.crd' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'input00.top' (2 actions):
+  0: [center :1]
+	Mask [:1] corresponds to 28 atoms.
+  1: [image familiar]
+	Mask [*] corresponds to 5596 atoms.
+	Number of molecules to be imaged is 929
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  input01.crd (coordinates, velocities, box)
+----- input00.crd (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 32.5150 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.06%)
+TIME:		Trajectory Process : 0.0308 s ( 99.67%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.01%)
+TIME:		Other              : 0.0001 s (  0.00%)
+TIME:	Run Total 0.0309 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.1562 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+
+
+CPPTRAJ: Trajectory Analysis. V6.4.4 (AmberTools)
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Date/time: 07/07/22 10:05:08
+| Available memory: 115.603 GB
+
+INPUT: Reading input from 'cpptrajscript.02'
+  [parm input00.top]
+	Reading 'input00.top' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin input01.crd]
+	Reading 'input01.crd' as Amber Restart
+  [reference input01.crd]
+	Reading 'input01.crd' as Amber Restart
+	Setting active reference for distance-based masks: 'input01.crd'
+  [strip :1>:12.0 outprefix droplet]
+    STRIP: Stripping atoms in mask [:1>:12.0]
+	Writing 'stripped' topology file with prefix 'droplet'
+  [trajout input02.crd restart]
+	Writing 'input02.crd' as Amber Restart
+  [go]
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: input00.top, 5596 atoms, 929 res, box: Truncated octahedron, 929 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'input01.crd' is an AMBER restart file with velocity info, Parm input00.top (Truncated octahedron box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+REFERENCE FRAMES (1 total):
+    0: input01.crd:1
+	Active reference frame for distance-based masks is 'Cpptraj Generated Restart'
+
+OUTPUT TRAJECTORIES (1 total):
+  'input02.crd' (1 frames) is an AMBER restart file
+
+BEGIN TRAJECTORY PROCESSING:
+.....................................................
+ACTION SETUP FOR PARM 'input00.top' (1 actions):
+  0: [strip :1>:12.0 outprefix droplet]
+	Stripping 3966 atoms.
+	Stripped topology: 1630 atoms, 268 res, box: Truncated octahedron, 268 mol
+	Writing topology 0 (input00.top) to 'droplet.input00.top' with format Amber Topology
+	Memory used by full exclusion list: 16.532 kB
+	Topology has alternative residue numbering (from e.g PDB, stripping, reordering, etc).
+.....................................................
+ACTIVE OUTPUT TRAJECTORIES (1):
+  input02.crd (coordinates, velocities, box)
+----- input01.crd (1-1, 1) -----
+100% Complete.
+
+Read 1 frames and processed 1 frames.
+TIME: Avg. throughput= 34.8396 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+RUN TIMING:
+TIME:		Init               : 0.0000 s (  0.05%)
+TIME:		Trajectory Process : 0.0287 s ( 99.60%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0000 s (  0.01%)
+TIME:		Other              : 0.0001 s (  0.00%)
+TIME:	Run Total 0.0288 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.2293 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+

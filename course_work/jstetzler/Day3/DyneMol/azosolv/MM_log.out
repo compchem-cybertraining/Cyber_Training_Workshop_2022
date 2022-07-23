@@ -1,0 +1,1003 @@
+ 
+!==========================================!
+!                                          !
+!               MM_Dynamics                !
+!                                          !
+!==========================================!
+ 
+ 
+ INITIAL Parameters
+ 
+ 
+Number of Molecules       :       119
+Initial Bath Temperature  :    300.00 Kelvin
+Box dimensions            :     20.33     20.33     20.33 Angstroms
+Cut-off radius            :      9.00 Angstroms
+Density                   :    0.7837 g/cm³
+ 
+System Temperature        :      0.00 Kelvin
+ 
+Total Simulation Steps    :    100000
+Integration time step     :     0.000 femtosec
+frame-output step         :       200 steps
+ 
+Lennard-Jones Potential
+ 
+Box contains  2 different species
+ 
+Species 1 comprised of    6 atoms
+ 
+Species 2 comprised of   24 atoms
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0000 ps
+                                 (kJ/mol)
+Bond Potential              :    789.5889
+Harmonic Bond Potential     :    789.5889
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    968.8875
+Dihedral Potential          :    251.6944
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    251.6944
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     78.8963
+Lennard-Jones Intra         :     -2.3327
+Lennard-Jones               :   -408.9800
+Coulomb 1-4                 :   1706.5982
+Coulomb Intra               :    -19.7306
+Coulomb self-interaction    :      1.6501
+Coulomb short-range         :  -3789.2112
+Total Coulomb               :   3787.5611
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -3.5818419E+000
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0010 ps
+                                 (kJ/mol)
+Bond Potential              :    639.1851
+Harmonic Bond Potential     :    639.1851
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    924.0010
+Dihedral Potential          :    251.2152
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    251.2152
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     78.0419
+Lennard-Jones Intra         :     -2.3157
+Lennard-Jones               :   -410.6451
+Coulomb 1-4                 :   1706.5732
+Coulomb Intra               :    -19.7297
+Coulomb self-interaction    :      1.6504
+Coulomb short-range         :  -3788.2177
+Total Coulomb               :   3786.5674
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -5.2398499E+000
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0020 ps
+                                 (kJ/mol)
+Bond Potential              :    354.5676
+Harmonic Bond Potential     :    354.5676
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    799.9099
+Dihedral Potential          :    249.8394
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    249.8394
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     75.6233
+Lennard-Jones Intra         :     -2.2764
+Lennard-Jones               :   -414.8822
+Coulomb 1-4                 :   1706.4620
+Coulomb Intra               :    -19.7282
+Coulomb self-interaction    :      1.6512
+Coulomb short-range         :  -3786.9464
+Total Coulomb               :   3785.2951
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -8.7317833E+000
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0030 ps
+                                 (kJ/mol)
+Bond Potential              :    238.4527
+Harmonic Bond Potential     :    238.4527
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    625.2033
+Dihedral Potential          :    247.6967
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    247.6967
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     72.0883
+Lennard-Jones Intra         :     -2.2383
+Lennard-Jones               :   -420.1355
+Coulomb 1-4                 :   1706.1759
+Coulomb Intra               :    -19.7292
+Coulomb self-interaction    :      1.6524
+Coulomb short-range         :  -3789.0682
+Total Coulomb               :   3787.4158
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.1287451E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0040 ps
+                                 (kJ/mol)
+Bond Potential              :    380.9175
+Harmonic Bond Potential     :    380.9175
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    438.5943
+Dihedral Potential          :    244.8613
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    244.8613
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     68.0314
+Lennard-Jones Intra         :     -2.2164
+Lennard-Jones               :   -425.3048
+Coulomb 1-4                 :   1705.6220
+Coulomb Intra               :    -19.7366
+Coulomb self-interaction    :      1.6531
+Coulomb short-range         :  -3797.4475
+Total Coulomb               :   3795.7944
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.1834720E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0050 ps
+                                 (kJ/mol)
+Bond Potential              :    578.3802
+Harmonic Bond Potential     :    578.3802
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    279.2884
+Dihedral Potential          :    241.3089
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    241.3089
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     63.9100
+Lennard-Jones Intra         :     -2.2114
+Lennard-Jones               :   -430.1696
+Coulomb 1-4                 :   1704.7656
+Coulomb Intra               :    -19.7525
+Coulomb self-interaction    :      1.6527
+Coulomb short-range         :  -3812.4817
+Total Coulomb               :   3810.8290
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.1753067E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0060 ps
+                                 (kJ/mol)
+Bond Potential              :    597.5387
+Harmonic Bond Potential     :    597.5387
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    178.7607
+Dihedral Potential          :    237.4177
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    237.4177
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     60.0260
+Lennard-Jones Intra         :     -2.2097
+Lennard-Jones               :   -434.8336
+Coulomb 1-4                 :   1703.7049
+Coulomb Intra               :    -19.7763
+Coulomb self-interaction    :      1.6514
+Coulomb short-range         :  -3832.1499
+Total Coulomb               :   3830.4985
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.2715739E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0070 ps
+                                 (kJ/mol)
+Bond Potential              :    441.9177
+Harmonic Bond Potential     :    441.9177
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    154.0514
+Dihedral Potential          :    233.5544
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    233.5544
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     56.5765
+Lennard-Jones Intra         :     -2.1951
+Lennard-Jones               :   -439.0547
+Coulomb 1-4                 :   1702.6564
+Coulomb Intra               :    -19.7981
+Coulomb self-interaction    :      1.6499
+Coulomb short-range         :  -3852.4627
+Total Coulomb               :   3850.8128
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.4507597E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0080 ps
+                                 (kJ/mol)
+Bond Potential              :    316.8435
+Harmonic Bond Potential     :    316.8435
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    204.3128
+Dihedral Potential          :    229.9174
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    229.9174
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     53.6988
+Lennard-Jones Intra         :     -2.1600
+Lennard-Jones               :   -442.3580
+Coulomb 1-4                 :   1701.8936
+Coulomb Intra               :    -19.8000
+Coulomb self-interaction    :      1.6489
+Coulomb short-range         :  -3868.2859
+Total Coulomb               :   3866.6370
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.5357873E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0090 ps
+                                 (kJ/mol)
+Bond Potential              :    380.7901
+Harmonic Bond Potential     :    380.7901
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    311.7794
+Dihedral Potential          :    226.5645
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    226.5645
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     51.5081
+Lennard-Jones Intra         :     -2.0772
+Lennard-Jones               :   -444.8252
+Coulomb 1-4                 :   1701.6351
+Coulomb Intra               :    -19.7647
+Coulomb self-interaction    :      1.6488
+Coulomb short-range         :  -3875.3086
+Total Coulomb               :   3873.6598
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.4044935E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0100 ps
+                                 (kJ/mol)
+Bond Potential              :    580.2002
+Harmonic Bond Potential     :    580.2002
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    446.5211
+Dihedral Potential          :    223.5678
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    223.5678
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     50.0219
+Lennard-Jones Intra         :     -1.9401
+Lennard-Jones               :   -447.6242
+Coulomb 1-4                 :   1701.9436
+Coulomb Intra               :    -19.6796
+Coulomb self-interaction    :      1.6496
+Coulomb short-range         :  -3872.6962
+Total Coulomb               :   3871.0466
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.1271723E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0110 ps
+                                 (kJ/mol)
+Bond Potential              :    721.6999
+Harmonic Bond Potential     :    721.6999
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    573.7679
+Dihedral Potential          :    220.9909
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    220.9909
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     49.2407
+Lennard-Jones Intra         :     -1.7374
+Lennard-Jones               :   -452.5070
+Coulomb 1-4                 :   1702.6881
+Coulomb Intra               :    -19.5417
+Coulomb self-interaction    :      1.6511
+Coulomb short-range         :  -3864.2142
+Total Coulomb               :   3862.5631
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -9.0022169E+000
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0120 ps
+                                 (kJ/mol)
+Bond Potential              :    672.8748
+Harmonic Bond Potential     :    672.8748
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    663.4065
+Dihedral Potential          :    218.7471
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    218.7471
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     49.1978
+Lennard-Jones Intra         :     -1.4472
+Lennard-Jones               :   -460.5174
+Coulomb 1-4                 :   1703.5908
+Coulomb Intra               :    -19.3584
+Coulomb self-interaction    :      1.6528
+Coulomb short-range         :  -3856.1437
+Total Coulomb               :   3854.4909
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -8.6664094E+000
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0130 ps
+                                 (kJ/mol)
+Bond Potential              :    488.9866
+Harmonic Bond Potential     :    488.9866
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    698.2202
+Dihedral Potential          :    216.8565
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    216.8565
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     49.8614
+Lennard-Jones Intra         :     -1.0631
+Lennard-Jones               :   -471.1133
+Coulomb 1-4                 :   1704.3179
+Coulomb Intra               :    -19.1451
+Coulomb self-interaction    :      1.6540
+Coulomb short-range         :  -3853.7514
+Total Coulomb               :   3852.0974
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -9.9872623E+000
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0140 ps
+                                 (kJ/mol)
+Bond Potential              :    358.4300
+Harmonic Bond Potential     :    358.4300
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    677.6725
+Dihedral Potential          :    215.3756
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    215.3756
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     51.1297
+Lennard-Jones Intra         :     -0.5898
+Lennard-Jones               :   -482.7082
+Coulomb 1-4                 :   1704.5928
+Coulomb Intra               :    -18.9232
+Coulomb self-interaction    :      1.6538
+Coulomb short-range         :  -3859.1546
+Total Coulomb               :   3857.5008
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.1393521E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0150 ps
+                                 (kJ/mol)
+Bond Potential              :    419.4543
+Harmonic Bond Potential     :    419.4543
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    616.5200
+Dihedral Potential          :    214.2057
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    214.2057
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     52.7908
+Lennard-Jones Intra         :     -0.0448
+Lennard-Jones               :   -493.9100
+Coulomb 1-4                 :   1704.2819
+Coulomb Intra               :    -18.7184
+Coulomb self-interaction    :      1.6522
+Coulomb short-range         :  -3871.0891
+Total Coulomb               :   3869.4369
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.1581190E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0160 ps
+                                 (kJ/mol)
+Bond Potential              :    609.9850
+Harmonic Bond Potential     :    609.9850
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    538.7419
+Dihedral Potential          :    213.3475
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    213.3475
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     54.5451
+Lennard-Jones Intra         :      0.5172
+Lennard-Jones               :   -504.1517
+Coulomb 1-4                 :   1703.4377
+Coulomb Intra               :    -18.5501
+Coulomb self-interaction    :      1.6501
+Coulomb short-range         :  -3885.4105
+Total Coulomb               :   3883.7604
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.0833514E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0170 ps
+                                 (kJ/mol)
+Bond Potential              :    714.6326
+Harmonic Bond Potential     :    714.6326
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    471.2349
+Dihedral Potential          :    212.7206
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    212.7206
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     56.0333
+Lennard-Jones Intra         :      1.0552
+Lennard-Jones               :   -513.4690
+Coulomb 1-4                 :   1702.2579
+Coulomb Intra               :    -18.4319
+Coulomb self-interaction    :      1.6484
+Coulomb short-range         :  -3895.7972
+Total Coulomb               :   3894.1488
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.0684135E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0180 ps
+                                 (kJ/mol)
+Bond Potential              :    596.7793
+Harmonic Bond Potential     :    596.7793
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    435.2361
+Dihedral Potential          :    212.1755
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    212.1755
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     56.9882
+Lennard-Jones Intra         :      1.4932
+Lennard-Jones               :   -521.9529
+Coulomb 1-4                 :   1701.0299
+Coulomb Intra               :    -18.3653
+Coulomb self-interaction    :      1.6478
+Coulomb short-range         :  -3896.0960
+Total Coulomb               :   3894.4482
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.2053443E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0190 ps
+                                 (kJ/mol)
+Bond Potential              :    365.7290
+Harmonic Bond Potential     :    365.7290
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    442.6102
+Dihedral Potential          :    211.5763
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    211.5763
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     57.2750
+Lennard-Jones Intra         :      1.7742
+Lennard-Jones               :   -529.4686
+Coulomb 1-4                 :   1699.9935
+Coulomb Intra               :    -18.3413
+Coulomb self-interaction    :      1.6484
+Coulomb short-range         :  -3883.6613
+Total Coulomb               :   3882.0130
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.3900516E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0200 ps
+                                 (kJ/mol)
+Bond Potential              :    271.3933
+Harmonic Bond Potential     :    271.3933
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    492.2565
+Dihedral Potential          :    210.8395
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    210.8395
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     56.9176
+Lennard-Jones Intra         :      1.8490
+Lennard-Jones               :   -536.0330
+Coulomb 1-4                 :   1699.2668
+Coulomb Intra               :    -18.3428
+Coulomb self-interaction    :      1.6501
+Coulomb short-range         :  -3861.4584
+Total Coulomb               :   3859.8083
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.4159341E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0210 ps
+                                 (kJ/mol)
+Bond Potential              :    413.7342
+Harmonic Bond Potential     :    413.7342
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    568.7322
+Dihedral Potential          :    209.7820
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    209.7820
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     56.0089
+Lennard-Jones Intra         :      1.6720
+Lennard-Jones               :   -542.2858
+Coulomb 1-4                 :   1698.8312
+Coulomb Intra               :    -18.3502
+Coulomb self-interaction    :      1.6524
+Coulomb short-range         :  -3836.6558
+Total Coulomb               :   3835.0034
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.2186418E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0220 ps
+                                 (kJ/mol)
+Bond Potential              :    613.2618
+Harmonic Bond Potential     :    613.2618
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    648.4999
+Dihedral Potential          :    208.3620
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    208.3620
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     54.8067
+Lennard-Jones Intra         :      1.2710
+Lennard-Jones               :   -549.3062
+Coulomb 1-4                 :   1698.5531
+Coulomb Intra               :    -18.3480
+Coulomb self-interaction    :      1.6543
+Coulomb short-range         :  -3817.0176
+Total Coulomb               :   3815.3633
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -9.7611062E+000
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0230 ps
+                                 (kJ/mol)
+Bond Potential              :    622.7294
+Harmonic Bond Potential     :    622.7294
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    704.9643
+Dihedral Potential          :    206.6816
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    206.6816
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     53.5545
+Lennard-Jones Intra         :      0.6909
+Lennard-Jones               :   -557.7556
+Coulomb 1-4                 :   1698.2662
+Coulomb Intra               :    -18.3258
+Coulomb self-interaction    :      1.6549
+Coulomb short-range         :  -3808.1121
+Total Coulomb               :   3806.4571
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -9.2349712E+000
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0240 ps
+                                 (kJ/mol)
+Bond Potential              :    431.5145
+Harmonic Bond Potential     :    431.5145
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    715.1267
+Dihedral Potential          :    204.6972
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    204.6972
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     52.3653
+Lennard-Jones Intra         :     -0.0586
+Lennard-Jones               :   -567.1915
+Coulomb 1-4                 :   1697.8575
+Coulomb Intra               :    -18.2766
+Coulomb self-interaction    :      1.6540
+Coulomb short-range         :  -3812.2041
+Total Coulomb               :   3810.5502
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.0906080E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0250 ps
+                                 (kJ/mol)
+Bond Potential              :    275.0014
+Harmonic Bond Potential     :    275.0014
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    669.7441
+Dihedral Potential          :    202.6633
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    202.6633
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     51.3792
+Lennard-Jones Intra         :     -0.8885
+Lennard-Jones               :   -576.3222
+Coulomb 1-4                 :   1697.2924
+Coulomb Intra               :    -18.2055
+Coulomb self-interaction    :      1.6520
+Coulomb short-range         :  -3827.8374
+Total Coulomb               :   3826.1854
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.2847271E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0260 ps
+                                 (kJ/mol)
+Bond Potential              :    344.6951
+Harmonic Bond Potential     :    344.6951
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    573.9165
+Dihedral Potential          :    200.6529
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    200.6529
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     50.6606
+Lennard-Jones Intra         :     -1.7277
+Lennard-Jones               :   -583.8962
+Coulomb 1-4                 :   1696.6335
+Coulomb Intra               :    -18.1208
+Coulomb self-interaction    :      1.6499
+Coulomb short-range         :  -3849.8476
+Total Coulomb               :   3848.1977
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.3350283E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0270 ps
+                                 (kJ/mol)
+Bond Potential              :    558.0528
+Harmonic Bond Potential     :    558.0528
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    447.2888
+Dihedral Potential          :    198.7640
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    198.7640
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     50.2546
+Lennard-Jones Intra         :     -2.4866
+Lennard-Jones               :   -589.3039
+Coulomb 1-4                 :   1695.9957
+Coulomb Intra               :    -18.0355
+Coulomb self-interaction    :      1.6485
+Coulomb short-range         :  -3871.0557
+Total Coulomb               :   3869.4072
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.2875415E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0280 ps
+                                 (kJ/mol)
+Bond Potential              :    669.7487
+Harmonic Bond Potential     :    669.7487
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    319.5805
+Dihedral Potential          :    197.0473
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    197.0473
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     50.1974
+Lennard-Jones Intra         :     -3.1243
+Lennard-Jones               :   -592.5098
+Coulomb 1-4                 :   1695.5038
+Coulomb Intra               :    -17.9563
+Coulomb self-interaction    :      1.6480
+Coulomb short-range         :  -3885.6051
+Total Coulomb               :   3883.9571
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.3182906E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0290 ps
+                                 (kJ/mol)
+Bond Potential              :    567.4993
+Harmonic Bond Potential     :    567.4993
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    222.9794
+Dihedral Potential          :    195.4883
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    195.4883
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     50.5058
+Lennard-Jones Intra         :     -3.6257
+Lennard-Jones               :   -593.6636
+Coulomb 1-4                 :   1695.2592
+Coulomb Intra               :    -17.8833
+Coulomb self-interaction    :      1.6487
+Coulomb short-range         :  -3892.0840
+Total Coulomb               :   3890.4352
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.4934229E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0300 ps
+                                 (kJ/mol)
+Bond Potential              :    385.2885
+Harmonic Bond Potential     :    385.2885
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    183.7298
+Dihedral Potential          :    194.1242
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    194.1242
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     51.1342
+Lennard-Jones Intra         :     -4.0026
+Lennard-Jones               :   -592.8686
+Coulomb 1-4                 :   1695.3300
+Coulomb Intra               :    -17.8098
+Coulomb self-interaction    :      1.6504
+Coulomb short-range         :  -3893.5524
+Total Coulomb               :   3891.9021
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.6809051E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0310 ps
+                                 (kJ/mol)
+Bond Potential              :    330.3806
+Harmonic Bond Potential     :    330.3806
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    214.3925
+Dihedral Potential          :    192.6868
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    192.6868
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     51.9779
+Lennard-Jones Intra         :     -4.2723
+Lennard-Jones               :   -590.4021
+Coulomb 1-4                 :   1695.7644
+Coulomb Intra               :    -17.7305
+Coulomb self-interaction    :      1.6521
+Coulomb short-range         :  -3895.0929
+Total Coulomb               :   3893.4408
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.7007964E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0320 ps
+                                 (kJ/mol)
+Bond Potential              :    455.0207
+Harmonic Bond Potential     :    455.0207
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    310.5667
+Dihedral Potential          :    190.9727
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    190.9727
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     52.8505
+Lennard-Jones Intra         :     -4.4479
+Lennard-Jones               :   -587.1034
+Coulomb 1-4                 :   1696.5900
+Coulomb Intra               :    -17.6466
+Coulomb self-interaction    :      1.6528
+Coulomb short-range         :  -3901.2346
+Total Coulomb               :   3899.5818
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.5177183E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0330 ps
+                                 (kJ/mol)
+Bond Potential              :    626.9719
+Harmonic Bond Potential     :    626.9719
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    452.0088
+Dihedral Potential          :    188.9582
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    188.9582
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     53.5668
+Lennard-Jones Intra         :     -4.5362
+Lennard-Jones               :   -584.3425
+Coulomb 1-4                 :   1697.8083
+Coulomb Intra               :    -17.5689
+Coulomb self-interaction    :      1.6522
+Coulomb short-range         :  -3914.6673
+Total Coulomb               :   3913.0151
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.2634060E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0340 ps
+                                 (kJ/mol)
+Bond Potential              :    685.5383
+Harmonic Bond Potential     :    685.5383
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    607.5024
+Dihedral Potential          :    186.7476
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    186.7476
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     53.9881
+Lennard-Jones Intra         :     -4.5398
+Lennard-Jones               :   -583.2838
+Coulomb 1-4                 :   1699.3824
+Coulomb Intra               :    -17.5133
+Coulomb self-interaction    :      1.6506
+Coulomb short-range         :  -3935.3943
+Total Coulomb               :   3933.7437
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.1001875E+001
+ 
+<======  ###############  ==>
+<====  E N E R G I E S  ====>
+<==  ###############  ======>
+ 
+time :    0.0350 ps
+                                 (kJ/mol)
+Bond Potential              :    594.7000
+Harmonic Bond Potential     :    594.7000
+Morse Bond Potential        :      0.0000
+Morse (Inter) Potential     :      0.0000
+Angle Potential             :    742.6702
+Dihedral Potential          :    184.1880
+Proper Dihedral             :      0.0000
+Ryckaert-Bell. Dihedral     :    184.1880
+Harmonic Dihedral           :      0.0000
+Improper Dihedral (cos)     :      0.0000
+Lennard-Jones 1-4           :     54.0152
+Lennard-Jones Intra         :     -4.4724
+Lennard-Jones               :   -584.0476
+Coulomb 1-4                 :   1701.2260
+Coulomb Intra               :    -17.4921
+Coulomb self-interaction    :      1.6489
+Coulomb short-range         :  -3960.1509
+Total Coulomb               :   3958.5020
+Potential (INTER) Energy    :     -0.0000
+Potential Energy (gmx-like) : -1.0848844E+001
+ 

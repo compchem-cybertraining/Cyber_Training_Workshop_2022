@@ -1,0 +1,36 @@
+\frametitle{Multireference Calculation (mr-C1.inp)}
+\begin{columns}
+			\begin{column}{.5\linewidth}
+				\begin{scriptsize}
+					\begin{verbatim}
+					&GATEWAY
+					Title = Benzene MR with Symmetry
+					Coord = optimized.xyz
+					Basis = aug-cc-pVTZ
+					Group = NoSym
+					
+					&SEWARD
+					grid input
+					grid=ultrafine
+					end of grid input
+					
+					&RASSCF
+					FileOrb = labeled-C1.ScfOrb
+					nActEl = 6
+					Charge = 0
+					Spin = 1
+					CIRoot = 6 6 1
+					OutOrbital = Natural; 6
+					
+					...
+				\end{verbatim}
+				\end{scriptsize}
+			\end{column}
+			\begin{column}{.5\linewidth}
+				\begin{itemize}
+					\item In \&RASSCF, use FileOrb = " to give the name of your manually flagged SCF orbitals
+					\item Still specify the number of active electrons, not no need to specify the number of active orbitals
+					\item No need to make changes to any of the following modules, e.g. \&CASPT2 and \&MCPDFT; the active space is ``decided'' in the \&RASSCF module
+				\end{itemize}
+			\end{column}
+		\end{columns}

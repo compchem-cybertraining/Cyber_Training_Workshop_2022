@@ -1,0 +1,32 @@
+screened_coulomb_cutoff   60
+bare_coulomb_cutoff      90.0 
+wavefunction_cutoff      90.0  
+number_bands       350 # These two lines have the same meaning as
+band_occupation      4*1 346*0 # band occupation
+
+use_oldcdvxcformat 1
+degeneracy_check_override
+dont_use_vxcdat
+sum_method 0              # 0: new integration method; 2: old band-by-band summation
+
+
+band_index_min   1  # band_index_min and band_index_max fix the range
+band_index_max   8       # of calculation in terms of bands
+
+finite_difference_spacing   0.5
+
+
+screening_semiconductor
+
+number_kpoints  1
+
+begin kpoints
+    0.00000000000000    0.00000000000000    0.00000000000000  1  0
+end
+
+evs     0.0000               # scissors shift (energy unit is eV)
+evdel   0.0000
+ev0     0.0000
+ecs     0.0000
+ecdel   0.0000
+ec0     0.0000
