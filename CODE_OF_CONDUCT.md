@@ -29,7 +29,7 @@ title: "Projects and Participants"
 |-----|------|------|-------------|---------|------------|--------|--------|
 | 1 | Mohammad Shakiba | GRA-1 | University at Buffalo | USA | Alexey Akimov | Online | **2nd prize** |
 | 2 | Anjali Ganai | GRA-1 | Visva-Bharati U | India | Pranab Sarkar | Online | attended |
-| 3 | Julian Stetzler | GRA-2 | U of South Carolina | USA | Vitaly Rassolov | **1st prize** |  |
+| 3 | Julian Stetzler | GRA-2 | U of South Carolina | USA | Vitaly Rassolov | In-person | **1st prize** |  |
 | 4 | David Hoffmann | GRA-1 | Karlsruhe Institute of Technology | Germany | Marcus Elstner | Online | attended |
 | 5 | Priya Das | GRA-1 | Visva-Bharati U | India | Pranab Sarkar | Online | attended |
 | 6 | Min Choi | PD | UC Riverside | USA | Bryan Wong | In-person | attended |
