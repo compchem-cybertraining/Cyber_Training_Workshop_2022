@@ -47,7 +47,6 @@ title: "Projects and Participants"
 | 18 | Anna Hehn | PD | U of Zurich | Switzerland | Jurg Hutter | Online | attended |
 
 
-
 Notes:
 >
 > bolded are participants with access to UB HPC; GRA-N - graduate students, N-th year; PD - postdoc; FAC-PHD - faculty at a PhD-granting institution, 
