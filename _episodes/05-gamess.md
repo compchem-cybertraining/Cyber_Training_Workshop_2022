@@ -76,6 +76,11 @@ title: "5. Spin-Restricted Ensemble-Referenced Kohn-Sham (REKS) Method: Practica
 
 [Slides](../files/Michael_Filatov/HandsOn.pdf)
 
+<a name="2.1"></a>
+### 2.1. Overview of REKS implementation in GAMESS-US
+[See also](../files/Michael_Filatov/note_about_reks.pdf)[ and ](../files/Michael_Filatov/reks_gamess_synopsis.pdf)
+[REKS keywords](../files/Michael_Filatov/reks_gamess_input.txt)
+
 <a name="2.3"></a>
 ### 2.3. For environment setup and sample files, refer to /projects/academic/cyberwksp21/Software/mfilatov
 
